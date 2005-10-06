@@ -1,0 +1,1798 @@
+# Translation of xkeyboard-config-0.4-el.po to Greek
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004, Free Software Foundation.
+# Simos Xenitellis <simos74@gmx.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xkeyboard-config 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-24 23:32+0100\n"
+"PO-Revision-Date: 2004-12-21 00:57+0000\n"
+"Last-Translator: Simos Xenitellis <simos74@gmx.net>\n"
+"Language-Team: Greek <nls@tux.hellug.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: ../rules/base.xml.in.h:1
+msgid "\"Standard\""
+msgstr "\"Εξ ορισμού\""
+
+#: ../rules/base.xml.in.h:2
+msgid "(F)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:3
+msgid "101/qwerty/comma/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:4
+msgid "101/qwerty/comma/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:5
+msgid "101/qwerty/dot/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:6
+msgid "101/qwerty/dot/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:7
+msgid "101/qwertz/comma/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:8
+msgid "101/qwertz/comma/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:9
+msgid "101/qwertz/dot/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:10
+msgid "101/qwertz/dot/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:11
+msgid "102/qwerty/comma/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:12
+msgid "102/qwerty/comma/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:13
+msgid "102/qwerty/dot/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:14
+msgid "102/qwerty/dot/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:15
+msgid "102/qwertz/comma/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:16
+msgid "102/qwertz/comma/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:17
+msgid "102/qwertz/dot/Dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:18
+msgid "102/qwertz/dot/Eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:19
+msgid "A4Tech KB-21"
+msgstr ""
+
+#: ../rules/base.xml.in.h:20
+msgid "A4Tech KBS-8"
+msgstr ""
+
+#: ../rules/base.xml.in.h:21
+msgid "ACPI Standard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:22
+msgid "Acer AirKey V"
+msgstr ""
+
+#: ../rules/base.xml.in.h:23
+msgid "Acer TravelMate 800"
+msgstr ""
+
+#: ../rules/base.xml.in.h:24
+msgid "Add the EuroSign to the 2 key."
+msgstr ""
+
+#: ../rules/base.xml.in.h:25
+msgid "Add the EuroSign to the 5 key."
+msgstr ""
+
+#: ../rules/base.xml.in.h:26
+msgid "Add the EuroSign to the E key."
+msgstr ""
+
+#: ../rules/base.xml.in.h:27
+msgid "Add the standard behavior to Menu key."
+msgstr ""
+
+#: ../rules/base.xml.in.h:28
+msgid "Adding the EuroSign to certain keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:29
+msgid "Advance Scorpius KI"
+msgstr ""
+
+#: ../rules/base.xml.in.h:30
+msgid "Alb"
+msgstr ""
+
+#: ../rules/base.xml.in.h:31
+msgid "Albania"
+msgstr ""
+
+#: ../rules/base.xml.in.h:32
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr ""
+
+#: ../rules/base.xml.in.h:33
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr ""
+
+#: ../rules/base.xml.in.h:34
+msgid "Alt+Control changes group."
+msgstr "Το Alt+Control αλλάζει ομάδα."
+
+#: ../rules/base.xml.in.h:35
+msgid "Alt+Shift changes group."
+msgstr "Το Alt+Shift αλλάζει ομάδα."
+
+#: ../rules/base.xml.in.h:36
+msgid "Alt-Q"
+msgstr "Alt-Q"
+
+#: ../rules/base.xml.in.h:37
+msgid "Alt/Win key behavior"
+msgstr "Συμπεριφορά πλήκτρου Alt/Win"
+
+#: ../rules/base.xml.in.h:38
+msgid "Alternative"
+msgstr "Ενναλακτικό"
+
+#: ../rules/base.xml.in.h:39
+msgid "Alternative international (former us_intl)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:40
+msgid "Alternative, Sun dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:41
+msgid "Alternative, eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:42
+msgid "Apostrophe (') variant"
+msgstr ""
+
+#: ../rules/base.xml.in.h:43
+msgid "Ara"
+msgstr "Αρα"
+
+#: ../rules/base.xml.in.h:44
+msgid "Arabic"
+msgstr "Αραβικό"
+
+#: ../rules/base.xml.in.h:45
+msgid "Arm"
+msgstr "Αρμ"
+
+#: ../rules/base.xml.in.h:46
+#, fuzzy
+msgid "Armenia"
+msgstr "Αρμένικα"
+
+#: ../rules/base.xml.in.h:47
+msgid "Aze"
+msgstr "Αζε"
+
+#: ../rules/base.xml.in.h:48
+msgid "Azerbaijan"
+msgstr ""
+
+#: ../rules/base.xml.in.h:49
+msgid "Azona RF2300 wireless Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:50
+msgid "BTC 5090"
+msgstr ""
+
+#: ../rules/base.xml.in.h:51
+msgid "BTC 5113RF Multimedia"
+msgstr ""
+
+#: ../rules/base.xml.in.h:52
+msgid "BTC 5126T"
+msgstr ""
+
+#: ../rules/base.xml.in.h:53
+msgid "BTC 9000"
+msgstr ""
+
+#: ../rules/base.xml.in.h:54
+msgid "BTC 9000A"
+msgstr ""
+
+#: ../rules/base.xml.in.h:55
+msgid "BTC 9001AH"
+msgstr ""
+
+#: ../rules/base.xml.in.h:56
+#, fuzzy
+msgid "Ban"
+msgstr "Καν"
+
+#: ../rules/base.xml.in.h:57
+msgid "Bangladesh"
+msgstr ""
+
+#: ../rules/base.xml.in.h:58
+msgid "Bel"
+msgstr "Λευ"
+
+#: ../rules/base.xml.in.h:59
+#, fuzzy
+msgid "Belarus"
+msgstr "Λευ"
+
+#: ../rules/base.xml.in.h:60
+#, fuzzy
+msgid "Belgium"
+msgstr "Βελγικά"
+
+#: ../rules/base.xml.in.h:61
+#, fuzzy
+msgid "Bengali"
+msgstr "Βεν"
+
+#: ../rules/base.xml.in.h:62
+msgid "Bengali Probhat"
+msgstr ""
+
+#: ../rules/base.xml.in.h:63
+msgid "Bgr"
+msgstr ""
+
+#: ../rules/base.xml.in.h:64
+msgid "Bhu"
+msgstr ""
+
+#: ../rules/base.xml.in.h:65
+#, fuzzy
+msgid "Bhutan"
+msgstr "Καν"
+
+#: ../rules/base.xml.in.h:66
+msgid "Bih"
+msgstr ""
+
+#: ../rules/base.xml.in.h:67
+msgid "Blr"
+msgstr ""
+
+#: ../rules/base.xml.in.h:68
+msgid "Bosnia and Herzegovina"
+msgstr ""
+
+#: ../rules/base.xml.in.h:69
+msgid "Both Alt keys together change group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:70
+msgid "Both Ctrl keys together change group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:71
+msgid "Both Shift keys together change group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:72
+msgid "Both Win-keys switch group while pressed."
+msgstr ""
+
+#: ../rules/base.xml.in.h:73
+msgid "Bra"
+msgstr ""
+
+#: ../rules/base.xml.in.h:74
+msgid "Brazil"
+msgstr ""
+
+#: ../rules/base.xml.in.h:75
+msgid "Brazilian ABNT2"
+msgstr ""
+
+#: ../rules/base.xml.in.h:76
+msgid "Brother Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:77
+#, fuzzy
+msgid "Bulgaria"
+msgstr "Βουλγαρικά"
+
+#: ../rules/base.xml.in.h:78
+msgid "Can"
+msgstr "Καν"
+
+#: ../rules/base.xml.in.h:79
+#, fuzzy
+msgid "Canada"
+msgstr "Καναδέζικα"
+
+#: ../rules/base.xml.in.h:80
+msgid "CapsLock LED shows alternative group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:81
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr ""
+
+#: ../rules/base.xml.in.h:82
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr ""
+
+#: ../rules/base.xml.in.h:83
+msgid "CapsLock just locks the Shift modifier."
+msgstr ""
+
+#: ../rules/base.xml.in.h:84
+msgid "CapsLock key behavior"
+msgstr "Συμπεριφορά πλήκτρου Κλείδωμα Κεφαλαίων"
+
+#: ../rules/base.xml.in.h:85
+msgid "CapsLock key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:86
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr ""
+
+#: ../rules/base.xml.in.h:87
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr ""
+
+#: ../rules/base.xml.in.h:88
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr ""
+
+#: ../rules/base.xml.in.h:89
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr ""
+
+#: ../rules/base.xml.in.h:90
+msgid "Che"
+msgstr ""
+
+#: ../rules/base.xml.in.h:91
+msgid "Cherry Blue Line CyBo@rd"
+msgstr ""
+
+#: ../rules/base.xml.in.h:92
+msgid "Cherry Blue Line CyBo@rd (alternate option)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:93
+msgid "Cherry CyMotion Master Linux"
+msgstr ""
+
+#: ../rules/base.xml.in.h:94
+msgid "Chicony Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:95
+msgid "Chicony KB-9885"
+msgstr ""
+
+#: ../rules/base.xml.in.h:96
+msgid "CloGaelach"
+msgstr ""
+
+#: ../rules/base.xml.in.h:97
+msgid "Compaq Easy Access Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:98
+msgid "Compaq Internet Keyboard (13 keys)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:99
+msgid "Compaq Internet Keyboard (18 keys)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:100
+msgid "Compaq Internet Keyboard (7 keys)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:101
+msgid "Compaq iPaq Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:102
+#, fuzzy
+msgid "Compose key position"
+msgstr "Θέση Πλήκτρου Control"
+
+#: ../rules/base.xml.in.h:103
+msgid "Control key at bottom left"
+msgstr "Πλήκτρο Control κάτω αριστερά"
+
+#: ../rules/base.xml.in.h:104
+msgid "Control key at left of 'A'"
+msgstr "Πλήκτρο Control στα αριστερά του 'Α'"
+
+#: ../rules/base.xml.in.h:105
+#, fuzzy
+msgid "Control key position"
+msgstr "Θέση Πλήκτρου Control"
+
+#: ../rules/base.xml.in.h:106
+msgid "Control+Shift changes group."
+msgstr "Το Control+Shift αλλάζει ομάδα."
+
+#: ../rules/base.xml.in.h:107
+#, fuzzy
+msgid "Croatia"
+msgstr "Κροατικά"
+
+#: ../rules/base.xml.in.h:108
+msgid "Cyrillic"
+msgstr "Κυριλλικά"
+
+#: ../rules/base.xml.in.h:109
+msgid "Cze"
+msgstr "Τσε"
+
+#: ../rules/base.xml.in.h:110
+#, fuzzy
+msgid "Czechia"
+msgstr "Τσέχικα"
+
+#: ../rules/base.xml.in.h:111
+msgid "DTK2000"
+msgstr ""
+
+#: ../rules/base.xml.in.h:112
+msgid "Dead acute"
+msgstr ""
+
+#: ../rules/base.xml.in.h:113
+msgid "Dead grave acute"
+msgstr ""
+
+#: ../rules/base.xml.in.h:114
+msgid "Dell"
+msgstr ""
+
+#: ../rules/base.xml.in.h:115
+msgid "Dell 101-key PC"
+msgstr ""
+
+#: ../rules/base.xml.in.h:116
+msgid "Denmark"
+msgstr ""
+
+#: ../rules/base.xml.in.h:117
+msgid "Deu"
+msgstr ""
+
+#: ../rules/base.xml.in.h:118
+msgid "Dexxa Wireless Desktop Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:119
+msgid "Diamond 9801 / 9802 series"
+msgstr ""
+
+#: ../rules/base.xml.in.h:120
+msgid "Dnk"
+msgstr ""
+
+#: ../rules/base.xml.in.h:121
+msgid "Dvorak"
+msgstr ""
+
+#: ../rules/base.xml.in.h:122
+msgid "Dvorak, Polish quotes on key \"1/!\""
+msgstr ""
+
+#: ../rules/base.xml.in.h:123
+msgid "Dvorak, Polish quotes on quotemark key"
+msgstr ""
+
+#: ../rules/base.xml.in.h:124
+msgid "Eliminate dead keys"
+msgstr "Χωρίς νεκρά πλήκτρα"
+
+#: ../rules/base.xml.in.h:125
+msgid "Ennyah DKB-1008"
+msgstr ""
+
+#: ../rules/base.xml.in.h:126
+msgid "Esp"
+msgstr ""
+
+#: ../rules/base.xml.in.h:127
+msgid "Est"
+msgstr ""
+
+#: ../rules/base.xml.in.h:128
+msgid "Estonia"
+msgstr ""
+
+#: ../rules/base.xml.in.h:129
+msgid "Everex STEPnote"
+msgstr ""
+
+#: ../rules/base.xml.in.h:130
+msgid "Extended"
+msgstr ""
+
+#: ../rules/base.xml.in.h:131
+msgid "Extended Backslash"
+msgstr ""
+
+#: ../rules/base.xml.in.h:132
+msgid "F-letter (F) variant"
+msgstr ""
+
+#: ../rules/base.xml.in.h:133
+msgid "Fao"
+msgstr ""
+
+#: ../rules/base.xml.in.h:134
+msgid "Faroe Islands"
+msgstr ""
+
+#: ../rules/base.xml.in.h:135
+msgid "Fin"
+msgstr "Φιν"
+
+#: ../rules/base.xml.in.h:136
+#, fuzzy
+msgid "Finland"
+msgstr "Φιν"
+
+#: ../rules/base.xml.in.h:137
+msgid "Fra"
+msgstr "Γαλ"
+
+#: ../rules/base.xml.in.h:138
+#, fuzzy
+msgid "France"
+msgstr "Γαλλικά"
+
+#: ../rules/base.xml.in.h:139
+msgid "French"
+msgstr "Γαλλικά"
+
+#: ../rules/base.xml.in.h:140
+msgid "French (legacy)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:141
+#, fuzzy
+msgid "French Dvorak"
+msgstr "Γαλλικά"
+
+#: ../rules/base.xml.in.h:142
+msgid "French, Sun dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:143
+msgid "French, eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:144
+msgid "GBr"
+msgstr ""
+
+#: ../rules/base.xml.in.h:145
+msgid "Generic 101-key PC"
+msgstr "Τυπικός Ηλεκ. Υπολογιστής 101-πλήκτρων"
+
+#: ../rules/base.xml.in.h:146
+msgid "Generic 102-key (Intl) PC"
+msgstr "Τυπικός Ηλεκ. Υπολογιστής 102-πλήκτρων (Διεθνές)"
+
+#: ../rules/base.xml.in.h:147
+msgid "Generic 104-key PC"
+msgstr "Τυπικός Ηλεκ. Υπολογιστής 104-πλήκτρων"
+
+#: ../rules/base.xml.in.h:148
+msgid "Generic 105-key (Intl) PC"
+msgstr "Τυπικός Ηλεκ. Υπολογιστής 105-πλήκτρων (Διεθνές)"
+
+#: ../rules/base.xml.in.h:149
+msgid "Genius Comfy KB-16M / Genius MM Keyboard KWD-910"
+msgstr ""
+
+#: ../rules/base.xml.in.h:150
+msgid "Genius Comfy KB-21e-Scroll"
+msgstr ""
+
+#: ../rules/base.xml.in.h:151
+msgid "Geo"
+msgstr ""
+
+#: ../rules/base.xml.in.h:152
+msgid "Georgia"
+msgstr ""
+
+#: ../rules/base.xml.in.h:153
+msgid "German, Sun dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:154
+msgid "German, eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:155
+msgid "Germany"
+msgstr ""
+
+#: ../rules/base.xml.in.h:156
+msgid "Gre"
+msgstr "Ελλ"
+
+#: ../rules/base.xml.in.h:157
+#, fuzzy
+msgid "Greece"
+msgstr "Ελληνικά"
+
+#: ../rules/base.xml.in.h:158
+msgid "Group Shift/Lock behavior"
+msgstr ""
+
+#: ../rules/base.xml.in.h:159
+msgid "Gujarati"
+msgstr ""
+
+#: ../rules/base.xml.in.h:160
+msgid "Gurmukhi"
+msgstr ""
+
+#: ../rules/base.xml.in.h:161
+msgid "Gyration"
+msgstr ""
+
+#: ../rules/base.xml.in.h:162
+msgid "Hewlett-Packard Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:163
+msgid "Hewlett-Packard Omnibook 500 FA"
+msgstr ""
+
+#: ../rules/base.xml.in.h:164
+msgid "Hewlett-Packard Omnibook 5xx"
+msgstr ""
+
+#: ../rules/base.xml.in.h:165
+msgid "Hewlett-Packard Omnibook 6000/6100"
+msgstr ""
+
+#: ../rules/base.xml.in.h:166
+msgid "Hewlett-Packard Omnibook XE3 GC"
+msgstr ""
+
+#: ../rules/base.xml.in.h:167
+msgid "Hewlett-Packard Omnibook XE3 GF"
+msgstr ""
+
+#: ../rules/base.xml.in.h:168
+msgid "Hewlett-Packard Omnibook XT1000"
+msgstr ""
+
+#: ../rules/base.xml.in.h:169
+msgid "Hewlett-Packard Pavilion ZT11xx"
+msgstr ""
+
+#: ../rules/base.xml.in.h:170
+msgid "Hewlett-Packard SK-2501 Multimedia Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:171
+msgid "Hewlett-Packard SK-2505 Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:172
+msgid "Honeywell Euroboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:173
+msgid "Hrv"
+msgstr ""
+
+#: ../rules/base.xml.in.h:174
+msgid "Hun"
+msgstr ""
+
+#: ../rules/base.xml.in.h:175
+msgid "Hungary"
+msgstr ""
+
+#: ../rules/base.xml.in.h:176
+msgid "Hyper is mapped to the Win-keys."
+msgstr ""
+
+#: ../rules/base.xml.in.h:177
+msgid "IBM Rapid Access"
+msgstr ""
+
+#: ../rules/base.xml.in.h:178
+msgid "IBM Rapid Access II"
+msgstr ""
+
+#: ../rules/base.xml.in.h:179
+msgid "IBM Rapid Access II (alternate option)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:180
+msgid "IBM ThinkPad 560Z/600/600E/A22E"
+msgstr ""
+
+#: ../rules/base.xml.in.h:181
+msgid "ISO Alternate"
+msgstr ""
+
+#: ../rules/base.xml.in.h:182
+msgid "Iceland"
+msgstr ""
+
+#: ../rules/base.xml.in.h:183
+msgid "Ind"
+msgstr ""
+
+#: ../rules/base.xml.in.h:184
+msgid "India"
+msgstr ""
+
+#: ../rules/base.xml.in.h:185
+msgid "International (with dead keys)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:186
+msgid "Inuktitut"
+msgstr ""
+
+#: ../rules/base.xml.in.h:187
+msgid "Iran"
+msgstr ""
+
+#: ../rules/base.xml.in.h:188
+msgid "Ireland"
+msgstr ""
+
+#: ../rules/base.xml.in.h:189
+msgid "Irl"
+msgstr ""
+
+#: ../rules/base.xml.in.h:190
+msgid "Irn"
+msgstr ""
+
+#: ../rules/base.xml.in.h:191
+msgid "Isl"
+msgstr ""
+
+#: ../rules/base.xml.in.h:192
+msgid "Isr"
+msgstr ""
+
+#: ../rules/base.xml.in.h:193
+msgid "Israel"
+msgstr ""
+
+#: ../rules/base.xml.in.h:194
+msgid "Ita"
+msgstr ""
+
+#: ../rules/base.xml.in.h:195
+#, fuzzy
+msgid "Italy"
+msgstr "Ιταλικά"
+
+#: ../rules/base.xml.in.h:196
+#, fuzzy
+msgid "Japan"
+msgstr "Γιαπωνέζικα"
+
+#: ../rules/base.xml.in.h:197
+msgid "Japanese 106-key"
+msgstr ""
+
+#: ../rules/base.xml.in.h:198
+msgid "Jpn"
+msgstr "Ιαπ"
+
+#: ../rules/base.xml.in.h:199
+#, fuzzy
+msgid "Kannada"
+msgstr "Καναδέζικα"
+
+#: ../rules/base.xml.in.h:200
+msgid "Keypad"
+msgstr ""
+
+#: ../rules/base.xml.in.h:201
+msgid "Keytronic FlexPro"
+msgstr ""
+
+#: ../rules/base.xml.in.h:202
+#, fuzzy
+msgid "Kyr"
+msgstr "Συρ"
+
+#: ../rules/base.xml.in.h:203
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: ../rules/base.xml.in.h:204
+msgid "LAm"
+msgstr ""
+
+#: ../rules/base.xml.in.h:205
+msgid "Lao"
+msgstr ""
+
+#: ../rules/base.xml.in.h:206
+msgid "Laos"
+msgstr ""
+
+#: ../rules/base.xml.in.h:207
+msgid "Laptop/notebook Compaq (eg. Armada) Laptop Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:208
+msgid "Laptop/notebook Compaq (eg. Presario) Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:209
+msgid "Laptop/notebook Dell Inspiron 8xxx"
+msgstr ""
+
+#: ../rules/base.xml.in.h:210
+msgid "Latin"
+msgstr ""
+
+#: ../rules/base.xml.in.h:211
+msgid "Latin American"
+msgstr ""
+
+#: ../rules/base.xml.in.h:212
+msgid "Latin Unicode"
+msgstr ""
+
+#: ../rules/base.xml.in.h:213
+msgid "Latin Unicode qwerty"
+msgstr ""
+
+#: ../rules/base.xml.in.h:214
+msgid "Latin qwerty"
+msgstr ""
+
+#: ../rules/base.xml.in.h:215
+msgid "Latin with guillemots"
+msgstr ""
+
+#: ../rules/base.xml.in.h:216
+msgid "Latvia"
+msgstr ""
+
+#: ../rules/base.xml.in.h:217
+msgid "Left Alt key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:218
+msgid "Left Alt key switches group while pressed."
+msgstr ""
+
+#: ../rules/base.xml.in.h:219
+msgid "Left Ctrl key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:220
+msgid "Left Shift key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:221
+msgid "Left Win-key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:222
+msgid "Left Win-key switches group while pressed."
+msgstr ""
+
+#: ../rules/base.xml.in.h:223
+msgid "Lithuania"
+msgstr ""
+
+#: ../rules/base.xml.in.h:224
+msgid "Logitech Access Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:225
+msgid "Logitech Cordless Desktop"
+msgstr ""
+
+#: ../rules/base.xml.in.h:226
+msgid "Logitech Cordless Desktop Navigator"
+msgstr ""
+
+#: ../rules/base.xml.in.h:227
+msgid "Logitech Cordless Desktop Optical"
+msgstr ""
+
+#: ../rules/base.xml.in.h:228
+msgid "Logitech Cordless Desktop Pro"
+msgstr ""
+
+#: ../rules/base.xml.in.h:229
+msgid "Logitech Cordless Desktop Pro (alternate option)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:230
+msgid "Logitech Cordless Desktop Pro (alternate option2)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:231
+msgid "Logitech Cordless Desktop iTouch"
+msgstr ""
+
+#: ../rules/base.xml.in.h:232
+msgid "Logitech Cordless Freedom/Desktop Navigator"
+msgstr ""
+
+#: ../rules/base.xml.in.h:233
+msgid "Logitech Deluxe Access Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:234
+msgid "Logitech Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:235
+msgid "Logitech Internet Navigator Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:236
+msgid "Logitech Ultra-X Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:237
+msgid "Logitech iTouch"
+msgstr ""
+
+#: ../rules/base.xml.in.h:238
+msgid "Logitech iTouch Cordless Keyboard (model Y-RB6)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:239
+msgid "Logitech iTouch keyboard Internet Navigator"
+msgstr ""
+
+#: ../rules/base.xml.in.h:240
+msgid "Ltu"
+msgstr ""
+
+#: ../rules/base.xml.in.h:241
+msgid "Lva"
+msgstr ""
+
+#: ../rules/base.xml.in.h:242
+#, fuzzy
+msgid "Macedonia (FYROM)"
+msgstr "Φυρομιακά"
+
+#: ../rules/base.xml.in.h:243
+msgid "Macintosh"
+msgstr ""
+
+#: ../rules/base.xml.in.h:244
+msgid "Macintosh Old"
+msgstr ""
+
+#: ../rules/base.xml.in.h:245
+msgid "Make CapsLock an additional Control."
+msgstr ""
+
+#: ../rules/base.xml.in.h:246
+msgid "Mal"
+msgstr ""
+
+#: ../rules/base.xml.in.h:247
+msgid "Malayalam"
+msgstr ""
+
+#: ../rules/base.xml.in.h:248
+msgid "Maldives"
+msgstr ""
+
+#: ../rules/base.xml.in.h:249
+msgid "Malta"
+msgstr ""
+
+#: ../rules/base.xml.in.h:250
+msgid "Mao"
+msgstr ""
+
+#: ../rules/base.xml.in.h:251
+msgid "Maori"
+msgstr ""
+
+#: ../rules/base.xml.in.h:252
+msgid "Memorex MX1998"
+msgstr ""
+
+#: ../rules/base.xml.in.h:253
+msgid "Memorex MX2500 EZ-Access Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:254
+msgid "Memorex MX2750"
+msgstr ""
+
+#: ../rules/base.xml.in.h:255
+msgid "Menu is Compose."
+msgstr ""
+
+#: ../rules/base.xml.in.h:256
+msgid "Menu key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:257
+msgid "Meta is mapped to the Win-keys."
+msgstr ""
+
+#: ../rules/base.xml.in.h:258
+msgid "Meta is mapped to the left Win-key."
+msgstr ""
+
+#: ../rules/base.xml.in.h:259
+msgid "Microsoft Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:260
+msgid "Microsoft Internet Keyboard Pro, Swedish"
+msgstr ""
+
+#: ../rules/base.xml.in.h:261
+msgid "Microsoft Natural"
+msgstr ""
+
+#: ../rules/base.xml.in.h:262
+msgid "Microsoft Natural Keyboard Pro / Microsoft Internet Keyboard Pro"
+msgstr ""
+
+#: ../rules/base.xml.in.h:263
+msgid "Microsoft Natural Keyboard Pro OEM"
+msgstr ""
+
+#: ../rules/base.xml.in.h:264
+msgid "Microsoft Natural Keyboard Pro USB / Microsoft Internet Keyboard Pro"
+msgstr ""
+
+#: ../rules/base.xml.in.h:265
+msgid "Microsoft Office Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:266
+msgid "Microsoft Wireless Multimedia Keyboard 1.0A"
+msgstr ""
+
+#: ../rules/base.xml.in.h:267
+msgid "Miscellaneous compatibility options"
+msgstr ""
+
+#: ../rules/base.xml.in.h:268
+msgid "Mkd"
+msgstr ""
+
+#: ../rules/base.xml.in.h:269
+msgid "Mlt"
+msgstr ""
+
+#: ../rules/base.xml.in.h:270
+msgid "Mmr"
+msgstr ""
+
+#: ../rules/base.xml.in.h:271
+msgid "Mng"
+msgstr ""
+
+#: ../rules/base.xml.in.h:272
+msgid "Mongolia"
+msgstr ""
+
+#: ../rules/base.xml.in.h:273
+msgid "Multilingual"
+msgstr ""
+
+#: ../rules/base.xml.in.h:274
+msgid "Multilingual, second part"
+msgstr ""
+
+#: ../rules/base.xml.in.h:275
+msgid "Myanmar"
+msgstr ""
+
+#: ../rules/base.xml.in.h:276
+msgid "Netherlands"
+msgstr ""
+
+#: ../rules/base.xml.in.h:277
+msgid "Nld"
+msgstr ""
+
+#: ../rules/base.xml.in.h:278
+msgid "Nor"
+msgstr ""
+
+#: ../rules/base.xml.in.h:279
+msgid "Northern Saami"
+msgstr ""
+
+#: ../rules/base.xml.in.h:280
+#, fuzzy
+msgid "Northern Saami, eliminate dead keys"
+msgstr "Χωρίς νεκρά πλήκτρα"
+
+#: ../rules/base.xml.in.h:281
+msgid "Northgate OmniKey 101"
+msgstr ""
+
+#: ../rules/base.xml.in.h:282
+msgid "Norway"
+msgstr ""
+
+#: ../rules/base.xml.in.h:283
+msgid "NumLock LED shows alternative group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:284
+msgid "Ogham"
+msgstr ""
+
+#: ../rules/base.xml.in.h:285
+msgid "Ogham IS434"
+msgstr ""
+
+#: ../rules/base.xml.in.h:286
+msgid "Oretec MCK-800 MM/Internet keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:287
+msgid "Oriya"
+msgstr ""
+
+#: ../rules/base.xml.in.h:288
+msgid "PC-98xx Series"
+msgstr ""
+
+#: ../rules/base.xml.in.h:289
+msgid "Pak"
+msgstr ""
+
+#: ../rules/base.xml.in.h:290
+msgid "Pakistan"
+msgstr ""
+
+#: ../rules/base.xml.in.h:291
+msgid "Pattachote"
+msgstr ""
+
+#: ../rules/base.xml.in.h:292
+msgid "Phonetic"
+msgstr "Φωνητικά"
+
+#: ../rules/base.xml.in.h:293
+msgid "Pol"
+msgstr "Πολ"
+
+#: ../rules/base.xml.in.h:294
+#, fuzzy
+msgid "Poland"
+msgstr "Πολ"
+
+#: ../rules/base.xml.in.h:295
+msgid "Polytonic"
+msgstr "Πολυτονικά"
+
+#: ../rules/base.xml.in.h:296
+#, fuzzy
+msgid "Portugal"
+msgstr "Πορτογαλικά"
+
+#: ../rules/base.xml.in.h:297
+msgid "PowerPC PS/2"
+msgstr ""
+
+#: ../rules/base.xml.in.h:298
+msgid "Press Left Alt key to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:299
+msgid "Press Left Win-key to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:300
+msgid "Press Menu key to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:301
+msgid "Press Right Alt key to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:302
+msgid "Press Right Control to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:303
+msgid "Press Right Win-key to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:304
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:305
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr ""
+
+#: ../rules/base.xml.in.h:306
+#, fuzzy
+msgid "Pro"
+msgstr "Πολ"
+
+#: ../rules/base.xml.in.h:307
+msgid "Pro Keypad"
+msgstr ""
+
+#: ../rules/base.xml.in.h:308
+msgid "Probhat"
+msgstr ""
+
+#: ../rules/base.xml.in.h:309
+msgid "Propeller Voyager (KTEZ-1000)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:310
+msgid "Prt"
+msgstr ""
+
+#: ../rules/base.xml.in.h:311
+msgid "QTronix Scorpius 98N+"
+msgstr ""
+
+#: ../rules/base.xml.in.h:312
+msgid "R-Alt switches group while pressed."
+msgstr ""
+
+#: ../rules/base.xml.in.h:313
+msgid "Right Alt is Compose."
+msgstr ""
+
+#: ../rules/base.xml.in.h:314
+msgid "Right Alt key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:315
+msgid "Right Control key works as Right Alt."
+msgstr ""
+
+#: ../rules/base.xml.in.h:316
+msgid "Right Ctrl is Compose."
+msgstr ""
+
+#: ../rules/base.xml.in.h:317
+msgid "Right Ctrl key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:318
+msgid "Right Ctrl key switches group while pressed."
+msgstr ""
+
+#: ../rules/base.xml.in.h:319
+msgid "Right Shift key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:320
+msgid "Right Win-key changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:321
+msgid "Right Win-key is Compose."
+msgstr ""
+
+#: ../rules/base.xml.in.h:322
+msgid "Right Win-key switches group while pressed."
+msgstr ""
+
+#: ../rules/base.xml.in.h:323
+msgid "Romania"
+msgstr ""
+
+#: ../rules/base.xml.in.h:324
+msgid "Romanian keyboard with German letters"
+msgstr ""
+
+#: ../rules/base.xml.in.h:325
+msgid "Romanian keyboard with German letters, eliminate dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:326
+msgid "Rou"
+msgstr ""
+
+#: ../rules/base.xml.in.h:327
+msgid "Rus"
+msgstr "Ρωσ"
+
+#: ../rules/base.xml.in.h:328
+#, fuzzy
+msgid "Russia"
+msgstr "Ρωσσικά"
+
+#: ../rules/base.xml.in.h:329
+msgid "Russian"
+msgstr "Ρωσσικά"
+
+#: ../rules/base.xml.in.h:330
+#, fuzzy
+msgid "Russian phonetic"
+msgstr "Ρωσσικά"
+
+#: ../rules/base.xml.in.h:331
+#, fuzzy
+msgid "Russian phonetic, eliminate dead keys"
+msgstr "Χωρίς νεκρά πλήκτρα"
+
+#: ../rules/base.xml.in.h:332
+msgid "SK-1300"
+msgstr ""
+
+#: ../rules/base.xml.in.h:333
+msgid "SK-2500"
+msgstr ""
+
+#: ../rules/base.xml.in.h:334
+msgid "SK-6200"
+msgstr ""
+
+#: ../rules/base.xml.in.h:335
+msgid "SK-7100"
+msgstr ""
+
+#: ../rules/base.xml.in.h:336
+msgid "SVEN Ergonomic 2500"
+msgstr ""
+
+#: ../rules/base.xml.in.h:337
+msgid "Samsung SDM 4500P"
+msgstr ""
+
+#: ../rules/base.xml.in.h:338
+msgid "Samsung SDM 4510P"
+msgstr ""
+
+#: ../rules/base.xml.in.h:339
+msgid "ScrollLock LED shows alternative group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:340
+#, fuzzy
+msgid "Serbia"
+msgstr "Συριακά"
+
+#: ../rules/base.xml.in.h:341
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr ""
+
+#: ../rules/base.xml.in.h:342
+msgid "Shift+CapsLock changes group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:343
+#, fuzzy
+msgid "Slovakia"
+msgstr "Σλοβακικά"
+
+#: ../rules/base.xml.in.h:344
+#, fuzzy
+msgid "Slovenia"
+msgstr "Σλοβενικά"
+
+#: ../rules/base.xml.in.h:345
+#, fuzzy
+msgid "Spain"
+msgstr "Φιν"
+
+#: ../rules/base.xml.in.h:346
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr ""
+
+#: ../rules/base.xml.in.h:347
+#, fuzzy
+msgid "SrL"
+msgstr "Συρ"
+
+#: ../rules/base.xml.in.h:348
+msgid "Sri Lanka"
+msgstr ""
+
+#: ../rules/base.xml.in.h:349
+msgid "Srp"
+msgstr ""
+
+#: ../rules/base.xml.in.h:350
+msgid "Standard"
+msgstr "Εξ ορισμού"
+
+#. RSTU 2019-91
+#: ../rules/base.xml.in.h:352
+#, fuzzy
+msgid "Standard RSTU"
+msgstr "Εξ ορισμού"
+
+#. RSTU 2019-91
+#: ../rules/base.xml.in.h:354
+msgid "Standard RSTU on Russian layout"
+msgstr ""
+
+#: ../rules/base.xml.in.h:355
+msgid "Sun dead keys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:356
+msgid "Super Power Multimedia Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:357
+msgid "Super is mapped to the Win-keys (default)."
+msgstr ""
+
+#: ../rules/base.xml.in.h:358
+msgid "Svk"
+msgstr ""
+
+#: ../rules/base.xml.in.h:359
+msgid "Svn"
+msgstr ""
+
+#: ../rules/base.xml.in.h:360
+msgid "Swap Control and CapsLock."
+msgstr ""
+
+#: ../rules/base.xml.in.h:361
+msgid "Swe"
+msgstr "Σου"
+
+#: ../rules/base.xml.in.h:362
+#, fuzzy
+msgid "Sweden"
+msgstr "Σου"
+
+#: ../rules/base.xml.in.h:363
+msgid "Switzerland"
+msgstr ""
+
+#: ../rules/base.xml.in.h:364
+msgid "Symplon PaceBook (tablet PC)"
+msgstr ""
+
+#: ../rules/base.xml.in.h:365
+msgid "Syr"
+msgstr "Συρ"
+
+#: ../rules/base.xml.in.h:366
+#, fuzzy
+msgid "Syria"
+msgstr "Συριακά"
+
+#: ../rules/base.xml.in.h:367
+msgid "Syriac"
+msgstr "Συριακά"
+
+#: ../rules/base.xml.in.h:368
+#, fuzzy
+msgid "Syriac phonetic"
+msgstr "Ρωσσικά"
+
+#: ../rules/base.xml.in.h:369
+msgid "TIS-820.2538"
+msgstr ""
+
+#: ../rules/base.xml.in.h:370
+msgid "Tajikistan"
+msgstr ""
+
+#: ../rules/base.xml.in.h:371
+msgid "Tamil"
+msgstr "Ταμίλ"
+
+#: ../rules/base.xml.in.h:372
+msgid "Tamil INSCRIPT"
+msgstr ""
+
+#: ../rules/base.xml.in.h:373
+#, fuzzy
+msgid "Tamil TAB Typewriter"
+msgstr "\"Γραφομηχανή\""
+
+#: ../rules/base.xml.in.h:374
+msgid "Tamil TSCII Typewriter"
+msgstr ""
+
+#: ../rules/base.xml.in.h:375
+msgid "Tamil Unicode"
+msgstr ""
+
+#: ../rules/base.xml.in.h:376
+msgid "Telugu"
+msgstr "Τελούγκου"
+
+#: ../rules/base.xml.in.h:377
+msgid "Tha"
+msgstr ""
+
+#: ../rules/base.xml.in.h:378
+#, fuzzy
+msgid "Thailand"
+msgstr "Ταμίλ"
+
+#: ../rules/base.xml.in.h:379
+msgid "Third level choosers"
+msgstr ""
+
+#: ../rules/base.xml.in.h:380
+msgid "Tilde (~) variant"
+msgstr ""
+
+#: ../rules/base.xml.in.h:381
+msgid "Tjk"
+msgstr ""
+
+#: ../rules/base.xml.in.h:382
+msgid "Toshiba Satellite S3000"
+msgstr ""
+
+#: ../rules/base.xml.in.h:383
+msgid "Trust Direct Access Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:384
+msgid "Trust Wireless Keyboard Classic"
+msgstr ""
+
+#: ../rules/base.xml.in.h:385
+msgid "Tur"
+msgstr "Του"
+
+#: ../rules/base.xml.in.h:386
+msgid "Turkish"
+msgstr "Τουρικά"
+
+#: ../rules/base.xml.in.h:387
+#, fuzzy
+msgid "Typewriter"
+msgstr "\"Γραφομηχανή\""
+
+#: ../rules/base.xml.in.h:388
+msgid "U.S. English"
+msgstr "Αγγλικά ΗΠΑ"
+
+#: ../rules/base.xml.in.h:389
+msgid "US keyboard with Bosnian digraphs"
+msgstr ""
+
+#: ../rules/base.xml.in.h:390
+msgid "US keyboard with Bosnian letters"
+msgstr ""
+
+#: ../rules/base.xml.in.h:391
+msgid "US keyboard with Croatian digraphs"
+msgstr ""
+
+#: ../rules/base.xml.in.h:392
+msgid "US keyboard with Croatian letters"
+msgstr ""
+
+#: ../rules/base.xml.in.h:393
+msgid "US keyboard with Lithuanian letters"
+msgstr ""
+
+#: ../rules/base.xml.in.h:394
+msgid "US keyboard with Maltian letters"
+msgstr ""
+
+#: ../rules/base.xml.in.h:395
+msgid "US keyboard with Romanian letters"
+msgstr ""
+
+#: ../rules/base.xml.in.h:396
+msgid "US keyboard with Slovenian digraphs"
+msgstr ""
+
+#: ../rules/base.xml.in.h:397
+msgid "US keyboard with Slovenian letters"
+msgstr ""
+
+#: ../rules/base.xml.in.h:398
+msgid "USA"
+msgstr "ΗΠΑ"
+
+#: ../rules/base.xml.in.h:399
+msgid "Ukr"
+msgstr "Ουκ"
+
+#: ../rules/base.xml.in.h:400
+#, fuzzy
+msgid "Ukraine"
+msgstr "Ουκρανικά"
+
+#: ../rules/base.xml.in.h:401
+msgid "UnicodeExpert"
+msgstr ""
+
+#: ../rules/base.xml.in.h:402
+msgid "United Kingdom"
+msgstr "Ηνωμένο Βασίλειο"
+
+#: ../rules/base.xml.in.h:403
+msgid "Urdu"
+msgstr "Ούρντου"
+
+#: ../rules/base.xml.in.h:404
+msgid "Use Bosnian digraphs"
+msgstr ""
+
+#: ../rules/base.xml.in.h:405
+msgid "Use Croatian digraphs"
+msgstr ""
+
+#: ../rules/base.xml.in.h:406
+msgid "Use Slovenian digraphs"
+msgstr ""
+
+#: ../rules/base.xml.in.h:407
+msgid "Use guillemots for quotes"
+msgstr ""
+
+#: ../rules/base.xml.in.h:408
+msgid "Use keyboard LED to show alternative group."
+msgstr ""
+
+#: ../rules/base.xml.in.h:409
+msgid "Uzb"
+msgstr ""
+
+#: ../rules/base.xml.in.h:410
+msgid "Uzbekistan"
+msgstr ""
+
+#: ../rules/base.xml.in.h:411
+msgid "Vietnam"
+msgstr ""
+
+#: ../rules/base.xml.in.h:412
+msgid "Vnm"
+msgstr ""
+
+#: ../rules/base.xml.in.h:413
+msgid "Winbook Model XP5"
+msgstr ""
+
+#: ../rules/base.xml.in.h:414
+msgid "Winkeys"
+msgstr ""
+
+#: ../rules/base.xml.in.h:415
+msgid "With &lt;\\|&gt; key"
+msgstr ""
+
+#: ../rules/base.xml.in.h:416
+msgid "With guillemots"
+msgstr ""
+
+#: ../rules/base.xml.in.h:417
+msgid "Yahoo! Internet Keyboard"
+msgstr ""
+
+#: ../rules/base.xml.in.h:418
+msgid "Z and ZHE swapped"
+msgstr ""
+
+#: ../rules/base.xml.in.h:419
+msgid "azerty"
+msgstr ""
+
+#: ../rules/base.xml.in.h:420
+msgid "azerty/digits"
+msgstr ""
+
+#: ../rules/base.xml.in.h:421
+msgid "digits"
+msgstr ""
+
+#: ../rules/base.xml.in.h:422
+msgid "lyx"
+msgstr ""
+
+#: ../rules/base.xml.in.h:423
+msgid "qwerty"
+msgstr ""
+
+#: ../rules/base.xml.in.h:424
+msgid "qwerty, extended Backslash"
+msgstr ""
+
+#: ../rules/base.xml.in.h:425
+msgid "qwerty/digits"
+msgstr ""
+
+#: ../rules/base.xml.in.h:426
+msgid "qwertz"
+msgstr ""
+
+#: ../rules/base.xml.in.h:427
+msgid "si1452"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Sinhala phonetic"
+#~ msgstr "Ρωσσικά"
+
+#~ msgid "Finish and Swedish"
+#~ msgstr "Φινλανδικά και Σουηδικά"
+
+#, fuzzy
+#~ msgid "Sin"
+#~ msgstr "Φιν"
+
+#~ msgid "Tam"
+#~ msgstr "Ταμ"
+
+#~ msgid "Tel"
+#~ msgstr "Τελ"
+
+#~ msgid "Urd"
+#~ msgstr "Ουρ"
+
+#~ msgid "Bosnian"
+#~ msgstr "Βοσνιακά"
+
+#~ msgid "Finnish"
+#~ msgstr "Φινλανδικά"
+
+#~ msgid "Polish"
+#~ msgstr "Πολωνέζικα"
+
+#~ msgid "Spanish"
+#~ msgstr "Ισπανικά"
+
+#~ msgid "Swedish"
+#~ msgstr "Σουηδικά"
+
+#~ msgid "Swiss"
+#~ msgstr "Ελβετικά"

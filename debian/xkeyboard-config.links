@@ -1,0 +1,5 @@
+etc/X11/xkb/rules/base etc/X11/xkb/rules/xfree86
+etc/X11/xkb/rules/base.lst etc/X11/xkb/rules/xfree86.lst
+etc/X11/xkb/rules/base.xml etc/X11/xkb/rules/xfree86.xml
+etc/X11/xkb usr/lib/X11/xkb
+etc/X11/xkb usr/X11R6/lib/X11/xkb

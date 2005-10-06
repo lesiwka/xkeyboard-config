@@ -1,0 +1,69 @@
+xkeyboard-config (0.6-5) breezy; urgency=low
+
+  * Add ralt -> l3 mapping to no(dvorak), es(dvorak), and de(dvorak).
+  * diaresis -> diaeresis in de(dvorak).
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Thu,  6 Oct 2005 12:01:39 +1000
+
+xkeyboard-config (0.6-4) breezy; urgency=low
+
+  * Add l:us_intl -> l:us,v:alt-intl mapping in rules.ml_s.part (closes:
+    Ubuntu#16568).
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Fri, 30 Sep 2005 19:11:29 +1000
+
+xkeyboard-config (0.6-3) breezy; urgency=low
+
+  * Remove ca mapping from rules.ml_s.part, re-merge the rules.  Add default
+    'default' mapping to symbols/ca, which emulates the old rule-based
+    behaviour.  Add ca_enhanced mapping to rules.ml_s.part.  Add ca(fr) and
+    ca_enhanced to base.xml.in (closes: Ubuntu#15040).
+  * Fix merge.sh to be srcdir != destdir safe.
+  * Re-add compose:caps (closes: Ubuntu#15790).
+  * Add hr(alt) variant, thanks Ante Karamatic (closes: Ubuntu#14667); also
+    add hr_US -> hr(alt) mapping in rules.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Wed, 21 Sep 2005 18:19:41 +1000
+
+xkeyboard-config (0.6-2) breezy; urgency=low
+
+  * Fix missing build-depends.
+
+ -- LaMont Jones <lamont@ubuntu.com>  Sat,  3 Sep 2005 11:22:39 -0600
+
+xkeyboard-config (0.6-1) breezy; urgency=low
+
+  * New upstream release.
+    + Provides fr-latin9 as an alias for fr(latin9) (closes: Ubuntu#13919).
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 29 Aug 2005 13:01:44 +1000
+
+xkeyboard-config (0.5-4) breezy; urgency=low
+
+  * Replaces on old versions of xlibs-data.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Thu,  4 Aug 2005 19:30:21 +1000
+
+xkeyboard-config (0.5-3) breezy; urgency=low
+
+  * Add /usr/lib/X11/xkb and /usr/X11R6/lib/X11/xkb symlinks; add Pre-Depends
+    on x-common as we now use /usr/lib/X11 and want that to be in a
+    transitioned state.  Add Conflicts on old (monolith) versions of libx11-6
+    as that's where the XKB symlinks used to live.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 25 Jul 2005 21:19:44 +1000
+
+xkeyboard-config (0.5-2) breezy; urgency=low
+
+  * Remove 'compiled' symlink in debian/rules, averting conflict with
+    xbase-clients.
+  * Bump xlibs Conflicts/Replaces to -39, to account for fun with broken
+    packaging.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 18 Jul 2005 18:47:52 +1000
+
+xkeyboard-config (0.5-1) breezy; urgency=low
+
+  * First xkeyboard-config release.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 11 Jul 2005 15:07:19 +1000

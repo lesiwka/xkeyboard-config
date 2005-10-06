@@ -1,0 +1,22 @@
+Source: xkeyboard-config
+Section: x11
+Priority: optional
+Maintainer: Daniel Stone <daniel.stone@ubuntu.com>
+Build-Depends: debhelper (>= 4.0.0), intltool, libxml-parser-perl, xkbutils
+Standards-Version: 3.6.1.0
+
+Package: xkeyboard-config
+Architecture: all
+Depends: ${misc:Depends}
+Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1)
+Conflicts: xlibs (<< 6.8.2-39)
+Pre-Depends: x-common (>= 1.0)
+Description: XKB data
+ This package contains layout and other data for XKB, the X Keyboard
+ Extension.  This data contains enough information on all known keyboards
+ to be able to configure an X server to understand its layouts and keys
+ correctly.
+ .
+ This data formerly lived in the 'xlibs' package, but it is now in its
+ own package, after having moved to the xkeyboard-config upstream tarballs:
+ http://www.freedesktop.org/wiki/Software_2fxkeyboard-config
