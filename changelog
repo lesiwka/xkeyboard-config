@@ -1,0 +1,29 @@
+xkeyboard-config (0.6-6) breezy; urgency=low
+
+  * Add level3(ralt_switch_for_alts_toggle), which maps RALT to
+    [ l3switch, group_next ], which is the desired behaviour for a three-level
+    keyboard with multiple layouts present (see below).
+  * Add list of layouts which use third/fourth levels to base.lists.part.
+  * Add l[x] + o -> s mappings for all four levels; for all three-level
+    layouts, map grp:alts_toggle -> level3(ralt_switch_for_alts_toggle) for
+    that group only.  Note that this precludes (sensibly) adding layouts
+    which use a different key than RALT for the l3 switcher to
+    $threelevellayouts, although this is only cosmetic (closes: Ubuntu#13527).
+  * Adjust altwin(meta_win) to cope with this; only modify the first level of
+    LALT and RALT.
+  * Only modify the first level in compose(ralt).
+  * Bind Alt_R to Mod1 in pc.
+  * Remove (completely false) ONE_LEVEL declarations for LALT, RALT, LWIN and
+    RWIN through level3.
+  * Add Conflicts on libxkbfile1 (<< 7.0.0-3), so we force upgrading to a
+    fixed version; l[x] + o -> s mappings in the rules will cause earlier
+    versions of xkbfile to choke.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 10 Oct 2005 15:41:08 +1000
+
+libxkbfile (7.0.0-3) breezy; urgency=low
+
+  * Allow options to appear with other mappings, as this restriction seems to
+    make no sense.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 10 Oct 2005 15:40:36 +1000
