@@ -177,6 +177,10 @@ xkb_symbols "basic" {
 
     key <ALT>  {	[ NoSymbol, Alt_L	]	};
     modifier_map Mod1   { <ALT>, <LALT> };
+    
+    // RALT is often overridden to l3-switch, so we bind Alt_R rather than
+    // RALT to the modifier here
+    modifier_map Mod1   { Alt_R };
 
     key <META> {	[ NoSymbol, Meta_L	]	};
     modifier_map Mod1   { <META> };

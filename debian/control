@@ -9,7 +9,7 @@ Package: xkeyboard-config
 Architecture: all
 Depends: ${misc:Depends}
 Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1)
-Conflicts: xlibs (<< 6.8.2-39)
+Conflicts: xlibs (<< 6.8.2-39), libxkbfile1 (<< 7.0.0-3)
 Pre-Depends: x-common (>= 1.0)
 Description: XKB data
  This package contains layout and other data for XKB, the X Keyboard
