@@ -163,6 +163,7 @@ SUBDIRS = compat
 @USE_COMPAT_RULES_FALSE@HDR base.l2_s.part  HDR base.l3_s.part  HDR base.l4_s.part HDR HDR HDR \
 @USE_COMPAT_RULES_FALSE@HDR base.m_s.part   HDR base.ml_c.part  HDR base.ml1_c.part \
 @USE_COMPAT_RULES_FALSE@HDR base.m_t.part \
+@USE_COMPAT_RULES_FALSE@HDR base.lo_s.part	HDR base.l1o_s.part HDR base.l2o_s.part HDR base.l3o_s.part HDR base.l4o_s.part \
 @USE_COMPAT_RULES_FALSE@HDR base.o_s.part   HDR base.o_c.part   HDR base.o_t.part
 
 @USE_COMPAT_RULES_TRUE@base_parts = base.hdr.part  base.lists.part \
@@ -181,6 +182,7 @@ SUBDIRS = compat
 @USE_COMPAT_RULES_TRUE@HDR compat/base.l4v4_s.part \
 @USE_COMPAT_RULES_TRUE@HDR base.m_s.part  HDR base.ml_c.part        HDR base.ml1_c.part \
 @USE_COMPAT_RULES_TRUE@HDR base.m_t.part \
+@USE_COMPAT_RULES_TRUE@HDR base.lo_s.part	HDR base.l1o_s.part HDR base.l2o_s.part HDR base.l3o_s.part HDR base.l4o_s.part \
 @USE_COMPAT_RULES_TRUE@HDR compat/base.o_s.part base.o_s.part \
 @USE_COMPAT_RULES_TRUE@HDR base.o_c.part HDR base.o_t.part
 
