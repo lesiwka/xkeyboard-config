@@ -1,3 +1,9 @@
+xkeyboard-config (0.6-10) dapper; urgency=low
+
+  * Change dependency on x-common to x11-common.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Thu, 19 Jan 2006 18:39:16 +1100
+
 xkeyboard-config (0.6-9) dapper; urgency=low
 
   * Respin to get compose:caps back (suspect timestamp hilarity with
