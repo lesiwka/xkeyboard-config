@@ -1,3 +1,9 @@
+xkeyboard-config (0.6-11) dapper; urgency=low
+
+  * Make sure compose:caps is actually there.
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Sun, 26 Feb 2006 14:43:59 +0100
+
 xkeyboard-config (0.6-10) dapper; urgency=low
 
   * Change dependency on x-common to x11-common.
