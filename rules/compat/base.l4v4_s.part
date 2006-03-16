@@ -21,6 +21,8 @@
   ogham		is434	=	+ie(ogam_is434):4
   ogham		is434laptop	=	+ie(ogam_is434):4
   ori		basic	=	+in(ori):4
+  ro		de	=	+ro(winkeys):4
+  ro		us	=	+ro(std):4
   sapmi		basic	=	+no(smi):4
   sapmi		nodeadkeys	=	+no(smi_nodeadkeys):4
   sapmi		sefi	=	+fi(smi):4

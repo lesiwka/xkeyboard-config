@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/nl,v 1.6 2005/07/02 18:01:48 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/nl,v 1.7 2006/02/26 03:33:08 svu Exp $
 
 // based on
 // Converted keytable file to xkb/symbols/ file
@@ -50,5 +50,23 @@ xkb_symbols "basic" {
     key <LSGT>	{ [bracketright, bracketleft,       bar,    brokenbar ]	};
 
     include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "Sundeadkeys" {
+
+    // For naming consistency
+
+    include "nl(basic)"
+
+};
+
+partial alphanumeric_keys
+xkb_symbols "sundeadkeys" {
+
+     // For naming consistency
+
+    include "nl(Sundeadkeys)"
+    name[Group1]="Netherlands - Sun dead keys";
 };
 

@@ -1,10 +1,10 @@
-// $XKeyboardConfig: xkbdesc/symbols/compose,v 1.4 2005/07/30 23:29:11 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/compose,v 1.5 2005/10/01 12:20:31 svu Exp $
 
 // $XFree86: xc/programs/xkbcomp/symbols/compose,v 1.1 2001/08/17 16:31:25 dawes Exp $
     
 partial modifier_keys
 xkb_symbols "ralt" {
-    key <RALT>	{ [ Multi_key ] };
+    key <RALT>	{ type[Group1]="TWO_LEVEL", [ Multi_key, Multi_key ] };
 };
 
 partial modifier_keys

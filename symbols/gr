@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/gr,v 1.6 2005/01/21 23:16:05 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/gr,v 1.7 2005/10/04 17:32:19 svu Exp $
 
 // $XFree86: xc/programs/xkbcomp/symbols/el,v 1.2 2002/11/15 02:26:41 dawes Exp $
 //
@@ -41,6 +41,7 @@ xkb_symbols "basic" {
     key <AB10> {	[     slash,	question	]	};
     key <BKSL> {	[ backslash,	bar		]	};
 
+    include "keypad(comma)"
 };
 
 hidden partial alphanumeric_keys alternate_group

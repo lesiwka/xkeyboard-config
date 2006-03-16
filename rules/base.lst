@@ -28,6 +28,7 @@
   cherryblue      Cherry Blue Line CyBo@rd
   cherryblueb     Cherry CyMotion Master XPress
   cherrybluea     Cherry Blue Line CyBo@rd (alternate option)
+  cherrycyboard   Cherry CyBo@rd USB-Hub
   chicony         Chicony Internet Keyboard
   chicony9885     Chicony KB-9885
   compaqeak8      Compaq Easy Access Keyboard
@@ -39,12 +40,14 @@
   presario        Laptop/notebook Compaq (eg. Presario) Internet Keyboard
   ipaq            Compaq iPaq Keyboard
   dell            Dell
-  inspiron        Laptop/notebook Dell Inspiron 8xxx
+  dellusbmm       Dell USB Multimedia Keybard
+  inspiron        Laptop/notebook Dell Inspiron 6xxx/8xxx
   dexxa           Dexxa Wireless Desktop Keyboard
   diamond         Diamond 9801 / 9802 series
   dtk2000         DTK2000
   ennyah_dkb1008  Ennyah DKB-1008
   genius          Genius Comfy KB-16M / Genius MM Keyboard KWD-910
+  geniuscomfy     Genius Comfy KB-12e
   geniuscomfy2    Genius Comfy KB-21e-Scroll
   gyration        Gyration
   hpi6            Hewlett-Packard Internet Keyboard
@@ -110,9 +113,14 @@
   macintosh_old   Macintosh Old
   powerpcps2      PowerPC PS/2
   acer_tm_800     Acer TravelMate 800
+  power_g5        Power G5
+  silvercrest     SILVERCREST Multimedia Wireless Keyboard
+  emachines       Laptop/notebook eMachines m68xx
 
 ! layout
   us              U.S. English
+  ad              Andorra
+  af              Afghanistan
   ara             Arabic
   al              Albania
   am              Armenia
@@ -136,6 +144,7 @@
   fo              Faroe Islands
   fi              Finland
   fr              France
+  gh              Ghana
   ge              Georgia
   de              Germany
   gr              Greece
@@ -145,12 +154,15 @@
   it              Italy
   jp              Japan
   kg              Kyrgyzstan
+  kh              Cambodia
+  ko              Korea
+  kz              Kazakhstan
   la              Laos
   latam           Latin American
   lt              Lithuania
   lv              Latvia
   mao             Maori
-  mk              Macedonia (FYROM)
+  mk              Macedonia
   mt              Malta
   mn              Mongolia
   no              Norway
@@ -158,7 +170,7 @@
   pt              Portugal
   ro              Romania
   ru              Russia
-  cs              Serbia
+  cs              Serbia and Montenegro
   si              Slovenia
   sk              Slovakia
   es              Spain
@@ -168,7 +180,7 @@
   tj              Tajikistan
   lk              Sri Lanka
   th              Thailand
-  tr              Turkish
+  tr              Turkey
   ua              Ukraine
   gb              United Kingdom
   uz              Uzbekistan
@@ -177,12 +189,18 @@
   ie              Ireland
   pk              Pakistan
   mv              Maldives
+  za              South Africa
+  epo             Esperanto
 
 ! variant
   intl            us: International (with dead keys)
   alt-intl        us: Alternative international (former us_intl)
   dvorak          us: Dvorak
+  dvorak-l        us: Left handed Dvorak
+  dvorak-r        us: Right handed Dvorak
   rus             us: Russian phonetic
+  ps              af: Pashto
+  uz              af: Southern Uzbek
   azerty          ara: azerty
   azerty_digits   ara: azerty/digits
   digits          ara: digits
@@ -191,6 +209,7 @@
   phonetic        am: Phonetic
   cyrillic        az: Cyrillic
   winkeys         by: Winkeys
+  latin           by: Latin
   iso-alternate   be: ISO Alternate
   nodeadkeys      be: Eliminate dead keys
   sundeadkeys     be: Sun dead keys
@@ -216,7 +235,8 @@
   phonetic        bg: Phonetic
   fr-dvorak       ca: French Dvorak
   fr-legacy       ca: French (legacy)
-  multi           ca: Multilingual
+  multix          ca: Multilingual
+  multi           ca: Multilingual, first part
   multi-2gr       ca: Multilingual, second part
   ike             ca: Inuktitut
   alternatequotes hr: Use guillemots for quotes
@@ -227,7 +247,9 @@
   qwerty          cz: qwerty
   qwerty_bksl     cz: qwerty, extended Backslash
   nodeadkeys      dk: Eliminate dead keys
+  sundeadkeys     nl: Sun dead keys
   nodeadkeys      ee: Eliminate dead keys
+  dvorak          ee: Dvorak
   pro             ir: Pro
   keypad          ir: Keypad
   pro_keypad      ir: Pro Keypad
@@ -240,6 +262,12 @@
   latin9_nodeadkeys fr: Alternative, eliminate dead keys
   latin9_sundeadkeys fr: Alternative, Sun dead keys
   dvorak          fr: Dvorak
+  generic         gh: Multilingual
+  akan            gh: Akan
+  ewe             gh: Ewe
+  fula            gh: Fula
+  ga              gh: Ga
+  hausa           gh: Hausa
   ru              ge: Russian
   deadacute       de: Dead acute
   deadgraveacute  de: Dead grave acute
@@ -247,6 +275,7 @@
   ro              de: Romanian keyboard with German letters
   ro_nodeadkeys   de: Romanian keyboard with German letters, eliminate dead keys
   dvorak          de: Dvorak
+  sundeadkeys     de: Sun dead keys
   extended        gr: Extended
   nodeadkeys      gr: Eliminate dead keys
   polytonic       gr: Polytonic
@@ -275,9 +304,11 @@
   si1452          il: si1452
   phonetic        il: Phonetic
   nodeadkeys      it: Eliminate dead keys
+  ruskaz          kz: Russian with Kazakh
+  kazrus          kz: Kazakh with Russian
   nodeadkeys      latam: Eliminate dead keys
   sundeadkeys     latam: Sun dead keys
-  std             lt: "Standard"
+  std             lt: Standard
   us              lt: US keyboard with Lithuanian letters
   apostrophe      lv: Apostrophe (') variant
   tilde           lv: Tilde (~) variant
@@ -294,11 +325,12 @@
   dvorak_altquotes pl: Dvorak, Polish quotes on key "1/!"
   nodeadkeys      pt: Eliminate dead keys
   sundeadkeys     pt: Sun dead keys
-  us              ro: US keyboard with Romanian letters
-  de              ro: Romanian keyboard with German letters
+  std             ro: Standard
+  winkeys         ro: Winkeys
   phonetic        ru: Phonetic
   typewriter      ru: Typewriter
   winkeys         ru: Winkeys
+  tt              ru: Tatar
   yz              cs: Z and ZHE swapped
   latin           cs: Latin
   latinunicode    cs: Latin Unicode
@@ -316,6 +348,7 @@
   nodeadkeys      es: Eliminate dead keys
   sundeadkeys     es: Sun dead keys
   dvorak          es: Dvorak
+  cat             es: Catalan variant with middle-dot L
   nodeadkeys      se: Eliminate dead keys
   dvorak          se: Dvorak
   rus             se: Russian phonetic
@@ -329,13 +362,12 @@
   syc             sy: Syriac
   syc_phonetic    sy: Syriac phonetic
   tam_unicode     lk: Tamil Unicode
-  tam_INSCRIPT    lk: Tamil INSCRIPT
   tam_TAB         lk: Tamil TAB Typewriter
-  tam_TSCII       lk: Tamil TSCII Typewriter
   tis             th: TIS-820.2538
   pat             th: Pattachote
   f               tr: (F)
   alt             tr: Alt-Q
+  sundeadkeys     tr: Sun dead keys
   phonetic        ua: Phonetic
   typewriter      ua: Typewriter
   winkeys         ua: Winkeys
@@ -363,8 +395,8 @@
   grp:shifts_toggle    Both Shift keys together change group.
   grp:alts_toggle      Both Alt keys together change group.
   grp:ctrls_toggle     Both Ctrl keys together change group.
-  grp:ctrl_shift_toggle Control+Shift changes group.
-  grp:ctrl_alt_toggle  Alt+Control changes group.
+  grp:ctrl_shift_toggle Ctrl+Shift changes group.
+  grp:ctrl_alt_toggle  Alt+Ctrl changes group.
   grp:alt_shift_toggle Alt+Shift changes group.
   grp:menu_toggle      Menu key changes group.
   grp:lwin_toggle      Left Win-key changes group.
@@ -374,7 +406,7 @@
   grp:lctrl_toggle     Left Ctrl key changes group.
   grp:rctrl_toggle     Right Ctrl key changes group.
   lv3                  Third level choosers
-  lv3:switch           Press Right Control to choose 3rd level.
+  lv3:switch           Press Right Ctrl to choose 3rd level.
   lv3:menu_switch      Press Menu key to choose 3rd level.
   lv3:win_switch       Press any of Win-keys to choose 3rd level.
   lv3:lwin_switch      Press Left Win-key to choose 3rd level.
@@ -382,12 +414,12 @@
   lv3:alt_switch       Press any of Alt keys to choose 3rd level.
   lv3:lalt_switch      Press Left Alt key to choose 3rd level.
   lv3:ralt_switch      Press Right Alt key to choose 3rd level.
-  ctrl                 Control key position
-  ctrl:nocaps          Make CapsLock an additional Control.
-  ctrl:swapcaps        Swap Control and CapsLock.
-  ctrl:ctrl_ac         Control key at left of 'A'
-  ctrl:ctrl_aa         Control key at bottom left
-  ctrl:ctrl_ra         Right Control key works as Right Alt.
+  ctrl                 Ctrl key position
+  ctrl:nocaps          Make CapsLock an additional Ctrl.
+  ctrl:swapcaps        Swap Ctrl and CapsLock.
+  ctrl:ctrl_ac         Ctrl key at left of 'A'
+  ctrl:ctrl_aa         Ctrl key at bottom left
+  ctrl:ctrl_ra         Right Ctrl key works as Right Alt.
   grp_led              Use keyboard LED to show alternative group.
   grp_led:num          NumLock LED shows alternative group.
   grp_led:caps         CapsLock LED shows alternative group.
@@ -413,6 +445,7 @@
   compose:rwin         Right Win-key is Compose.
   compose:menu         Menu is Compose.
   compose:rctrl        Right Ctrl is Compose.
+  compose:caps         Caps Lock is Compose.
   compat               Miscellaneous compatibility options
   numpad:microsoft     Shift with numpad keys works as in MS Windows.
   srvrkeys:none        Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server.
@@ -420,3 +453,5 @@
   eurosign:e           Add the EuroSign to the E key.
   eurosign:5           Add the EuroSign to the 5 key.
   eurosign:2           Add the EuroSign to the 2 key.
+  japan                Japanese Keyboard Options
+  japan:kana_lock      Kana Lock key is locking

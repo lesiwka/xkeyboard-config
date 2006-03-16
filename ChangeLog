@@ -1,3 +1,330 @@
+2006-03-05  Sergey Udaltsov
+
+	configure.in, NEWS, Changelog:Preparing release 0.8
+
+2006-02-26  Sergey Udaltsov
+
+	* symbols/es, rules/base.xml.in: added es(cat), closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6047
+
+2006-02-25  Alan Coopersmith 
+
+	* symbols/sun_vndr/*, compat/japan, compat/mousekeys,
+	geometry/sun:
+	massive update from Sun, see
+	https://bugs.freedesktop.org/show_bug.cgi?id=5725
+	
+2006-02-24  M. Emal Alekozai <memala@gmx.net>
+
+	* symbols/af, symbols/Makefile.am, rules/base.xml:
+	added Afghan, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6013
+
+2006-02-15  Zephaniah E. Hull  <warp@aehallh.com>
+
+	* keycodes/Makefile.am:
+	* keycodes/evdev:
+	* rules/base.m_k.part:
+	Add the evdev keyboard data files. Closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=5903
+
+2006-02-21 svu
+
+	* symbols/inet: Fixed inet(armada)
+	https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=5893
+	
+2006-02-21 svu
+
+	* symbols/hu: Fixed hr(us)
+	https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=3807
+	
+2006-02-01 svu
+
+	* rules/compat/layoutRename.lst: Added cz_qwerty compat rule
+	https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=177362
+	
+2006-01-31 svu
+
+	* symbols/us: Added single-handed dvoraks
+	https://bugs.freedesktop.org/show_bug.cgi?id=5659
+	
+2006-01-22 svu
+
+	* types/level5: Fixed ScrollLock behaviour
+	https://bugs.freedesktop.org/show_bug.cgi?id=5635
+	
+2006-01-15 svu
+
+	* symbols/bd: Corrected Bangladesh layout, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=5480
+	
+2006-01-14 svu
+
+	* rules/base.ml_*.part: Japanese layouts are nec_vndr/jp, for
+	consistency
+	
+2006-01-14 svu
+
+	* symbols/macintosh_vnd/is: some cosmetic stuff and some info, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=5597
+	
+2006-01-14 svu
+
+	* rules/base.lists.part: extended non-latin list, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=5590
+
+2006-01-11 svu
+
+	* rules/base*part: improved stuff for non-AT keyboards, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=5507
+
+2006-01-10 svu
+
+	* geometry/pc: fixed geometry, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=5568
+
+2006-01-08 svu
+
+	* symbols/gh: added Ghana layout, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=5497
+
+2006-01-06 svu
+
+	* symbols/ad: added Catalan layout, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=5526
+
+2006-01-01 svu
+
+	* symbols/in: fixed ben_probhat, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=1012
+
+2005-12-31 svu
+
+	* symbols/ru, rules/base.xml.in: added
+	Tatar, closing https://bugs.freedesktop.org/show_bug.cgi?id=4818
+
+2005-12-31 svu
+
+	* symbols/kh, rules/base.xml.in, symbols/Makefile.am: added
+	Khmer, closing https://bugs.freedesktop.org/show_bug.cgi?id=5389
+
+2005-12-31 svu
+
+	* symbols/epo, rules/base.xml.in, symbols/Makefile.am: added
+	Esperanto, closing https://bugs.freedesktop.org/show_bug.cgi?id=5454
+
+2005-12-30 svu
+
+	* symbols/ctrl: expanding Caps a bit, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=3193
+
+2005-12-20 svu
+
+	* symbols/hu: returned def_dot (instead of def_comma, really
+	eliminated)
+	
+2005-12-10 svu
+
+	* symbols/compat/layoutRename.lst: added en_US
+
+2005-12-01 svu
+
+	* symbols/inet, rules/base.xml.in: added Inspiron 6000 keys, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=5195
+
+2005-12-01 svu
+
+	* symbols/inet: HUGE redesign of the inet file. Major reorganization
+	of Logitech keyboard. HUGE thanks to Fr?d?ric BOITEUX
+
+2005-11-26 svu
+
+	* symbols/group, symbols/level3, compat/level5, compat/misc:
+	Fixing problem with level3(ralt) and group(alts_toggle).
+	Now "us,ru,se" works ok.
+
+2005-10-20 svu
+
+	* symbols/inet, rules:
+	adding Dell USB Multimedia Keybard, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=4826
+
+2005-10-17 svu
+
+	* symbols, types, compat, rules:
+	adding 5th level and beyond, trying to hack 1-group Canadian layout
+
+2005-10-11 svu
+
+	* symbols/macintosh_vndr/fr: update French Macintosh keyboard, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=2870
+
+2005-10-10 svu
+
+	* symbols/za, rules/base.xml.in: added South Afrika, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=2856
+
+2005-10-09 svu
+
+	* symbols/inet: expanded Inspiron definition, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=4071
+
+2005-10-07 svu
+
+	* symbols/hu: fixed comma issue, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=4693
+
+2005-10-04 svu
+
+	* symbols/by, rules/base.xml.in: added by(latin), closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=4576
+	
+2005-10-04 svu
+
+	* symbols/gr: added keypad(comma), closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=3538
+
+2005-10-02 svu
+
+	* symbols/se:
+	updating svorak, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=3635
+
+2005-10-02 svu
+
+	* rules/base.lists.part, rules/base.xml.in, 
+	symbols/inet:
+	adding Genius Comfy, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=2275
+
+2005-10-02 svu
+
+	* rules/Makefile.am, rules/HDR, 
+	rules/base.l1o_s.part, rules/base.l2o_s.part,
+	rules/base.l3o_s.part, rules/base.l4o_s.part:
+	adding "layout + option -> symbols" rules,
+	for properly maingating RAlt as AltGr + alts_toggle
+	IMPORTANT: REQUIRES FIXING XORG
+
+2005-10-02 svu
+
+	* rules/base.xml.in, symbols/ee:
+	added Estonian Dvorak, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=4568
+
+2005-10-02 svu
+
+	* rules/base.xml.in, symbols/inet, rules/base.lists.part:
+	Added eMachines m68xx notebooks keyboards, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=4000
+
+2005-10-01 svu
+
+	* rules/base.xml.in, symbols/inet, rules/base.lists.part:
+	Added SILVERCREST Multimedia Wireless Keyboard, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=4217
+
+2005-09-30 svu
+
+	* rules/compat/layoutRename.lst:
+	added us_intl, fixed https://bugs.freedesktop.org/show_bug.cgi?id=4642
+
+2005-09-30 svu
+
+	* po/sl.po:
+	Slovenian translation
+
+2005-09-22 svu
+
+	* rules/base.xml.in, rules/base.o_s.part, symbols/compose:
+	adding CapsLock as Compose, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=4548
+
+2005-09-22 svu
+
+	* rules/Makefile.am, rules/merge.sh
+	fixing merging in env where srcdir != objdir, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=4547
+	
+2005-09-22 svu
+
+	* rules/base.xml.in, symbols/kz:
+	change Cyr to Rus
+	
+2005-09-21 svu
+
+	* rules/base.ml_s.part:
+	IMPORTANT: NO MORE 2-GROUP CANADIAN DEFAULT CONFIGURATION
+
+2005-09-21 svu
+
+	* symbols/kz, symbols/Makefile.am, rules/base.xml.in:
+	added Kazakh, fixing
+	https://bugs.freedesktop.org/show_bug.cgi?id=4497
+
+2005-09-20 svu
+
+	* symbols/macintoch_vndr/ch:
+	Updated de_CH, from
+	https://bugs.freedesktop.org/show_bug.cgi?id=4520
+
+2005-09-20 svu
+
+	* symbols/mk, rules/base.xml.in:
+	removing controversal 'FYROM'
+
+2005-09-14 svu
+
+	* symbols/inet, rules/base.xml.in rules/base.lists.part: 
+	Added Cherry CyBo@rd USB-Hub. Thanks to Paul Egan
+	Fixed https://bugs.freedesktop.org/show_bug.cgi?id=4498
+
+2005-09-14 svu
+
+	* symbols/cs: a bit of cleanup by Denis
+
+2005-09-13 svu
+
+	* configure.in: added Finnish translation
+
+2005-09-04 svu
+
+	* symbols/no:
+	fixed no(dvorak), closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=4397
+
+2005-09-04 svu
+
+	* rules/base.xml.in, symbols/inet:
+	adding Power G5
+
+2005-09-04 svu
+
+	* rules/base.xml.in, symbols/ro:
+	Fixing Romanian, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=371
+
+2005-09-04 svu
+
+	* rules/base.xml.in, symbols/lk:
+	No TSCII/INSCRIPT in Sri Lanka, 
+	according to <hash@jayasolutions.cjb.net>
+
+2005-08-25 svu
+
+	* rules/base.xml.in:
+	Control -> Ctrl everywhere, for consistency sake
+
+2005-08-25 svu
+
+	* rules/base.xml.in, symbols/cs:
+	Serbia -> Serbia and Montenegro
+
+2005-08-25 svu
+
+	* configure.in, po/sr@Latn.po:
+	adding sr@Latn translation, thanks to Danilo
+
 2005-08-24 svu
 
 	* configure.in:
@@ -415,7 +742,7 @@
 
 2004-09-13 22:39  svu
 
-	* symbols/tj: new local cvs keyword seems to be ok - no more $Id: ChangeLog,v 1.67 2005/08/24 22:10:25 svu Exp $
+	* symbols/tj: new local cvs keyword seems to be ok - no more $Id: ChangeLog,v 1.126 2006/03/04 17:33:43 svu Exp $
 
 2004-09-13 22:38  svu
 

@@ -1,3 +1,11 @@
+xkeyboard-config (0.8-1) dapper; urgency=low
+
+  * New upstream release
+    - Fixes group switching (Malone: #21595)
+  * Add Korean symbols file.
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Thu, 16 Mar 2006 14:55:09 +0100
+
 xkeyboard-config (0.6-11) dapper; urgency=low
 
   * Make sure compose:caps is actually there.

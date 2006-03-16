@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/group,v 1.6 2004/09/16 00:11:27 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/group,v 1.7 2005/11/26 23:23:29 svu Exp $
 // $Xorg: group,v 1.3 2000/08/17 19:54:43 cpqbld Exp $
 // using the group(switch) map, the right alt key temporarily chooses 
 // the second keyboard group (until it is released).
@@ -231,7 +231,7 @@ xkb_symbols "ctrls_toggle" {
 // Both Alts pressed together toggle group
 partial modifier_keys
 xkb_symbols "alts_toggle" {
-  virtual_modifiers AltGr;
+  virtual_modifiers Alt;
     key <LALT> {
 	type="PC_SYSRQ",
 	symbols[Group1]= [ NoSymbol,	ISO_Prev_Group ],

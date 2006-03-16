@@ -10,13 +10,15 @@
 
 // If you want non-latin layouts implicitly include the en_US layout
 // uncomment lines below
-//! $nonlatin = am ara ben bg by deva ge gr guj guru il \
-//              ir iku kan lao mk mm mal ori ru scc syr tel th\
-//              tj tam ua
+//! $nonlatin = am ara ben bd bg bt by cs deva ge gh gr guj guru il \
+//              in ir iku jp kan kh la lao lk mk mm mn mv mal ori pk \
+//              ru scc sy syr tel th tj tam ua uz
 
 ! $pcmodels = pc101 pc102 pc104 pc105
 ! $maclaptop = ibook powerbook
 ! $mac = macintosh macintosh_old ibook powerbook
+
+! $macvendorlayouts = ch de dk es fi fr gb is it nl no pt se us
 
 ! $azerty = be fr
 ! $qwertz = al cz de hr hu ro si sk 
@@ -24,13 +26,13 @@
 ! $inetkbds = a4techKB21 a4techKBS8 acer_tm_800 acpi airkey azonaRF2300 \
               brother \
               btc5113rf btc5126t btc9000 btc9000a btc9001ah btc5090\
-              cherryblue cherrybluea cherryblueb \
+              cherryblue cherrybluea cherryblueb cherrycyboard \
               chicony chicony9885 \
               compaqeak8 compaqik7 compaqik13 compaqik18 cymotionlinux \
               armada presario ipaq \
-              dell inspiron dtk2000 \
-              dexxa diamond genius geniuscomfy2 \
-              ennyah_dkb1008 gyration \
+              dell inspiron dellusbmm dtk2000 \
+              dexxa diamond genius geniuscomfy geniuscomfy2 \
+              emachines ennyah_dkb1008 gyration \
               hpi6 hp2501 hp2505 hp5181 hpxe3gc hpxe3gf hpxe4xxx hpzt11xx \
               hp500fa hp5xx hp5185 \
               honeywell_euroboard \
@@ -41,20 +43,49 @@
               microsoftinet microsoftpro microsoftprousb microsoftprooem microsoftprose \
               microsoftoffice microsoftmult \
               oretec \
-              propeller scorpius \
+              power_g5 propeller silvercrest scorpius \
               qtronix \
               samsung4500 samsung4510 \
               sk1300 sk2500 sk6200 sk7100 sp_inet \
               sven symplon toshiba_s3000 trust trustda yahoo
 
-! $dvoraklayouts = fr gb no se
+// all layouts with 3rd and 4th groups
+! $threelevellayouts = al az \
+              be br bt \
+              ca ch cs cz \
+              de dk \
+              ee es \
+              fi fo fr \
+              gb gr \
+              hu \
+              ie ir is it \
+              kg \
+              latam \
+              lk lt \
+              mn mt \
+              nl no \
+              pl pt \
+              ro \
+              se sk \
+              tr \
+              us \
+              vn \
+              za
+
+
+! $dvoraklayouts = ca de ee es fr gb no pl se us
 
 ! model		=	keycodes
+  amiga		=	amiga(de)
+  ataritt	=	ataritt(de)
+  sun4		=	sun(type4_euro)
+  sun5		=	sun(type5_euro)
   macintosh_old	=	macintosh
   powerpcps2	=	powerpcps2
   pc98		=	xfree98(pc98)
   abnt2		=	xfree86(abnt2)
   jp106		=	xfree86(jp106)
+  evdev		=	evdev
   *		=	xfree86
 
 ! layout[1]	=	keycodes
@@ -133,6 +164,10 @@
   *		ogham		is434laptop		=	pc(pc105)+ie(ogam_is434)
   $pcmodels	ori		basic		=	pc(%m)+in(ori)
   *		ori		basic		=	pc(pc105)+in(ori)
+  $pcmodels	ro		de		=	pc(%m)+ro(winkeys)
+  *		ro		de		=	pc(pc105)+ro(winkeys)
+  $pcmodels	ro		us		=	pc(%m)+ro(std)
+  *		ro		us		=	pc(pc105)+ro(std)
   $pcmodels	sapmi		basic		=	pc(%m)+no(smi)
   *		sapmi		basic		=	pc(pc105)+no(smi)
   $pcmodels	sapmi		nodeadkeys		=	pc(%m)+no(smi_nodeadkeys)
@@ -163,8 +198,7 @@
   *		yu		yz		=	pc(pc105)+srp(latinyz)
   $pcmodels	yu		unicodeyz		=	pc(%m)+srp(latinunicodeyz)
   *		yu		unicodeyz		=	pc(pc105)+srp(latinunicodeyz)
- $maclaptop	*		nodeadkeys	=	macintosh_vndr/us(extended)+macintosh_vndr/%l%(v)+macintosh_vndr/apple(laptop_bad_switch)
- $mac		*		nodeadkeys	=	macintosh_vndr/us(extended)+macintosh_vndr/%l%(v)
+ $mac		$macvendorlayouts	nodeadkeys	=	macintosh_vndr/us(extended)+macintosh_vndr/%l%(v)
 
 ! model		layout				=	symbols
   $pcmodels	ar			=	pc(%m)+ara
@@ -173,6 +207,8 @@
   *		ben			=	pc(pc105)+in(ben)
   $pcmodels	bs			=	pc(%m)+ba
   *		bs			=	pc(pc105)+ba
+  $pcmodels	cz_qwerty			=	pc(%m)+cz(qwerty)
+  *		cz_qwerty			=	pc(pc105)+cz(qwerty)
   $pcmodels	dev			=	pc(%m)+in(deva)
   *		dev			=	pc(pc105)+in(deva)
   $pcmodels	dvorak			=	pc(%m)+us(dvorak)
@@ -181,6 +217,8 @@
   *		dzdwi			=	pc(pc105)+bt
   $pcmodels	el			=	pc(%m)+gr
   *		el			=	pc(pc105)+gr
+  $pcmodels	en_US			=	pc(%m)+latin
+  *		en_US			=	pc(pc105)+latin
   $pcmodels	guj			=	pc(%m)+in(guj)
   *		guj			=	pc(pc105)+in(guj)
   $pcmodels	gur			=	pc(%m)+in(guru)
@@ -213,6 +251,8 @@
   *		yu			=	pc(pc105)+srp
   $pcmodels	fr-latin9			=	pc(%m)+fr(latin9)
   *		fr-latin9			=	pc(pc105)+fr(latin9)
+  $pcmodels	us_intl			=	pc(%m)+us(alt-intl)
+  *		us_intl			=	pc(pc105)+us(alt-intl)
   $pcmodels	ben(basic)			=	pc(%m)+in(ben)
   *		ben(basic)			=	pc(pc105)+in(ben)
   $pcmodels	ben(probhat)			=	pc(%m)+in(ben_probhat)
@@ -259,6 +299,10 @@
   *		ogham(is434laptop)			=	pc(pc105)+ie(ogam_is434)
   $pcmodels	ori(basic)			=	pc(%m)+in(ori)
   *		ori(basic)			=	pc(pc105)+in(ori)
+  $pcmodels	ro(de)			=	pc(%m)+ro(winkeys)
+  *		ro(de)			=	pc(pc105)+ro(winkeys)
+  $pcmodels	ro(us)			=	pc(%m)+ro(std)
+  *		ro(us)			=	pc(pc105)+ro(std)
   $pcmodels	sapmi(basic)			=	pc(%m)+no(smi)
   *		sapmi(basic)			=	pc(pc105)+no(smi)
   $pcmodels	sapmi(nodeadkeys)			=	pc(%m)+no(smi_nodeadkeys)
@@ -289,20 +333,29 @@
   *		yu(yz)			=	pc(pc105)+srp(latinyz)
   $pcmodels	yu(unicodeyz)			=	pc(%m)+srp(latinunicodeyz)
   *		yu(unicodeyz)			=	pc(pc105)+srp(latinunicodeyz)
-  pc98		nec/jp			=	nec_vndr/jp(pc98)
+  ataritt	$nonlatin		=	xfree68_vndr/ataritt(us)+%l%(v):2
+  ataritt	*			=	xfree68_vndr/ataritt(us)+%l%(v)
+  amiga		$nonlatin		=	xfree68_vndr/amiga(usa1)+%l%(v):2
+  amiga		*			=	xfree68_vndr/amiga(usa1)+%l%(v)
+  sun4		$nonlatin		=	latin+sun_vndr/us(sun4)+%l%(v):2
+  sun4		*			=	latin+sun_vndr/us(sun4)+%l%(v)
+  sun5		$nonlatin		=	latin+sun_vndr/us(sun5)+%l%(v):2
+  sun5		*			=	latin+sun_vndr/us(sun5)+%l%(v)
+  pc98		nec_vndr/jp		=	nec_vndr/jp(pc98)
   abnt2		br			=	pc(pc104)+br
- $maclaptop	us			=	macintosh_vndr/us(extended)+macintosh_vndr/apple(laptop_bad_switch)
- $maclaptop	en_US			=	macintosh_vndr/us(extended)+macintosh_vndr/apple(laptop_bad_switch)
- $maclaptop	*			=	macintosh_vndr/us(extended)+apple(laptop_bad_switch)+macintosh_vndr/%l%(v)
- $mac		us			=	macintosh_vndr/us(extended)
- $mac		en_US			=	macintosh_vndr/us(extended)
- $mac		*			=	macintosh_vndr/us(extended)+macintosh_vndr/%l%(v)
+  old_macintosh	us			=	macintosh_vndr/us(extended)
+  old_macintosh	en_US			=	macintosh_vndr/us(extended)
+  old_macintosh	$macvendorlayouts	=	macintosh_vndr/us(extended)+macintosh_vndr/%l%(v)
+  old_macintosh	$nonlatin		=	macintosh_vndr/us(extended)+%l%(v):2
+  old_macintosh	*			=	macintosh_vndr/us(extended)+%l%(v)
+ $mac		en_US			=	pc(pc105)+macintosh_vndr/us(extended)
+ $mac		$macvendorlayouts	=	pc(pc105)+macintosh_vndr/%l%(v)
  $pcmodels      intl   			=       us(%mcompose)
   *		intl			=	us(pc104compose)
   *		jp			=	pc(pc102)+jp(latin)+jp:2
- $pcmodels $nonlatin			=	pc(%m)+us+%l%(v):2
+ $pcmodels	$nonlatin		=	pc(%m)+us+%l%(v):2
  $pcmodels	*			=	pc(%m)+%l%(v)
-  *	   $nonlatin			=	pc(pc105)+us+%l%(v):2
+  *	   	$nonlatin		=	pc(pc105)+us+%l%(v):2
   *		*			=	pc(pc105)+%l%(v)
 
 ! model		layout[1]			=	symbols
@@ -312,6 +365,8 @@
   *		ben			=	pc(pc105)+in(ben)%(v[1])
   $pcmodels	bs			=	pc(%m)+ba%(v[1])
   *		bs			=	pc(pc105)+ba%(v[1])
+  $pcmodels	cz_qwerty			=	pc(%m)+cz(qwerty)%(v[1])
+  *		cz_qwerty			=	pc(pc105)+cz(qwerty)%(v[1])
   $pcmodels	dev			=	pc(%m)+in(deva)%(v[1])
   *		dev			=	pc(pc105)+in(deva)%(v[1])
   $pcmodels	dvorak			=	pc(%m)+us(dvorak)%(v[1])
@@ -320,6 +375,8 @@
   *		dzdwi			=	pc(pc105)+bt%(v[1])
   $pcmodels	el			=	pc(%m)+gr%(v[1])
   *		el			=	pc(pc105)+gr%(v[1])
+  $pcmodels	en_US			=	pc(%m)+latin%(v[1])
+  *		en_US			=	pc(pc105)+latin%(v[1])
   $pcmodels	guj			=	pc(%m)+in(guj)%(v[1])
   *		guj			=	pc(pc105)+in(guj)%(v[1])
   $pcmodels	gur			=	pc(%m)+in(guru)%(v[1])
@@ -352,6 +409,8 @@
   *		yu			=	pc(pc105)+srp%(v[1])
   $pcmodels	fr-latin9			=	pc(%m)+fr(latin9)%(v[1])
   *		fr-latin9			=	pc(pc105)+fr(latin9)%(v[1])
+  $pcmodels	us_intl			=	pc(%m)+us(alt-intl)%(v[1])
+  *		us_intl			=	pc(pc105)+us(alt-intl)%(v[1])
   $pcmodels	ben(basic)			=	pc(%m)+in(ben)
   *		ben(basic)			=	pc(pc105)+in(ben)
   $pcmodels	ben(probhat)			=	pc(%m)+in(ben_probhat)
@@ -398,6 +457,10 @@
   *		ogham(is434laptop)			=	pc(pc105)+ie(ogam_is434)
   $pcmodels	ori(basic)			=	pc(%m)+in(ori)
   *		ori(basic)			=	pc(pc105)+in(ori)
+  $pcmodels	ro(de)			=	pc(%m)+ro(winkeys)
+  *		ro(de)			=	pc(pc105)+ro(winkeys)
+  $pcmodels	ro(us)			=	pc(%m)+ro(std)
+  *		ro(us)			=	pc(pc105)+ro(std)
   $pcmodels	sapmi(basic)			=	pc(%m)+no(smi)
   *		sapmi(basic)			=	pc(pc105)+no(smi)
   $pcmodels	sapmi(nodeadkeys)			=	pc(%m)+no(smi_nodeadkeys)
@@ -428,6 +491,14 @@
   *		yu(yz)			=	pc(pc105)+srp(latinyz)
   $pcmodels	yu(unicodeyz)			=	pc(%m)+srp(latinunicodeyz)
   *		yu(unicodeyz)			=	pc(pc105)+srp(latinunicodeyz)
+  ataritt	*			=	xfree68_vndr/ataritt(us)+%l[1]%(v[1])
+  amiga		*			=	xfree68_vndr/amiga(usa1)+%l[1]%(v[1])
+  sun4		*			=	latin+sun_vndr/us(sun4)+%l[1]%(v[1])
+  sun5		*			=	latin+sun_vndr/us(sun5)+%l[1]%(v[1])
+  old_macintosh	us			=	macintosh_vndr/us(extended)
+  old_macintosh	$macvendorlayouts	=	macintosh_vndr/us(extended)+macintosh_vndr/%l[1]%(v[1])
+  old_macintosh	*			=	macintosh_vndr/us(extended)+%l[1]%(v[1])
+ $mac		$macvendorlayouts	=	pc(pc105)+macintosh_vndr/%l[1]%(v[1])
  $pcmodels	*			=	pc(%m)+%l[1]%(v[1])
   *		*			=	pc(pc105)+%l[1]%(v[1])
 
@@ -478,6 +549,10 @@
   *		ogham		is434laptop		=	pc(pc105)+ie(ogam_is434)
   $pcmodels	ori		basic		=	pc(%m)+in(ori)
   *		ori		basic		=	pc(pc105)+in(ori)
+  $pcmodels	ro		de		=	pc(%m)+ro(winkeys)
+  *		ro		de		=	pc(pc105)+ro(winkeys)
+  $pcmodels	ro		us		=	pc(%m)+ro(std)
+  *		ro		us		=	pc(pc105)+ro(std)
   $pcmodels	sapmi		basic		=	pc(%m)+no(smi)
   *		sapmi		basic		=	pc(pc105)+no(smi)
   $pcmodels	sapmi		nodeadkeys		=	pc(%m)+no(smi_nodeadkeys)
@@ -513,10 +588,12 @@
   ar		=	+ara%(v[2]):2
   ben		=	+in(ben)%(v[2]):2
   bs		=	+ba%(v[2]):2
+  cz_qwerty		=	+cz(qwerty)%(v[2]):2
   dev		=	+in(deva)%(v[2]):2
   dvorak		=	+us(dvorak)%(v[2]):2
   dzdwi		=	+bt%(v[2]):2
   el		=	+gr%(v[2]):2
+  en_US		=	+latin%(v[2]):2
   guj		=	+in(guj)%(v[2]):2
   gur		=	+in(guru)%(v[2]):2
   iu		=	+ca(ike)%(v[2]):2
@@ -533,6 +610,7 @@
   tml		=	+in(tam)%(v[2]):2
   yu		=	+srp%(v[2]):2
   fr-latin9		=	+fr(latin9)%(v[2]):2
+  us_intl		=	+us(alt-intl)%(v[2]):2
   ben(basic)	=	+in(ben):2
   ben(probhat)	=	+in(ben_probhat):2
   dev(basic)	=	+in(deva):2
@@ -556,6 +634,8 @@
   ogham(is434)	=	+ie(ogam_is434):2
   ogham(is434laptop)	=	+ie(ogam_is434):2
   ori(basic)	=	+in(ori):2
+  ro(de)	=	+ro(winkeys):2
+  ro(us)	=	+ro(std):2
   sapmi(basic)	=	+no(smi):2
   sapmi(nodeadkeys)	=	+no(smi_nodeadkeys):2
   sapmi(sefi)	=	+fi(smi):2
@@ -577,10 +657,12 @@
   ar		=	+ara%(v[3]):3
   ben		=	+in(ben)%(v[3]):3
   bs		=	+ba%(v[3]):3
+  cz_qwerty		=	+cz(qwerty)%(v[3]):3
   dev		=	+in(deva)%(v[3]):3
   dvorak		=	+us(dvorak)%(v[3]):3
   dzdwi		=	+bt%(v[3]):3
   el		=	+gr%(v[3]):3
+  en_US		=	+latin%(v[3]):3
   guj		=	+in(guj)%(v[3]):3
   gur		=	+in(guru)%(v[3]):3
   iu		=	+ca(ike)%(v[3]):3
@@ -597,6 +679,7 @@
   tml		=	+in(tam)%(v[3]):3
   yu		=	+srp%(v[3]):3
   fr-latin9		=	+fr(latin9)%(v[3]):3
+  us_intl		=	+us(alt-intl)%(v[3]):3
   ben(basic)	=	+in(ben):3
   ben(probhat)	=	+in(ben_probhat):3
   dev(basic)	=	+in(deva):3
@@ -620,6 +703,8 @@
   ogham(is434)	=	+ie(ogam_is434):3
   ogham(is434laptop)	=	+ie(ogam_is434):3
   ori(basic)	=	+in(ori):3
+  ro(de)	=	+ro(winkeys):3
+  ro(us)	=	+ro(std):3
   sapmi(basic)	=	+no(smi):3
   sapmi(nodeadkeys)	=	+no(smi_nodeadkeys):3
   sapmi(sefi)	=	+fi(smi):3
@@ -641,10 +726,12 @@
   ar		=	+ara%(v[4]):4
   ben		=	+in(ben)%(v[4]):4
   bs		=	+ba%(v[4]):4
+  cz_qwerty		=	+cz(qwerty)%(v[4]):4
   dev		=	+in(deva)%(v[4]):4
   dvorak		=	+us(dvorak)%(v[4]):4
   dzdwi		=	+bt%(v[4]):4
   el		=	+gr%(v[4]):4
+  en_US		=	+latin%(v[4]):4
   guj		=	+in(guj)%(v[4]):4
   gur		=	+in(guru)%(v[4]):4
   iu		=	+ca(ike)%(v[4]):4
@@ -661,6 +748,7 @@
   tml		=	+in(tam)%(v[4]):4
   yu		=	+srp%(v[4]):4
   fr-latin9		=	+fr(latin9)%(v[4]):4
+  us_intl		=	+us(alt-intl)%(v[4]):4
   ben(basic)	=	+in(ben):4
   ben(probhat)	=	+in(ben_probhat):4
   dev(basic)	=	+in(deva):4
@@ -684,6 +772,8 @@
   ogham(is434)	=	+ie(ogam_is434):4
   ogham(is434laptop)	=	+ie(ogam_is434):4
   ori(basic)	=	+in(ori):4
+  ro(de)	=	+ro(winkeys):4
+  ro(us)	=	+ro(std):4
   sapmi(basic)	=	+no(smi):4
   sapmi(nodeadkeys)	=	+no(smi_nodeadkeys):4
   sapmi(sefi)	=	+fi(smi):4
@@ -725,6 +815,8 @@
   ogham		is434	=	+ie(ogam_is434):2
   ogham		is434laptop	=	+ie(ogam_is434):2
   ori		basic	=	+in(ori):2
+  ro		de	=	+ro(winkeys):2
+  ro		us	=	+ro(std):2
   sapmi		basic	=	+no(smi):2
   sapmi		nodeadkeys	=	+no(smi_nodeadkeys):2
   sapmi		sefi	=	+fi(smi):2
@@ -765,6 +857,8 @@
   ogham		is434	=	+ie(ogam_is434):3
   ogham		is434laptop	=	+ie(ogam_is434):3
   ori		basic	=	+in(ori):3
+  ro		de	=	+ro(winkeys):3
+  ro		us	=	+ro(std):3
   sapmi		basic	=	+no(smi):3
   sapmi		nodeadkeys	=	+no(smi_nodeadkeys):3
   sapmi		sefi	=	+fi(smi):3
@@ -805,6 +899,8 @@
   ogham		is434	=	+ie(ogam_is434):4
   ogham		is434laptop	=	+ie(ogam_is434):4
   ori		basic	=	+in(ori):4
+  ro		de	=	+ro(winkeys):4
+  ro		us	=	+ro(std):4
   sapmi		basic	=	+no(smi):4
   sapmi		nodeadkeys	=	+no(smi_nodeadkeys):4
   sapmi		sefi	=	+fi(smi):4
@@ -822,10 +918,11 @@
   yu		unicodeyz	=	+srp(latinunicodeyz):4
 
 ! model		=	symbols
+  $maclaptop	=	+macintosh_vndr/apple(laptop_bad_switch)
   $inetkbds     =       +inet(%m)
 
 ! model		layout		=	compat
-  pc98		nec/jp		=	pc98(basic)
+  pc98		nec_vndr/jp	=	pc98(basic)
   *		*		=	complete
 
 ! model		layout[1]	=	compat
@@ -833,6 +930,21 @@
 
 ! model		=	types
   *		=	complete
+
+! layout	option	=	symbols
+  $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle)
+
+! layout[1]	option	=	symbols
+  $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):1
+
+! layout[2]	option	=	symbols
+  $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):2
+
+! layout[3]	option	=	symbols
+  $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):3
+
+! layout[4]	option	=	symbols
+  $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):4
 
 ! option	=	symbols
   grp:shift_toggle	=	+group(shifts_toggle)
@@ -881,11 +993,11 @@
   altwin:super_win	=	+altwin(super_win)
   altwin:hyper_win	=	+altwin(hyper_win)
   altwin:alt_super_win	=	+altwin(alt_super_win)
-  compose:caps		=	+compose(caps)
   compose:ralt		=	+compose(ralt)
   compose:rwin		=	+compose(rwin)
   compose:menu		=	+compose(menu)
   compose:rctrl		=	+compose(rctrl)
+  compose:caps      =   +compose(caps)
   srvrkeys:none		=	+srvr_ctrl(no_srvr_keys)
   eurosign:e		=	+eurosign(e)
   eurosign:5		=	+eurosign(5)
@@ -896,6 +1008,7 @@
   grp_led:caps		=	+ledcaps(group_lock)
   grp_led:scroll	=	+ledscroll(group_lock)
   grp:caps_toggle	=	+ledcaps(group_lock)
+  japan:kana_lock	=	+japan(kana_lock)
 
 
 ! option	=	types
