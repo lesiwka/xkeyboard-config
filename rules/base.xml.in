@@ -178,6 +178,12 @@
     </model>
     <model>
       <configItem>
+        <name>cherrycyboard</name>
+        <_description>Cherry CyBo@rd USB-Hub</_description>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>chicony</name>
         <_description>Chicony Internet Keyboard</_description>
       </configItem>
@@ -244,8 +250,14 @@
     </model>
     <model>
       <configItem>
+        <name>dellusbmm</name>
+        <_description>Dell USB Multimedia Keybard</_description>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>inspiron</name>
-        <_description>Laptop/notebook Dell Inspiron 8xxx</_description>
+        <_description>Laptop/notebook Dell Inspiron 6xxx/8xxx</_description>
       </configItem>
     </model>
     <model>
@@ -276,6 +288,12 @@
       <configItem>
         <name>genius</name>
         <_description>Genius Comfy KB-16M / Genius MM Keyboard KWD-910</_description>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>geniuscomfy</name>
+        <_description>Genius Comfy KB-12e</_description>
       </configItem>
     </model>
     <model>
@@ -668,6 +686,24 @@
         <_description>Acer TravelMate 800</_description>
       </configItem>
     </model>
+    <model>
+      <configItem>
+        <name>power_g5</name>
+        <_description>Power G5</_description>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>silvercrest</name>
+        <_description>SILVERCREST Multimedia Wireless Keyboard</_description>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>emachines</name>
+        <_description>Laptop/notebook eMachines m68xx</_description>
+      </configItem>
+    </model>
   </modelList>
   <layoutList>
     <layout>
@@ -697,8 +733,49 @@
         </variant>
         <variant>
           <configItem>
+            <name>dvorak-l</name>
+            <_description>Left handed Dvorak</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak-r</name>
+            <_description>Right handed Dvorak</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>rus</name>
             <_description>Russian phonetic</_description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>ad</name>
+        <_shortDescription>And</_shortDescription>
+        <_description>Andorra</_description>
+      </configItem>
+      <variantList/>
+    </layout>
+    <layout>
+      <configItem>
+        <name>af</name>
+        <_shortDescription>Afg</_shortDescription>
+        <_description>Afghanistan</_description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ps</name>
+            <_description>Pashto</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>uz</name>
+            <_description>Southern Uzbek</_description>
           </configItem>
         </variant>
       </variantList>
@@ -791,6 +868,12 @@
           <configItem>
             <name>winkeys</name>
             <_description>Winkeys</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>latin</name>
+            <_description>Latin</_description>
           </configItem>
         </variant>
       </variantList>
@@ -997,24 +1080,11 @@
     </layout>
     <layout>
       <configItem>
-        <name>ca_enhanced</name>
-        <_shortDescription>CaE</_shortDescription>
-        <_description>Canada (Multilingual)</_description>
-      </configItem>
-    </layout>
-    <layout>
-      <configItem>
         <name>ca</name>
         <_shortDescription>Can</_shortDescription>
         <_description>Canada</_description>
       </configItem>
       <variantList>
-        <variant>
-          <configItem>
-            <name>fr</name>
-            <_description>French</_description>
-          </configItem>
-        </variant>
         <variant>
           <configItem>
             <name>fr-dvorak</name>
@@ -1029,8 +1099,14 @@
         </variant>
         <variant>
           <configItem>
-            <name>multi</name>
+            <name>multix</name>
             <_description>Multilingual</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>multi</name>
+            <_description>Multilingual, first part</_description>
           </configItem>
         </variant>
         <variant>
@@ -1076,12 +1152,6 @@
           <configItem>
             <name>us</name>
             <_description>US keyboard with Croatian letters</_description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>alt</name>
-            <_description>Alternate US keyboard with Croatian letters</_description>
           </configItem>
         </variant>
       </variantList>
@@ -1134,7 +1204,14 @@
         <_shortDescription>Nld</_shortDescription>
         <_description>Netherlands</_description>
       </configItem>
-      <variantList/>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>sundeadkeys</name>
+            <_description>Sun dead keys</_description>
+          </configItem>
+        </variant>
+      </variantList>
     </layout>
     <layout>
       <configItem>
@@ -1154,6 +1231,12 @@
           <configItem>
             <name>nodeadkeys</name>
             <_description>Eliminate dead keys</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>dvorak</name>
+            <_description>Dvorak</_description>
           </configItem>
         </variant>
       </variantList>
@@ -1268,6 +1351,51 @@
     </layout>
     <layout>
       <configItem>
+        <name>gh</name>
+        <_shortDescription>Gha</_shortDescription>
+        <_description>Ghana</_description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>generic</name>
+            <_description>Multilingual</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>akan</name>
+            <_description>Akan</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ewe</name>
+            <_description>Ewe</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>fula</name>
+            <_description>Fula</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ga</name>
+            <_description>Ga</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>hausa</name>
+            <_description>Hausa</_description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
         <name>ge</name>
         <_shortDescription>Geo</_shortDescription>
         <_description>Georgia</_description>
@@ -1322,6 +1450,12 @@
           <configItem>
             <name>dvorak</name>
             <_description>Dvorak</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>sundeadkeys</name>
+            <_description>Sun dead keys</_description>
           </configItem>
         </variant>
       </variantList>
@@ -1564,6 +1698,41 @@
     </layout>
     <layout>
       <configItem>
+        <name>kh</name>
+        <_shortDescription>Khm</_shortDescription>
+        <_description>Cambodia</_description>
+      </configItem>
+      <variantList/>
+    </layout>
+    <layout>
+      <configItem>
+	<name>kz</name>
+	<_shortDescription>Kaz</_shortDescription>
+	<_description>Kazakhstan</_description>
+      </configItem>
+      <variantList>
+	<variant>
+	  <configItem>
+	    <name>ruskaz</name>
+	    <_description>Russian with Kazakh</_description>
+	  </configItem>
+	</variant>
+	<variant>
+	  <configItem>
+	    <name>kazrus</name>
+	    <_description>Kazakh with Russian</_description>
+	  </configItem>
+	</variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>ko</name>
+        <_description>Korean</_description>
+      </configItem>
+    </layout>
+    <layout>
+      <configItem>
         <name>la</name>
         <_shortDescription>Lao</_shortDescription>
         <_description>Laos</_description>
@@ -1601,7 +1770,7 @@
         <variant>
           <configItem>
             <name>std</name>
-            <_description>"Standard"</_description>
+            <_description>Standard</_description>
           </configItem>
         </variant>
         <variant>
@@ -1651,7 +1820,7 @@
       <configItem>
         <name>mk</name>
         <_shortDescription>Mkd</_shortDescription>
-        <_description>Macedonia (FYROM)</_description>
+        <_description>Macedonia</_description>
       </configItem>
       <variantList>
         <variant>
@@ -1781,14 +1950,14 @@
       <variantList>
         <variant>
           <configItem>
-            <name>us</name>
-            <_description>US keyboard with Romanian letters</_description>
+            <name>std</name>
+            <_description>Standard</_description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>de</name>
-            <_description>Romanian keyboard with German letters</_description>
+            <name>winkeys</name>
+            <_description>Winkeys</_description>
           </configItem>
         </variant>
       </variantList>
@@ -1818,13 +1987,19 @@
             <_description>Winkeys</_description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>tt</name>
+            <_description>Tatar</_description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>cs</name>
-        <_shortDescription>Srp</_shortDescription>
-        <_description>Serbia</_description>
+        <_shortDescription>SCG</_shortDescription>
+        <_description>Serbia and Montenegro</_description>
       </configItem>
       <variantList>
         <variant>
@@ -1956,6 +2131,12 @@
             <_description>Dvorak</_description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cat</name>
+            <_description>Catalan variant with middle-dot L</_description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -2080,20 +2261,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_INSCRIPT</name>
-            <_description>Tamil INSCRIPT</_description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>tam_TAB</name>
             <_description>Tamil TAB Typewriter</_description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>tam_TSCII</name>
-            <_description>Tamil TSCII Typewriter</_description>
           </configItem>
         </variant>
       </variantList>
@@ -2123,7 +2292,7 @@
       <configItem>
         <name>tr</name>
         <_shortDescription>Tur</_shortDescription>
-        <_description>Turkish </_description>
+        <_description>Turkey</_description>
       </configItem>
       <variantList>
         <variant>
@@ -2136,6 +2305,12 @@
           <configItem>
             <name>alt</name>
             <_description>Alt-Q</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>sundeadkeys</name>
+            <_description>Sun dead keys</_description>
           </configItem>
         </variant>
       </variantList>
@@ -2275,6 +2450,20 @@
       </configItem>
       <variantList/>
     </layout>
+    <layout>
+       <configItem>
+        <name>za</name>
+        <_shortDescription>Zar</_shortDescription>
+        <_description>South Africa</_description>
+      </configItem>
+    </layout>
+    <layout>
+      <configItem>
+        <name>epo</name>
+        <_shortDescription>Epo</_shortDescription>
+	<_description>Esperanto</_description>
+      </configItem>
+    </layout>
   </layoutList>
   <optionList>
     <group allowMultipleSelection="true">
@@ -2364,13 +2553,13 @@
       <option>
         <configItem>
           <name>grp:ctrl_shift_toggle</name>
-          <_description>Control+Shift changes group.</_description>
+          <_description>Ctrl+Shift changes group.</_description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>grp:ctrl_alt_toggle</name>
-          <_description>Alt+Control changes group.</_description>
+          <_description>Alt+Ctrl changes group.</_description>
         </configItem>
       </option>
       <option>
@@ -2432,7 +2621,7 @@
       <option>
         <configItem>
           <name>lv3:switch</name>
-          <_description>Press Right Control to choose 3rd level.</_description>
+          <_description>Press Right Ctrl to choose 3rd level.</_description>
         </configItem>
       </option>
       <option>
@@ -2482,36 +2671,36 @@
       <!-- Tweaking the position of the "Ctrl" key -->
       <configItem>
         <name>ctrl</name>
-        <_description>Control key position</_description>
+        <_description>Ctrl key position</_description>
       </configItem>
       <option>
         <configItem>
           <name>ctrl:nocaps</name>
-          <_description>Make CapsLock an additional Control.</_description>
+          <_description>Make CapsLock an additional Ctrl.</_description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>ctrl:swapcaps</name>
-          <_description>Swap Control and CapsLock.</_description>
+          <_description>Swap Ctrl and CapsLock.</_description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>ctrl:ctrl_ac</name>
-          <_description>Control key at left of 'A'</_description>
+          <_description>Ctrl key at left of 'A'</_description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>ctrl:ctrl_aa</name>
-          <_description>Control key at bottom left</_description>
+          <_description>Ctrl key at bottom left</_description>
         </configItem>
       </option>
       <option>
         <configItem>
           <name>ctrl:ctrl_ra</name>
-          <_description>Right Control key works as Right Alt.</_description>
+          <_description>Right Ctrl key works as Right Alt.</_description>
         </configItem>
       </option>
     </group>
@@ -2718,6 +2907,18 @@
           <name>eurosign:2</name>
           <_description>Add the EuroSign to the 2 key.</_description>
         </configItem>
+      </option>
+    </group>
+    <group allowMultipleSelection="true">
+      <configItem>
+        <name>japan</name>
+        <description>Japanese Keyboard Options</description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>japan:kana_lock</name>
+          <description>Kana Lock key is locking</description>
+       </configItem>
       </option>
     </group>
   </optionList>

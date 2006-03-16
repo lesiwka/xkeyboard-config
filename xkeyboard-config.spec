@@ -1,6 +1,6 @@
 Name:		xkeyboard-config
 Summary:	XML-based XKB configuration registry
-Version:	0.6
+Version:	0.8
 Release:	1
 License:	LGPL
 Group:		User Interface/X

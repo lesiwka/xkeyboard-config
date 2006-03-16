@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/lk,v 1.4 2005/08/04 22:15:10 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/lk,v 1.6 2006/01/09 21:43:27 svu Exp $
 
 // X Keyboard Extension file for Sinhala (Sri Lanka) (2004-04-22)
 // Maintainer  : Harshula Jayasuriya <hash@jayasolutions.cjb.net>
@@ -79,26 +79,10 @@ xkb_symbols "sin_phonetic" {
   include "level3(ralt_switch)"
 };
 
-// based on a keyboard map from an 'xkb/symbols/tml' file
-//
-// $XFree86: xc/programs/xkbcomp/symbols/tml,v 1.2 2002/11/22 04:03:28 dawes Exp $
-
 partial alphanumeric_keys
 xkb_symbols "tam_unicode" {
     include "in(tam_unicode)"
     name[Group1]= "Sri Lanka - Tamil Unicode";
-};
-
-partial alphanumeric_keys
-xkb_symbols "tam_INSCRIPT" {
-    include "in(tam)"
-    name[Group1]= "Sri Lanka - Tamil INSCRIPT";
-};
-
-partial alphanumeric_keys
-xkb_symbols "tam_TSCII" {
-    include "in(tam_TSCII)"
-    name[Group1]= "Sri Lanka - Tamil TSCII Typewriter";
 };
 
 partial alphanumeric_keys

@@ -1,10 +1,12 @@
   ar		=	+ara%(v[4]):4
   ben		=	+in(ben)%(v[4]):4
   bs		=	+ba%(v[4]):4
+  cz_qwerty		=	+cz(qwerty)%(v[4]):4
   dev		=	+in(deva)%(v[4]):4
   dvorak		=	+us(dvorak)%(v[4]):4
   dzdwi		=	+bt%(v[4]):4
   el		=	+gr%(v[4]):4
+  en_US		=	+latin%(v[4]):4
   guj		=	+in(guj)%(v[4]):4
   gur		=	+in(guru)%(v[4]):4
   iu		=	+ca(ike)%(v[4]):4
@@ -21,6 +23,7 @@
   tml		=	+in(tam)%(v[4]):4
   yu		=	+srp%(v[4]):4
   fr-latin9		=	+fr(latin9)%(v[4]):4
+  us_intl		=	+us(alt-intl)%(v[4]):4
   ben(basic)	=	+in(ben):4
   ben(probhat)	=	+in(ben_probhat):4
   dev(basic)	=	+in(deva):4
@@ -44,6 +47,8 @@
   ogham(is434)	=	+ie(ogam_is434):4
   ogham(is434laptop)	=	+ie(ogam_is434):4
   ori(basic)	=	+in(ori):4
+  ro(de)	=	+ro(winkeys):4
+  ro(us)	=	+ro(std):4
   sapmi(basic)	=	+no(smi):4
   sapmi(nodeadkeys)	=	+no(smi_nodeadkeys):4
   sapmi(sefi)	=	+fi(smi):4

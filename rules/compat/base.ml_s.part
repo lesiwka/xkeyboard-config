@@ -4,6 +4,8 @@
   *		ben			=	pc(pc105)+in(ben)
   $pcmodels	bs			=	pc(%m)+ba
   *		bs			=	pc(pc105)+ba
+  $pcmodels	cz_qwerty			=	pc(%m)+cz(qwerty)
+  *		cz_qwerty			=	pc(pc105)+cz(qwerty)
   $pcmodels	dev			=	pc(%m)+in(deva)
   *		dev			=	pc(pc105)+in(deva)
   $pcmodels	dvorak			=	pc(%m)+us(dvorak)
@@ -12,6 +14,8 @@
   *		dzdwi			=	pc(pc105)+bt
   $pcmodels	el			=	pc(%m)+gr
   *		el			=	pc(pc105)+gr
+  $pcmodels	en_US			=	pc(%m)+latin
+  *		en_US			=	pc(pc105)+latin
   $pcmodels	guj			=	pc(%m)+in(guj)
   *		guj			=	pc(pc105)+in(guj)
   $pcmodels	gur			=	pc(%m)+in(guru)
@@ -44,6 +48,8 @@
   *		yu			=	pc(pc105)+srp
   $pcmodels	fr-latin9			=	pc(%m)+fr(latin9)
   *		fr-latin9			=	pc(pc105)+fr(latin9)
+  $pcmodels	us_intl			=	pc(%m)+us(alt-intl)
+  *		us_intl			=	pc(pc105)+us(alt-intl)
   $pcmodels	ben(basic)			=	pc(%m)+in(ben)
   *		ben(basic)			=	pc(pc105)+in(ben)
   $pcmodels	ben(probhat)			=	pc(%m)+in(ben_probhat)
@@ -90,6 +96,10 @@
   *		ogham(is434laptop)			=	pc(pc105)+ie(ogam_is434)
   $pcmodels	ori(basic)			=	pc(%m)+in(ori)
   *		ori(basic)			=	pc(pc105)+in(ori)
+  $pcmodels	ro(de)			=	pc(%m)+ro(winkeys)
+  *		ro(de)			=	pc(pc105)+ro(winkeys)
+  $pcmodels	ro(us)			=	pc(%m)+ro(std)
+  *		ro(us)			=	pc(pc105)+ro(std)
   $pcmodels	sapmi(basic)			=	pc(%m)+no(smi)
   *		sapmi(basic)			=	pc(pc105)+no(smi)
   $pcmodels	sapmi(nodeadkeys)			=	pc(%m)+no(smi_nodeadkeys)

@@ -48,7 +48,7 @@ HDR base.ml1_s.part HDR \
 HDR base.l2_s.part  HDR base.l3_s.part  HDR base.l4_s.part HDR HDR HDR \
 HDR base.m_s.part   HDR base.ml_c.part  HDR base.ml1_c.part \
 HDR base.m_t.part \
-HDR base.lo_s.part HDR base.l1o_s.part HDR base.l2o_s.part HDR base.l3o_s.part HDR base.l4o_s.part \
+HDR base.l1o_s.part HDR base.l2o_s.part HDR base.l3o_s.part HDR base.l4o_s.part \
 HDR base.o_s.part   HDR base.o_c.part   HDR base.o_t.part
 endif
 
@@ -72,7 +72,7 @@ xml_DATA = $(xml_in_files:.xml.in=.xml)
 
 EXTRA_DIST= $(all_rules_files) $(xml_in_files) $(base_parts) xml2lst.pl merge.sh
 
-DISTCLEANFILES=base.xml
+DISTCLEANFILES=base.xml base.lst
 
 rulesdir = $(xkb_base)/rules
 xmldir = $(rulesdir)
