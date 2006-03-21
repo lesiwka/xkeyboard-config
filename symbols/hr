@@ -10,6 +10,8 @@ xkb_symbols "basic" {
 partial alphanumeric_keys 
 xkb_symbols "us" {
 
+    include "us"
+
     name[Group1]= "Croatia - US keyboard with Croatian letters";
 
     key <AD01> { [    any,    any,	backslash	        ] };

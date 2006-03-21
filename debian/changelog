@@ -1,3 +1,11 @@
+xkeyboard-config (0.8-2) dapper; urgency=low
+
+  * Rename the korean symbols file to kr since it's a South Korean
+    keyboard layout.
+  * Add missing include "us" for hr(us).
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Tue, 21 Mar 2006 11:56:38 +0100
+
 xkeyboard-config (0.8-1) dapper; urgency=low
 
   * New upstream release
