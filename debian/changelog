@@ -1,3 +1,16 @@
+xkeyboard-config (0.8-3) dapper; urgency=low
+
+  [ Tollef Fog Heen ]
+  * Add missing descriptions for Logitech iTouch Internet Navigator
+    Keyboard SE and same + USB, added in upstream CVS (Malone: #29470)
+
+  [ Sebastien Bacher ]
+  * symbols/level3, types/pc: 
+    - CVS patch to fix some of the issues with "compose:ralt" (Ubuntu:
+    #35845)
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Thu, 23 Mar 2006 10:55:02 +0100
+
 xkeyboard-config (0.8-2) dapper; urgency=low
 
   * Rename the korean symbols file to kr since it's a South Korean
