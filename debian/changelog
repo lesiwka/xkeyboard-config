@@ -1,3 +1,10 @@
+xkeyboard-config (0.8-4) dapper; urgency=low
+
+  * symbols/group:
+    - patch from the CVS to fix the ralt issue (Ubuntu :#35845)
+
+ -- Sebastien Bacher <seb128@canonical.com>  Fri, 24 Mar 2006 01:28:57 +0100
+
 xkeyboard-config (0.8-3) dapper; urgency=low
 
   [ Tollef Fog Heen ]
