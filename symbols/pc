@@ -120,7 +120,10 @@ xkb_symbols "basic" {
     key <RGHT> {	[  Right		]	};
 
     // End "Editing" section, begin "Keypad"
-    key <NMLK> {	[  Num_Lock, Pointer_EnableKeys		]	};
+
+    // Disable Shift-NumLock=>MouseKeys as a global policy, so
+    // that NumLock works on ThinkPads, which send Shift-NumLock
+    key <NMLK> {	[  Num_Lock		]	};
 
 // Ungrab cancels server/keyboard/pointer grabs
     key <KPDV> {
