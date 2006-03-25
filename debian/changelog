@@ -1,3 +1,12 @@
+xkeyboard-config (0.8-5) dapper; urgency=low
+
+  * Experimentally remove the default Shift-NumLock=>Pointer_EnableKeys
+    (aka MouseKeys) policy so that NumLock works on ThinkPads (which send
+    Shift+NumLock).  If this causes problems for a large number of people
+    it can be investigated.  [Malone: #35080]
+
+ -- Paul Sladen <ubuntu@paul.sladen.org>  Sat, 25 Mar 2006 16:00:17 +0000
+
 xkeyboard-config (0.8-4) dapper; urgency=low
 
   * symbols/group:
