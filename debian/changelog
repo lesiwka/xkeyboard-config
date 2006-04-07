@@ -1,3 +1,9 @@
+xkeyboard-config (0.8-6) dapper; urgency=low
+
+  * debian/rules: Generate a POT file. Closes: LP##35407.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri,  7 Apr 2006 09:57:49 +0200
+
 xkeyboard-config (0.8-5) dapper; urgency=low
 
   * Experimentally remove the default Shift-NumLock=>Pointer_EnableKeys

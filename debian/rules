@@ -37,6 +37,8 @@ build-stamp:
 		     $(confflags)
 	cd obj-$(DEB_BUILD_GNU_TYPE) && $(MAKE)
 
+	cd po && intltool-update --verbose -p
+
 	touch build-stamp
 
 clean:
