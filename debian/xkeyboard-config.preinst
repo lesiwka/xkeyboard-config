@@ -1,0 +1,5 @@
+#! /bin/sh -e
+
+[ -d /etc/X11/xkb/symbols/pc ] && rm -rf /etc/X11/xkb/symbols/pc || true
+
+#DEBHELPER#

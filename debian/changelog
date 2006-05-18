@@ -1,3 +1,14 @@
+xkeyboard-config (0.8-7) dapper; urgency=low
+
+  * Grab Kurdish keymaps from upstream.  Malone: #30361
+  * Nuke /etc/X11/xkb/symbols/pc if it's a directory.  This is
+    kinda-wrong, but leaving it around is worse.  Malone #23083. 
+  * Add Spanish translation from upstream CVS.  Malone #22424
+  * Add LSGT to keycodes/evdev.  Malone: #42846
+  * Remove Daniel from maintainer field in control file.  
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Thu, 18 May 2006 09:43:43 +0200
+
 xkeyboard-config (0.8-6) dapper; urgency=low
 
   * debian/rules: Generate a POT file. Closes: LP##35407.

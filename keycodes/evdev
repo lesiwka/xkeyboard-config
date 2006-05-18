@@ -120,6 +120,7 @@ default xkb_keycodes "evdev" {
 	<KP1> = 87;
 	<KP2> = 88;
 	<KP3> = 89;
+        <LSGT> = 94;
 	<KPEN> = 104;
 
 	<KP0> = 90;
