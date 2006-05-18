@@ -2128,7 +2128,7 @@ fi
 
 
 
-ALL_LINGUAS="af az bg cs da el en_GB fi fr hu nl ru rw sk sl sq sr sr@Latn sv tr uk vi zh_CN zh_TW"
+ALL_LINGUAS="af az bg cs da el en_GB es fi fr hu nl ru rw sk sl sq sr sr@Latn sv tr uk vi zh_CN zh_TW"
 
 
 

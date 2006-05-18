@@ -1278,6 +1278,51 @@
             <_description>Pro Keypad</_description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>ku</name>
+            <_description>Kurdish, Latin Q</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_f</name>
+            <_description>Kurdish, (F)</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_alt</name>
+            <_description>Kurdish, Latin Alt-Q</_description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>iq</name>
+        <_shortDescription>Irq</_shortDescription>
+        <_description>Iraq</_description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ku</name>
+            <_description>Kurdish, Latin Q</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_f</name>
+            <_description>Kurdish, (F)</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_alt</name>
+            <_description>Kurdish, Latin Alt-Q</_description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -1625,8 +1670,6 @@
             <_description>102/qwerty/dot/Eliminate dead keys</_description>
           </configItem>
         </variant>
-
-
       </variantList>
     </layout>
     <layout>
@@ -1739,12 +1782,6 @@
     </layout>
     <layout>
       <configItem>
-        <name>kr</name>
-        <_description>Korean</_description>
-      </configItem>
-    </layout>
-    <layout>
-      <configItem>
         <name>la</name>
         <_shortDescription>Lao</_shortDescription>
         <_description>Laos</_description>
@@ -2248,6 +2285,24 @@
             <_description>Syriac phonetic</_description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>ku</name>
+            <_description>Kurdish, Latin Q</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_f</name>
+            <_description>Kurdish, (F)</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_alt</name>
+            <_description>Kurdish, Latin Alt-Q</_description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -2323,6 +2378,24 @@
           <configItem>
             <name>sundeadkeys</name>
             <_description>Sun dead keys</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku</name>
+            <_description>Kurdish, Latin Q</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_f</name>
+            <_description>Kurdish, (F)</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ku_alt</name>
+            <_description>Kurdish, Latin Alt-Q</_description>
           </configItem>
         </variant>
       </variantList>
@@ -2407,9 +2480,17 @@
     </layout>
     <layout>
       <configItem>
+        <name>kr</name>
+        <_shortDescription>Kor</_shortDescription>
+        <_description>Korea, Republic of</_description>
+      </configItem>
+      <variantList/>
+    </layout>
+    <layout>
+      <configItem>
         <name>nec_vndr/jp</name>
         <_shortDescription>Jpn</_shortDescription>
-        <_description>PC-98xx Series</_description>
+        <_description>Japan (PC-98xx Series)</_description>
       </configItem>
       <variantList/>
     </layout>

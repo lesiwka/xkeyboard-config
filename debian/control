@@ -1,7 +1,7 @@
 Source: xkeyboard-config
 Section: x11
 Priority: optional
-Maintainer: Daniel Stone <daniel.stone@ubuntu.com>
+Maintainer: Tollef Fog Heen <tfheen@ubuntu.com>
 Build-Depends: debhelper (>= 4.0.0), intltool, libxml-parser-perl, xkbutils
 Standards-Version: 3.6.1.0
 
