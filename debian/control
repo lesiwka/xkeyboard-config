@@ -5,7 +5,7 @@ Maintainer: Tollef Fog Heen <tfheen@ubuntu.com>
 Build-Depends: debhelper (>= 4.0.0), intltool, libxml-parser-perl, xkbutils
 Standards-Version: 3.6.1.0
 
-Package: xkeyboard-config
+Package: xkb-data
 Architecture: all
 Depends: ${misc:Depends}
 Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1)
@@ -20,3 +20,10 @@ Description: XKB data
  This data formerly lived in the 'xlibs' package, but it is now in its
  own package, after having moved to the xkeyboard-config upstream tarballs:
  http://www.freedesktop.org/wiki/Software_2fxkeyboard-config
+
+Package: xkeyboard-config
+Architecture: all
+Depends: xkb-data
+Description: Transitional package for xkb-data
+ This packe is not needed and can safely be removed from the system
+ once no other packages depend on it.

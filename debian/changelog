@@ -1,3 +1,10 @@
+xkeyboard-config (0.8-7ubuntu1) edgy; urgency=low
+
+  * Rename binary package to xkb-data to match Debian.
+  * Add transitional package for xkeyboard-config.
+
+ -- Tollef Fog Heen <tfheen@ubuntu.com>  Wed,  5 Jul 2006 15:08:24 +0200
+
 xkeyboard-config (0.8-7) dapper; urgency=low
 
   * Grab Kurdish keymaps from upstream.  Malone: #30361
