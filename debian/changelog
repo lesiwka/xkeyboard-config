@@ -1,3 +1,13 @@
+xkeyboard-config (0.8-7ubuntu2) edgy; urgency=low
+
+  * Actually move all the files from xkeyboard-config to xkb-data (closes:
+    Malone #59220).
+  * Version xkeyboard-config's dependency on xkb-data to avoid files going
+    missing.
+  * Fix typo in xkeyboard-config's description.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 10 Sep 2006 14:30:46 +0100
+
 xkeyboard-config (0.8-7ubuntu1) edgy; urgency=low
 
   * Rename binary package to xkb-data to match Debian.

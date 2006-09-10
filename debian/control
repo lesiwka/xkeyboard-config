@@ -8,7 +8,7 @@ Standards-Version: 3.6.1.0
 Package: xkb-data
 Architecture: all
 Depends: ${misc:Depends}
-Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1)
+Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1), xkeyboard-config (<< 0.8-7ubuntu2)
 Conflicts: xlibs (<< 6.8.2-39), libxkbfile1 (<< 7.0.0-3)
 Pre-Depends: x11-common (>= 7.0.0-0ubuntu3)
 Description: XKB data
@@ -23,7 +23,7 @@ Description: XKB data
 
 Package: xkeyboard-config
 Architecture: all
-Depends: xkb-data
+Depends: xkb-data (>= ${source:Version})
 Description: Transitional package for xkb-data
- This packe is not needed and can safely be removed from the system
+ This package is not needed and can safely be removed from the system
  once no other packages depend on it.
