@@ -38,8 +38,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-DIST_COMMON = README $(dist_compat_DATA) $(srcdir)/Makefile.am \
-	$(srcdir)/Makefile.in $(top_srcdir)/xkbrules.am
+DIST_COMMON = README $(dist_compat_DATA) $(dist_dir_DATA) \
+	$(srcdir)/Makefile.am $(srcdir)/Makefile.in \
+	$(top_srcdir)/xkbrules.am
 subdir = compat
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
@@ -55,12 +56,13 @@ am__vpath_adj = case $$p in \
     *) f=$$p;; \
   esac;
 am__strip_dir = `echo $$p | sed -e 's|^.*/||'`;
-am__installdirs = "$(DESTDIR)$(dirdir)" "$(DESTDIR)$(compatdir)"
-dirDATA_INSTALL = $(INSTALL_DATA)
+am__installdirs = "$(DESTDIR)$(compatdir)" "$(DESTDIR)$(dirdir)"
 dist_compatDATA_INSTALL = $(INSTALL_DATA)
-DATA = $(dir_DATA) $(dist_compat_DATA)
+dist_dirDATA_INSTALL = $(INSTALL_DATA)
+DATA = $(dist_compat_DATA) $(dist_dir_DATA)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACLOCAL = @ACLOCAL@
+ALL_LINGUAS = @ALL_LINGUAS@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
@@ -126,26 +128,32 @@ USE_COMPAT_RULES_FALSE = @USE_COMPAT_RULES_FALSE@
 USE_COMPAT_RULES_TRUE = @USE_COMPAT_RULES_TRUE@
 VERSION = @VERSION@
 XKBCOMP = @XKBCOMP@
-ac_ct_STRIP = @ac_ct_STRIP@
 am__leading_dot = @am__leading_dot@
 am__tar = @am__tar@
 am__untar = @am__untar@
 bindir = @bindir@
 build_alias = @build_alias@
 datadir = @datadir@
+datarootdir = @datarootdir@
+docdir = @docdir@
+dvidir = @dvidir@
 exec_prefix = @exec_prefix@
 host_alias = @host_alias@
+htmldir = @htmldir@
 includedir = @includedir@
 infodir = @infodir@
 install_sh = @install_sh@
 libdir = @libdir@
 libexecdir = @libexecdir@
+localedir = @localedir@
 localstatedir = @localstatedir@
 mandir = @mandir@
 mkdir_p = @mkdir_p@
 oldincludedir = @oldincludedir@
+pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
+psdir = @psdir@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
@@ -162,8 +170,7 @@ misc mousekeys norepeat \
 pc pc98 xfree86 \
 xtest README
 
-MOSTLYCLEANFILES = $(subdir).dir
-dir_DATA = $(subdir).dir
+dist_dir_DATA = $(subdir).dir
 dirdir = $(xkb_base)
 all: all-am
 
@@ -177,9 +184,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am $(top_srcdir
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  compat/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign  compat/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  compat/Makefile
+	  $(AUTOMAKE) --foreign  compat/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -198,23 +205,6 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 uninstall-info-am:
-install-dirDATA: $(dir_DATA)
-	@$(NORMAL_INSTALL)
-	test -z "$(dirdir)" || $(mkdir_p) "$(DESTDIR)$(dirdir)"
-	@list='$(dir_DATA)'; for p in $$list; do \
-	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
-	  f=$(am__strip_dir) \
-	  echo " $(dirDATA_INSTALL) '$$d$$p' '$(DESTDIR)$(dirdir)/$$f'"; \
-	  $(dirDATA_INSTALL) "$$d$$p" "$(DESTDIR)$(dirdir)/$$f"; \
-	done
-
-uninstall-dirDATA:
-	@$(NORMAL_UNINSTALL)
-	@list='$(dir_DATA)'; for p in $$list; do \
-	  f=$(am__strip_dir) \
-	  echo " rm -f '$(DESTDIR)$(dirdir)/$$f'"; \
-	  rm -f "$(DESTDIR)$(dirdir)/$$f"; \
-	done
 install-dist_compatDATA: $(dist_compat_DATA)
 	@$(NORMAL_INSTALL)
 	test -z "$(compatdir)" || $(mkdir_p) "$(DESTDIR)$(compatdir)"
@@ -231,6 +221,23 @@ uninstall-dist_compatDATA:
 	  f=$(am__strip_dir) \
 	  echo " rm -f '$(DESTDIR)$(compatdir)/$$f'"; \
 	  rm -f "$(DESTDIR)$(compatdir)/$$f"; \
+	done
+install-dist_dirDATA: $(dist_dir_DATA)
+	@$(NORMAL_INSTALL)
+	test -z "$(dirdir)" || $(mkdir_p) "$(DESTDIR)$(dirdir)"
+	@list='$(dist_dir_DATA)'; for p in $$list; do \
+	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
+	  f=$(am__strip_dir) \
+	  echo " $(dist_dirDATA_INSTALL) '$$d$$p' '$(DESTDIR)$(dirdir)/$$f'"; \
+	  $(dist_dirDATA_INSTALL) "$$d$$p" "$(DESTDIR)$(dirdir)/$$f"; \
+	done
+
+uninstall-dist_dirDATA:
+	@$(NORMAL_UNINSTALL)
+	@list='$(dist_dir_DATA)'; for p in $$list; do \
+	  f=$(am__strip_dir) \
+	  echo " rm -f '$(DESTDIR)$(dirdir)/$$f'"; \
+	  rm -f "$(DESTDIR)$(dirdir)/$$f"; \
 	done
 tags: TAGS
 TAGS:
@@ -271,7 +278,7 @@ check-am: all-am
 check: check-am
 all-am: Makefile $(DATA)
 installdirs:
-	for dir in "$(DESTDIR)$(dirdir)" "$(DESTDIR)$(compatdir)"; do \
+	for dir in "$(DESTDIR)$(compatdir)" "$(DESTDIR)$(dirdir)"; do \
 	  test -z "$$dir" || $(mkdir_p) "$$dir"; \
 	done
 install: install-am
@@ -289,7 +296,6 @@ install-strip:
 	  `test -z '$(STRIP)' || \
 	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
 mostlyclean-generic:
-	-test -z "$(MOSTLYCLEANFILES)" || rm -f $(MOSTLYCLEANFILES)
 
 clean-generic:
 
@@ -317,7 +323,7 @@ info: info-am
 
 info-am:
 
-install-data-am: install-dirDATA install-dist_compatDATA
+install-data-am: install-dist_compatDATA install-dist_dirDATA
 
 install-exec-am:
 
@@ -343,18 +349,19 @@ ps: ps-am
 
 ps-am:
 
-uninstall-am: uninstall-dirDATA uninstall-dist_compatDATA \
+uninstall-am: uninstall-dist_compatDATA uninstall-dist_dirDATA \
 	uninstall-info-am
 
 .PHONY: all all-am check check-am clean clean-generic distclean \
 	distclean-generic distdir dvi dvi-am html html-am info info-am \
 	install install-am install-data install-data-am \
-	install-dirDATA install-dist_compatDATA install-exec \
+	install-dist_compatDATA install-dist_dirDATA install-exec \
 	install-exec-am install-info install-info-am install-man \
 	install-strip installcheck installcheck-am installdirs \
 	maintainer-clean maintainer-clean-generic mostlyclean \
 	mostlyclean-generic pdf pdf-am ps ps-am uninstall uninstall-am \
-	uninstall-dirDATA uninstall-dist_compatDATA uninstall-info-am
+	uninstall-dist_compatDATA uninstall-dist_dirDATA \
+	uninstall-info-am
 
 
 $(subdir).dir:

@@ -295,6 +295,9 @@ xkb_keycodes "basic" {
     <I7E> =   254;
     <I7F> =   255;
 
+    // MacBooks generate 0x65 for the lower brightness key
+    <II65> =  101;
+
     // Codes generated for scancodes 0x59-0x5f, 0x62-0x76
     <K59> =   157;		// <I1D>
     <K5A> =   170;		// <I2A>
@@ -407,9 +410,7 @@ xkb_keycodes "jp106" {
 // For brazilian ABNT2 keyboard. by Ricardo Y. Igarashi(iga@that.com.br)
 xkb_keycodes "abnt2" {
     include "xfree86(basic)"
-    <BKSL> = 94;
-    <AC12> = 51;
+    <BKSL> = 51;
+    <AC13> = 94;
     <KPPT> = 134;
 };
-
-

@@ -1,6 +1,443 @@
+2006-10-09  Sergey Udaltsov
+
+	* NEWS, configure.in: preparing 0.9
+
+2006-10-09  Sergey Udaltsov
+
+	* tests/*: tests now run alphabetically, a bit of xslt tweaking
+	* symbols/altwin: Alt keys should be mapped on two shift levels,
+	undoing previous fix, as requested in
+	https://bugs.freedesktop.org/show_bug.cgi?id=8571
+	* symbols/level3: mapping Mod5 to keycode rather than to keysym,
+	hopefully fixing https://bugs.freedesktop.org/show_bug.cgi?id=8572
+	* symbols/us,symbols/latin: fixing quotes, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8122
+
+2006-10-07  Sergey Udaltsov
+
+	* types/complete, types/default: putting "numpad" after "extra"
+	hopefully fixes https://bugs.freedesktop.org/show_bug.cgi?id=8402
+
+2006-10-04  Sergey Udaltsov
+
+	* symbols/fi: s/micron/dead_micron, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8494
+
+2006-10-03  Sergey Udaltsov
+
+	* symbols/macintosh_vndr/gb, symbols/gb: adding missing Euro
+	character, closing https://bugs.freedesktop.org/show_bug.cgi?id=5227
+	* symbols/bt, symbols/fr, symbols/np: fixing typos, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8495
+	* symbols/ch, symbols/de, symbols/dk, symbols/es, symbols/no,
+	symbols/pt, symbols/se, symbols/us: optimized mac variants, overwrite
+	old de and ch mac variants, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8491
+
+2006-10-01  Sergey Udaltsov
+
+	* rules/base.xml.in, symbols/Makefile.am, symbols/ng: added Nigerian
+	layouts, closing https://bugs.freedesktop.org/show_bug.cgi?id=8467
+	* symbols/dk, symbols/es, symbols/fi, symbols/fr, symbols/gb,
+	symbols/is, symbols/it, symbols/nl, symbols/no, symbols/pt,
+	symbols/se, symbols/us, rules/base.xml.in: adding mac variants,
+	closing https://bugs.freedesktop.org/show_bug.cgi?id=8465
+
+2006-09-30  Sergey Udaltsov
+	
+	* rules/base.o_s.part, rules/base.xml.in, symbols/Makefile.am,
+	symbols/nbsp: adding nbsp:* options, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8451
+
+2006-09-29  Sergey Udaltsov
+	
+	* rules/base.xml.in: added keypad:* options, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8240
+
+2006-09-28  Sergey Udaltsov
+	
+	* geometry/thinkpad: fix for geometry, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8419
+
+2006-09-24  Sergey Udaltsov
+	
+	* symbols/am, rules/base.xml.in: added am(eastern), am(western),
+	am(eastern-alt), closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8404
+	* rules/base.ml_s.part: macbooks should use the vendor symbols, if
+	possible, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8385
+	* rules/base.o_s.part, rules/base.xml.in, symbols/fr, symbols/keypad:
+	added more French variants, new options, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8240
+
+2006-09-18  Sergey Udaltsov
+	
+	* keycodes/macintosh, rules/HDR, rules/Makefile.am,
+	rules/base.m_k.part, rules/base.o_k.part, rules/base.xml.in: split
+	"good" and "bad" apple keycodes, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8242
+
+	* rules/base.lists.part, rules/base.m_s.part, symbols/inet,
+	symbols/level3: lv3:enter_switch added, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8324
+
+	* symbols/ara: added ara(buckwalter), closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8198
+
+	* symbols/in: fixed layout, Unicode-related bug, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8203
+
+	* geometry/pc, rules/base.ml1_s.part, rules/base.ml_s.part,
+	rules/compat/ml1_s.sh, rules/compat/ml1v1_s.sh,
+	rules/compat/ml1v_s.sh, rules/compat/ml_s.sh, rules/compat/mlv_s.sh,
+	symbols/pc: getting rid of pc101/102/104 legacy. Breaking XkbSymbols
+	again, https://bugs.freedesktop.org/show_bug.cgi?id=8321
+
+2006-09-17  Sergey Udaltsov
+	
+	symbols/keypad, symbols/pc, symbols/us, symbols/macintosh_vndr/*,
+	rules/base.m_t.part, rules/base.ml1_s.part, rules/base.ml_s.part,
+	rules/base.o_t.part, rules/base.xml.in, rules/merge.sh: reorganized
+	Mac stuff, thanks to Denis,
+	https://bugs.freedesktop.org/show_bug.cgi?id=8280
+
+	* symbols/pc: modularized numpad stuff,
+	https://bugs.freedesktop.org/show_bug.cgi?id=8312
+	
+2006-09-10  Sergey Udaltsov
+
+	rules/base.list.part, symbols/inet: added 2 models, thanks to
+	Valery V. Inozemtsev
+
+2006-09-06  Sergey Udaltsov
+
+	* rules/altwin: mapping LALT to Mod4 modifier,
+	https://bugs.freedesktop.org/show_bug.cgi?id=8068
+
+2006-09-05  Sergey Udaltsov
+
+	* rules/base.lists.part: adding missing kbds, reordering a bit
+	https://bugs.freedesktop.org/show_bug.cgi?id=7816
+
+	* geometry/ibm_vnd, configure.in, rules/base.m_g.part: getting rid of
+	ibm_vndr geometry, fixing rules,
+	https://bugs.freedesktop.org/show_bug.cgi?id=7990
+
+	* symbols/gb: s/ralt_switch/ralt_switch_multikey
+	https://bugs.freedesktop.org/show_bug.cgi?id=7674
+
+	* rules/base.mlv_s.part: fixing mac rule for nodeadkeys,
+	https://bugs.freedesktop.org/show_bug.cgi?id=8123
+
+	* rules/base.ml_s.part: s/old_macintosh/macintosh_old/g,
+	https://bugs.freedesktop.org/show_bug.cgi?id=8128
+
+2006-09-04  Sergey Udaltsov
+
+	* rules/base.lists.part, rules/base.m_g.part, rules/base.m_k.part,
+	rules/base.m_s.part, rules/base.ml1_s.part, rules/base.ml_s.part,
+	rules/base.mlv_s.part: fixing lists,
+	https://bugs.freedesktop.org/show_bug.cgi?id=7817
+
+	* symbols/cd, symbols/gr, symbols/il, symbols/jp, symbols/la,
+	symbols/lk, symbols/ru, symbols/ca: fixing types, on per-group basis,
+	https://bugs.freedesktop.org/show_bug.cgi?id=8121
+
+	* symbols/level3: adding level3:ralt_switch_multikey,
+	https://bugs.freedesktop.org/show_bug.cgi?id=7674
+
+2006-09-03  Sergey Udaltsov
+
+	* symbols/vn: getting rid of digits (1 and 2 shift levels),
+	https://bugs.freedesktop.org/show_bug.cgi?id=7807
+
+	* rules/base.xml.in: s/guillemot/guillemet/, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8116
+
+2006-09-02  Sergey Udaltsov
+
+	* symbols/lt, rules/base.xml.in: added lt(ibm)
+	https://bugs.freedesktop.org/show_bug.cgi?id=3841
+
+	* symbols/hr: reverted Croatian
+	https://bugs.freedesktop.org/show_bug.cgi?id=8019
+
+2006-09-01  Sergey Udaltsov
+
+	* symbols/ru, rules/base.xml.in: added Ossetian, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8092
+
+	* symbols/ir, symbols/iq, rules/base.xml.in: added Kurdish Arabic-Latin
+
+2006-08-31  Sergey Udaltsov
+
+	* geometry/macintosh, keycodes/macintosh, keycodes/xfree86,
+	rules/base.lists.part, rules/base.m_g.part, rules/base.m_k.part,
+	rules/base.m_s.part, rules/base.ml_s.part, rules/base.xml.in,
+	symbols/inet: Added Macbook stuff, partially closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=8068
+
+	* symbols/group, rules/base.o_s.part: added group:alt_caps_toggle
+	https://bugs.freedesktop.org/show_bug.cgi?id=8047
+
+2006-08-02  Sergey Udaltsov
+
+	* symbols/inet, keycodes/evdev: updated evdev
+	https://bugs.freedesktop.org/show_bug.cgi?id=7631
+
+2006-07-30  Sergey Udaltsov
+
+	* symbols/pl: added pl(csb)
+	https://bugs.freedesktop.org/show_bug.cgi?id=7693
+
+2006-07-29  Sergey Udaltsov
+
+	* symbols/bt: fixed Bhutan
+	https://bugs.freedesktop.org/show_bug.cgi?id=7556
+
+	* symbols/us: added dvorak-classic, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=7503
+
+	* symbols/inet: added acer_c300, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6361
+
+2006-07-29  Sergey Udaltsov
+
+	* symbols/lk: updated Sinhala, thanks to Harshula
+
+2006-07-10  Sergey Udaltsov
+
+	* symbols/de: added Mac variants, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6671
+
+2006-07-04  Sergey Udaltsov
+
+	* symbols/ch: fixed KPDL in ch(de_mac), patch from
+	https://bugs.freedesktop.org/show_bug.cgi?id=6960
+
+2006-07-02  Sergey Udaltsov
+
+	* rules/base.xml.in: fixed mismatch between directory and symbols/inet
+	file.
+	https://bugs.freedesktop.org/show_bug.cgi?id=7398
+	
+	* symbols/ro: fixed Romanian academic
+	https://bugs.freedesktop.org/show_bug.cgi?id=7393
+	
+2006-06-28  Sergey Udaltsov
+
+	* keycodes/evdev: pc105 compatiliby, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=7347
+
+2006-06-25  Sergey Udaltsov
+
+	* rules/base.xml.in, geometry/pc, symbols/inet: added Dell Lattitude,
+	https://bugs.freedesktop.org/show_bug.cgi?id=6894
+
+	* symbols/inet, rules/base.xml.in: added 2 new layouts, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=7325
+
+	* symbols/np: added Nepali, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6373
+
+2006-06-25  Sergey Udaltsov
+
+	* geometry/pc, rules/base.lists.part, rules/base.m_g.part,
+	rules/base.xml.in, symbols/kr: updated Korean layouts/geometry
+	https://bugs.freedesktop.org/show_bug.cgi?id=7316
+
+2006-06-22  Sergey Udaltsov
+
+	* symbols/inet: fixing double RaiseVolume, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=7095
+
+2006-06-14  Sergey Udaltsov
+
+	* symbols/mt, rules/base.xml.in: fixed the US variant group name
+	* symbols/gh: fixed 'D' key, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=7216
+
+2006-06-13  Sergey Udaltsov
+
+	* symbols/level5, compat/level5: replacing F21-F23 with explicit
+	hexadecimal values of XK_ISO_Level5_*. So for next months people could
+	have Canadian layout fixed and, at the same time, do not have to
+	upgrade xorg. Closing https://bugs.freedesktop.org/show_bug.cgi?id=4411
+
+	* symbols/ch, symbols/inet, symbols/base.xml.in: added mac stuff from
+	https://bugs.freedesktop.org/show_bug.cgi?id=6960
+
+2006-06-13  Sergey Udaltsov
+
+	* symbols/mt: fixed mt(us), closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=1411
+
+2006-06-10  Sergey Udaltsov
+
+	* symbols/level5, compat5/level5: better working Canadian
+	layout, but not complete yet
+
+2006-06-01  Sergey Udaltsov
+
+	* symbols/am: fixed comma in Armenian, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=7080
+
+2006-05-28  Sergey Udaltsov
+
+	* symbols/inet,rules/base.xml.in,rules/base.lists.part: 
+	added Logitech Cordless Desktop LX-300
+	https://bugs.freedesktop.org/show_bug.cgi?id=5609
+
+2006-05-28  Sergey Udaltsov
+
+	* rules/base.ml_c: fixed compat for jp layout, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=4002
+
+2006-05-17  Sergey Udaltsov
+
+	* symbols/inet: fixed power_g5, partially closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6960
+
+2006-05-13  Sergey Udaltsov
+
+	* symbols/fi: added fi(kotoistus)
+	https://bugs.freedesktop.org/show_bug.cgi?id=6901
+
+2006-05-05  Sergey Udaltsov
+
+	* symbols/de: added de(neo)
+	https://bugs.freedesktop.org/show_bug.cgi?id=6837
+
+2006-05-04  Sergey Udaltsov
+
+	* symbols/inet: fixed cymotionlinux, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6828
+
+2006-05-04  Sergey Udaltsov
+
+	* rules/base.xml.in,symbols/iq,symbols/in,symbols/sy: added Kurdish, 
+	closed https://bugs.freedesktop.org/show_bug.cgi?id=6159
+	one more time
+
+2006-04-20  Sergey Udaltsov
+
+	* keycodes/evdev: added LSGT, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6674
+
+2006-04-19  Sergey Udaltsov
+
+	* symbols/macintosh_vndr/(be,de,ch): use keypad(comma)
+
+2006-04-19  Sergey Udaltsov
+
+	* rules/*, keymap/sgi_vndr/*: shift_toggle -> shifts_toggle,
+	fixing https://bugs.freedesktop.org/show_bug.cgi?id=5078
+
+2006-04-08  Sergey Udaltsov
+
+	* keycodes/xfree86,symbols/br: fixed abnt2 keymap and layout
+	https://bugs.freedesktop.org/show_bug.cgi?id=4910
+
+2006-04-08  Sergey Udaltsov
+
+	* geometry/macintosh: fixed mac geometry
+	https://bugs.freedesktop.org/show_bug.cgi?id=4714
+
+2006-04-05  Sergey Udaltsov
+
+	* rules/base.xml.in, changed PC-98xx Series to Japan,
+	https://bugs.freedesktop.org/show_bug.cgi?id=5591
+
+2006-04-04  Sergey Udaltsov
+
+	* symbols/compose,rules/base.xml.in,rules/base.o_s.part: added
+	compose(lwin)
+	https://bugs.freedesktop.org/show_bug.cgi?id=2396
+
+2006-04-04  Sergey Udaltsov
+
+	* symbols/inet,rules/base.xml.in: added Logitech diNovo
+	https://bugs.freedesktop.org/show_bug.cgi?id=1681
+
+2006-04-04  Sergey Udaltsov
+
+	* symbols/inet: fixed Logitech Access Keyboard
+	https://bugs.freedesktop.org/show_bug.cgi?id=1018
+
+2006-04-04  Sergey Udaltsov
+
+	* symbols/pt: added LSGT
+	https://bugs.freedesktop.org/show_bug.cgi?id=970
+
+2006-04-02  Sergey Udaltsov
+
+	* symbols/be, rules/base.xml.in: added 'be(wang)'
+	https://bugs.freedesktop.org/show_bug.cgi?id=6474
+
+2006-03-28  Sergey Udaltsov
+
+	* symbols/cd, symbols/Makefile.am: added 'cd'
+	https://bugs.freedesktop.org/show_bug.cgi?id=5500
+
+2006-03-27  Sergey Udaltsov
+
+	* keycodes/macintosh,keymap/macintosh,rules/base.m_k.part: fixed
+	Macintosh F13-F15, closed 
+	https://bugs.freedesktop.org/show_bug.cgi?id=6399
+
+2006-03-25  Sergey Udaltsov
+
+	* symbols/inet: fixed cymotion,
+	https://bugs.freedesktop.org/show_bug.cgi?id=3541
+
+2006-03-25  Sergey Udaltsov
+
+	* symbols/il,rules/compat/variantRename.lst: generalized 'basic', 
+	removed si1452, closed 
+	https://bugs.freedesktop.org/show_bug.cgi?id=6375
+
+2006-03-23  Sergey Udaltsov
+
+	* symbols/group: another attempt to fix unfamous
+	RAlt problem, reported in ubuntu:
+	https://launchpad.net/distros/ubuntu/+source/xkeyboard-config/+bug/35845
+	Now all types are specified for Group1, to make it consistent
+	
+2006-03-22  Sergey Udaltsov
+
+	* rules/base.xml.in,symbols/tr: added Kurdish, closed
+	https://bugs.freedesktop.org/show_bug.cgi?id=6159
+	
+2006-03-22  Sergey Udaltsov
+
+	* rules/base.xml.in: added missing Logitech models, fixed
+	https://bugs.freedesktop.org/show_bug.cgi?id=6350
+	
+2006-03-21  Sergey Udaltsov
+
+	* symbols/kr: added Korean layout, closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=6323
+
+2006-03-21  Sergey Udaltsov
+
+	* types/pc,symbols/level3: another attempt to fix unfamous
+	RAlt problem, reported in ubuntu:
+	https://launchpad.net/distros/ubuntu/+source/xkeyboard-config/+bug/35845
+
+2006-03-17  Sergey Udaltsov
+
+	* symbols/inet, rules/base*: added Acer Ferrari 4K
+	https://bugs.freedesktop.org/show_bug.cgi?id=5259
+
+2006-03-16  Sergey Udaltsov
+
+	* symbols/ee: improved ee(dvorak), closing
+	https://bugs.freedesktop.org/show_bug.cgi?id=4568
+
 2006-03-05  Sergey Udaltsov
 
-	configure.in, NEWS, Changelog:Preparing release 0.8
+	* configure.in, NEWS, Changelog:Preparing release 0.8
 
 2006-02-26  Sergey Udaltsov
 
@@ -35,7 +472,7 @@
 	
 2006-02-21 svu
 
-	* symbols/hu: Fixed hr(us)
+	* symbols/hr: Fixed hr(us)
 	https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=3807
 	
 2006-02-01 svu
@@ -742,7 +1179,7 @@
 
 2004-09-13 22:39  svu
 
-	* symbols/tj: new local cvs keyword seems to be ok - no more $Id: ChangeLog,v 1.126 2006/03/04 17:33:43 svu Exp $
+	* symbols/tj: new local cvs keyword seems to be ok - no more $Id: ChangeLog,v 1.219 2006/10/09 21:37:13 svu Exp $
 
 2004-09-13 22:38  svu
 

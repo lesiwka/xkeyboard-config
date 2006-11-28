@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/gb,v 1.7 2005/01/16 02:18:20 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/gb,v 1.11 2006/10/03 22:25:41 svu Exp $
 
 // based on a keyboard map from an 'xkb/symbols/gb' file
 //
@@ -26,7 +26,7 @@ xkb_symbols "basic" {
     key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
     key <LSGT>	{ [ backslash,        bar,          bar,    brokenbar ]	};
 
-    include "level3(ralt_switch)"
+    include "level3(ralt_switch_multikey)"
 };
 
 partial alphanumeric_keys 
@@ -77,3 +77,24 @@ xkb_symbols "dvorak" {
     key <LSGT> { [  backslash,	bar		] };
     key <AD01> { [ apostrophe,	at		] };
 };
+
+// Copied from macintosh_vndr/gb
+partial alphanumeric_keys 
+xkb_symbols "mac" {
+
+    // Describes the differences between a very simple en_US
+    // keyboard and a very simple U.K. keyboard layout
+
+    include "latin"
+
+    name[Group1]= "United Kingdom - Macintosh";
+
+    key <AE02> {	[               2,              at,         EuroSign	]	};
+    key <AE03> {	[               3,        sterling,       numbersign	]	};
+
+    // End alphanumeric section
+    
+    include "level3(ralt_switch)"
+};
+
+

@@ -11,6 +11,7 @@
   gur		basic	=	+in(guru):2
   ie		laptop	=	+ie(basic):2
   ie		CloGaelachLaptop	=	+ie(CloGaelach):2
+  il		si1452	=	+ie(basic):2
   iu		basic	=	+ca(ike):2
   lo		basic	=	+la(basic):2
   kan		basic	=	+in(kan):2

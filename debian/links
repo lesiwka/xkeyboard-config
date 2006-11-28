@@ -1,0 +1,15 @@
+usr/share/X11/xkb/compat etc/X11/xkb/compat
+usr/share/X11/xkb/compat.dir etc/X11/xkb/compat.dir
+usr/share/X11/xkb/geometry etc/X11/xkb/geometry
+usr/share/X11/xkb/geometry.dir etc/X11/xkb/geometry.dir
+usr/share/X11/xkb/keycodes etc/X11/xkb/keycodes
+usr/share/X11/xkb/keycodes.dir etc/X11/xkb/keycodes.dir
+usr/share/X11/xkb/keymap etc/X11/xkb/keymap
+usr/share/X11/xkb/keymap.dir etc/X11/xkb/keymap.dir
+usr/share/X11/xkb/rules etc/X11/xkb/rules
+usr/share/X11/xkb/semantics etc/X11/xkb/semantics
+usr/share/X11/xkb/semantics.dir etc/X11/xkb/semantics.dir
+usr/share/X11/xkb/symbols etc/X11/xkb/symbols
+usr/share/X11/xkb/symbols.dir etc/X11/xkb/symbols.dir
+usr/share/X11/xkb/types etc/X11/xkb/types
+usr/share/X11/xkb/types.dir etc/X11/xkb/types.dir

@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/ru,v 1.9 2006/02/26 03:33:08 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/ru,v 1.11 2006/09/04 20:25:10 svu Exp $
 
 // based on
 // russian standard keyboard
@@ -165,7 +165,7 @@ xkb_symbols "tt" {
     include "ru(winkeys)"
     name[Group1]= "Russia - Tatar";
 
-    key.type[group2]="FOUR_LEVEL";
+    key.type[group1]="FOUR_LEVEL";
 
     key <TLDE> {       [      0x010004bb,      0x010004ba,
                              Cyrillic_io,     Cyrillic_IO      ]       };
@@ -182,4 +182,26 @@ xkb_symbols "tt" {
 
     include "level3(ralt_switch)"
 
+};
+
+partial alphanumeric_keys 
+xkb_symbols "os" {
+    include "ru(basic)"
+
+    name[Group1]= "Russia - Ossetian";
+
+    key	<TLDE> {	[      Cyrillic_e,      Cyrillic_E	]	};
+    key	<AC07> {	[      Cyrillic_o,	Cyrillic_O, Cyrillic_io, Cyrillic_IO	]	};
+    key	<AC11> {	[      0x010004D5,      0x010004D4      ]	};
+};
+
+partial alphanumeric_keys 
+xkb_symbols "os_winkeys" {
+    include "ru(winkeys)"
+
+    name[Group1]= "Russia - Ossetian, Winkeys";
+
+    key	<TLDE> {	[      Cyrillic_e,      Cyrillic_E	]	};
+    key	<AC07> {	[      Cyrillic_o,	Cyrillic_O, Cyrillic_io, Cyrillic_IO	]	};
+    key	<AC11> {	[      0x010004D5,      0x010004D4      ]	};
 };

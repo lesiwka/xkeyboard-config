@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/gr,v 1.7 2005/10/04 17:32:19 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/gr,v 1.8 2006/09/04 20:25:10 svu Exp $
 
 // $XFree86: xc/programs/xkbcomp/symbols/el,v 1.2 2002/11/15 02:26:41 dawes Exp $
 //
@@ -88,7 +88,7 @@ xkb_symbols "extended" {
 
     name[Group1] = "Greece - Extended";
 
-    key.type = "THREE_LEVEL";
+    key.type[Group1] = "THREE_LEVEL";
 
     key <AE05> { [	5,		percent,	EuroSign	] };
 
@@ -108,7 +108,7 @@ xkb_symbols "polytonic" {
 
     name[Group1] = "Greece - Polytonic";
 
-    key.type = "THREE_LEVEL";
+    key.type[Group1] = "THREE_LEVEL";
 
     key <AD11> { [ 	dead_tilde,	dead_diaeresis,	dead_macron	] };
     key <AD12> { [	dead_iota,	VoidSymbol,	dead_breve	] };
