@@ -37,6 +37,7 @@
   gur(basic)	=	+in(guru):3
   ie(laptop)	=	+ie(basic):3
   ie(CloGaelachLaptop)	=	+ie(CloGaelach):3
+  il(si1452)	=	+ie(basic):3
   iu(basic)	=	+ca(ike):3
   lo(basic)	=	+la(basic):3
   kan(basic)	=	+in(kan):3

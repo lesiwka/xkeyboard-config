@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/sy,v 1.1 2005/08/01 00:01:54 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/sy,v 1.2 2006/05/04 21:52:51 svu Exp $
 
 //
 // $XFree86: xc/programs/xkbcomp/symbols/syr,v 1.1 2002/11/22 03:06:50 dawes Exp $
@@ -150,3 +150,22 @@ xkb_symbols "syc_phonetic" {
     modifier_map Mod2   { Mode_switch };
 
 };
+
+partial alphanumeric_keys
+xkb_symbols "ku" {
+    include "tr(ku)"
+    name[Group1]= "Syria - Kurdish, Latin Q";
+};
+
+partial alphanumeric_keys
+xkb_symbols "ku_f" {
+    include "tr(ku_f)"
+    name[Group1]= "Syria - Kurdish, (F)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "ku_alt" {
+    include "tr(ku_alt)"
+    name[Group1]= "Syria - Kurdish, Latin Alt-Q";
+};
+

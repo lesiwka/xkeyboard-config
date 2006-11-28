@@ -38,8 +38,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-DIST_COMMON = README $(dist_keymap_DATA) $(srcdir)/Makefile.am \
-	$(srcdir)/Makefile.in $(top_srcdir)/xkbrules.am
+DIST_COMMON = README $(dist_dir_DATA) $(dist_keymap_DATA) \
+	$(srcdir)/Makefile.am $(srcdir)/Makefile.in \
+	$(top_srcdir)/xkbrules.am
 subdir = keymap
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
@@ -62,14 +63,15 @@ am__vpath_adj = case $$p in \
   esac;
 am__strip_dir = `echo $$p | sed -e 's|^.*/||'`;
 am__installdirs = "$(DESTDIR)$(dirdir)" "$(DESTDIR)$(keymapdir)"
-dirDATA_INSTALL = $(INSTALL_DATA)
+dist_dirDATA_INSTALL = $(INSTALL_DATA)
 dist_keymapDATA_INSTALL = $(INSTALL_DATA)
-DATA = $(dir_DATA) $(dist_keymap_DATA)
+DATA = $(dist_dir_DATA) $(dist_keymap_DATA)
 ETAGS = etags
 CTAGS = ctags
 DIST_SUBDIRS = $(SUBDIRS)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACLOCAL = @ACLOCAL@
+ALL_LINGUAS = @ALL_LINGUAS@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
@@ -135,26 +137,32 @@ USE_COMPAT_RULES_FALSE = @USE_COMPAT_RULES_FALSE@
 USE_COMPAT_RULES_TRUE = @USE_COMPAT_RULES_TRUE@
 VERSION = @VERSION@
 XKBCOMP = @XKBCOMP@
-ac_ct_STRIP = @ac_ct_STRIP@
 am__leading_dot = @am__leading_dot@
 am__tar = @am__tar@
 am__untar = @am__untar@
 bindir = @bindir@
 build_alias = @build_alias@
 datadir = @datadir@
+datarootdir = @datarootdir@
+docdir = @docdir@
+dvidir = @dvidir@
 exec_prefix = @exec_prefix@
 host_alias = @host_alias@
+htmldir = @htmldir@
 includedir = @includedir@
 infodir = @infodir@
 install_sh = @install_sh@
 libdir = @libdir@
 libexecdir = @libexecdir@
+localedir = @localedir@
 localstatedir = @localstatedir@
 mandir = @mandir@
 mkdir_p = @mkdir_p@
 oldincludedir = @oldincludedir@
+pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
+psdir = @psdir@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
@@ -168,8 +176,7 @@ amiga ataritt macintosh \
 sony xfree86 xfree98 \
 README
 
-MOSTLYCLEANFILES = $(subdir).dir
-dir_DATA = $(subdir).dir
+dist_dir_DATA = $(subdir).dir
 dirdir = $(xkb_base)
 all: all-recursive
 
@@ -183,9 +190,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am $(top_srcdir
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu  keymap/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign  keymap/Makefile'; \
 	cd $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu  keymap/Makefile
+	  $(AUTOMAKE) --foreign  keymap/Makefile
 .PRECIOUS: Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
@@ -204,19 +211,19 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 uninstall-info-am:
-install-dirDATA: $(dir_DATA)
+install-dist_dirDATA: $(dist_dir_DATA)
 	@$(NORMAL_INSTALL)
 	test -z "$(dirdir)" || $(mkdir_p) "$(DESTDIR)$(dirdir)"
-	@list='$(dir_DATA)'; for p in $$list; do \
+	@list='$(dist_dir_DATA)'; for p in $$list; do \
 	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
 	  f=$(am__strip_dir) \
-	  echo " $(dirDATA_INSTALL) '$$d$$p' '$(DESTDIR)$(dirdir)/$$f'"; \
-	  $(dirDATA_INSTALL) "$$d$$p" "$(DESTDIR)$(dirdir)/$$f"; \
+	  echo " $(dist_dirDATA_INSTALL) '$$d$$p' '$(DESTDIR)$(dirdir)/$$f'"; \
+	  $(dist_dirDATA_INSTALL) "$$d$$p" "$(DESTDIR)$(dirdir)/$$f"; \
 	done
 
-uninstall-dirDATA:
+uninstall-dist_dirDATA:
 	@$(NORMAL_UNINSTALL)
-	@list='$(dir_DATA)'; for p in $$list; do \
+	@list='$(dist_dir_DATA)'; for p in $$list; do \
 	  f=$(am__strip_dir) \
 	  echo " rm -f '$(DESTDIR)$(dirdir)/$$f'"; \
 	  rm -f "$(DESTDIR)$(dirdir)/$$f"; \
@@ -437,7 +444,6 @@ install-strip:
 	  `test -z '$(STRIP)' || \
 	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
 mostlyclean-generic:
-	-test -z "$(MOSTLYCLEANFILES)" || rm -f $(MOSTLYCLEANFILES)
 
 clean-generic:
 
@@ -465,7 +471,7 @@ info: info-recursive
 
 info-am:
 
-install-data-am: install-dirDATA install-dist_keymapDATA
+install-data-am: install-dist_dirDATA install-dist_keymapDATA
 
 install-exec-am:
 
@@ -491,7 +497,7 @@ ps: ps-recursive
 
 ps-am:
 
-uninstall-am: uninstall-dirDATA uninstall-dist_keymapDATA \
+uninstall-am: uninstall-dist_dirDATA uninstall-dist_keymapDATA \
 	uninstall-info-am
 
 uninstall-info: uninstall-info-recursive
@@ -500,14 +506,14 @@ uninstall-info: uninstall-info-recursive
 	clean clean-generic clean-recursive ctags ctags-recursive \
 	distclean distclean-generic distclean-recursive distclean-tags \
 	distdir dvi dvi-am html html-am info info-am install \
-	install-am install-data install-data-am install-dirDATA \
+	install-am install-data install-data-am install-dist_dirDATA \
 	install-dist_keymapDATA install-exec install-exec-am \
 	install-info install-info-am install-man install-strip \
 	installcheck installcheck-am installdirs installdirs-am \
 	maintainer-clean maintainer-clean-generic \
 	maintainer-clean-recursive mostlyclean mostlyclean-generic \
 	mostlyclean-recursive pdf pdf-am ps ps-am tags tags-recursive \
-	uninstall uninstall-am uninstall-dirDATA \
+	uninstall uninstall-am uninstall-dist_dirDATA \
 	uninstall-dist_keymapDATA uninstall-info-am
 
 

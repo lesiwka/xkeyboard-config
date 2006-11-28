@@ -1,0 +1,60 @@
+#! /bin/sh
+
+set -e
+rm_conffile() {
+      CONFFILE="$1"
+      OLD="$2"
+
+      if [ -e "$CONFFILE" ]; then
+              md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
+              [ "$md5sum" != "$OLD" ] || rm -f "$CONFFILE"
+     fi
+}
+
+case "$1" in
+    install|upgrade)
+        # TODO: we should really have rollback code for all of this.
+        if dpkg --compare-versions "$2" le "0.9-1"; then
+            (echo; cat /var/lib/dpkg/status) |\
+              sed -e '1,/^Package: xkb-data$/d' -e '/^$/,$d' |\
+              sed -e '1,/^Conffiles:/d' -e '/^Description:/,$d' |\
+              while read cf md5sum
+            do
+                rm_conffile $cf $md5sum
+            done
+
+            for link in xfree86 xfree86.lst xfree86.xml xorg xorg.lst xorg.xml; do
+                rm -f "/etc/X11/xkb/rules/$link"
+            done
+
+            for dir in compat geometry keycodes keymap rules semantics symbols types; do
+                if [ -d "/etc/X11/xkb/$dir" ]; then
+                    find "/etc/X11/xkb/$dir" -depth -type d -print0 | \
+                        xargs -0r rmdir --ignore-fail-on-non-empty
+                    if [ -d "/etc/X11/xkb/$dir" ]; then
+                        cat >&2 <<EOF
+
+WARNING: /etc/X11/xkb/$dir had local changes! XKB configuration has
+moved to /usr/share/X11/xkb. Preserving as /etc/X11/xkb/$dir.dpkg-old.
+EOF
+                        mv "/etc/X11/xkb/$dir" "/etc/X11/xkb/$dir.dpkg-old"
+                    fi
+                fi
+                if [ "$dir" != rules ]; then
+                    if [ -f "/etc/X11/xkb/$dir.dir" ]; then
+                        cat >&2 <<EOF
+
+WARNING: /etc/X11/xkb/$dir.dir had local changes! XKB configuration has
+moved to /usr/share/X11/xkb. Preserving as /etc/X11/xkb/$dir.dir.dpkg-old.
+EOF
+                        mv "/etc/X11/xkb/$dir.dir" "/etc/X11/xkb/$dir.dir.dpkg-old"
+                    fi
+                fi
+            done
+        fi
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -1,22 +1,31 @@
 Source: xkeyboard-config
 Section: x11
-Priority: optional
-Maintainer: Tollef Fog Heen <tfheen@ubuntu.com>
-Build-Depends: debhelper (>= 4.0.0), intltool, libxml-parser-perl, xkbutils
-Standards-Version: 3.6.1.0
+Priority: extra
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Build-Depends: debhelper (>= 4.0.0), quilt
+Build-Depends-Indep: libxml-parser-perl
+Standards-Version: 3.7.2
+
+Package: xkb-data
+Architecture: all
+Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1), xkeyboard-config (<< 0.8-7ubuntu2)
+Description: X Keyboard Extension (XKB) configuration data
+ This package contains configuration data used by the X Keyboard
+ Extension (XKB), which allows selection of keyboard layouts when
+ using a graphical interface.
+ .
+ Every X11 vendor provides its own XKB data files, so keyboard layout
+ designers have to send their layouts to several places.  The
+ xkeyboard-config project has been launched at FreeDesktop in order
+ to provide a central repository that could be used by all vendors.
+ This package comes from xkeyboard-config, and thus conflicts with
+ and replaces the xlibs package which is part of the XFree86 server.
+ .
+  Homepage: http://www.freedesktop.org/Software/XKeyboardConfig
 
 Package: xkeyboard-config
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1)
-Conflicts: xlibs (<< 6.8.2-39), libxkbfile1 (<< 7.0.0-3)
-Pre-Depends: x11-common (>= 7.0.0-0ubuntu3)
-Description: XKB data
- This package contains layout and other data for XKB, the X Keyboard
- Extension.  This data contains enough information on all known keyboards
- to be able to configure an X server to understand its layouts and keys
- correctly.
- .
- This data formerly lived in the 'xlibs' package, but it is now in its
- own package, after having moved to the xkeyboard-config upstream tarballs:
- http://www.freedesktop.org/wiki/Software_2fxkeyboard-config
+Depends: xkb-data (>= ${source:Version})
+Description: Transitional package for xkb-data
+ This package is not needed and can safely be removed from the system
+ once no other packages depend on it.

@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/altwin,v 1.4 2005/10/01 12:20:31 svu Exp $
+// $XKeyboardConfig: xkbdesc/symbols/altwin,v 1.8 2006/10/09 21:20:45 svu Exp $
 
 // $XFree86: xc/programs/xkbcomp/symbols/altwin,v 1.5 2003/12/03 14:09:08 pascal Exp $
 
@@ -12,10 +12,10 @@ xkb_symbols "meta_alt" {
 
 partial modifier_keys 
 xkb_symbols "meta_win" {
-    key <LALT> {	[ 	Alt_L	]	};
-    key <RALT> {	[ 	Alt_R	]	};
-    key <LWIN> {	[ 	Meta_L	]	};
-    key <RWIN> {	[ 	Meta_R	]	};
+    key <LALT> {	[ 	Alt_L,	Alt_L		]	};
+    key <RALT> {	[ 	Alt_R,	Alt_R		]	};
+    key <LWIN> {	[ 	Meta_L			]	};
+    key <RWIN> {	[ 	Meta_R			]	};
     modifier_map Mod1	{ Alt_L, Alt_R };
     modifier_map Mod4	{ <META>, Meta_L, Meta_R };
 };
@@ -57,4 +57,12 @@ xkb_symbols "alt_super_win" {
     key <MENU> {        [       Super_R                 ]       };
     modifier_map Mod1   { Alt_L, Alt_R, Meta_L, Meta_R };
     modifier_map Mod4   { Super_L, Super_R };
+};
+
+partial modifier_keys 
+xkb_symbols "swap_lalt_lwin" {
+    key <LALT> {	[ 	Super_L			]	};
+    key <LWIN> {	[	Alt_L,	Meta_L		]	};
+    modifier_map Mod1 { <LWIN> };
+    modifier_map Mod4 { <LALT> };
 };
