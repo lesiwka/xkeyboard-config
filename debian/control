@@ -1,7 +1,8 @@
 Source: xkeyboard-config
 Section: x11
 Priority: extra
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Build-Depends: debhelper (>= 4.0.0), quilt
 Build-Depends-Indep: libxml-parser-perl
 Standards-Version: 3.7.2
