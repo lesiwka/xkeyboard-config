@@ -1,3 +1,11 @@
+xkeyboard-config (0.9-4ubuntu2) gutsy; urgency=low
+
+  [ Ante Karamatić ]
+  * debian/patches/cs_hr_any.diff: Avoid using the "any" symbol in cs and
+    hr, since console-setup doesn't understand it (LP: #93077).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 24 Sep 2007 12:44:06 +0100
+
 xkeyboard-config (0.9-4ubuntu1) feisty; urgency=low
 
   * Resynchronise with Debian. New packaging; old Ubuntu changelog preserved
