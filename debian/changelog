@@ -1,3 +1,12 @@
+xkeyboard-config (0.9-4ubuntu3) gutsy; urgency=low
+
+  * debian/patches/romanian_comma.diff : Patch from upstream exposing
+    two additional Romanian variants that use commas instead of cedillas.
+    The comma variants are the new standard layouts and this patch is needed
+    for them to appear in the keyboard-preferences dialog
+
+ -- Jani Monoses <jani@ubuntu.com>  Sun, 30 Sep 2007 16:48:01 +0200
+
 xkeyboard-config (0.9-4ubuntu2) gutsy; urgency=low
 
   [ Ante Karamatić ]
