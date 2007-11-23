@@ -1,11 +1,11 @@
 
 // based on 
-// "a very simple Brasilian ABNT2 keybaord
+// "a very simple Brasilian ABNT2 keyboard
 // by Ricardo Y. Igarashi (iga@that.com.br)
 // Adds suport for dead-keys in I18N applications
 // by Conectiva  (http://www.conectiva.com.br)"
 //
-// $XKeyboardConfig: xkbdesc/symbols/br,v 1.9 2006/04/08 01:18:27 svu Exp $
+// $XKeyboardConfig: xkeyboard-config/symbols/br,v 1.12 2007-08-10 09:06:27 svu Exp $
 // $XdotOrg: xc/programs/xkbcomp/symbols/br,v 1.1.4.3 2004/03/05 13:41:32 eich Exp $
 // $XFree86: xc/programs/xkbcomp/symbols/br,v 1.3 2003/04/19 12:22:11 pascal Exp $
 
@@ -35,7 +35,7 @@ xkb_symbols "abnt2" {
 
     key <TLDE>	{ [apostrophe,   quotedbl,      notsign,      notsign ]	};
 
-    key <AC13>	{ [ backslash,        bar,    masculine,   dead_breve ]	};
+    key <LSGT>	{ [ backslash,        bar,    masculine,   dead_breve ]	};
     key <AB03>	{ [         c,          C,    copyright,    copyright ]	};
     key <AB07>  { [         m,          M,           mu,           mu ] };
     key <AB10>	{ [ semicolon,    colon, dead_belowdot, dead_abovedot ]	};
@@ -46,7 +46,7 @@ xkb_symbols "abnt2" {
 
     key <KPPT>	{ [ KP_Decimal ]	};
 
-    include "keypad(comma)"
+    include "kpdl(comma)"
 
     include "level3(ralt_switch)"
 };
@@ -62,4 +62,16 @@ xkb_symbols "nodeadkeys" {
     key <AC10>	{ [  ccedilla,   Ccedilla,        acute,  doubleacute ]	};
     key <AC11>	{ [asciitilde, asciicircum ]	};
     key <AB10>	{ [ semicolon,      colon, dead_belowdot,    abovedot ]	};
+};
+
+// ABNT2 Keyboard to IBM/Lenovo Thinkpads 
+// by Piter PUNK <piterpk@terra.com.br>
+//
+partial alphanumeric_keys
+xkb_symbols "thinkpad" {
+
+    include "br(abnt2)" // for consistent naming
+    name[Group1]="Brazil";
+
+    key <RCTL> { [     slash,   question,       degree, questiondown ] };
 };

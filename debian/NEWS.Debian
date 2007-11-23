@@ -1,9 +1,0 @@
-xkeyboard-config (0.8-3) unstable; urgency=low
-
-  * This package is intended to replace xlibs in the modular X.Org release 7.0.
-    Layout files have been moved to /usr/share/X11/xkb, which means that some
-    applications need to be modified to search for XKB files in this directory.
-    Please read /usr/share/doc/xkb-data/README.Debian for detailed instructions
-    to let your applications find XKB files.
-
- -- Denis Barbier <barbier@debian.org>  Tue, 28 Mar 2006 20:52:21 +0200

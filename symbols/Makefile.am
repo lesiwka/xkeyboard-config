@@ -5,17 +5,19 @@ dist_symbols_DATA = \
 ad af al am ara \
 az be bd \
 bg br ba \
-bt by ca cd \
-ch cs cz \
+bt by braille \
+ca cd \
+ch cn cs cz \
 de dk ee \
-es epo fi fo \
-fr gb ge gh \
+es et epo \
+fi fo fr \
+gb ge gh gn \
 gr hr hu \
 ie il in iq \
 ir is it \
 jp kg kh kr kz la \
 latam latin lk \
-lt lv mao \
+lt lv ma mao \
 mk mm mn \
 mt mv ng nl \
 no np pc pk \
@@ -25,7 +27,7 @@ sk sy th \
 tj tr ua \
 us uz vn \
 za \
-altwin capslock compose ctrl group inet keypad level3 level5 nbsp srvr_ctrl \
+altwin capslock compose ctrl group inet keypad kpdl level3 level5 nbsp srvr_ctrl \
 eurosign
                                                                                           
 include $(top_srcdir)/xkbrules.am

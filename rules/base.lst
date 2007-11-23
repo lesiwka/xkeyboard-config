@@ -5,6 +5,7 @@
   pc105           Generic 105-key (Intl) PC
   dell101         Dell 101-key PC
   latitude        Dell Latitude series laptop
+  dellm65         Dell Precision M65
   everex          Everex STEPnote
   flexpro         Keytronic FlexPro
   microsoft       Microsoft Natural
@@ -44,7 +45,8 @@
   ipaq            Compaq iPaq Keyboard
   dell            Dell
   dellusbmm       Dell USB Multimedia Keybard
-  inspiron        Laptop/notebook Dell Inspiron 6xxx/8xxx
+  inspiron        Dell Laptop/notebook Inspiron 6xxx/8xxx
+  precision_m     Dell Laptop/notebook Precision M series
   dexxa           Dexxa Wireless Desktop Keyboard
   diamond         Diamond 9801 / 9802 series
   dtk2000         DTK2000
@@ -54,6 +56,7 @@
   geniuscomfy2    Genius Comfy KB-21e-Scroll
   geniuskb19e     Genius KB-19e NB
   gyration        Gyration
+  logitech_g15    Logitech G15 extra keys via G15daemon
   hpi6            Hewlett-Packard Internet Keyboard
   hp2501          Hewlett-Packard SK-2501 Multimedia Keyboard
   hp2505          Hewlett-Packard SK-2505 Internet Keyboard
@@ -71,19 +74,17 @@
   thinkpad        IBM ThinkPad 560Z/600/600E/A22E
   thinkpadintl    IBM ThinkPad 560Z/600/600E/A22E, Intl
   logiaccess      Logitech Access Keyboard
-  ltcd            Logitech Cordless Desktop
-  logicdit        Logitech Cordless Desktop iTouch
   logiclx300      Logitech Cordless Desktop LX-300
-  logicdp         Logitech Cordless Desktop Pro
-  logicdpa        Logitech Cordless Desktop Pro (alternate option)
+  logicd          Logitech Cordless Desktop
+  logicda         Logitech Cordless Desktop (alternate option)
   logicdpa2       Logitech Cordless Desktop Pro (alternate option2)
-  logicdo         Logitech Cordless Desktop Optical
   logicfn         Logitech Cordless Freedom/Desktop Navigator
   logicdn         Logitech Cordless Desktop Navigator
   logiitc         Logitech iTouch Cordless Keyboard (model Y-RB6)
   logiik          Logitech Internet Keyboard
   itouch          Logitech iTouch
   logicink        Logitech Internet Navigator Keyboard
+  logiex110       Logitech Cordless Desktop EX110
   logiinkse       Logitech iTouch Internet Navigator Keyboard SE
   logiinkseusb    Logitech iTouch Internet Navigator Keyboard SE (USB)
   logiultrax      Logitech Ultra-X Keyboard
@@ -98,7 +99,7 @@
   microsoftprose  Microsoft Internet Keyboard Pro, Swedish
   microsoftoffice Microsoft Office Keyboard
   microsoftmult   Microsoft Wireless Multimedia Keyboard 1.0A
-  oretec          Oretec MCK-800 MM/Internet keyboard
+  oretec          Ortek MCK-800 MM/Internet keyboard
   propeller       Propeller Voyager (KTEZ-1000)
   qtronix         QTronix Scorpius 98N+
   samsung4500     Samsung SDM 4500P
@@ -118,16 +119,20 @@
   macbook79       MacBook/MacBook Pro (Intl)
   macintosh       Macintosh
   macintosh_old   Macintosh Old
-  powerpcps2      PowerPC PS/2
+  macintosh_hhk   Happy Hacking Keyboard for Mac
   acer_c300       Acer C300
-  acer_tm_800     Acer TravelMate 800
   acer_ferrari4k  Acer Ferrari 4000
+  acer_laptop     Acer Laptop
+  asus_laptop     Asus Laptop
   apple           Apple
   apple_laptop    Apple Laptop
   silvercrest     SILVERCREST Multimedia Wireless Keyboard
   emachines       Laptop/notebook eMachines m68xx
   kr106           Korean 106-key
   evdev           Evdev-managed keyboard
+  benqx           BenQ X-Touch
+  hhk             Happy Hacking Keyboard
+  classmate       Classmate PC
 
 ! layout
   us              U.S. English
@@ -144,9 +149,11 @@
   ba              Bosnia and Herzegovina
   br              Brazil
   bg              Bulgaria
+  ma              Morocco
   mm              Myanmar
   ca              Canada
   cd              Congo, Democratic Republic of the
+  cn              China
   hr              Croatia
   cz              Czechia
   dk              Denmark
@@ -159,6 +166,7 @@
   fi              Finland
   fr              France
   gh              Ghana
+  gn              Guinea
   ge              Georgia
   de              Germany
   gr              Greece
@@ -207,16 +215,21 @@
   epo             Esperanto
   np              Nepal
   ng              Nigeria
+  et              Ethiopia
+  braille         Braille
 
 ! variant
+  euro            us: With EuroSign on 5
   intl            us: International (with dead keys)
   alt-intl        us: Alternative international (former us_intl)
+  colemak         us: Colemak
   dvorak          us: Dvorak
   dvorak-l        us: Left handed Dvorak
   dvorak-r        us: Right handed Dvorak
   dvorak-classic  us: Classic Dvorak
   rus             us: Russian phonetic
   mac             us: Macintosh
+  altgr-intl      us: International (AltGr dead keys)
   ps              af: Pashto
   uz              af: Southern Uzbek
   azerty          ara: azerty
@@ -226,6 +239,7 @@
   qwerty_digits   ara: qwerty/digits
   buckwalter      ara: Buckwalter
   phonetic        am: Phonetic
+  phonetic-alt    am: Alternative Phonetic
   eastern         am: Eastern
   western         am: Western
   eastern-alt     am: Alternative Eastern
@@ -250,18 +264,28 @@
   tam             in: Tamil
   tel             in: Telugu
   urd             in: Urdu
+  bolnagri        in: Hindi Bolnagri
   alternatequotes ba: Use guillemets for quotes
   unicode         ba: Use Bosnian digraphs
   unicodeus       ba: US keyboard with Bosnian digraphs
   us              ba: US keyboard with Bosnian letters
   nodeadkeys      br: Eliminate dead keys
   phonetic        bg: Phonetic
+  french          ma: French
+  tifinagh        ma: Tifinagh
+  tifinagh-alt    ma: Tifinagh Alternative
+  tifinagh-alt-phonetic ma: Tifinagh Alternative Phonetic
+  tifinagh-extended ma: Tifinagh Extended
+  tifinagh-phonetic ma: Tifinagh Phonetic
+  tifinagh-extended-phonetic ma: Tifinagh Extended Phonetic
   fr-dvorak       ca: French Dvorak
   fr-legacy       ca: French (legacy)
   multix          ca: Multilingual
   multi           ca: Multilingual, first part
   multi-2gr       ca: Multilingual, second part
   ike             ca: Inuktitut
+  tib             cn: Tibetan
+  tib_asciinum    cn: Tibetan (with ASCII numerals)
   alternatequotes hr: Use guillemets for quotes
   unicode         hr: Use Croatian digraphs
   unicodeus       hr: US keyboard with Croatian digraphs
@@ -274,6 +298,7 @@
   mac_nodeadkeys  dk: Macintosh, eliminate dead keys
   sundeadkeys     nl: Sun dead keys
   mac             nl: Macintosh
+  std             nl: Standard
   nodeadkeys      ee: Eliminate dead keys
   dvorak          ee: Dvorak
   pro             ir: Pro
@@ -301,7 +326,9 @@
   latin9          fr: (Legacy) Alternative
   latin9_nodeadkeys fr: (Legacy) Alternative, eliminate dead keys
   latin9_sundeadkeys fr: (Legacy) Alternative, Sun dead keys
-  dvorak          fr: Dvorak
+  bepo            fr: Bepo, ergonomic, Dvorak way
+  bepo_latin9     fr: Bepo, ergonomic, Dvorak way, latin-9 only
+  dvorak          fr: (Legacy) Dvorak
   mac             fr: Macintosh
   generic         gh: Multilingual
   akan            gh: Akan
@@ -309,7 +336,11 @@
   fula            gh: Fula
   ga              gh: Ga
   hausa           gh: Hausa
+  azerty_tskapo   ge: AZERTY Tskapo
+  ergonomic       ge: Ergonomic
+  mess            ge: MESS
   ru              ge: Russian
+  os              ge: Ossetian
   deadacute       de: Dead acute
   deadgraveacute  de: Dead grave acute
   nodeadkeys      de: Eliminate dead keys
@@ -347,8 +378,12 @@
   mac             is: Macintosh
   lyx             il: lyx
   phonetic        il: Phonetic
+  biblical        il: Biblical Hebrew (Tiro)
   nodeadkeys      it: Eliminate dead keys
   mac             it: Macintosh
+  geo             it: Georgian
+  kana            jp: Kana
+  OADG109A        jp: OADG 109A
   ruskaz          kz: Russian with Kazakh
   kazrus          kz: Kazakh with Russian
   nodeadkeys      latam: Eliminate dead keys
@@ -377,7 +412,9 @@
   mac             pt: Macintosh
   mac_nodeadkeys  pt: Macintosh, eliminate dead keys
   mac_sundeadkeys pt: Macintosh, Sun dead keys
+  comma           ro: Commabelow
   std             ro: Standard
+  academic        ro: Standard (Commabelow)
   winkeys         ro: Winkeys
   phonetic        ru: Phonetic
   typewriter      ru: Typewriter
@@ -385,6 +422,9 @@
   tt              ru: Tatar
   os              ru: Ossetian
   os_winkeys      ru: Ossetian, Winkeys
+  cv              ru: Chuvash
+  cv_latin        ru: Chuvash Latin
+  udm             ru: Udmurt
   yz              cs: Z and ZHE swapped
   latin           cs: Latin
   latinunicode    cs: Latin Unicode
@@ -410,6 +450,7 @@
   rus_nodeadkeys  se: Russian phonetic, eliminate dead keys
   smi             se: Northern Saami
   mac             se: Macintosh
+  svdvorak        se: Svdvorak
   de_nodeadkeys   ch: German, eliminate dead keys
   de_sundeadkeys  ch: German, Sun dead keys
   fr              ch: French
@@ -440,41 +481,46 @@
   intl            gb: International (with dead keys)
   dvorak          gb: Dvorak
   mac             gb: Macintosh
+  latin           uz: Latin
   kr104           kr: 101/104 key Compatible
   CloGaelach      ie: CloGaelach
   UnicodeExpert   ie: UnicodeExpert
   ogam            ie: Ogham
   ogam_is434      ie: Ogham IS434
+  legacy          epo: displaced semicolon and quote (obsolete)
   igbo            ng: Igbo
   yoruba          ng: Yoruba
   hausa           ng: Hausa
+  left_hand       braille: Left hand
+  right_hand      braille: Right hand
 
 ! option
-  grp                  Group Shift/Lock behavior
-  grp:switch           R-Alt switches group while pressed.
-  grp:lswitch          Left Alt key switches group while pressed.
-  grp:lwin_switch      Left Win-key switches group while pressed.
-  grp:rwin_switch      Right Win-key switches group while pressed.
-  grp:win_switch       Both Win-keys switch group while pressed.
-  grp:rctrl_switch     Right Ctrl key switches group while pressed.
-  grp:toggle           Right Alt key changes group.
-  grp:lalt_toggle      Left Alt key changes group.
-  grp:caps_toggle      CapsLock key changes group.
-  grp:shift_caps_toggle Shift+CapsLock changes group.
-  grp:alt_caps_toggle  Alt+CapsLock changes group.
-  grp:shifts_toggle    Both Shift keys together change group.
-  grp:alts_toggle      Both Alt keys together change group.
-  grp:ctrls_toggle     Both Ctrl keys together change group.
-  grp:ctrl_shift_toggle Ctrl+Shift changes group.
-  grp:ctrl_alt_toggle  Alt+Ctrl changes group.
-  grp:alt_shift_toggle Alt+Shift changes group.
-  grp:menu_toggle      Menu key changes group.
-  grp:lwin_toggle      Left Win-key changes group.
-  grp:rwin_toggle      Right Win-key changes group.
-  grp:lshift_toggle    Left Shift key changes group.
-  grp:rshift_toggle    Right Shift key changes group.
-  grp:lctrl_toggle     Left Ctrl key changes group.
-  grp:rctrl_toggle     Right Ctrl key changes group.
+  grp                  Layout switching
+  grp:switch           R-Alt switches layout while pressed.
+  grp:lswitch          Left Alt key switches layout while pressed.
+  grp:lwin_switch      Left Win-key switches layout while pressed.
+  grp:rwin_switch      Right Win-key switches layout while pressed.
+  grp:win_switch       Both Win-keys switch layout while pressed.
+  grp:rctrl_switch     Right Ctrl key switches layout while pressed.
+  grp:toggle           Right Alt key changes layout.
+  grp:lalt_toggle      Left Alt key changes layout.
+  grp:caps_toggle      CapsLock key changes layout.
+  grp:shift_caps_toggle Shift+CapsLock changes layout.
+  grp:alt_caps_toggle  Alt+CapsLock changes layout.
+  grp:shifts_toggle    Both Shift keys together change layout.
+  grp:alts_toggle      Both Alt keys together change layout.
+  grp:ctrls_toggle     Both Ctrl keys together change layout.
+  grp:ctrl_shift_toggle Ctrl+Shift change layout.
+  grp:lctrl_lshift_toggle LCtrl+LShift change layout.
+  grp:ctrl_alt_toggle  Alt+Ctrl change layout.
+  grp:alt_shift_toggle Alt+Shift change layout.
+  grp:menu_toggle      Menu key changes layout.
+  grp:lwin_toggle      Left Win-key changes layout.
+  grp:rwin_toggle      Right Win-key changes layout.
+  grp:lshift_toggle    Left Shift key changes layout.
+  grp:rshift_toggle    Right Shift key changes layout.
+  grp:lctrl_toggle     Left Ctrl key changes layout.
+  grp:rctrl_toggle     Right Ctrl key changes layout.
   lv3                  Third level choosers
   lv3:switch           Press Right Ctrl to choose 3rd level.
   lv3:menu_switch      Press Menu key to choose 3rd level.
@@ -485,19 +531,31 @@
   lv3:lalt_switch      Press Left Alt key to choose 3rd level.
   lv3:ralt_switch      Press Right Alt key to choose 3rd level.
   lv3:ralt_switch_multikey Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key.
+  lv3:ralt_alt         Right Alt key never chooses 3rd level.
   ctrl                 Ctrl key position
   ctrl:nocaps          Make CapsLock an additional Ctrl.
   ctrl:swapcaps        Swap Ctrl and CapsLock.
   ctrl:ctrl_ac         Ctrl key at left of 'A'
   ctrl:ctrl_aa         Ctrl key at bottom left
   ctrl:ctrl_ra         Right Ctrl key works as Right Alt.
-  grp_led              Use keyboard LED to show alternative group.
-  grp_led:num          NumLock LED shows alternative group.
-  grp_led:caps         CapsLock LED shows alternative group.
-  grp_led:scroll       ScrollLock LED shows alternative group.
-  keypad               Keypad layout selection
-  keypad:legacy        Force standard legacy keypad
-  keypad:oss           Use keypad with unicode additions (arrows and math operators)
+  grp_led              Use keyboard LED to show alternative layout.
+  grp_led:num          NumLock LED shows alternative layout.
+  grp_led:caps         CapsLock LED shows alternative layout.
+  grp_led:scroll       ScrollLock LED shows alternative layout.
+  keypad               Numeric keypad layout selection
+  keypad:legacy        Legacy keypad
+  keypad:oss           Keypad with unicode additions (arrows and math operators)
+  keypad:future        Keypad with unicode additions (arrows and math operators). Math operators on default level.
+  keypad:legacy_wang   Legacy Wang 724 keypad
+  keypad:oss_wang      Wang 724 keypad with unicode additions (arrows and math operators)
+  keypad:future_wang   Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level.
+  kpdl                 Numeric keypad delete key behaviour
+  kpdl:dot             Legacy key with dot
+  kpdl:comma           Legacy key with comma
+  kpdl:dotoss          Four-level key with dot
+  kpdl:commaoss        Four-level key with comma
+  kpdl:momayyezoss     Four-level key with momayyez
+  kpdl:kposs           Four-level key with abstract separators
   caps                 CapsLock key behavior
   caps:internal        CapsLock uses internal capitalization. Shift "pauses" CapsLock.
   caps:internal_nocancel CapsLock uses internal capitalization. Shift doesn't affect CapsLock.
@@ -508,10 +566,11 @@
   caps:shiftlock       CapsLock toggles Shift so all keys are affected.
   altwin               Alt/Win key behavior
   altwin:menu          Add the standard behavior to Menu key.
-  altwin:meta_alt      Alt and Meta are on the Alt keys (default).
+  altwin:meta_alt      Alt and Meta are on the Alt keys.
+  altwin:ctrl_win      Control is mapped to the Win-keys (and the usual Ctrl keys).
   altwin:meta_win      Meta is mapped to the Win-keys.
   altwin:left_meta_win Meta is mapped to the left Win-key.
-  altwin:super_win     Super is mapped to the Win-keys (default).
+  altwin:super_win     Super is mapped to the Win-keys.
   altwin:hyper_win     Hyper is mapped to the Win-keys.
   altwin:alt_super_win Alt is mapped to the right Win-key and Super to Menu.
   altwin:swap_lalt_lwin Left Alt is swapped with left Win-key.
@@ -523,19 +582,23 @@
   compose:rctrl        Right Ctrl is Compose.
   compose:caps         Caps Lock is Compose.
   compat               Miscellaneous compatibility options
-  numpad:pc            Default numpad keys.
-  numpad:mac           Numpad keys work as with Mac.
-  numpad:microsoft     Shift with numpad keys works as in MS Windows.
+  numpad:pc            Default numeric keypad keys.
+  numpad:mac           Numeric keypad keys work as with Mac.
+  numpad:microsoft     Shift with numeric keypad keys works as in MS Windows.
   srvrkeys:none        Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server.
   apple:badmap         Swap keycodes of two keys when Mac keyboards are misdetected by kernel.
   eurosign             Adding the EuroSign to certain keys
   eurosign:e           Add the EuroSign to the E key.
   eurosign:5           Add the EuroSign to the 5 key.
   eurosign:2           Add the EuroSign to the 2 key.
-  nbsp                 Adding the nobreakspace keysym to space key
-  nbsp:none            Space key output space at any level.
-  nbsp:level2          Space key output nobreakspace at second level.
-  nbsp:level3          Space key output nobreakspace at third level.
-  nbsp:level4          Space key output nobreakspace at fourth level.
-  japan                Japanese Keyboard Options
+  nbsp                 Using space key to input non-breakable space character
+  nbsp:none            Space key outputs usual space at any level.
+  nbsp:level2          Space key outputs non-breakable space character at second level.
+  nbsp:level3          Space key outputs non-breakable space character at third level.
+  nbsp:level3s         Space key outputs non-breakable space character at third level, nothing at fourth level.
+  nbsp:level3n         Space key outputs non-breakable space character at third level, thin non-breakable space character at fourth level
+  nbsp:level4          Space key outputs non-breakable space character at fourth level.
+  nbsp:level4n         Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level
+  japan                Japanese keyboard options
   japan:kana_lock      Kana Lock key is locking
+  japan:nicola_f_bs    NICOLA-F style Backspace

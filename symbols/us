@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/us,v 1.22 2006/10/09 21:37:13 svu Exp $
+// $XKeyboardConfig: xkeyboard-config/symbols/us,v 1.33 2007-08-24 22:01:29 uid2570 Exp $
 
 //
 // $XdotOrg: xc/programs/xkbcomp/symbols/us,v 1.1.4.3 2004/03/05 13:41:33 eich Exp $
@@ -61,7 +61,21 @@ xkb_symbols "basic" {
     key <AB09> {	[    period,	greater		]	};
     key <AB10> {	[     slash,	question	]	};
 
+    key <BKSL> {	[ backslash,         bar	]	};
+    key <CAPS> {	[ Caps_Lock	]	};
     // End alphanumeric section
+};
+
+partial alphanumeric_keys
+xkb_symbols "euro" {
+
+    name[Group1]= "U.S. English - With EuroSign on 5";
+
+    include "us(basic)"
+
+    include "eurosign(5)"
+
+    include "level3(ralt_switch)"
 };
 
 
@@ -103,6 +117,7 @@ xkb_symbols "intl" {
     key <AC01> { [	   a,          A,        aacute,           Aacute ] };
     key <AC02> { [	   s,          S,        ssharp,          section ] };
     key <AC03> { [	   d,          D,           eth,              ETH ] };
+    key <AC08> { [	   k,          K,            oe,               OE ] };
 
     key <AC09> { [	   l,          L,        oslash,         Ooblique ] };
     key <AC10> { [ semicolon,      colon,     paragraph,           degree ] };
@@ -235,6 +250,8 @@ xkb_symbols "dvorak" {
     key <AB08> { [	    w,	W		]	};
     key <AB09> { [	    v,	V		]	};
     key <AB10> { [	    z,	Z		]	};
+
+    key <BKSL> { [  backslash,  bar             ]       };
 };
 
 // Left and right handed dvorak layouts
@@ -427,6 +444,7 @@ xkb_symbols "dvorak-classic" {
     key <AB08> { [	    w,	W		]	};
     key <AB09> { [	    v,	V		]	};
     key <AB10> { [	    z,	Z		]	};
+    key <BKSL> { [  backslash,  bar             ]       };
 };
 
 // phonetic layout for Russian letters on an US keyboard
@@ -491,4 +509,263 @@ xkb_symbols "mac" {
     include "us"
     name[Group1]= "U.S. English - Macintosh";
 };
+ 
+// Colemak symbols for xkb on X.Org Server 7.x
+// 2006-01-01 Shai Coleman, http://colemak.com/ . Public domain.
 
+partial alphanumeric_keys
+xkb_symbols "colemak" {
+    include "us"
+    name[Group1]= "U.S. English - Colemak";
+
+    // Alphanumeric section
+    key <TLDE> { [        grave,   asciitilde,      dead_tilde,       asciitilde ] };
+    key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
+    key <AE02> { [            2,           at,       masculine,      twosuperior ] };
+    key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
+    key <AE04> { [            4,       dollar,            cent,         sterling ] };
+    key <AE05> { [            5,      percent,        EuroSign,              yen ] };
+    key <AE06> { [            6,  asciicircum,         hstroke,          Hstroke ] };
+    key <AE07> { [            7,    ampersand,             eth,              ETH ] };
+    key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
+    key <AE09> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        minus,   underscore,          endash,           emdash ] };
+    key <AE12> { [        equal,         plus,        multiply,         division ] };
+
+    key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
+    key <AD02> { [            w,            W,           aring,            Aring ] };
+    key <AD03> { [            f,            F,          atilde,           Atilde ] };
+    key <AD04> { [            p,            P,          oslash,         Ooblique ] };
+    key <AD05> { [            g,            G,     dead_ogonek,       asciitilde ] };
+    key <AD06> { [            j,            J,         dstroke,          Dstroke ] };
+    key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
+    key <AD08> { [            u,            U,          uacute,           Uacute ] };
+    key <AD09> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
+    key <AD10> { [    semicolon,        colon,      odiaeresis,       Odiaeresis ] };
+    key <AD11> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
+    key <AD12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+    key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
+
+    key <AC01> { [            a,            A,          aacute,           Aacute ] };
+    key <AC02> { [            r,            R,      dead_grave,       asciitilde ] };
+    key <AC03> { [            s,            S,          ssharp,       asciitilde ] };
+    key <AC04> { [            t,            T,      dead_acute, dead_doubleacute ] };
+    key <AC05> { [            d,            D,  dead_diaeresis,       asciitilde ] };
+    key <AC06> { [            h,            H,      dead_caron,       asciitilde ] };
+    key <AC07> { [            n,            N,          ntilde,           Ntilde ] };
+    key <AC08> { [            e,            E,          eacute,           Eacute ] };
+    key <AC09> { [            i,            I,          iacute,           Iacute ] };
+    key <AC10> { [            o,            O,          oacute,           Oacute ] };
+    key <AC11> { [   apostrophe,     quotedbl,          otilde,           Otilde ] };
+
+    key <AB01> { [            z,            Z,              ae,               AE ] };
+    key <AB02> { [            x,            X, dead_circumflex,       asciitilde ] };
+    key <AB03> { [            c,            C,        ccedilla,         Ccedilla ] };
+    key <AB04> { [            v,            V,              oe,               OE ] };
+    key <AB05> { [            b,            B,      dead_breve,       asciitilde ] };
+    key <AB06> { [            k,            K,  dead_abovering,       asciitilde ] };
+    key <AB07> { [            m,            M,     dead_macron,       asciitilde ] };
+    key <AB08> { [        comma,         less,    dead_cedilla,       asciitilde ] };
+    key <AB09> { [       period,      greater,   dead_abovedot,       asciitilde ] };
+    key <AB10> { [        slash,     question,    questiondown,       asciitilde ] };
+
+    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
+    key <LSGT> { [        minus,   underscore,          endash,           emdash ] };
+    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+
+    include "level3(ralt_switch)"
+};
+
+// I do NOT like dead-keys - the International keyboard as defined by Microsoft
+// doesn't fit my needs. Why use two keystrokes for all simple characters (eg '
+// and <space> generates a single ') just to have an é (eacute) in two strokes
+// as well? I type ' more often than é (eacute).
+//
+// This file works just like a regular keyboard, BUT has all dead-keys
+// accessible at level3 (through AltGr). An ë (ediaeresis) is now: AltGr+"
+// followed by an e. In other words, this keyboard is not international as long
+// as you leave the right Alt key alone.
+//
+// The original MS International keyboard was intended for Latin1 (iso8859-1).
+// With the introduction of iso8859-15, the (important) ligature oe (and OE)
+// became available. I added them next to ae. Because I write ediaeresis more
+// often than registered, I moved registered to be next to copyright and added
+// ediaeresis and idiaeresis. - Adriaan
+
+partial alphanumeric_keys
+xkb_symbols "altgr-intl" {
+
+   name[Group1]= "U.S. English - International (AltGr dead keys)";
+
+   include "us(intl)"
+
+// five dead keys moved into level3:
+
+   key <TLDE> { [    grave, asciitilde,  dead_grave,   dead_tilde      ] };
+   key <AC11> { [apostrophe,quotedbl,    dead_acute,   dead_diaeresis  ] };
+
+// diversions from the MS Intl keyboard:
+
+   key <AE01> { [        1, exclam,      onesuperior,  exclamdown      ] };
+   key <AD04> { [        r, R,           ediaeresis,   Ediaeresis      ] };
+   key <AC07> { [        j, J,           idiaeresis,   Idiaeresis      ] };
+   key <AB02> { [        x, X,           oe,           OE              ] };
+   key <AB04> { [        v, V,           registered,   registered      ] };
+
+// onequarter etc (not in iso8859-15) deleted to get three unshifted deadkeys:
+
+   key <AE06> { [        6, asciicircum,       dead_circumflex         ] };
+   key <AE07> { [        7, ampersand,         dead_horn               ] };
+   key <AE08> { [        8, asterisk,          dead_ogonek             ] };
+
+   include "level3(ralt_switch)"
+};
+
+// Intel ClassmatePC Keyboard Layout
+// by Piter PUNK <piterpk@terra.com.br>
+//
+// The keyboard layouts below maps the us(basic), us(intl) and us(alt-intl)
+// to ClassmatePC keyboard. All layouts uses RCTL as level3(switch) since
+// the keyboard doesn't have AltGr key. The EuroSign is engraved at 5 key.
+
+// classmate - us(basic)
+partial alphanumeric_keys
+xkb_symbols "classmate" {
+    include "us(basic)"
+    name[Group1]= "U.S. English - ClassmatePC";
+
+    key <LSGT> { [ backslash,	bar,		backslash,	bar ] };
+
+    include "eurosign(5)"
+    include "level3(switch)"
+};
+
+// classmate-intl - us(intl)
+// RCTL is generated by Fn+Alt, because that, when trying to access
+// the level3 symbols at 7,8,9,0,u,i,o,p,j,k,l,;,m,. and / we got
+// the keypad keycodes. The keypad is changed to make Fn+Alt+<KP_key>
+// generate the same symbol as the original key.
+partial alphanumeric_keys
+xkb_symbols "classmate-intl" {
+    include "us(intl)"
+    name[Group1]= "U.S. English - ClassmatePC (International)";
+    key.type[Group1]="FOUR_LEVEL";
+
+    key <LSGT> { [ backslash,	bar,		backslash,	bar ] };
+
+    key <KP7>  { [	KP_Home,		KP_7,	
+			onehalf,		dead_horn	] };
+    key <KP8>  { [	KP_Up,			KP_8,
+			threequarters,		dead_ogonek	] };
+    key <KP9>  { [	KP_Prior,		KP_9,
+			leftsinglequotemark,	dead_breve	] };
+    key <KPMU> { [ 	KP_Multiply,		KP_Multiply,
+			rightsinglequotemark,	dead_abovering	] };
+
+    key <KP4>  { [	KP_Left,		KP_4,
+			uacute,			Uacute		] };
+    key <KP5>  { [	KP_Begin,		KP_5,
+			iacute,			Iacute		] };
+    key <KP6>  { [	KP_Right,		KP_6,
+			oacute,			Oacute		] };
+    key <KPSU> { [	KP_Subtract,		KP_Subtract,
+			odiaeresis,		Odiaeresis	] };
+
+    key <KP2>  { [	KP_Down,		KP_2,
+			oe,			OE		] };
+    key <KP3>  { [	KP_Next,		KP_3,
+			oslash,			Ooblique	] };
+    key <KPAD> { [ 	KP_Add,     		KP_Add,
+			paragraph,		degree          ] };
+   
+    key <KP0>  { [	KP_Insert,		KP_0,
+			mu,			mu	] };
+    key <KPDL> { [	KP_Delete,		KP_Decimal,
+			dead_abovedot,		dead_caron	] }; 
+    key <KPDV> { [ 	KP_Divide,   		KP_Divide,
+			questiondown,		dead_hook       ] };
+
+    include "level3(switch)"
+};
+
+// classmate-alt-intl - us(alt-intl)
+// RCTL is generated by Fn+Alt, because that, when trying to access
+// the level3 symbols at 7,8,9,0,u,i,o,p,j,k,l,;,m,. and / we got
+// the keypad keycodes. The keypad is changed to make Fn+Alt+<KP_key>
+// generate the same symbol as the original key.
+partial alphanumeric_keys
+xkb_symbols "classmate-alt-intl" {
+    include "us(alt-intl)"
+    name[Group1]= "U.S. English - ClassmatePC (Alternative International)";
+    key.type[Group1]="FOUR_LEVEL";
+
+    key <LSGT> { [ backslash,	bar,		backslash,	bar ] };
+
+    key <KPSU> { [	KP_Subtract,		KP_Subtract	] };
+
+    key <KP9>  { [	KP_Prior,		KP_9,
+			leftsinglequotemark,	dead_breve	] };
+    key <KPMU> { [ 	KP_Multiply,		KP_Multiply,
+			rightsinglequotemark,	dead_abovering	] };
+
+    key <KPAD> { [ 	KP_Add,     		KP_Add,
+			dead_ogonek,		dead_diaeresis   ] };
+    
+    key <KPDL> { [	KP_Delete,		KP_Decimal,
+			dead_abovedot,		dead_circumflex	] }; 
+    key <KPDV> { [ 	KP_Divide,   		KP_Divide,
+			dead_hook,		dead_hook       ] };
+
+    include "level3(switch)"
+};
+
+// classmate-altgr-intl - us(altgr-intl)
+// RCTL is generated by Fn+Alt, because that, when trying to access
+// the level3 symbols at 7,8,9,0,u,i,o,p,j,k,l,;,m,. and / we got
+// the keypad keycodes. The keypad is changed to make Fn+Alt+<KP_key>
+// generate the same symbol as the original key.
+partial alphanumeric_keys
+xkb_symbols "classmate-altgr-intl" {
+    include "us(altgr-intl)"
+    name[Group1]= "U.S. English - ClassmatePC (International Fn+Alt dead-keys)";
+    key.type[Group1]="FOUR_LEVEL";
+
+    key <LSGT> { [ backslash,	bar,		backslash,	bar ] };
+
+    key <KP7>  { [	KP_Home,		KP_7,	
+			dead_horn,		dead_horn	] };
+    key <KP8>  { [	KP_Up,			KP_8,
+			dead_ogonek,		dead_ogonek	] };
+    key <KP9>  { [	KP_Prior,		KP_9,
+			leftsinglequotemark,	dead_breve	] };
+    key <KPMU> { [ 	KP_Multiply,		KP_Multiply,
+			rightsinglequotemark,	dead_abovering	] };
+
+    key <KP4>  { [	KP_Left,		KP_4,
+			uacute,			Uacute		] };
+    key <KP5>  { [	KP_Begin,		KP_5,
+			iacute,			Iacute		] };
+    key <KP6>  { [	KP_Right,		KP_6,
+			oacute,			Oacute		] };
+    key <KPSU> { [	KP_Subtract,		KP_Subtract,
+			odiaeresis,		Odiaeresis	] };
+
+    key <KP1>  { [	KP_End,			KP_1,
+			idiaeresis,		Idiaeresis	] };
+    key <KP2>  { [	KP_Down,		KP_2,
+			oe,			OE		] };
+    key <KP3>  { [	KP_Next,		KP_3,
+			oslash,			Ooblique	] };
+    key <KPAD> { [ 	KP_Add,     		KP_Add,
+			paragraph,		degree          ] };
+   
+    key <KP0>  { [	KP_Insert,		KP_0,
+			mu,			mu	] };
+    key <KPDL> { [	KP_Delete,		KP_Decimal,
+			dead_abovedot,		dead_caron	] }; 
+    key <KPDV> { [ 	KP_Divide,   		KP_Divide,
+			questiondown,		dead_hook       ] };
+
+    include "level3(switch)"
+};
