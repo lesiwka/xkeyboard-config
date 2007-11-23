@@ -4,8 +4,8 @@ avoid the use of "any" so that console-setup is happier.
 
 only in patch2:
 unchanged:
---- xkb-data.orig/symbols/cs
-+++ xkb-data/symbols/cs
+--- xkeyboard-config-1.0~cvs.20070916-1ubuntu1.orig/symbols/cs	2007-11-21 19:18:13.000000000 +0100
++++ xkeyboard-config-1.0~cvs.20070916-1ubuntu1/symbols/cs	2007-11-23 12:16:50.000000000 +0100
 @@ -150,56 +150,56 @@
  
  partial hidden alphanumeric_keys
@@ -113,11 +113,9 @@ unchanged:
  
  };
  
-only in patch2:
-unchanged:
---- xkb-data.orig/symbols/hr
-+++ xkb-data/symbols/hr
-@@ -21,28 +21,28 @@
+--- xkeyboard-config-1.0~cvs.20070916-1ubuntu1.orig/symbols/hr	2007-11-21 19:18:13.000000000 +0100
++++ xkeyboard-config-1.0~cvs.20070916-1ubuntu1/symbols/hr	2007-11-23 12:16:50.000000000 +0100
+@@ -23,28 +23,28 @@
  
      include "us"
  

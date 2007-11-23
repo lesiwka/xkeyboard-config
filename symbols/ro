@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/ro,v 1.12 2006/07/02 21:05:20 svu Exp $
+// $XKeyboardConfig: xkeyboard-config/symbols/ro,v 1.14 2007-08-22 21:44:23 uid2570 Exp $
 // $XFree86: xc/programs/xkbcomp/symbols/ro,v 1.6 2003/09/08 13:12:51 pascal Exp $
 //
 // Complete set of Romanian keyboards as described in the new Romanian standard
@@ -71,6 +71,8 @@ xkb_symbols "comma" {
 
     include "ro(basic)"
 
+    name[Group1]="Romania - Commabelow";
+
     key <AD05>	{ [ t,                     T,  0x100021b,       0x100021a ] };
     key <AC02>	{ [ s,          	   S,  0x1000219,       0x1000218 ] };
 };
@@ -129,6 +131,8 @@ xkb_symbols "academic" {
 
     include "ro(std)"
 
+    name[Group1]="Romania - Standard (Commabelow)";
+
     key <AC10> { [ 0x1000219,	   0x1000218 ] };
     key <AC11> { [ 0x100021b,	   0x100021a ] };
 };
@@ -186,7 +190,7 @@ xkb_symbols "winkeys" {
     key <BKSL> { [ acircumflex, Acircumflex             ]       };
 
     // End alphanumeric section, begin "Keypad"
-    include "keypad(comma)"
+    include "kpdl(comma)"
     // End "Keypad" section
 
     include "level3(ralt_switch)"
