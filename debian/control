@@ -3,9 +3,13 @@ Section: x11
 Priority: extra
 Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Uploaders: Mohammed Adnène Trojette <adn+deb@diwi.org>
 Build-Depends: debhelper (>= 5.0.0), quilt
 Build-Depends-Indep: libxml-parser-perl
-Standards-Version: 3.7.2
+Standards-Version: 3.7.3
+Vcs-Git: git://git.debian.org/git/pkg-xorg/data/xkb-data
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/data/xkb-data.git
+Homepage: http://www.freedesktop.org/Software/XKeyboardConfig
 
 Package: xkb-data
 Architecture: all
@@ -19,8 +23,6 @@ Description: X Keyboard Extension (XKB) configuration data
  designers have to send their layouts to several places.  The
  xkeyboard-config project has been launched at FreeDesktop in order
  to provide a central repository that could be used by all vendors.
- .
-  Homepage: http://www.freedesktop.org/Software/XKeyboardConfig
 
 Package: xkeyboard-config
 Architecture: all
