@@ -1,3 +1,11 @@
+xkeyboard-config (1.1~cvs.20080104.1-1ubuntu2) hardy; urgency=low
+
+  * Remove cs_hr_any patch; console-setup 1.21ubuntu3 fixes the real bug.
+  * Add Breaks field to ensure safe partial upgrades for the above. This may
+    be removed after Ubuntu 8.04.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 26 Feb 2008 14:16:34 +0000
+
 xkeyboard-config (1.1~cvs.20080104.1-1ubuntu1) hardy; urgency=low
 
   * Merge from debian unstable, remaining changes:
