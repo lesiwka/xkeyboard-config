@@ -1,0 +1,28 @@
+Index: xkeyboard-config-1.1~cvs.20080104.1/symbols/gn
+===================================================================
+--- xkeyboard-config-1.1~cvs.20080104.1.orig/symbols/gn
++++ xkeyboard-config-1.1~cvs.20080104.1/symbols/gn
+@@ -11,8 +11,8 @@
+     key <AE01>	{ [0x010007F1, 0x010007C1 ]	};
+     key <AE02>	{ [0x010007EB, 0x010007C2 ]	};
+     key <AE03>	{ [0x010007F5, 0x010007C3,  numbersign,     sterling ]	};
+-    key <AE04>	{ [0x010007F4, 0x010007C4, 0x010002E1C,       dollar ]	};
+-    key <AE05>	{ [ parenleft, 0x010007C5, 0x010002E1D				 ]	};
++    key <AE04>	{ [0x010007F4, 0x010007C4,  0x01002E1C,       dollar ]	};
++    key <AE05>	{ [ parenleft, 0x010007C5,  0x01002E1D				 ]	};
+     key <AE06>	{ [     minus, 0x010007C6,         bar				 ]	};
+     key <AE07>	{ [0x010007EC, 0x010007C7,       grave				 ]	};
+     key <AE08>	{ [0x010007FA, 0x010007C8,   backslash				 ]	};
+Index: xkeyboard-config-1.1~cvs.20080104.1/symbols/ng
+===================================================================
+--- xkeyboard-config-1.1~cvs.20080104.1.orig/symbols/ng
++++ xkeyboard-config-1.1~cvs.20080104.1/symbols/ng
+@@ -97,7 +97,7 @@
+    key <AC06>  { [         h,          H,    0x1001EE5,               0x1001EE4 ] }; // U with dot below
+    key <AC07>  { [         j,          J,    0x1001ECB,               0x1001ECA ] }; // I with dot below
+    key <AC08>  { [         k,          K,    0x1000199,               0x1000198 ] }; // K with hook
+-   key <AC09>  { [         l,          L,    0x10001E37,       0x1001E36 ] }; // L with dot below
++   key <AC09>  { [         l,          L,    0x1001E37,        0x1001E36 ] }; // L with dot below
+    key <AC10>  { [ semicolon,      colon,    masculine,      ordfeminine ] };
+    key <AC11>  { [ apostrophe,  quotedbl,     currency,         currency ] };
+    key <BKSL>  { [ backslash,        bar,      section,          section ] };

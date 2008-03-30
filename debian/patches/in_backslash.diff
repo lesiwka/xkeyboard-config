@@ -1,0 +1,31 @@
+Index: xkeyboard-config-1.1~cvs.20080104.1/symbols/in
+===================================================================
+--- xkeyboard-config-1.1~cvs.20080104.1.orig/symbols/in
++++ xkeyboard-config-1.1~cvs.20080104.1/symbols/in
+@@ -116,7 +116,7 @@
+     key <AE10>  { [   0,	parenright,	U0966,		parenright ] };
+     key <AE11>	{ [   minus,	underscore	     ] };
+     key <AE12>	{ [   equal,	plus		     ] };
+-    key <BKSL>  { [   U0964,	U0965,		pipe,		backlash   ] }; //pipe : danda, double danda
++    key <BKSL>  { [   U0964,	U0965,		pipe,		backslash   ] }; //pipe : danda, double danda
+ 
+     //Q Row	
+     key <AD01>   { [   U200C, 	U200D   ] };  // Q: ZWNJ, ZWJ
+@@ -484,7 +484,7 @@
+ 
+     key <AE11> { [ minus      , 0x01000d03           ] };
+     key <AE12> { [ 0x01000d43 , 0x01000d0b           ] };
+-    key <BKSL>  { [0x0100200c, backlash ]};//bksl: ZWNJ 
++    key <BKSL>  { [0x0100200c, backslash ]};//bksl: ZWNJ 
+ 
+   
+     // From 'q' to right bracket (])
+@@ -555,7 +555,7 @@
+     key <AE10>  { [   0,	parenright,	U0D66,		parenright ] };
+     key <AE11>	{ [   minus,	underscore	     ] };
+     key <AE12>	{ [   equal,	plus		     ] };
+-    key <BKSL>  { [   U005C,	U007C,		U200C	] };//backlash:pipe,backlash,ZWNJ 
++    key <BKSL>  { [   U005C,	U007C,		U200C	] };//backslash:pipe,backslash,ZWNJ 
+ 
+     //Q Row	
+     key <AD01>   { [   U0D48,	U0D4C,	U0D10,	U0D14  ] }; // Q: ai and au matras 
