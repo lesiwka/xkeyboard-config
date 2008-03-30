@@ -1,3 +1,13 @@
+xkeyboard-config (1.1~cvs.20080104.1-1ubuntu3) hardy; urgency=low
+
+  * in_backslash: Fix "backlash" typo in symbols/in.
+  * unicode_symbols: Fix 0x01000XXXX (instead of 0x0100XXXX) typos in
+    symbols/gn and symbols/ng. Also filed as freedesktop.org bug #15273.
+  * Use dpkg-query in preinst conffile upgrade code rather than looking in
+    /var/lib/dpkg/status directly.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sun, 30 Mar 2008 17:32:13 +0100
+
 xkeyboard-config (1.1~cvs.20080104.1-1ubuntu2) hardy; urgency=low
 
   * Remove cs_hr_any patch; console-setup 1.21ubuntu3 fixes the real bug.

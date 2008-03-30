@@ -15,9 +15,7 @@ case "$1" in
     install|upgrade)
         # TODO: we should really have rollback code for all of this.
         if dpkg --compare-versions "$2" le "0.9-1"; then
-            (echo; cat /var/lib/dpkg/status) |\
-              sed -e '1,/^Package: xkb-data$/d' -e '/^$/,$d' |\
-              sed -e '1,/^Conffiles:/d' -e '/^Description:/,$d' |\
+            dpkg-query -W -f='${Conffiles}' xkb-data 2>/dev/null |\
               while read cf md5sum
             do
                 rm_conffile $cf $md5sum
