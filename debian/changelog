@@ -1,3 +1,11 @@
+xkeyboard-config (1.1~cvs.20080104.1-1ubuntu4) hardy; urgency=low
+
+  * New patches:
+    + ca-shs-add.diff - layout for Secwepemctsin (LP: #187430)
+    + lekp-add.diff - layout for Lithuanian (LP: #183511)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Tue, 08 Apr 2008 01:13:34 -0700
+
 xkeyboard-config (1.1~cvs.20080104.1-1ubuntu3) hardy; urgency=low
 
   * in_backslash: Fix "backlash" typo in symbols/in.
