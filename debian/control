@@ -14,6 +14,7 @@ Homepage: http://www.freedesktop.org/Software/XKeyboardConfig
 Package: xkb-data
 Architecture: all
 Replaces: xlibs (<< 6.8.2-39), xlibs-data (<< 6.8.2-39), libx11-6 (<< 1:6.2.1+cvs.20050610-1), xkeyboard-config (<< 0.8-7ubuntu2)
+Conflicts: xkeyboard-config (<< 0.8-7ubuntu2)
 Breaks: console-setup (<< 1.21ubuntu3)
 Description: X Keyboard Extension (XKB) configuration data
  This package contains configuration data used by the X Keyboard
