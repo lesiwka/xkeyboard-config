@@ -1,3 +1,14 @@
+xkeyboard-config (1.1~cvs.20080104.1-1ubuntu5) hardy; urgency=low
+
+  * preinst:
+    - when upgrading from hardy, check the conffiles against
+      xkeyboard-config not xkb-data (was not available back then)
+  * debian/control:
+    - add conflicts against old xkeyboard-config to ensure the 
+      upgrade happens in the right order (LP: #213566)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 09 Apr 2008 13:11:52 +0200
+
 xkeyboard-config (1.1~cvs.20080104.1-1ubuntu4) hardy; urgency=low
 
   * New patches:

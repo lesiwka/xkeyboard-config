@@ -15,7 +15,7 @@ case "$1" in
     install|upgrade)
         # TODO: we should really have rollback code for all of this.
         if dpkg --compare-versions "$2" le "0.9-1"; then
-            dpkg-query -W -f='${Conffiles}' xkb-data 2>/dev/null |\
+            dpkg-query -W -f='${Conffiles}' xkeyboard-config 2>/dev/null |\
               while read cf md5sum
             do
                 rm_conffile $cf $md5sum
