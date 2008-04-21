@@ -1,11 +1,5 @@
---- lt	2006/09/02 00:34:17	1.9
-+++ lt	2008/02/01 23:59:44	1.10
-@@ -1,4 +1,4 @@
--// $XKeyboardConfig: xkbdesc/symbols/lt,v 1.8 2005/01/16 02:18:20 svu Exp $
-+// $XKeyboardConfig: xkeyboard-config/symbols/lt,v 1.9 2006/09/02 00:34:17 svu Exp $
- 
- // based on
- // Lithuanian keyboard map by Ričardas Čepas <rch@richard.eu.org>
+--- xkeyboard-config-1.1~cvs.20080104.1.orig/symbols/lt	2006/09/02 00:34:17	1.9
++++ xkeyboard-config-1.1~cvs.20080104.1/symbols/lt	2008/02/01 23:59:44	1.10
 @@ -157,3 +157,157 @@
  
      include "level3(ralt_switch)"

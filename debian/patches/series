@@ -17,3 +17,6 @@ send-upstream/001_keypad_comma.diff
 add_void_definition_pl-324647.diff
 in_backslash.diff
 unicode_symbols.diff
+ca-shs-add.diff
+lekp-add.diff
+nbsp-level4nl.diff
