@@ -1,0 +1,131 @@
+By Nicolas Mailhot, from https://bugs.freedesktop.org/show_bug.cgi?id=9529#c29
+
+diff -uNr xkeyboard-config-20080420/rules/base.o_s.part xkeyboard-config-20080420.new/rules/base.o_s.part
+--- xkeyboard-config-20080420/rules/base.o_s.part	2008-04-07 23:28:16.000000000 +0200
++++ xkeyboard-config-20080420.new/rules/base.o_s.part	2008-04-20 16:43:06.000000000 +0200
+@@ -75,6 +75,7 @@
+   nbsp:level3n          =	+nbsp(level3n)
+   nbsp:level4           =	+nbsp(level4)
+   nbsp:level4n          =	+nbsp(level4n)
++  nbsp:level4nl         =	+nbsp(level4nl)
+   japan:nicola_f_bs     =	+jp(nicola_f_bs)
+   kpdl:dot              =	+kpdl(dot)
+   kpdl:comma            =	+kpdl(comma)
+diff -uNr xkeyboard-config-20080420/rules/base.xml.in xkeyboard-config-20080420.new/rules/base.xml.in
+--- xkeyboard-config-20080420/rules/base.xml.in	2008-04-20 00:36:46.000000000 +0200
++++ xkeyboard-config-20080420.new/rules/base.xml.in	2008-04-20 21:12:23.000000000 +0200
+@@ -4588,6 +4588,12 @@
+           <_description>Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level</_description>
+         </configItem>
+       </option>
++      <option>
++        <configItem>
++          <name>nbsp:level4nl</name>
++          <_description>Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level; uses hardcoded control instead of iso-level-5 to access high levels.</_description>
++        </configItem>
++      </option>
+     </group>
+     <group allowMultipleSelection="true">
+       <configItem>
+diff -uNr xkeyboard-config-20080420/symbols/fr xkeyboard-config-20080420.new/symbols/fr
+--- xkeyboard-config-20080420/symbols/fr	2008-03-22 19:50:08.000000000 +0100
++++ xkeyboard-config-20080420.new/symbols/fr	2008-04-20 17:18:30.000000000 +0200
+@@ -85,11 +85,11 @@
+ // Unicode French derivative
+ // Loose refactoring of the historic Linux French keyboard layout
+ //
+-// Copyright © 2006 Nicolas Mailhot <nicolas.mailhot @ laposte.net>
++// Copyright © 2006-2008 Nicolas Mailhot <nicolas.mailhot @ laposte.net>
+ //
+ // Credits (fr-latin1, fr-latin0, fr-latin9)
+ //   © 199x-1996 René Cougnenc ✝
+-//   © 1997-2002 Guylhem Aznar <clavier @ externe.net> 
++//   © 1997-2002 Guylhem Aznar <clavier @ externe.net>
+ //   © 2003-2006 Nicolas Mailhot <nicolas.mailhot @ laposte.net>
+ //
+ // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
+@@ -113,8 +113,7 @@
+ 
+     include "latin"
+     include "level3(ralt_switch)"
+-    include "level5(rctrl_switch)"
+-    include "nbsp(level4n)"
++    include "nbsp(level4nl)"
+     include "keypad(oss)"
+ 
+     name[Group1]="France - Alternative";
+diff -uNr xkeyboard-config-20080420/symbols/nbsp xkeyboard-config-20080420.new/symbols/nbsp
+--- xkeyboard-config-20080420/symbols/nbsp	2007-01-05 00:31:30.000000000 +0100
++++ xkeyboard-config-20080420.new/symbols/nbsp	2008-04-20 17:50:36.000000000 +0200
+@@ -62,7 +62,6 @@
+ };
+ 
+ // level4n provides narrow no-breaking space in addition to the normal one
+-// Used by fr(oss), be(oss)…
+ partial
+ xkb_symbols "level4n" {
+  key <SPCE> {
+@@ -71,3 +70,14 @@
+  };
+ };
+ 
++// level4nl provides narrow no-breaking space in addition to the normal one
++// without forcing the use of level5 for mostly four-level layouts
++// Used by fr(oss), be(oss)…
++partial
++xkb_symbols "level4nl" {
++ key <SPCE> {
++   type[Group1]="LOCAL_EIGHT_LEVEL",
++   symbols[Group1]= [ space, space, space, nobreakspace, space, 0x100202F, NoSymbol, NoSymbol ]
++ };
++};
++
+diff -uNr xkeyboard-config-20080420/types/pc xkeyboard-config-20080420.new/types/pc
+--- xkeyboard-config-20080420/types/pc	2007-08-29 00:04:38.000000000 +0200
++++ xkeyboard-config-20080420.new/types/pc	2008-04-20 21:15:24.000000000 +0200
+@@ -67,4 +67,45 @@
+ 	level_name[Level1] = "Base";
+ 	level_name[Level2] = "Ctrl+Alt";
+     };
++
++   // Local eight level
++   // Needed when you want part of your layout eight-level but can not use
++   // LevelFive as modifier, as this will take over right ctrl by default
++   // for all the layout and is too invasive for your average four-level user
++   // Needed to fix bug #9529
++   // FIXME Should really use RControl but it's seems not to be enabled by
++   // default and touching this requires a lot of testing
++   type "LOCAL_EIGHT_LEVEL" {
++	modifiers = Shift+Lock+LevelThree+Control;
++
++	map[None]       = Level1;
++	map[Lock+Shift] = Level1;
++	map[Shift] = Level2;
++	map[Lock]  = Level2;
++
++	map[LevelThree]            = Level3;
++	map[Lock+Shift+LevelThree] = Level3;
++	map[Shift+LevelThree] = Level4;
++	map[Lock+LevelThree]  = Level4;
++
++	map[Control]            = Level5;
++	map[Lock+Shift+Control] = Level5;
++	map[Shift+Control] = Level6;
++	map[Lock+Control]  = Level6;
++
++	map[LevelThree+Control]            = Level7;
++	map[Lock+Shift+LevelThree+Control] = Level7;
++	map[Shift+LevelThree+Control] = Level8;
++	map[Lock+LevelThree+Control]  = Level8;
++
++	level_name[Level1] = "Base";
++	level_name[Level2] = "Shift";
++	level_name[Level3] = "Level3";
++	level_name[Level4] = "Shift Level3";
++	level_name[Level5] = "Ctrl";
++	level_name[Level6] = "Shift Ctrl";
++	level_name[Level7] = "Level3 Ctrl";
++	level_name[Level8] = "Shift Level3 Ctrl";
++    };
++
+ };

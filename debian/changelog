@@ -1,3 +1,15 @@
+xkeyboard-config (1.1~cvs.20080104.1-1ubuntu6) hardy; urgency=low
+
+  * Actually apply ca-shs-add and lekp-add patches. Fix up lekp-add to avoid
+    patch conflicts.
+  * nbsp-level4nl: Define a new type for French narrow non-breaking space
+    handling which hardcodes the Control modifier, rather than relying on a
+    level-5 shift which changes the modifier key's function for every key on
+    the keyboard (LP: #198759). Patch from Nicolas Mailhot upstream, via
+    https://bugs.freedesktop.org/show_bug.cgi?id=9529#c29.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Mon, 21 Apr 2008 16:42:54 +0100
+
 xkeyboard-config (1.1~cvs.20080104.1-1ubuntu5) hardy; urgency=low
 
   * preinst:
