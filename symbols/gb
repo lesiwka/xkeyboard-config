@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/gb,v 1.7 2005/01/16 02:18:20 svu Exp $
+// $XKeyboardConfig: xkeyboard-config/symbols/gb,v 1.12 2008-04-01 21:23:40 svu Exp $
 
 // based on a keyboard map from an 'xkb/symbols/gb' file
 //
@@ -26,7 +26,7 @@ xkb_symbols "basic" {
     key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
     key <LSGT>	{ [ backslash,        bar,          bar,    brokenbar ]	};
 
-    include "level3(ralt_switch)"
+    include "level3(ralt_switch_multikey)"
 };
 
 partial alphanumeric_keys 
@@ -61,6 +61,29 @@ xkb_symbols "intl" {
     include "level3(ralt_switch)"
 };
 
+// Describe the differences between the US Colemak layout
+// and a UK variant. By Andy Buckley (andy@insectnation.org)
+
+partial alphanumeric_keys
+xkb_symbols "colemak" {
+    include "us(colemak)"
+
+    name[Group1]="United Kingdom - Colemak";
+
+    key <AE02>	{ [         2,   quotedbl,  twosuperior,    oneeighth ]	};
+    key <AE03>	{ [         3,   sterling, threesuperior,    sterling ]	};
+    key <AE04>	{ [         4,     dollar,     EuroSign,   onequarter ]	};
+
+    key <AC11>	{ [apostrophe,         at, dead_circumflex, dead_caron]	};
+    key <TLDE>	{ [     grave,    notsign,          bar,          bar ]	};
+
+    key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
+    key <LSGT>	{ [ backslash,        bar,          bar,    brokenbar ]	};
+
+    include "level3(ralt_switch_multikey)"
+};
+
+
 // Dvorak (UK) keymap (by odaen) allowing the usage of
 // the £ and ? key and swapping the @ and " keys.
 
@@ -77,3 +100,24 @@ xkb_symbols "dvorak" {
     key <LSGT> { [  backslash,	bar		] };
     key <AD01> { [ apostrophe,	at		] };
 };
+
+// Copied from macintosh_vndr/gb
+partial alphanumeric_keys 
+xkb_symbols "mac" {
+
+    // Describes the differences between a very simple en_US
+    // keyboard and a very simple U.K. keyboard layout
+
+    include "latin"
+
+    name[Group1]= "United Kingdom - Macintosh";
+
+    key <AE02> {	[               2,              at,         EuroSign	]	};
+    key <AE03> {	[               3,        sterling,       numbersign	]	};
+
+    // End alphanumeric section
+    
+    include "level3(ralt_switch)"
+};
+
+

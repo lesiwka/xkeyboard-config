@@ -1,4 +1,4 @@
-// $XKeyboardConfig: xkbdesc/symbols/iq,v 1.1 2006-05-04 21:52:51 svu Exp $
+// $XKeyboardConfig: xkeyboard-config/symbols/iq,v 1.2 2006/08/31 23:07:37 svu Exp $
 // Iraque keyboard layout,
 
 // 3-Level layout
@@ -25,4 +25,10 @@ partial alphanumeric_keys
 xkb_symbols "ku_alt" {
     include "tr(ku_alt)"
     name[Group1]= "Iraq - Kurdish, Latin Alt-Q";
+};
+
+partial alphanumeric_keys
+xkb_symbols "ku_ara" {
+    include "ir(ku_ara)"
+    name[Group1]= "Iraq - Kurdish, Arabic-Latin";
 };

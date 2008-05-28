@@ -1,9 +1,9 @@
-// $XKeyboardConfig: xkbdesc/symbols/ua,v 1.7 2005/07/19 23:03:51 svu Exp $
+// $XKeyboardConfig: xkeyboard-config/symbols/ua,v 1.11 2008-05-27 23:07:42 svu Exp $
 
 // based on
 // ukrainian standard keyboard 
 // AEN <aen@logic.ru> & Leon Kanter <leon@geon.donetsk.ua>
-// Last Changes 2003/09/03 by Andriy Rysin <arysin@yahoo.com>
+// Last Changes 2007/10/03 by Andriy Rysin <arysin@yahoo.com>
 //
 // $XFree86: xc/programs/xkbcomp/symbols/ua,v 1.4 2003/05/15 11:29:47 pascal Exp $
 
@@ -82,6 +82,47 @@ xkb_symbols "winkeys" {
     key <AB10> {        [          period,           comma      ]       };
 };
 
+
+// Unicode - 3d level added with some Unicode symbols (typographic quotes, m-dash, n-dash etc), 
+// some often used cyrillics from other slavic languages and some ASCII symbols used often (slash, brackets...)
+partial alphanumeric_keys
+xkb_symbols "unicode" {
+    include "ua(winkeys)"
+ 
+    name[Group1]= "Ukraine - Unicode";
+
+    key <TLDE> {    [           U2019, 	apostrophe,    U0301,   asciitilde     ]       };	// Apostrophe and Stress symbol
+    key <AE02> {    [               1,      exclam,  onesuperior               ]       };
+    key <AE02> {    [               2,    quotedbl,  twosuperior               ]       };
+    key <AE03> {    [               3,  numerosign,	   U00A7,    U20B4     ]       };	// Paragraph and Hryvnia sign
+    key <AE04> {    [               4,   semicolon,	  dollar,    EuroSign  ]       };
+    key <AE05> {    [               5,     percent,	  degree               ]       };
+    key <AE06> {    [               6,       colon,   less                             ]       };
+    key <AE07> {    [               7,    question,   greater                             ]       };
+    key <AE08> {    [               8,    asterisk, enfilledcircbullet         ]       };
+    key	<AE09> {    [		    9,	 parenleft,  bracketleft,    braceleft ]       };
+    key	<AE10> {    [		    0,	parenright, bracketright,    braceright]       };
+    key	<AE11> {    [	    	minus,	underscore,       emdash,    endash    ]       };
+    key	<AE12> {    [	    	equal,	      plus, 	notequal,    plusminus ]       };
+
+    key	<AD03> {    [      Cyrillic_u,	Cyrillic_U,  Byelorussian_shortu,  Byelorussian_SHORTU	]};
+    key	<AD04> {    [     Cyrillic_ka, Cyrillic_KA,	registered	       ]       };						// Registered tm
+    key	<AD05> {    [     Cyrillic_ie, Cyrillic_IE,     Cyrillic_io,     Cyrillic_IO	]	};
+    key	<AD12> {    [    Ukrainian_yi,Ukrainian_YI,	Cyrillic_hardsign,	Cyrillic_HARDSIGN	]	};
+    key	<AC02> {    [    Ukrainian_i,  Ukrainian_I, Cyrillic_yeru,   Cyrillic_YERU	]	};
+    key	<AC11> {    [    Ukrainian_ie,Ukrainian_IE,	Cyrillic_e,	Cyrillic_E	]	};
+
+    key	<BKSL> {    [ Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN, backslash,  bar	]	};
+
+    key	<AB03> {    [     Cyrillic_es,     Cyrillic_ES,	copyright              ]	};
+    key	<AB06> {    [     Cyrillic_te,     Cyrillic_TE,	trademark              ]	};
+    key	<AB08> {    [     Cyrillic_be,     Cyrillic_BE,	guillemotleft,	doublelowquotemark 	]	};
+    key	<AB09> {    [     Cyrillic_yu,     Cyrillic_YU,	guillemotright, leftdoublequotemark ]	};
+    key <AB10> {    [          period,           comma,	slash,          ellipsis        ]       };
+
+    include "level3(ralt_switch)"
+};
+
 partial alphanumeric_keys
 xkb_symbols "typewriter" {
     include "ua(basic)"
@@ -122,7 +163,7 @@ xkb_symbols "phonetic" {
   key <LatE> {   [ Cyrillic_ie,       Cyrillic_IE         ]    };
   key <LatR> {   [ Cyrillic_er,       Cyrillic_ER         ]    };
   key <LatT> {   [ Cyrillic_te,       Cyrillic_TE         ]    };
-  key <LatY> {   [ Cyrillic_i,        Cyrillic_i          ]    };
+  key <LatY> {   [ Cyrillic_i,        Cyrillic_I          ]    };
   key <LatU> {   [ Cyrillic_u,        Cyrillic_U          ]    };
   key <LatI> {   [ Ukrainian_i,       Ukrainian_I         ]    };
   key <LatO> {   [ Cyrillic_o,        Cyrillic_O          ]    };
@@ -190,7 +231,7 @@ xkb_symbols "rstu" {
 // Andrew Porokhnyak <aop@porokhnyak.org>
 partial alphanumeric_keys
 xkb_symbols "rstu_ru" {
-    include "ru(basic)"
+    include "ru(common)"
     name[Group1]= "Ukraine - Standard RSTU on Russian layout";
 
     key <TLDE> {        [      apostrophe,        question      ]       };
@@ -209,5 +250,65 @@ xkb_symbols "rstu_ru" {
 key.type[group1]="ALPHABETIC";
 
     key <AB10> {        [     Cyrillic_io,     Cyrillic_IO      ]       };
+};
+
+//Homophonic keyboard layout (Tomas Marko Miljenović)
+//Based on Ukrainian National Transliteration, commonly used phonetic layouts for Mac and Win.
+//Existing layout "phonetic" used as template.
+partial alphanumeric_keys
+xkb_symbols "homophonic" {
+  include "ua(basic)"
+  name[Group1]= "Ukraine - Homophonic";
+
+  key <TLDE> {	 [          grave,	underscore	]	};
+  key <AE01> {	 [		1,	    exclam 	]	};
+  key <AE02> {	 [		2,              at	]	};
+  key <AE03> {	 [		3,       semicolon	]	};
+  key <AE04> {	 [		4,           colon	]	};
+  key <AE05> {	 [		5,	   percent	]	};
+  key <AE06> {	 [		6,	apostrophe	]	};
+  key <AE07> {	 [		7,	  quotedbl	]	};
+  key <AE08> {	 [		8,	  asterisk	]	};
+  key <AE09> {	 [		9,	 parenleft	]	};
+  key <AE10> {	 [		0,	parenright	]	};
+  key <AE11> {	 [ Ukrainian_ie,      Ukrainian_IE	  ]    };
+  key <AE12> {	 [ Ukrainian_yi,      Ukrainian_YI        ]    };
+
+  key <LatQ> {   [ Cyrillic_ya,       Cyrillic_YA         ]    };
+  key <LatW> {   [ Cyrillic_sha,      Cyrillic_SHA        ]    };
+  key <LatE> {   [ Cyrillic_ie,       Cyrillic_IE         ]    };
+  key <LatR> {   [ Cyrillic_er,       Cyrillic_ER         ]    };
+  key <LatT> {   [ Cyrillic_te,       Cyrillic_TE         ]    };
+  key <LatY> {   [ Cyrillic_i,        Cyrillic_I          ]    };
+  key <LatU> {   [ Cyrillic_u,        Cyrillic_U          ]    };
+  key <LatI> {   [ Ukrainian_i,       Ukrainian_I         ]    };
+  key <LatO> {   [ Cyrillic_o,        Cyrillic_O          ]    };
+  key <LatP> {   [ Cyrillic_pe,       Cyrillic_PE         ]    };
+  key <AD11> {   [ Cyrillic_yu,       Cyrillic_YU        ]    };
+  key <AD12> {   [ Cyrillic_shcha,    Cyrillic_SHCHA      ]    };
+
+  key <LatA> {   [ Cyrillic_a,        Cyrillic_A          ]    };
+  key <LatS> {   [ Cyrillic_es,       Cyrillic_ES         ]    };
+  key <LatD> {   [ Cyrillic_de,       Cyrillic_DE         ]    };
+  key <LatF> {   [ Cyrillic_ef,       Cyrillic_EF         ]    };
+  key <LatG> {   [ Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ]    };
+  key <LatH> {   [ Cyrillic_ghe,      Cyrillic_GHE        ]    };
+  key <LatJ> {   [ Cyrillic_shorti,   Cyrillic_SHORTI     ]    };
+  key <LatK> {   [ Cyrillic_ka,       Cyrillic_KA         ]    };
+  key <LatL> {   [ Cyrillic_el,       Cyrillic_EL         ]    };
+  key <AC10> {   [ Cyrillic_che,      Cyrillic_CHE        ]    };
+  key <AC11> {   [ Cyrillic_zhe,      Cyrillic_ZHE        ]    };
+  key <BKSL> {   [ Cyrillic_softsign, Cyrillic_SOFTSIGN   ]    };
+
+  key <LatZ> {   [ Cyrillic_ze,       Cyrillic_ZE         ]    };
+  key <LatX> {   [ Cyrillic_ha,       Cyrillic_HA         ]    };
+  key <LatC> {   [ Cyrillic_tse,      Cyrillic_TSE        ]    };
+  key <LatV> {   [ Cyrillic_ve,       Cyrillic_VE         ]    };
+  key <LatB> {   [ Cyrillic_be,       Cyrillic_BE         ]    };
+  key <LatN> {   [ Cyrillic_en,       Cyrillic_EN         ]    };
+  key <LatM> {   [ Cyrillic_em,       Cyrillic_EM         ]    };
+  key <AB08> {   [ comma,             less	          ]    };
+  key <AB09> {   [ period,            greater	          ]    };
+  key <AB10> {   [ slash,             question            ]    };
 };
 

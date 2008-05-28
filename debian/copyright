@@ -1,7 +1,18 @@
-Copyright (C) 2001-2005 Denis Barbier <barbier@linuxfr.org>,
-Frank Murphy <murphyf+xfree86@f-m.fm>, Ivan Pascal (pascal@info.tsu.ru),
-Andriy Rysin (arysin@myrealbox.com) and
-Sergey V. Udaltsov (svu@users.sourceforge.net).
+This package was debianized by Denis Barbier <barbier@debian.org> on
+Tue, 10 Oct 2006 01:16:55 +0200
+
+It was downloaded from
+  http://xlibs.freedesktop.org/xkbdesc/xkeyboard-config-0.9.tar.gz
+
+Upstream Authors: 
+  Denis Barbier <barbier@linuxfr.org>
+  Frank Murphy <murphyf+xfree86@f-m.fm>
+  Ivan Pascal <pascal@info.tsu.ru>
+  Andriy Rysin <arysin@myrealbox.com>
+  Sergey V. Udaltsov <svu@users.sourceforge.net>
+  Данило Шеган <dsegan@gmx.net>
+
+This program is distributed under the following license:
 
 Permission to use, copy, modify, distribute, and sell this software and its
 documentation for any purpose is hereby granted without fee, provided that

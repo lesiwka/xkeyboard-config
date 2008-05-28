@@ -21,6 +21,7 @@ xkb_keycodes "basic" {
     maximum= 255;
 
     <TLDE> =  49;
+    alias <AE00> = <TLDE>;	// Some geometries use AE00
     <AE01> =  10;
     <AE02> =  11;
     <AE03> =  12;
@@ -156,6 +157,8 @@ xkb_keycodes "basic" {
     <XFER> =   129;		// Henkan
     <NFER> =   131;		// Muhenkan
     <AE13> =   133;		// Yen
+    <EISU> =   210;		// Alphanumeric mode on macintosh
+    <KANA> =   209;		// Kana mode on macintosh
 
     // Keys that are generated on Korean keyboards
 
@@ -252,10 +255,10 @@ xkb_keycodes "basic" {
     // <I53> =   211;	<K73>
     <I54> =   212;
     <I55> =   213;
-    <I56> =   214;
-    <I57> =   215;
-    <I58> =   216;
-    <I59> =   217;
+    <OUTP> =   214;
+    <KITG> =   215;
+    <KIDN> =   216;
+    <KIUP> =   217;
     <I5A> =   218;
     // <I5B> =   219;	<K74>
     // <I5C> =   220;	<K75>
@@ -295,6 +298,9 @@ xkb_keycodes "basic" {
     <I7E> =   254;
     <I7F> =   255;
 
+    // MacBooks generate 0x65 for the lower brightness key
+    <II65> =  101;
+
     // Codes generated for scancodes 0x59-0x5f, 0x62-0x76
     <K59> =   157;		// <I1D>
     <K5A> =   170;		// <I2A>
@@ -318,8 +324,8 @@ xkb_keycodes "basic" {
     <K6E> =   206;		// <I4E>
     <K6F> =   207;		// <I4F>
     alias <K70> = <HKTG>;	// <I50>
-    <K71> =   209;		// <I51>
-    <K72> =   210;		// <I52>
+    alias <K71> = <KANA>;	// <I51>
+    alias <K72> = <EISU>;	// <I52>
     alias <K73> = <AB11>;	// <I53>
     <K74> =   219;		// <I5B>
     <K75> =   220;		// <I5C>
@@ -406,10 +412,12 @@ xkb_keycodes "jp106" {
 
 // For brazilian ABNT2 keyboard. by Ricardo Y. Igarashi(iga@that.com.br)
 xkb_keycodes "abnt2" {
-    include "xfree86(basic)"
-    <BKSL> = 94;
-    <AC12> = 51;
+    include "xfree86(xfree86)"
     <KPPT> = 134;
 };
 
-
+// IBM ThinkPad 60 series
+xkb_keycodes "thinkpad60" {
+    include "xfree86(xfree86)"
+    <MENU> = 227;
+};
