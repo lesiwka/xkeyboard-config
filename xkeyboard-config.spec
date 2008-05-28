@@ -1,8 +1,8 @@
 Name:		xkeyboard-config
 Summary:	XML-based XKB configuration registry
-Version:	0.8
+Version:	1.3
 Release:	1
-License:	LGPL
+License:	X11/MIT
 Group:		User Interface/X
 
 Url: http://gswitchit.sourceforge.net/

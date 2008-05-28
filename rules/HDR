@@ -1,6 +1,8 @@
 ! model		=	keycodes
 ! layout[1]	=	keycodes
 ! layout	=	keycodes
+! option	=	keycodes
+! model		layout	=	geometry
 ! model		=	geometry
 ! model		layout		variant		=	symbols
 ! model		layout				=	symbols

@@ -2,13 +2,10 @@
 # Replaces Imake's MakeXkbDir() rule
 # svu: taken from xkbdata
 
-MOSTLYCLEANFILES = $(subdir).dir
-
-dir_DATA = $(subdir).dir
+dist_dir_DATA = $(subdir).dir
 
 dirdir = $(xkb_base)
 
 $(subdir).dir:
 	-rm -f $@
-	$(XKBCOMP) -lfhlpR -o $@ '*'
-
+	here=$$(pwd); cd $(srcdir) && $(XKBCOMP) -lfhlpR -o $${here}/$@ '*'

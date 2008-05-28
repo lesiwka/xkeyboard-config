@@ -1,90 +1,132 @@
 #!/usr/bin/make -f
-# debian/rules for the Debian xkeyboard-config package.
-# Copyright © 2004 Scott James Remnant <scott@netsplit.com>
-# Copyright © 2005 Daniel Stone <daniel@fooishbar.org>
 
-# Uncomment this to turn on verbose mode.  #export DH_VERBOSE=1
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
-CFLAGS = -Wall -g
-ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
-	CFLAGS += -O0
-else
-	CFLAGS += -O2
-endif
-ifeq (,$(findstring nostrip,$(DEB_BUILD_OPTIONS)))
-	INSTALL_PROGRAM += -s
-endif
+export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+export DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 
-DEB_HOST_ARCH      ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
-DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+# FOR AUTOCONF 2.52 AND NEWER ONLY
 ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE))
-	confflags += --build=$(DEB_HOST_GNU_TYPE)
+	confflags += --build $(DEB_HOST_GNU_TYPE)
 else
-	confflags += --build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE)
+	confflags += --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
 endif
 
-confflags := --with-xkb-base=/etc/X11/xkb --with-xkb-rules-symlink=xorg --enable-xkbcomp-symlink=no
+xkb_base := /usr/share/X11/xkb
+stamp := stamp-dir/
+QUILT := quilt --quiltrc debian/patches/quiltrc
 
-build: build-stamp
-build-stamp:
+$(stamp):
+	mkdir $@
+
+patch: $(stamp)patch
+$(stamp)patch: $(stamp)
+	@if $(QUILT) next >/dev/null 2>&1; then \
+	  echo -n "Applying patches..."; \
+	  if $(QUILT) push -a -v > ${stamp}patch-log 2>&1; then \
+	    echo "successful."; \
+	    mv ${stamp}patch-log $@; \
+	  else \
+	    echo "failed! (check ${stamp}patch-log for details)"; \
+	    exit 1; \
+	  fi; \
+	else \
+	  echo "No patches to apply"; \
+	fi
+	: > rules/base.mlv_s.part
+
+unpatch:
+	@echo -n "Unapplying patches..."
+	@if $(QUILT) top >/dev/null 2>&1; then \
+	  if $(QUILT) pop -a -v > $(stamp)unpatch-log 2>&1; then \
+	    echo "successful."; \
+	  else \
+	    echo "failed! (check $(stamp)unpatch-log for details)"; \
+	    exit 1; \
+	  fi; \
+	else \
+	  echo "nothing to do."; \
+	fi
+	-rm -f $(stamp)patch $(stamp)patch-log $(stamp)unpatch-log
+	-rm -rf .pc
+
+config.status: $(stamp)configure
+$(stamp)configure: $(stamp)patch
+	dh_testdir
+	./configure $(confflags) \
+	  --prefix=/usr \
+	  --disable-xkbcomp-symlink --with-xkb-rules-symlink=xfree86,xorg \
+	  --with-xkb-base=$(xkb_base) \
+	  XKBCOMP=/no/thanks
+	touch $@
+
+build: $(stamp)build
+$(stamp)build: $(stamp)configure
 	dh_testdir
 
-	mkdir obj-$(DEB_BUILD_GNU_TYPE)
-	cd obj-$(DEB_BUILD_GNU_TYPE) && CFLAGS="$(CFLAGS)" \
-	../configure --prefix=/usr --mandir=\$${prefix}/share/man \
-	             --infodir=\$${prefix}/share/info --sysconfdir=/etc \
-		     $(confflags)
-	cd obj-$(DEB_BUILD_GNU_TYPE) && $(MAKE)
+	# Files kept so that xkbcomp is not needed
+	for d in compat geometry keycodes keymap semantics symbols types; \
+	  do cp debian/$$d.dir $$d/; done
+	$(MAKE)
+	touch $@
 
-	cd po && intltool-update --verbose -p
-
-	touch build-stamp
-
-clean:
+clean: $(stamp) unpatch
 	dh_testdir
 	dh_testroot
-	rm -f build-stamp
+	rm -rf $(stamp)
 
-	rm -f config.cache config.log config.status
-	rm -f */config.cache */config.log */config.status
-	rm -f conftest* */conftest*
-	rm -rf autom4te.cache */autom4te.cache
-	rm -rf obj-*
+	[ ! -f Makefile ] || $(MAKE) distclean
+	# Files not cleaned up
+	-rm -f intltool-extract intltool-merge intltool-update
+	-rm -f rules/base.xml
+	-rm -f po/.intltool-merge-cache
+	dh_clean 
 
-	dh_clean
+deb:
+	dpkg-buildpackage -rfakeroot -i'/\.git|/\.svn'
+
+dir:
+	set -e; for f in compat geometry keycodes keymap semantics symbols types; do \
+	  rm -f $$f/$$f.dir; \
+	  cd $$f; \
+	  make $$f.dir XKBCOMP=xkbcomp; \
+	  LC_ALL=C sort -k3 $$f.dir > $$f.new && mv $$f.new $$f.dir; \
+	  cd ..; \
+	  cp $$f/$$f.dir debian/; \
+	done
 
 install: build
 	dh_testdir
 	dh_testroot
-	dh_clean -k
+	dh_clean -k 
 	dh_installdirs
 
-	cd obj-$(DEB_BUILD_GNU_TYPE) && $(MAKE) DESTDIR=$(CURDIR)/debian/tmp install
-	rm debian/tmp/etc/X11/xkb/compiled
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/xkb-data
+	#  Remove this symlink, it is no more needed
+	rm -f $(CURDIR)/debian/xkb-data/$(xkb_base)/compiled
+
+        # Move base.xml to /etc/X11/xkb/ and make
+        # /usr/share/X11/xkb/rules/base.xml links to it
+	mv debian/xkb-data/usr/share/X11/xkb/rules/base.xml debian/xkb-data/etc/X11/xkb/
+	dh_link etc/X11/xkb/base.xml usr/share/X11/xkb/rules/base.xml
 
 # Build architecture-dependent files here.
 binary-arch: build install
+# We have nothing to do by default.
+
+# Build architecture-independent files here.
+binary-indep: build install
 	dh_testdir
 	dh_testroot
-
+	dh_installchangelogs ChangeLog
 	dh_installdocs
-	dh_install --sourcedir=debian/tmp
-	dh_installchangelogs
-	dh_installman
-	dh_link
-	dh_strip
 	dh_compress
 	dh_fixperms
 	dh_installdeb
-	dh_shlibdeps
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
 
-# Build architecture-independent files here.
-binary-indep: build install
-# Nothing to do
-
 binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install
+.PHONY: build clean binary-indep binary-arch binary install 

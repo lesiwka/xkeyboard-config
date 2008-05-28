@@ -38,8 +38,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-DIST_COMMON = $(dist_symbols_DATA) $(srcdir)/Makefile.am \
-	$(srcdir)/Makefile.in $(top_srcdir)/xkbrules.am
+DIST_COMMON = $(dist_dir_DATA) $(dist_symbols_DATA) \
+	$(srcdir)/Makefile.am $(srcdir)/Makefile.in \
+	$(top_srcdir)/xkbrules.am
 subdir = symbols
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
@@ -62,44 +63,62 @@ am__vpath_adj = case $$p in \
   esac;
 am__strip_dir = `echo $$p | sed -e 's|^.*/||'`;
 am__installdirs = "$(DESTDIR)$(dirdir)" "$(DESTDIR)$(symbolsdir)"
-dirDATA_INSTALL = $(INSTALL_DATA)
+dist_dirDATA_INSTALL = $(INSTALL_DATA)
 dist_symbolsDATA_INSTALL = $(INSTALL_DATA)
-DATA = $(dir_DATA) $(dist_symbols_DATA)
+DATA = $(dist_dir_DATA) $(dist_symbols_DATA)
 ETAGS = etags
 CTAGS = ctags
 DIST_SUBDIRS = $(SUBDIRS)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACLOCAL = @ACLOCAL@
+ALL_LINGUAS = @ALL_LINGUAS@
+AMDEP_FALSE = @AMDEP_FALSE@
+AMDEP_TRUE = @AMDEP_TRUE@
 AMTAR = @AMTAR@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+CATALOGS = @CATALOGS@
+CATOBJEXT = @CATOBJEXT@
+CC = @CC@
+CCDEPMODE = @CCDEPMODE@
+CFLAGS = @CFLAGS@
+CPP = @CPP@
+CPPFLAGS = @CPPFLAGS@
 CREATE_RULES_SYMLINK_FALSE = @CREATE_RULES_SYMLINK_FALSE@
 CREATE_RULES_SYMLINK_TRUE = @CREATE_RULES_SYMLINK_TRUE@
 CREATE_XKBCOMP_SYMLINK_FALSE = @CREATE_XKBCOMP_SYMLINK_FALSE@
 CREATE_XKBCOMP_SYMLINK_TRUE = @CREATE_XKBCOMP_SYMLINK_TRUE@
 CYGPATH_W = @CYGPATH_W@
+DATADIRNAME = @DATADIRNAME@
 DEFS = @DEFS@
+DEPDIR = @DEPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
+EGREP = @EGREP@
+EXEEXT = @EXEEXT@
+GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
+GMOFILES = @GMOFILES@
+GMSGFMT = @GMSGFMT@
+GREP = @GREP@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
 INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+INSTOBJEXT = @INSTOBJEXT@
+INTLLIBS = @INTLLIBS@
 INTLTOOL_CAVES_RULE = @INTLTOOL_CAVES_RULE@
 INTLTOOL_DESKTOP_RULE = @INTLTOOL_DESKTOP_RULE@
 INTLTOOL_DIRECTORY_RULE = @INTLTOOL_DIRECTORY_RULE@
 INTLTOOL_EXTRACT = @INTLTOOL_EXTRACT@
-INTLTOOL_ICONV = @INTLTOOL_ICONV@
 INTLTOOL_KBD_RULE = @INTLTOOL_KBD_RULE@
 INTLTOOL_KEYS_RULE = @INTLTOOL_KEYS_RULE@
 INTLTOOL_MERGE = @INTLTOOL_MERGE@
-INTLTOOL_MSGFMT = @INTLTOOL_MSGFMT@
-INTLTOOL_MSGMERGE = @INTLTOOL_MSGMERGE@
 INTLTOOL_OAF_RULE = @INTLTOOL_OAF_RULE@
 INTLTOOL_PERL = @INTLTOOL_PERL@
+INTLTOOL_POLICY_RULE = @INTLTOOL_POLICY_RULE@
 INTLTOOL_PONG_RULE = @INTLTOOL_PONG_RULE@
 INTLTOOL_PROP_RULE = @INTLTOOL_PROP_RULE@
 INTLTOOL_SCHEMAS_RULE = @INTLTOOL_SCHEMAS_RULE@
@@ -111,9 +130,9 @@ INTLTOOL_THEME_RULE = @INTLTOOL_THEME_RULE@
 INTLTOOL_UI_RULE = @INTLTOOL_UI_RULE@
 INTLTOOL_UPDATE = @INTLTOOL_UPDATE@
 INTLTOOL_XAM_RULE = @INTLTOOL_XAM_RULE@
-INTLTOOL_XGETTEXT = @INTLTOOL_XGETTEXT@
 INTLTOOL_XML_NOMERGE_RULE = @INTLTOOL_XML_NOMERGE_RULE@
 INTLTOOL_XML_RULE = @INTLTOOL_XML_RULE@
+LDFLAGS = @LDFLAGS@
 LIBOBJS = @LIBOBJS@
 LIBS = @LIBS@
 LTLIBOBJS = @LTLIBOBJS@
@@ -121,6 +140,11 @@ MAINT = @MAINT@
 MAINTAINER_MODE_FALSE = @MAINTAINER_MODE_FALSE@
 MAINTAINER_MODE_TRUE = @MAINTAINER_MODE_TRUE@
 MAKEINFO = @MAKEINFO@
+MKINSTALLDIRS = @MKINSTALLDIRS@
+MSGFMT = @MSGFMT@
+MSGFMT_OPTS = @MSGFMT_OPTS@
+MSGMERGE = @MSGMERGE@
+OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
 PACKAGE_NAME = @PACKAGE_NAME@
@@ -128,33 +152,50 @@ PACKAGE_STRING = @PACKAGE_STRING@
 PACKAGE_TARNAME = @PACKAGE_TARNAME@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
+POFILES = @POFILES@
+POSUB = @POSUB@
+PO_IN_DATADIR_FALSE = @PO_IN_DATADIR_FALSE@
+PO_IN_DATADIR_TRUE = @PO_IN_DATADIR_TRUE@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
 USE_COMPAT_RULES_FALSE = @USE_COMPAT_RULES_FALSE@
 USE_COMPAT_RULES_TRUE = @USE_COMPAT_RULES_TRUE@
+USE_NLS = @USE_NLS@
 VERSION = @VERSION@
+XGETTEXT = @XGETTEXT@
 XKBCOMP = @XKBCOMP@
-ac_ct_STRIP = @ac_ct_STRIP@
+ac_ct_CC = @ac_ct_CC@
+am__fastdepCC_FALSE = @am__fastdepCC_FALSE@
+am__fastdepCC_TRUE = @am__fastdepCC_TRUE@
+am__include = @am__include@
 am__leading_dot = @am__leading_dot@
+am__quote = @am__quote@
 am__tar = @am__tar@
 am__untar = @am__untar@
 bindir = @bindir@
 build_alias = @build_alias@
 datadir = @datadir@
+datarootdir = @datarootdir@
+docdir = @docdir@
+dvidir = @dvidir@
 exec_prefix = @exec_prefix@
 host_alias = @host_alias@
+htmldir = @htmldir@
 includedir = @includedir@
 infodir = @infodir@
 install_sh = @install_sh@
 libdir = @libdir@
 libexecdir = @libexecdir@
+localedir = @localedir@
 localstatedir = @localstatedir@
 mandir = @mandir@
 mkdir_p = @mkdir_p@
 oldincludedir = @oldincludedir@
+pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
+psdir = @psdir@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@
@@ -164,34 +205,37 @@ xkb_rules_symlink = @xkb_rules_symlink@
 SUBDIRS = digital_vndr fujitsu_vndr hp_vndr macintosh_vndr nec_vndr sgi_vndr sony_vndr sun_vndr xfree68_vndr
 symbolsdir = $(xkb_base)/symbols
 dist_symbols_DATA = \
-ad af al am ara \
-az be bd \
+ad af al \
+am ara az \
+be bd \
 bg br ba \
-bt by ca \
-ch cs cz \
-de dk ee \
-es epo fi fo \
-fr gb ge gh \
+bt by braille \
+ca cd \
+ch cn cz \
+de dk \
+ee es et epo \
+fi fo fr \
+gb ge gh gn \
 gr hr hu \
-ie il in \
-ir is it \
-jp kg kh kr kz la \
-latam latin lk \
-lt lv mao \
-mk mm mn \
-mt mv nl \
-no pc pk \
-pl pt ro \
-ru se si \
-sk sy th \
-tj tr ua \
-us uz vn \
+ie il in iq \
+ir is it jp \
+kg kh kr kz \
+la latam latin \
+lk lt lv \
+ma mao me mk \
+mm mn mt mv \
+ng nl no np \
+pc pk pl pt \
+ro rs ru \
+se si sk \
+sy th \
+tj tr \
+ua us uz vn \
 za \
-altwin capslock compose ctrl group inet keypad level3 level5 srvr_ctrl \
-eurosign
+altwin capslock compose ctrl eurosign group inet \
+keypad kpdl level3 level5 nbsp olpc shift srvr_ctrl
 
-MOSTLYCLEANFILES = $(subdir).dir
-dir_DATA = $(subdir).dir
+dist_dir_DATA = $(subdir).dir
 dirdir = $(xkb_base)
 all: all-recursive
 
@@ -226,19 +270,19 @@ $(top_srcdir)/configure: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 uninstall-info-am:
-install-dirDATA: $(dir_DATA)
+install-dist_dirDATA: $(dist_dir_DATA)
 	@$(NORMAL_INSTALL)
 	test -z "$(dirdir)" || $(mkdir_p) "$(DESTDIR)$(dirdir)"
-	@list='$(dir_DATA)'; for p in $$list; do \
+	@list='$(dist_dir_DATA)'; for p in $$list; do \
 	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
 	  f=$(am__strip_dir) \
-	  echo " $(dirDATA_INSTALL) '$$d$$p' '$(DESTDIR)$(dirdir)/$$f'"; \
-	  $(dirDATA_INSTALL) "$$d$$p" "$(DESTDIR)$(dirdir)/$$f"; \
+	  echo " $(dist_dirDATA_INSTALL) '$$d$$p' '$(DESTDIR)$(dirdir)/$$f'"; \
+	  $(dist_dirDATA_INSTALL) "$$d$$p" "$(DESTDIR)$(dirdir)/$$f"; \
 	done
 
-uninstall-dirDATA:
+uninstall-dist_dirDATA:
 	@$(NORMAL_UNINSTALL)
-	@list='$(dir_DATA)'; for p in $$list; do \
+	@list='$(dist_dir_DATA)'; for p in $$list; do \
 	  f=$(am__strip_dir) \
 	  echo " rm -f '$(DESTDIR)$(dirdir)/$$f'"; \
 	  rm -f "$(DESTDIR)$(dirdir)/$$f"; \
@@ -459,7 +503,6 @@ install-strip:
 	  `test -z '$(STRIP)' || \
 	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
 mostlyclean-generic:
-	-test -z "$(MOSTLYCLEANFILES)" || rm -f $(MOSTLYCLEANFILES)
 
 clean-generic:
 
@@ -487,7 +530,7 @@ info: info-recursive
 
 info-am:
 
-install-data-am: install-dirDATA install-dist_symbolsDATA
+install-data-am: install-dist_dirDATA install-dist_symbolsDATA
 
 install-exec-am:
 
@@ -513,7 +556,7 @@ ps: ps-recursive
 
 ps-am:
 
-uninstall-am: uninstall-dirDATA uninstall-dist_symbolsDATA \
+uninstall-am: uninstall-dist_dirDATA uninstall-dist_symbolsDATA \
 	uninstall-info-am
 
 uninstall-info: uninstall-info-recursive
@@ -522,20 +565,20 @@ uninstall-info: uninstall-info-recursive
 	clean clean-generic clean-recursive ctags ctags-recursive \
 	distclean distclean-generic distclean-recursive distclean-tags \
 	distdir dvi dvi-am html html-am info info-am install \
-	install-am install-data install-data-am install-dirDATA \
+	install-am install-data install-data-am install-dist_dirDATA \
 	install-dist_symbolsDATA install-exec install-exec-am \
 	install-info install-info-am install-man install-strip \
 	installcheck installcheck-am installdirs installdirs-am \
 	maintainer-clean maintainer-clean-generic \
 	maintainer-clean-recursive mostlyclean mostlyclean-generic \
 	mostlyclean-recursive pdf pdf-am ps ps-am tags tags-recursive \
-	uninstall uninstall-am uninstall-dirDATA \
+	uninstall uninstall-am uninstall-dist_dirDATA \
 	uninstall-dist_symbolsDATA uninstall-info-am
 
 
 $(subdir).dir:
 	-rm -f $@
-	$(XKBCOMP) -lfhlpR -o $@ '*'
+	here=$$(pwd); cd $(srcdir) && $(XKBCOMP) -lfhlpR -o $${here}/$@ '*'
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
