@@ -1,3 +1,11 @@
+xkeyboard-config (1.1~cvs.20080104.1-1ubuntu7) hardy-proposed; urgency=low
+
+  [ Daniel Gimpelevich ]
+  * debian/patches/us-mac.diff:
+     + Fix for the USA - Macintosh layout. (Closes: #246834)
+
+ -- Артём Попов <artfwo@gmail.com>  Wed, 09 Jul 2008 17:05:45 +0700
+
 xkeyboard-config (1.1~cvs.20080104.1-1ubuntu6) hardy; urgency=low
 
   * Actually apply ca-shs-add and lekp-add patches. Fix up lekp-add to avoid
