@@ -2,7 +2,6 @@
 #fix_xkbcomp_crash.diff
 #revert_bz8572.diff
 #po.diff
-clean.diff
 docs.diff
 sclk_toggle.diff
 mac_poweroff.diff
@@ -13,6 +12,5 @@ unhide_lv3_enter_switch.diff
 #japan.diff
 add_void_definition_pl-324647.diff
 send-upstream/001_keypad_comma.diff
-resync_rules_base.diff
+#resync_rules_base.diff
 #send-upstream/002_add_asus6000.diff
-us-mac.diff
