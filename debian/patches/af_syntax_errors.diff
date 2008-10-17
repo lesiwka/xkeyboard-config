@@ -1,0 +1,31 @@
+Index: xkeyboard-config-1.1~cvs.20080104.1/symbols/af
+===================================================================
+--- xkeyboard-config-1.1~cvs.20080104.1.orig/symbols/af	2008-10-17 13:56:05.000000000 +0100
++++ xkeyboard-config-1.1~cvs.20080104.1/symbols/af	2008-10-17 13:56:41.000000000 +0100
+@@ -218,7 +218,7 @@
+ 
+    key <TLDE> { [ 0x100200D, 0x1000654, grave ] }; // zero width joiner, Arabic hamza above
+    key <AE01> { [ 0x10006F1, exclam, tilde ] }; // Arabic one
+-   key <AE02> { [ 0x10006F2, 0x100066C. at ] }; // Arabic two, Arabic thousands separator
++   key <AE02> { [ 0x10006F2, 0x100066C, at ] }; // Arabic two, Arabic thousands separator
+    key <AE03> { [ 0x10006F3, 0x100066B, numbersign ] }; // Arabic three, Arabic decimal separator
+    key <AE04> { [ 0x10006F4, 0x100060B, dollar ] }; // Arabic four, Afghani sign
+    key <AE05> { [ 0x10006F5, 0x100066A, percent ] }; // Arabic five, Arabic percent sign
+@@ -280,7 +280,7 @@
+ 
+    key <TLDE> { [ 0x100200D, divide, tilde ] }; // zero width joiner
+    key <AE01> { [ 0x10006F1, exclam, grave ] }; // Arabic one
+-   key <AE02> { [ 0x10006F2, 0x100066C. at ] }; // Arabic two, Arabic thousands separator
++   key <AE02> { [ 0x10006F2, 0x100066C, at ] }; // Arabic two, Arabic thousands separator
+    key <AE03> { [ 0x10006F3, 0x100066B, numbersign ] }; // Arabic three, Arabic decimal separator
+    key <AE04> { [ 0x10006F4, 0x100060B, dollar ] }; // Arabic four, Afghani sign
+    key <AE05> { [ 0x10006F5, 0x100066A, percent ] }; // Arabic five, Arabic percent sign
+@@ -342,7 +342,7 @@
+ 
+    key <TLDE> { [ 0x100200D, divide, tilde ] }; // zero width joiner
+    key <AE01> { [ 0x10006F1, exclam, grave ] }; // Arabic one
+-   key <AE02> { [ 0x10006F2, 0x100066C. at ] }; // Arabic two, Arabic thousands separator
++   key <AE02> { [ 0x10006F2, 0x100066C, at ] }; // Arabic two, Arabic thousands separator
+    key <AE03> { [ 0x10006F3, 0x100066B, numbersign ] }; // Arabic three, Arabic decimal separator
+    key <AE04> { [ 0x10006F4, 0x100060B, dollar ] }; // Arabic four, Afghani sign
+    key <AE05> { [ 0x10006F5, 0x100066A, percent ] }; // Arabic five, Arabic percent sign
