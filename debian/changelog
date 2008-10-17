@@ -1,3 +1,10 @@
+xkeyboard-config (1.1~cvs.20080104.1-1ubuntu8) hardy-proposed; urgency=low
+
+  * Added af_syntax_errors.diff patch to fix syntax errors in Afghan 
+    layout file. (Closes LP: #260647)
+
+ -- Adam Spain <mail@adamspain.me.uk>  Fri, 17 Oct 2008 14:02:06 +0100
+
 xkeyboard-config (1.1~cvs.20080104.1-1ubuntu7) hardy-proposed; urgency=low
 
   [ Daniel Gimpelevich ]
