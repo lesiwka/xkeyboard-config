@@ -1886,6 +1886,13 @@
             <_description>Ktunaxa</_description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>eng</name>
+            <_description>English</_description>
+            <languageList><iso639Id>eng</iso639Id></languageList>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -2216,7 +2223,8 @@
           <configItem>
             <name>smi</name>
             <_description>Northern Saami</_description>
-            <languageList><iso639Id>smi</iso639Id></languageList>
+            <languageList><iso639Id>smi</iso639Id>
+                          <iso639Id>sme</iso639Id></languageList>
           </configItem>
         </variant>
         <variant>
