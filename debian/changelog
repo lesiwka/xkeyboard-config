@@ -1,3 +1,10 @@
+xkeyboard-config (1.5-2ubuntu2) jaunty; urgency=low
+
+  * Add 104_hin_wx.patch:  Cherrypick patch from upstream.
+    (LP: #274024)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 12 Feb 2009 19:43:58 -0800
+
 xkeyboard-config (1.5-2ubuntu1) jaunty; urgency=low
 
   * Merge with Debian.  Remaining Ubuntu changes:
