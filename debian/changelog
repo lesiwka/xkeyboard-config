@@ -1,3 +1,11 @@
+xkeyboard-config (1.5-2ubuntu4) jaunty; urgency=low
+
+  * Add 106_ru_fix_shift.patch: Shift doesn't work on Russian letters, and
+    -/_ is missing from Phonetic layout.
+    (LP: #309844)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 12 Feb 2009 21:36:22 -0800
+
 xkeyboard-config (1.5-2ubuntu3) jaunty; urgency=low
 
   * Add 105_lt_kpdl_and_balticplus.patch: KPDL should produce , not . on
