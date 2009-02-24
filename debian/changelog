@@ -1,3 +1,10 @@
+xkeyboard-config (1.5-2ubuntu5) jaunty; urgency=low
+
+  * Add 107_crh_layouts.patch: Add Crimean Tatar layouts for several
+    countries.  (LP: #323041)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 23 Feb 2009 18:36:29 -0800
+
 xkeyboard-config (1.5-2ubuntu4) jaunty; urgency=low
 
   * Add 106_ru_fix_shift.patch: Shift doesn't work on Russian letters, and
