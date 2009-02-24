@@ -1,0 +1,297 @@
+diff -Nur -x .git -x '*.pot' -x ChangeLog -x configure.in -x crh.po xkeyboard-config-1.5/rules/base.xml.in xkeyboard-config-1.5-patched/rules/base.xml.in
+--- xkeyboard-config-1.5/rules/base.xml.in	2009-01-28 01:27:22.000000000 -0600
++++ xkeyboard-config-1.5-patched/rules/base.xml.in	2009-02-15 14:01:09.000000000 -0600
+@@ -3257,6 +3257,34 @@
+             <_description>Winkeys</_description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>crh_f</name>
++            <_description>Crimean Tatar (Turkish F)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_alt</name>
++            <_description>Crimean Tatar (Turkish Alt-Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_dobruca1</name>
++            <_description>Crimean Tatar (Dobruca-1 Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_dobruca2</name>
++            <_description>Crimean Tatar (Dobruca-2 Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+@@ -3788,6 +3816,27 @@
+             <_description>International (with dead keys)</_description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>crh</name>
++            <_description>Crimean Tatar (Turkish Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_f</name>
++            <_description>Crimean Tatar (Turkish F)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_alt</name>
++            <_description>Crimean Tatar (Turkish Alt-Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+@@ -3842,6 +3891,27 @@
+             <_description>Homophonic</_description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>crh</name>
++            <_description>Crimean Tatar (Turkish Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_f</name>
++            <_description>Crimean Tatar (Turkish F)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_alt</name>
++            <_description>Crimean Tatar (Turkish Alt-Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+@@ -3898,6 +3968,27 @@
+             <_description>Latin</_description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>crh</name>
++            <_description>Crimean Tatar (Turkish Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_f</name>
++            <_description>Crimean Tatar (Turkish F)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>crh_alt</name>
++            <_description>Crimean Tatar (Turkish Alt-Q)</_description>
++            <languageList><iso639Id>crh</iso639Id></languageList>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+diff -Nur -x .git -x '*.pot' -x ChangeLog -x configure.in -x crh.po xkeyboard-config-1.5/symbols/ro xkeyboard-config-1.5-patched/symbols/ro
+--- xkeyboard-config-1.5/symbols/ro	2009-01-28 01:27:22.000000000 -0600
++++ xkeyboard-config-1.5-patched/symbols/ro	2009-02-15 13:59:56.000000000 -0600
+@@ -193,3 +193,43 @@
+     include "level3(ralt_switch)"
+ 
+ };
++
++// Crimean Tatar (Crimean Turkish) layouts.
++partial
++xkb_symbols "crh_f" {
++    include "tr(crh_f)"
++
++    name[Group1]="Romania - Crimean Tatar (Turkish F)";
++};
++
++partial
++xkb_symbols "crh_alt" {
++    include "tr(crh_alt)"
++
++    name[Group1]="Romania - Crimean Tatar (Turkish Alt-Q)";
++};
++
++partial
++xkb_symbols "crh_dobruca1" {
++    include "tr(crh)"
++
++    name[Group1]="Romania - Crimean Tatar (Dobruca-1 Q)";
++
++    key <AD05>	{ [         t,          T,       tcedilla,       Tcedilla ]	};
++    key <AD10>	{ [         p,          P,         abreve,         Abreve ]	};
++
++    key <AC05>	{ [         g,          G,         ibreve,         Ibreve ]	};
++    key <AC07>	{ [    iacute,     Iacute,              j,              J ]	};
++
++    key <AB07>	{ [         m,          M,      trademark,      masculine ]	};
++};
++
++partial
++xkb_symbols "crh_dobruca2" {
++    include "ro(crh_dobruca1)"
++
++    name[Group1]="Romania - Crimean Tatar (Dobruca-2 Q)";
++
++    key <AC05>	{ [         g,          G,          iacute,          Iacute ]	};
++    key <AC07>	{ [    ibreve,     Ibreve,               j,               J ]	};
++};
+diff -Nur -x .git -x '*.pot' -x ChangeLog -x configure.in -x crh.po xkeyboard-config-1.5/symbols/tr xkeyboard-config-1.5-patched/symbols/tr
+--- xkeyboard-config-1.5/symbols/tr	2009-01-28 01:27:22.000000000 -0600
++++ xkeyboard-config-1.5-patched/symbols/tr	2009-02-13 02:21:06.000000000 -0600
+@@ -268,8 +268,7 @@
+     key <BKSL>	{ type[group1] = "FOUR_LEVEL",[     comma,  semicolon,   dead_grave, dead_grave ]	};
+     key <LSGT>	{ type[group1] = "FOUR_LEVEL",[     less,     greater,   bar,    brokenbar ]	};
+     key <AB08>	{ [odiaeresis, Odiaeresis,     multiply,   VoidSymbol ]	};
+-    key <AB09>	{ [  ccedilla,   Ccedilla, periodcentered,     division ] 
+-};
++    key <AB09>	{ [  ccedilla,   Ccedilla, periodcentered,     division ] };
+     key <AB10>	{ type[group1] = "FOUR_LEVEL",[    period,      colon, dead_abovedot, dead_abovedot ] };
+ 
+     include "nbsp(level3)"
+@@ -298,3 +297,58 @@
+     key <I219> { [  less,  greater, VoidSymbol, VoidSymbol ] };
+ 
+ };
++
++// Crimean Tatar (Crimean Turkish) layouts. 
++// These layouts are currently experimental. In particular, the mapping of letter 'x', 
++// included for foreign words and shortcuts, might change in the future...
++// Reşat SABIQ <tilde.birlik@gmail.org>, 2009
++
++// Crimean Tatar (Crimean Turkish) Q Layout
++default partial
++xkb_symbols "crh" {
++
++    include "tr(basic)"
++
++    name[Group1]="Turkey - Crimean Tatar (Turkish Q)";
++
++    key <AE11>	{ [         x,          X,          asterisk,      question ]   };
++
++    key <AC05>	{ [         g,          G,          iacute,          Iacute ]	};
++    key <AC07>	{ [         j,          J,          ibreve,          Ibreve ]	};
++    key <TLDE>	{ [  quotedbl,  backslash,            less,          degree ]	};
++
++    key <AB02>	{ [    ntilde,     Ntilde,  guillemotright,         greater ]	};
++};
++
++// Crimean Tatar (Crimean Turkish) F Layout
++default partial
++xkb_symbols "crh_f" {
++
++    include "tr(f)"
++
++    name[Group1]="Turkey - Crimean Tatar (Turkish F)";
++
++    key <AE11>	{ [         x,          X,           slash,        question ]	};
++
++    key <AD04>	{ type[group1] = "FOUR_LEVEL_SEMIALPHABETIC",
++                  [  idotless,          I,          iacute,          Iacute ]	};
++
++    key <AC07>	{ [         k,          K,          ibreve,          Ibreve ]	};
++    key <TLDE>	{ [      plus,   asterisk,       backslash,       plusminus ]	};
++
++    key <BKSL>	{ [    ntilde,     Ntilde,           grave,      dead_grave ]	};
++};
++
++// Crimean Tatar (Crimean Turkish) Alt-Q Layout
++partial
++xkb_symbols "crh_alt" {
++
++    include "tr(alt)"
++
++    name[Group1]="Turkey - Crimean Tatar (Turkish Alt-Q)";
++
++    key <AC05>	{ [         g,          G,          iacute,          Iacute ]	};
++    key <AC07>	{ [         j,          J,          ibreve,          Ibreve ]	};
++
++    key <AB06>	{ [         n,          N,          ntilde,          Ntilde ]	};
++};
+diff -Nur -x .git -x '*.pot' -x ChangeLog -x configure.in -x crh.po xkeyboard-config-1.5/symbols/ua xkeyboard-config-1.5-patched/symbols/ua
+--- xkeyboard-config-1.5/symbols/ua	2009-01-28 01:27:22.000000000 -0600
++++ xkeyboard-config-1.5-patched/symbols/ua	2009-02-13 02:22:20.000000000 -0600
+@@ -312,3 +312,24 @@
+   key <AB10> {   [ slash,             question            ]    };
+ };
+ 
++// Crimean Tatar (Crimean Turkish) layouts.
++partial
++xkb_symbols "crh" {
++    include "tr(crh)"
++
++    name[Group1]="Ukraine - Crimean Tatar (Turkish Q)";
++};
++
++partial
++xkb_symbols "crh_f" {
++    include "tr(crh_f)"
++
++    name[Group1]="Ukraine - Crimean Tatar (Turkish F)";
++};
++
++partial
++xkb_symbols "crh_alt" {
++    include "tr(crh_alt)"
++
++    name[Group1]="Ukraine - Crimean Tatar (Turkish Alt-Q)";
++};
+diff -Nur -x .git -x '*.pot' -x ChangeLog -x configure.in -x crh.po xkeyboard-config-1.5/symbols/uz xkeyboard-config-1.5-patched/symbols/uz
+--- xkeyboard-config-1.5/symbols/uz	2009-01-28 01:27:22.000000000 -0600
++++ xkeyboard-config-1.5-patched/symbols/uz	2009-02-13 02:23:39.000000000 -0600
+@@ -99,3 +99,24 @@
+     key <AC11>  { [0x010002BB, quotedbl] };
+ };
+ 
++// Crimean Tatar (Crimean Turkish) layouts.
++partial
++xkb_symbols "crh" {
++    include "tr(crh)"
++
++    name[Group1]="Uzbekistan - Crimean Tatar (Turkish Q)";
++};
++
++partial
++xkb_symbols "crh_f" {
++    include "tr(crh_f)"
++
++    name[Group1]="Uzbekistan - Crimean Tatar (Turkish F)";
++};
++
++partial
++xkb_symbols "crh_alt" {
++    include "tr(crh_alt)"
++
++    name[Group1]="Uzbekistan - Crimean Tatar (Turkish Alt-Q)";
++};
