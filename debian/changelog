@@ -1,3 +1,10 @@
+xkeyboard-config (1.5-2ubuntu6) jaunty; urgency=low
+
+  * Add 108_bg_standards_update.patch:  New phonetic layout for Bulgarian.
+    (LP: #197414)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Tue, 24 Feb 2009 14:51:25 -0800
+
 xkeyboard-config (1.5-2ubuntu5) jaunty; urgency=low
 
   * Add 107_crh_layouts.patch: Add Crimean Tatar layouts for several
