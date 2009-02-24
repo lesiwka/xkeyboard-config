@@ -1,7 +1,7 @@
-From efa0da6fba0ce4a8b20445bf88da64e69f959893 Mon Sep 17 00:00:00 2001
+From cc9045837fd8690c029b8508ed1bc471b5c3ad5b Mon Sep 17 00:00:00 2001
 From: Bryce Harrington <bryce@bryceharrington.org>
 Date: Tue, 24 Feb 2009 14:40:13 -0800
-Subject: [PATCH] Update bulgarian layouts and add new standard phonetic layout.
+Subject: [PATCH] Update bulgarian layouts and add new standard phonetic layout. #20301
 
 On Dec 5, 2007 the Bulgarian government created a new standard phonetic
 keyboard layout which differs from the traditional phonetic keyboard
@@ -10,9 +10,31 @@ with minor modifications recommended by the Bulgarian Academy of Science.
 
 Signed-off-by: Bryce Harrington <bryce@bryceharrington.org>
 ---
- symbols/bg |  101 ++++++++++++++++++++++++++++++++++++++++++++++++++++--------
- 1 files changed, 88 insertions(+), 13 deletions(-)
+ rules/base.xml.in |   10 +++++-
+ symbols/bg        |  101 ++++++++++++++++++++++++++++++++++++++++++++++-------
+ 2 files changed, 97 insertions(+), 14 deletions(-)
 
+diff --git a/rules/base.xml.in b/rules/base.xml.in
+index f12390a..ef7a4fb 100644
+--- a/rules/base.xml.in
++++ b/rules/base.xml.in
+@@ -1771,7 +1771,15 @@
+         <variant>
+           <configItem>
+             <name>phonetic</name>
+-            <_description>Phonetic</_description>
++            <_description>Traditional Phonetic</_description>
++          </configItem>
++        </variant>
++      </variantList>
++      <variantList>
++        <variant>
++          <configItem>
++            <name>bas_phonetic</name>
++            <_description>Standard Phonetic</_description>
+           </configItem>
+         </variant>
+       </variantList>
 diff --git a/symbols/bg b/symbols/bg
 index 8c4913c..b990d20 100644
 --- a/symbols/bg

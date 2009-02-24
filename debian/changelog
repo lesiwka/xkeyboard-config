@@ -1,3 +1,9 @@
+xkeyboard-config (1.5-2ubuntu7) jaunty; urgency=low
+
+  * 108_bg_standards_update.patch:  Update base.xml.in as well.
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Tue, 24 Feb 2009 15:03:51 -0800
+
 xkeyboard-config (1.5-2ubuntu6) jaunty; urgency=low
 
   * Add 108_bg_standards_update.patch:  New phonetic layout for Bulgarian.
