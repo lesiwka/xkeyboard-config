@@ -4,19 +4,6 @@ Date: Mon, 16 Mar 2009 09:18:32 +0000
 Subject: fixed Kyrgyz layouts, b.fd.o#17505
 
 ---
-diff --git a/ChangeLog b/ChangeLog
-index e3062be..1f5cc92 100644
---- a/ChangeLog
-+++ b/ChangeLog
-@@ -1,3 +1,8 @@
-+2009-03-16 Sergey Udaltsov
-+
-+	* rules/base.lists.part, rules/base.xml.in, symbols/kg: fixed Kyrgyz
-+	variants, http://bugs.freedesktop.org/show_bug.cgi?id=17505
-+
- 2009-03-07 Sergey Udaltsov
- 
- 	* rules/base.m_s.part, rules/base.xml.in: added trust_slimline model,
 diff --git a/rules/base.lists.part b/rules/base.lists.part
 index b708e46..7e75dfc 100644
 --- a/rules/base.lists.part

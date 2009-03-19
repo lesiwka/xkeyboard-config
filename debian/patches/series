@@ -18,5 +18,6 @@ unhide_lv3_enter_switch.diff
 108_bg_standards_update.patch
 109_de_low_quotemarks.patch
 110_fi_brokenbar.patch
-111_si_rm_unnecessary_diagraph_layouts.patch 112_si_rm_unnecessary_diagraph_layouts_basexmlin.patch
+111_si_rm_unnecessary_diagraph_layouts.patch
+112_si_rm_unnecessary_diagraph_layouts_basexmlin.patch
 113_kg_fix_kyrgyz_layouts.patch
