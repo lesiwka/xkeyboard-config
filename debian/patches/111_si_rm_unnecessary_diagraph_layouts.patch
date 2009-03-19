@@ -1,0 +1,43 @@
+From 213efc4d196ec2e1761242cde53a73bec78ac096 Mon Sep 17 00:00:00 2001
+From: Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+Date: Sat, 14 Feb 2009 10:15:59 +0100
+Subject: [PATCH 2/2] symbols/si: removed extraneous variants introduced in 2005 with bad7b04130f
+
+b.fd.o#19530
+
+Signed-off-by: Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+---
+ symbols/si |   20 --------------------
+ 1 files changed, 0 insertions(+), 20 deletions(-)
+
+diff --git a/symbols/si b/symbols/si
+index f133065..ced6d2f 100644
+--- a/symbols/si
++++ b/symbols/si
+@@ -31,23 +31,3 @@ xkb_symbols "alternatequotes" {
+ 
+     key <TLDE> { type[Group1]="TWO_LEVEL", [ cedilla, diaeresis ] };
+ };
+-
+-partial alphanumeric_keys 
+-xkb_symbols "unicode" {
+-
+-    name[Group1]= "Slovenia - Use Slovenian digraphs";
+-
+-    include "rs(latinunicode)"
+-
+-    key <TLDE> { type[Group1]="TWO_LEVEL", [ cedilla, diaeresis ] };
+-};
+-
+-partial alphanumeric_keys 
+-xkb_symbols "unicodeus" {
+-
+-    name[Group1]= "Slovenia - US keyboard with Slovenian digraphs";
+-
+-    include "rs(latinunicodeyz)"
+-
+-    key <TLDE> { type[Group1]="TWO_LEVEL", [ cedilla, diaeresis ] };
+-};
+-- 
+1.6.1.2
+

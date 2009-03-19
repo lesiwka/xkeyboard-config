@@ -1,0 +1,32 @@
+From e86ab43259d9f0f156b9981f8978a63cba5c4220 Mon Sep 17 00:00:00 2001
+From: Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+Date: Sat, 14 Feb 2009 18:42:46 +0000
+Subject: rules/base.xml.in: removed previously removed slovenian variants
+
+Signed-off-by: Jaka Kranjc <lynxlynxlynx@sourcemage.org>
+---
+diff --git a/rules/base.xml.in b/rules/base.xml.in
+index 5316ac4..f12390a 100644
+--- a/rules/base.xml.in
++++ b/rules/base.xml.in
+@@ -3452,18 +3452,6 @@
+         </variant>
+         <variant>
+           <configItem>
+-            <name>unicode</name>
+-            <_description>Use Slovenian digraphs</_description>
+-          </configItem>
+-        </variant>
+-        <variant>
+-          <configItem>
+-            <name>unicodeus</name>
+-            <_description>US keyboard with Slovenian digraphs</_description>
+-          </configItem>
+-        </variant>
+-        <variant>
+-          <configItem>
+             <name>us</name>
+             <_description>US keyboard with Slovenian letters</_description>
+           </configItem>
+--
+cgit v0.8.2

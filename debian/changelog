@@ -1,3 +1,24 @@
+xkeyboard-config (1.5-2ubuntu8) jaunty; urgency=low
+
+  * Update 106_ru_fix_shift.patch:  Remove extraneous parts to only
+    change the minus/underscore issue.  Upstream.
+    (LP: #309844)
+  * Add 109_de_low_quotemarks.patch: Add keys for typing low quotation
+    marks.  Upstream.
+    (LP: #59572)
+  * Add 110_fi_brokenbar.patch: Add keys for bar and broken bar symbols in
+    the finnish keymap.  Upstream.
+    (LP: #181595)
+  * Add 111_si_rm_unnecessary_diagraph_layouts.patch
+    and 112_si_rm_unnecessary_diagraph_layouts_basexmlin.patch:
+    Remove unnecessary diagraph layouts.  Upstream.
+    (LP: #162462)
+  * Add 113_kg_fix_kyrgyz_layouts.patch:  Update to official Kyrgyz
+    Republic layouts.  Upstream.
+    (LP: #198655)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Wed, 18 Mar 2009 22:02:42 -0700
+
 xkeyboard-config (1.5-2ubuntu7) jaunty; urgency=low
 
   * 108_bg_standards_update.patch:  Update base.xml.in as well.
