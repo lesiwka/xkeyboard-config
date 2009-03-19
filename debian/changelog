@@ -1,3 +1,11 @@
+xkeyboard-config (1.5-2ubuntu9) jaunty; urgency=low
+
+  * Update 109_de_low_quotemarks.patch,
+    111_si_rm_unnecessary_diagraph_layouts.patch, and
+    113_kg_fix_kyrgyz_layouts.patch to apply (FTBS).
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 19 Mar 2009 00:34:40 -0700
+
 xkeyboard-config (1.5-2ubuntu8) jaunty; urgency=low
 
   * Update 106_ru_fix_shift.patch:  Remove extraneous parts to only
