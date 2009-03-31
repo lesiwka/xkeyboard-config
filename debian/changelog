@@ -1,3 +1,19 @@
+xkeyboard-config (1.5-2ubuntu11) jaunty; urgency=low
+
+  * debian/xkeyboard-config.pot: Add pot file for translations
+    (LP: #349341)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 30 Mar 2009 21:32:36 -0700
+
+xkeyboard-config (1.5-2ubuntu10) jaunty; urgency=low
+
+  * README.Debian: Don't advertise customization of keyboard layouts by
+    hacking on base.xml, since that file gets overwritten on upgrade, and
+    since upstream does not consider this an end-user customizable thing.
+    (LP: #297428)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 19 Mar 2009 12:12:34 -0700
+
 xkeyboard-config (1.5-2ubuntu9) jaunty; urgency=low
 
   * Update 109_de_low_quotemarks.patch,
