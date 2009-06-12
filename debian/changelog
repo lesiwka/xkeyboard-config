@@ -1,3 +1,27 @@
+xkeyboard-config (1.6-1ubuntu1) karmic; urgency=low
+
+  * Merge from debian unstable (LP: #386445), remaining changes:
+    - debian/xkeyboard-config.pot: Add pot file for translations (updated)
+    - README.Debian: Don't advertise hacking on base.xml
+  * All Ubuntu patches dropped, applied in source.  Except for one small
+    part of 110_fi_brokenbar.patch which upstream rejected.
+
+ -- Michael Terry <michael.terry@canonical.com>  Fri, 12 Jun 2009 13:51:29 -0400
+
+xkeyboard-config (1.6-1) unstable; urgency=low
+
+  * Add Breaks on old libx11-6.  It seems some people are keeping very, very
+    old libx11-6 versions, which didn't know about some keysyms we're now
+    using, thus making their keyboard unusable (closes: #530585, #514975).
+  * New upstream release
+    + adds Crimean Tatar layouts (closes: #513557)
+    + French translation updated (closes: #529479)
+    + fixes handling of compat layouts (closes: #514409)
+  * Patches sclk_toggle.diff and unhide_lv3_enter_switch.diff are upstream.
+  * Add README.source, bump Standards-Version to 3.8.1.
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 30 May 2009 16:39:19 +0200
+
 xkeyboard-config (1.5-2ubuntu11) jaunty; urgency=low
 
   * debian/xkeyboard-config.pot: Add pot file for translations
