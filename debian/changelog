@@ -1,3 +1,11 @@
+xkeyboard-config (1.6-1ubuntu2) karmic; urgency=low
+
+  * Add abnt2-mapping-of-dot-key.patch, to fix ABNT2 numpad keyboards to
+    print period/dot instead of comma.  Cherrypick from upstream.
+    (LP: #272606)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 20 Aug 2009 10:42:47 -0700
+
 xkeyboard-config (1.6-1ubuntu1) karmic; urgency=low
 
   * Merge from debian unstable (LP: #386445), remaining changes:
