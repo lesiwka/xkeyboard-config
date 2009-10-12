@@ -1,6 +1,17 @@
+xkeyboard-config (1.6-1ubuntu3) karmic; urgency=low
+
+  * Add 101_rus.patch:  Tag USA Russian Phonetic keyboard layout with
+    Russian language tag.
+    (LP: #429034)
+  * Add 102_mac_aliases.patch: Fix error activating XKB config on MacBook
+    due to lack of mac w/ deadkeys layout aliases.
+    (LP: #327963)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 12 Oct 2009 15:27:33 -0700
+
 xkeyboard-config (1.6-1ubuntu2) karmic; urgency=low
 
-  * Add abnt2-mapping-of-dot-key.patch, to fix ABNT2 numpad keyboards to
+  * Add 100_abnt2-mapping-of-dot-key.patch, to fix ABNT2 numpad keyboards to
     print period/dot instead of comma.  Cherrypick from upstream.
     (LP: #272606)
 

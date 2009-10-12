@@ -1,0 +1,11 @@
+diff -Nurp xkeyboard-config-1.6/rules/base.xml.in xkeyboard-config-working/rules/base.xml.in
+--- xkeyboard-config-1.6/rules/base.xml.in	2009-05-18 14:07:25.000000000 -0700
++++ xkeyboard-config-working/rules/base.xml.in	2009-10-12 14:52:40.000000000 -0700
+@@ -1235,6 +1235,7 @@
+           <configItem>
+             <name>rus</name>
+             <_description>Russian phonetic</_description>
++            <languageList><iso639Id>rus</iso639Id></languageList>
+           </configItem>
+         </variant>
+         <variant>
