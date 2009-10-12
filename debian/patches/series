@@ -1,2 +1,4 @@
 docs.diff
 100_abnt2-mapping-of-dot-key.patch
+101_rus.patch
+102_mac_aliases.patch
