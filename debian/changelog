@@ -1,3 +1,12 @@
+xkeyboard-config (1.6-1ubuntu4) karmic; urgency=low
+
+  * Add 103_swiss_legacy.patch: Newer swiss keyboards have swapped bar and
+    brokenbar as a workaround to a Microsoft mistake in the Windows
+    keyboard layout.
+    (LP: #222430)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Tue, 13 Oct 2009 11:06:15 -0700
+
 xkeyboard-config (1.6-1ubuntu3) karmic; urgency=low
 
   * Add 101_rus.patch:  Tag USA Russian Phonetic keyboard layout with
