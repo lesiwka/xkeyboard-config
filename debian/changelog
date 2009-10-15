@@ -1,3 +1,10 @@
+xkeyboard-config (1.6-1ubuntu5) karmic; urgency=low
+
+  * Fix 103_swiss_legacy.patch to not patch the Changelog, so that it applies
+    cleanly.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 15 Oct 2009 09:24:53 +0000
+
 xkeyboard-config (1.6-1ubuntu4) karmic; urgency=low
 
   * Add 103_swiss_legacy.patch: Newer swiss keyboards have swapped bar and

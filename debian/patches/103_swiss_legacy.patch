@@ -6,24 +6,11 @@ Date:   Tue Oct 13 10:00:12 2009 +0100
     
     http://bugs.freedesktop.org/show_bug.cgi?id=24490
 
-diff --git a/ChangeLog b/ChangeLog
-index b146867..bd94b75 100644
---- a/ChangeLog
-+++ b/ChangeLog
-@@ -3,6 +3,8 @@
- 	* rules/base.lists.part, symbols/macintosh_vndr/Makefile.am,
- 	symbols/macintosh_vndr/es: Spanish mac layout just included the
- 	general one
-+	* rules/base.xml.in, symbols/ch: fixed Swiss default layout, added
-+	legacy variant, http://bugs.freedesktop.org/show_bug.cgi?id=24490
- 
- 2009-10-12 Sergey Udaltsov
- 
-diff --git a/rules/base.xml.in b/rules/base.xml.in
-index 58940c9..228b5e9 100644
---- a/rules/base.xml.in
-+++ b/rules/base.xml.in
-@@ -3706,6 +3706,12 @@
+Index: xkeyboard-config-1.6/rules/base.xml.in
+===================================================================
+--- xkeyboard-config-1.6.orig/rules/base.xml.in
++++ xkeyboard-config-1.6/rules/base.xml.in
+@@ -3656,6 +3656,12 @@
        <variantList>
          <variant>
            <configItem>
@@ -36,11 +23,11 @@ index 58940c9..228b5e9 100644
              <name>de_nodeadkeys</name>
              <_description>German, eliminate dead keys</_description>
            </configItem>
-diff --git a/symbols/ch b/symbols/ch
-index 3a7646f..a0a2621 100644
---- a/symbols/ch
-+++ b/symbols/ch
-@@ -16,7 +16,7 @@ xkb_symbols "basic" {
+Index: xkeyboard-config-1.6/symbols/ch
+===================================================================
+--- xkeyboard-config-1.6.orig/symbols/ch
++++ xkeyboard-config-1.6/symbols/ch
+@@ -16,7 +16,7 @@
      key <AE04> { [          4,   ccedilla                           ] };
      key <AE05> { [          5,    percent                           ] };
      key <AE06> { [          6,  ampersand,      notsign             ] };
@@ -49,7 +36,7 @@ index 3a7646f..a0a2621 100644
      key <AE08> { [          8,  parenleft,         cent             ] };
      key <AE09> { [          9, parenright                           ] };
      key <AE10> { [          0,      equal                           ] };
-@@ -42,6 +42,14 @@ xkb_symbols "basic" {
+@@ -42,6 +42,14 @@
  };
  
  partial alphanumeric_keys 
