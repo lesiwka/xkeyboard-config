@@ -38,7 +38,7 @@ $(STAMP_DIR)/build: config.status
 clean: xsfclean
 	dh_testdir
 	dh_testroot
-	[ ! -f Makefile ] || $(MAKE) distclean
+	[ ! -f Makefile ] || $(MAKE) maintainer-clean
 	rm -rf $$(find -name Makefile.in)
 	rm -f aclocal.m4 configure install-sh intltool-*.in
 	rm -f missing po/Makefile.in.in
@@ -49,7 +49,7 @@ clean: xsfclean
 	-rm -f intltool-extract intltool-merge intltool-update
 	-rm -f rules/base.xml
 	-rm -f po/.intltool-merge-cache config.status.lineno
-	dh_clean 
+	dh_clean
 	rm -f compat/compat.dir geometry/geometry.dir keycodes/keycodes.dir
 	rm -f keymap/keymap.dir symbols/symbols.dir types/types.dir rules/base
 	rm -f rules/compat/base.l[2-4]*.part rules/compat/base.m*.part
@@ -70,17 +70,12 @@ dir:
 install: build
 	dh_testdir
 	dh_testroot
-	dh_clean -k 
+	dh_prep
 	dh_installdirs
 
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/xkb-data
 	#  Remove this symlink, it is no more needed
 	rm -f $(CURDIR)/debian/xkb-data/$(xkb_base)/compiled
-
-        # Move base.xml to /etc/X11/xkb/ and make
-        # /usr/share/X11/xkb/rules/base.xml links to it
-	mv debian/xkb-data/usr/share/X11/xkb/rules/base.xml debian/xkb-data/etc/X11/xkb/
-	dh_link etc/X11/xkb/base.xml usr/share/X11/xkb/rules/base.xml
 
 # Build architecture-dependent files here.
 binary-arch: build install
