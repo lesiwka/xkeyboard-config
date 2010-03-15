@@ -1,3 +1,18 @@
+xkeyboard-config (1.8-1) unstable; urgency=low
+
+  [ Julien Cristau ]
+  * Remove myself from Uploaders
+  * New upstream release
+    + Fix Win key as third level chooser (closes: #531771)
+
+  [ Cyril Brulebois ]
+  * Add udeb needed for the graphical installer: xkb-data-udeb.
+  * Add myself to Uploaders.
+  * Bump Standards-Version from 3.8.3 to 3.8.4 (no changes needed).
+  * Add Depends: ${misc:Depends} to xkb-data.
+
+ -- Cyril Brulebois <kibi@debian.org>  Mon, 15 Mar 2010 14:24:43 +0100
+
 xkeyboard-config (1.7-2) unstable; urgency=low
 
   * Apparently some people have /etc/X11/xkb as a symlink, which makes rmdir
