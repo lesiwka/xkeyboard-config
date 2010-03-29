@@ -18,7 +18,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../rules/base.xml.in.h:1
 msgid "(F)"
@@ -510,19 +511,26 @@ msgstr "CapsLock"
 
 #: ../rules/base.xml.in.h:123
 msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
-msgstr "CapsLock (на первую раскладку), Shift+CapsLock (на последнюю раскладку)"
+msgstr ""
+"CapsLock (на первую раскладку), Shift+CapsLock (на последнюю раскладку)"
 
 #: ../rules/base.xml.in.h:124
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
-msgstr "CapsLock (пока нажата), Alt+CapsLock выполняет первоначальную функцию capslock"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgstr ""
+"CapsLock (пока нажата), Alt+CapsLock выполняет первоначальную функцию "
+"capslock"
 
 #: ../rules/base.xml.in.h:125
 msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock"
-msgstr "CapsLock действует как Shift с блокировкой. Shift приостанавливает действие CapsLock"
+msgstr ""
+"CapsLock действует как Shift с блокировкой. Shift приостанавливает действие "
+"CapsLock"
 
 #: ../rules/base.xml.in.h:126
 msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock"
-msgstr "CapsLock действует как Shift с блокировкой. Shift не влияет на CapsLock"
+msgstr ""
+"CapsLock действует как Shift с блокировкой. Shift не влияет на CapsLock"
 
 #: ../rules/base.xml.in.h:127
 msgid "CapsLock is disabled"
@@ -534,7 +542,8 @@ msgstr "Поведение клавиши CapsLock"
 
 #: ../rules/base.xml.in.h:129
 msgid "CapsLock toggles Shift so all keys are affected"
-msgstr "CapsLock включает Shift, таким образом что, он действует сразу на все клавиши"
+msgstr ""
+"CapsLock включает Shift, таким образом что, он действует сразу на все клавиши"
 
 #: ../rules/base.xml.in.h:130
 msgid "CapsLock toggles normal capitalization of alphabetic characters"
@@ -542,11 +551,14 @@ msgstr "CapsLock включает обычную капитализацию си
 
 #: ../rules/base.xml.in.h:131
 msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock"
-msgstr "CapsLock включает внутреннюю капитализацию. Shift приостанавливает действие CapsLock"
+msgstr ""
+"CapsLock включает внутреннюю капитализацию. Shift приостанавливает действие "
+"CapsLock"
 
 #: ../rules/base.xml.in.h:132
 msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock"
-msgstr "CapsLock включает внутреннюю капитализацию. Shift не влияет на CapsLock"
+msgstr ""
+"CapsLock включает внутреннюю капитализацию. Shift не влияет на CapsLock"
 
 #: ../rules/base.xml.in.h:133
 msgid "Catalan variant with middle-dot L"
@@ -674,7 +686,9 @@ msgstr "Control + Alt + Backspace"
 
 #: ../rules/base.xml.in.h:164
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr "Control используется в качестве клавиш Alt, Alt используется в качестве клавиш Win"
+msgstr ""
+"Control используется в качестве клавиш Alt, Alt используется в качестве "
+"клавиш Win"
 
 #: ../rules/base.xml.in.h:165
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
@@ -1544,7 +1558,8 @@ msgstr "Левая клавиша Win"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Левая Win (на первую раскладку), Правая Win/Menu (на последнюю раскладку)"
+msgstr ""
+"Левая Win (на первую раскладку), Правая Win/Menu (на последнюю раскладку)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1956,12 +1971,20 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Символ неразрывного пробела на четвёртом уровне"
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Символ неразрывного пробела на четвёртом уровне, символ тонкого неразрывного пробела на шестом уровне"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Символ неразрывного пробела на четвёртом уровне, символ тонкого неразрывного "
+"пробела на шестом уровне"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Символ неразрывного пробела на четвёртом уровне, символ тонкого неразрывного пробела на шестом уровне (с помощью Ctrl+Shift)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Символ неразрывного пробела на четвёртом уровне, символ тонкого неразрывного "
+"пробела на шестом уровне (с помощью Ctrl+Shift)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
@@ -1976,8 +1999,12 @@ msgid "Non-breakable space character at third level, nothing at fourth level"
 msgstr "Символ неразрывного пробела на третьем уровне, ничего на четвёртом"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "Символ неразрывного пробела на третьем уровне, символ тонкого неразрывного пробела на четвёртом уровне"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"Символ неразрывного пробела на третьем уровне, символ тонкого неразрывного "
+"пробела на четвёртом уровне"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2197,7 +2224,9 @@ msgstr "Румынская клавиатура с немецкими буква
 
 #: ../rules/base.xml.in.h:547
 msgid "Romanian keyboard with German letters, eliminate dead keys"
-msgstr "Румынская клавиатура с немецкими буквами, исключить специальные клавиши (dead keys)"
+msgstr ""
+"Румынская клавиатура с немецкими буквами, исключить специальные клавиши "
+"(dead keys)"
 
 #: ../rules/base.xml.in.h:548
 msgid "Rou"
@@ -2301,7 +2330,8 @@ msgstr "Shift не отменяет NumLock, а выбирает третий у
 
 #: ../rules/base.xml.in.h:573
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr "Клавиша Shift с клавишами цифровой клавиатуры работают также как в MS Windows"
+msgstr ""
+"Клавиша Shift с клавишами цифровой клавиатуры работают также как в MS Windows"
 
 #: ../rules/base.xml.in.h:574
 msgid "Shift+CapsLock"
@@ -2614,8 +2644,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Добавления юникода (стрелки и математические операторы)"
 
 #: ../rules/base.xml.in.h:653
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Добавления юникода (стрелки и математические операторы). Математические операторы на уровне по умолчанию"
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Добавления юникода (стрелки и математические операторы). Математические "
+"операторы на уровне по умолчанию"
 
 #: ../rules/base.xml.in.h:654
 msgid "UnicodeExpert"
@@ -2655,7 +2689,8 @@ msgstr "Использовать кавычки ёлочки как кавычк
 
 #: ../rules/base.xml.in.h:663
 msgid "Use keyboard LED to show alternative layout"
-msgstr "Использовать клавиатурные индикаторы для отображения дополнительных раскладок"
+msgstr ""
+"Использовать клавиатурные индикаторы для отображения дополнительных раскладок"
 
 #: ../rules/base.xml.in.h:664
 msgid "Using space key to input non-breakable space character"
@@ -2687,11 +2722,16 @@ msgstr "Вьет"
 
 #: ../rules/base.xml.in.h:671
 msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
-msgstr "Wang 724 keypad с добавлениями юникода (стрелки и математические операторы)"
+msgstr ""
+"Wang 724 keypad с добавлениями юникода (стрелки и математические операторы)"
 
 #: ../rules/base.xml.in.h:672
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Wang 724 keypad с добавлениями юникода (стрелки и математические операторы). Математические операторы на уровне по умолчанию"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Wang 724 keypad с добавлениями юникода (стрелки и математические операторы). "
+"Математические операторы на уровне по умолчанию"
 
 #: ../rules/base.xml.in.h:673
 msgid "Wang model 724 azerty"
@@ -2800,3 +2840,11 @@ msgstr "Международная (объединённая с AltGr Unicode)"
 #: ../rules/base.extras.xml.in.h:6
 msgid "International (AltGr Unicode combining, alternative)"
 msgstr "Международная (объединённая с AltGr Unicode, альтернативная)"
+
+#: ../rules/base.xml.in.h:86
+msgid "Baltic+"
+msgstr "Baltic+"
+
+#: ../rules/base.xml.in.h:308
+msgid "IBM ThinkPad 560Z/600/600E/A22E, Intl"
+msgstr "IBM ThinkPad 560Z/600/600E/A22E, международный"

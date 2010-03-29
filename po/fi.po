@@ -297,7 +297,9 @@ msgstr "Armenia"
 
 #: ../rules/base.xml.in.h:70
 msgid "Asturian variant with bottom-dot H and bottom-dot L"
-msgstr "Asturia-vaihtoehto keskipilkullisella H-kirjaimella ja alapilkullisella L-kirjaimella"
+msgstr ""
+"Asturia-vaihtoehto keskipilkullisella H-kirjaimella ja alapilkullisella L-"
+"kirjaimella"
 
 #: ../rules/base.xml.in.h:71
 msgid "Asus Laptop"
@@ -512,8 +514,10 @@ msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
 msgstr "CapsLock (ensimmäiselle tasolle), Shift+CapsLock (viimeiselle tasolle)"
 
 #: ../rules/base.xml.in.h:124
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
-msgstr "CapsLock (painettaessa), Alt+CapsLock tekee normaalin CapsLock-toiminnon"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgstr ""
+"CapsLock (painettaessa), Alt+CapsLock tekee normaalin CapsLock-toiminnon"
 
 #: ../rules/base.xml.in.h:125
 msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock"
@@ -1529,7 +1533,8 @@ msgstr "Vasen Ctrl"
 
 #: ../rules/base.xml.in.h:379
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
-msgstr "Vasen ctrl (ensimmäiselle asettelulle), Oikea Ctrl (viimeiselle asettelulle)"
+msgstr ""
+"Vasen ctrl (ensimmäiselle asettelulle), Oikea Ctrl (viimeiselle asettelulle)"
 
 #: ../rules/base.xml.in.h:380
 msgid "Left Ctrl+Left Shift"
@@ -1545,7 +1550,9 @@ msgstr "Vasen Win"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Vasen Win (ensimmäiselle asettelulle), Oikea Win/valikko (viimeiselle asettelulle)"
+msgstr ""
+"Vasen Win (ensimmäiselle asettelulle), Oikea Win/valikko (viimeiselle "
+"asettelulle)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1838,7 +1845,8 @@ msgstr "Microsoft Natural-näppäimistö Pro OEM"
 
 #: ../rules/base.xml.in.h:457
 msgid "Microsoft Natural Keyboard Pro USB / Microsoft Internet Keyboard Pro"
-msgstr "Microsoft Natural-näppäimistö Pro USB / Microsoft-Internet-näppäimistö Pro"
+msgstr ""
+"Microsoft Natural-näppäimistö Pro USB / Microsoft-Internet-näppäimistö Pro"
 
 #: ../rules/base.xml.in.h:458
 msgid "Microsoft Natural Wireless Ergonomic Keyboard 7000"
@@ -1957,12 +1965,20 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Sitova välilyöntimerkki 4. tasolla"
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Sitova välilyöntimerkki 4. tasolla ja kapea sitova välilyöntimerkki 6. tasolla"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Sitova välilyöntimerkki 4. tasolla ja kapea sitova välilyöntimerkki 6. "
+"tasolla"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Sitova välilyöntimerkki 4. tasolla, kapea sitova välilyöntimerkki 6. tasolla (Ctrl+Shift)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Sitova välilyöntimerkki 4. tasolla, kapea sitova välilyöntimerkki 6. tasolla "
+"(Ctrl+Shift)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
@@ -1977,8 +1993,11 @@ msgid "Non-breakable space character at third level, nothing at fourth level"
 msgstr "Sitova välilyöntimerkki 3. tasolla eikä mitään 4. tasolla"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "Sitova välilyöntimerkki 3. tasolla, kapea sitova välilyöntimerkki 4. tasolla"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"Sitova välilyöntimerkki 3. tasolla, kapea sitova välilyöntimerkki 4. tasolla"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2198,7 +2217,8 @@ msgstr "Romanialainen näppäimistö saksalaisilla kirjaimilla"
 
 #: ../rules/base.xml.in.h:547
 msgid "Romanian keyboard with German letters, eliminate dead keys"
-msgstr "Romanialainen näppäimistö saksalaisilla kirjaimilla, ei kuolleita näppäimiä"
+msgstr ""
+"Romanialainen näppäimistö saksalaisilla kirjaimilla, ei kuolleita näppäimiä"
 
 #: ../rules/base.xml.in.h:548
 msgid "Rou"
@@ -2615,8 +2635,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Unicode-lisäosat (nuolet ja matematiikkatoiminnot)"
 
 #: ../rules/base.xml.in.h:653
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Unicode-lisäosat (nuolet ja matematiikkatoiminnot). Matematiikkatoiminnot oletustasolla"
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Unicode-lisäosat (nuolet ja matematiikkatoiminnot). Matematiikkatoiminnot "
+"oletustasolla"
 
 #: ../rules/base.xml.in.h:654
 msgid "UnicodeExpert"
@@ -2688,11 +2712,16 @@ msgstr "Vnm"
 
 #: ../rules/base.xml.in.h:671
 msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
-msgstr "Wang 724 -sormio Unicode-lisäyksin (nuolet sekä matematiikkaoperaatiot)"
+msgstr ""
+"Wang 724 -sormio Unicode-lisäyksin (nuolet sekä matematiikkaoperaatiot)"
 
 #: ../rules/base.xml.in.h:672
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Wang 724 -sormio Unicode-lisäyksin (nuolet sekä matematiikkaoperaatiot). Matematiikkaoperaatiot oletustasolla"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Wang 724 -sormio Unicode-lisäyksin (nuolet sekä matematiikkaoperaatiot). "
+"Matematiikkaoperaatiot oletustasolla"
 
 #: ../rules/base.xml.in.h:673
 msgid "Wang model 724 azerty"
@@ -2985,8 +3014,11 @@ msgstr "Kansainvälinen (AltGr-Unicode-yhdistäminen, vaihtoehtoinen)"
 #~ msgid "Shift+CapsLock changes layout."
 #~ msgstr "Shift+CapsLock vaihtaa asettelua."
 
-#~ msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
-#~ msgstr "Vaihda kahden näppäimen näppäinkoodin, jos ydin tunnistaa väärin Mac-näppäimistön."
+#~ msgid ""
+#~ "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+#~ msgstr ""
+#~ "Vaihda kahden näppäimen näppäinkoodin, jos ydin tunnistaa väärin Mac-"
+#~ "näppäimistön."
 
 #~ msgid "Third level choosers"
 #~ msgstr "Kolmannnen tason valitsimet"
@@ -3102,8 +3134,11 @@ msgstr "Kansainvälinen (AltGr-Unicode-yhdistäminen, vaihtoehtoinen)"
 #~ msgid "Press Right Alt key to choose 3rd level"
 #~ msgstr "Paina oikeaa Alt-näppäintä valitaksesi kolmannen tason"
 
-#~ msgid "Press Right Alt-key to choose 3rd level, Shift+Right Alt-key is Multi_Key"
-#~ msgstr "Paina oikeaa Alt-näppäintä valitaksesi kolmannen tason, Shift-Oikea Alt on Multi_Key"
+#~ msgid ""
+#~ "Press Right Alt-key to choose 3rd level, Shift+Right Alt-key is Multi_Key"
+#~ msgstr ""
+#~ "Paina oikeaa Alt-näppäintä valitaksesi kolmannen tason, Shift-Oikea Alt "
+#~ "on Multi_Key"
 
 #~ msgid "Press Right Control to choose 3rd level"
 #~ msgstr "Paina oikeaa Ctrl-näppäintä valitaksesi kolmannen tason"
@@ -3211,7 +3246,8 @@ msgstr "Kansainvälinen (AltGr-Unicode-yhdistäminen, vaihtoehtoinen)"
 #~ msgstr "Logitech Cordless Desktop Pro (vaihtoehtoinen)"
 
 #~ msgid "Use keypad with unicode additions (arrows and math operators)"
-#~ msgstr "Käytä sormiota unicodelisäyksin (nuolet sekä matematiikkaoperaattorit)"
+#~ msgstr ""
+#~ "Käytä sormiota unicodelisäyksin (nuolet sekä matematiikkaoperaattorit)"
 
 #~ msgid "Adding the nobreakspace keysym to space key"
 #~ msgstr "Sitovan välilyönnin lisäys välilyöntinäppäimeen"

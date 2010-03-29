@@ -507,11 +507,15 @@ msgstr "BloqMaj"
 
 #: ../rules/base.xml.in.h:123
 msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
-msgstr "BloqMaj (a la primera disposició), Maj+BloqMaj (a la darrera disposició)"
+msgstr ""
+"BloqMaj (a la primera disposició), Maj+BloqMaj (a la darrera disposició)"
 
 #: ../rules/base.xml.in.h:124
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
-msgstr "BloqMaj (mentre està premuda), Alt+BloqMaj efectua l'acció de BloqMaj original"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgstr ""
+"BloqMaj (mentre està premuda), Alt+BloqMaj efectua l'acció de BloqMaj "
+"original"
 
 #: ../rules/base.xml.in.h:125
 msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock"
@@ -1526,7 +1530,8 @@ msgstr "Ctrl esquerra"
 
 #: ../rules/base.xml.in.h:379
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
-msgstr "Ctrl esquerra (a la primera disposició), Ctrl dreta (a la darrera disposició)"
+msgstr ""
+"Ctrl esquerra (a la primera disposició), Ctrl dreta (a la darrera disposició)"
 
 #: ../rules/base.xml.in.h:380
 msgid "Left Ctrl+Left Shift"
@@ -1542,7 +1547,9 @@ msgstr "Win esquerra"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Win esquerra (a la primera disposició), Win/Menú dreta (a la darrera disposició)"
+msgstr ""
+"Win esquerra (a la primera disposició), Win/Menú dreta (a la darrera "
+"disposició)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1954,28 +1961,44 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Caràcter d'espai sense salt al nivell quart"
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Caràcter d'espai sense salt al nivell quart, i un caràcter d'espai fi sense salt al nivell sisè"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Caràcter d'espai sense salt al nivell quart, i un caràcter d'espai fi sense "
+"salt al nivell sisè"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Caràcter d'espai sense salt al nivell quart, un caràcter d'espai fi sense salt al nivell sisè (via Ctrl+Maj)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Caràcter d'espai sense salt al nivell quart, un caràcter d'espai fi sense "
+"salt al nivell sisè (via Ctrl+Maj)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
-msgstr "La tecla d'espai produeix un caràcter d'espai sense salt al nivell segon"
+msgstr ""
+"La tecla d'espai produeix un caràcter d'espai sense salt al nivell segon"
 
 #: ../rules/base.xml.in.h:490
 msgid "Non-breakable space character at third level"
-msgstr "La tecla d'espai produeix un caràcter d'espai sense salt al nivell tercer"
+msgstr ""
+"La tecla d'espai produeix un caràcter d'espai sense salt al nivell tercer"
 
 #: ../rules/base.xml.in.h:491
 msgid "Non-breakable space character at third level, nothing at fourth level"
-msgstr "La tecla d'espai produeix un caràcter d'espai sense salt al nivell tercer, i res al nivell quart"
+msgstr ""
+"La tecla d'espai produeix un caràcter d'espai sense salt al nivell tercer, i "
+"res al nivell quart"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "La tecla d'espai produeix un caràcter d'espai sense salt al nivell tercer, i un caràcter d'espai fi sense salt al nivell quart"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"La tecla d'espai produeix un caràcter d'espai sense salt al nivell tercer, i "
+"un caràcter d'espai fi sense salt al nivell quart"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2612,8 +2635,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Addicions Unicode (fletxes i operadors matemàtics)"
 
 #: ../rules/base.xml.in.h:653
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Addicions Unicode (fletxes i operadors matemàtics). Els operadors matemàtics al nivell predeterminat"
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Addicions Unicode (fletxes i operadors matemàtics). Els operadors matemàtics "
+"al nivell predeterminat"
 
 #: ../rules/base.xml.in.h:654
 msgid "UnicodeExpert"
@@ -2685,11 +2712,17 @@ msgstr "Vnm"
 
 #: ../rules/base.xml.in.h:671
 msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
-msgstr "Teclat numèric Wang 724 amb addicions Unicode (fletxes i operadors matemàtics)"
+msgstr ""
+"Teclat numèric Wang 724 amb addicions Unicode (fletxes i operadors "
+"matemàtics)"
 
 #: ../rules/base.xml.in.h:672
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Teclat numèric Wang 724 amb addicions Unicode (fletxes i operadors matemàtics). Els operadors matemàtics en el nivell per defecte"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Teclat numèric Wang 724 amb addicions Unicode (fletxes i operadors "
+"matemàtics). Els operadors matemàtics en el nivell per defecte"
 
 #: ../rules/base.xml.in.h:673
 msgid "Wang model 724 azerty"

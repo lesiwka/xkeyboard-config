@@ -93,7 +93,6 @@ msgid "102/qwertz/comma/Dead keys"
 msgstr "102/qwertz/virgule/touches mortes"
 
 #: ../rules/base.xml.in.h:19
-#, fuzzy
 msgid "102/qwertz/comma/Eliminate dead keys"
 msgstr "102/qwertz/virgule/sans touches mortes"
 
@@ -511,19 +510,24 @@ msgstr "Verr. Maj."
 
 #: ../rules/base.xml.in.h:123
 msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
-msgstr "Verr. Maj. change vers la première disposition, Maj.+Verr. Maj. change vers la dernière disposition"
+msgstr ""
+"Verr. Maj. change vers la première disposition, Maj.+Verr. Maj. change vers "
+"la dernière disposition"
 
 #: ../rules/base.xml.in.h:124
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
 msgstr "Verr. Maj. (lorsque pressée), Alt+Verr. Maj. provoque le même résultat"
 
 #: ../rules/base.xml.in.h:125
 msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock"
-msgstr "Verr. maj. agit comme Maj. verrouillé. Maj. \"l'annule temporairement\""
+msgstr ""
+"Verr. maj. agit comme Maj. verrouillé. Maj. \"l'annule temporairement\""
 
 #: ../rules/base.xml.in.h:126
 msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock"
-msgstr "Verr. maj. agit comme Maj. verrouillé. Maj. n'a pas d'effet sur Verr. Maj."
+msgstr ""
+"Verr. maj. agit comme Maj. verrouillé. Maj. n'a pas d'effet sur Verr. Maj."
 
 #: ../rules/base.xml.in.h:127
 msgid "CapsLock is disabled"
@@ -539,15 +543,20 @@ msgstr "Verr. maj. inverse Maj., ce qui affecte toutes les touches"
 
 #: ../rules/base.xml.in.h:130
 msgid "CapsLock toggles normal capitalization of alphabetic characters"
-msgstr "Verr. maj. inverse la mise en majuscule usuelle des caractères alphabétiques"
+msgstr ""
+"Verr. maj. inverse la mise en majuscule usuelle des caractères alphabétiques"
 
 #: ../rules/base.xml.in.h:131
 msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock"
-msgstr "Verr. maj. permet la mise en majuscule interne. Maj. \"annule\" le verrouillage des majuscules"
+msgstr ""
+"Verr. maj. permet la mise en majuscule interne. Maj. \"annule\" le "
+"verrouillage des majuscules"
 
 #: ../rules/base.xml.in.h:132
 msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock"
-msgstr "Verr. maj. permet la mise en majuscule interne. Maj. n'a pas d'effet sur cette commande"
+msgstr ""
+"Verr. maj. permet la mise en majuscule interne. Maj. n'a pas d'effet sur "
+"cette commande"
 
 #: ../rules/base.xml.in.h:133
 msgid "Catalan variant with middle-dot L"
@@ -675,11 +684,15 @@ msgstr "Control + Alt + Eff. arrière"
 
 #: ../rules/base.xml.in.h:164
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr "La touche Ctrl est obtenue avec la touche Alt, Alt est obtenue avec les touches Logo"
+msgstr ""
+"La touche Ctrl est obtenue avec la touche Alt, Alt est obtenue avec les "
+"touches Logo"
 
 #: ../rules/base.xml.in.h:165
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr "La touche Ctrl est obtenue avec la touche Logo (et les touches Ctrl habituelles)"
+msgstr ""
+"La touche Ctrl est obtenue avec la touche Logo (et les touches Ctrl "
+"habituelles)"
 
 #: ../rules/base.xml.in.h:166
 msgid "Creative Desktop Wireless 7000"
@@ -1545,7 +1558,9 @@ msgstr "Touche Logo gauche"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Touche Logo de gauche (première disposition), touche Logo de droite (dernière disposition)"
+msgstr ""
+"Touche Logo de gauche (première disposition), touche Logo de droite "
+"(dernière disposition)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1957,12 +1972,19 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Espace insécable au 4e niveau."
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Espace insécable au 4e niveau et une espace fine insécable au 6e niveau"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Espace insécable au 4e niveau et une espace fine insécable au 6e niveau"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Espace insécable au 4e niveau et une espace fine insécable au 6e niveau (par les touches Ctrl+Maj.)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Espace insécable au 4e niveau et une espace fine insécable au 6e niveau (par "
+"les touches Ctrl+Maj.)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
@@ -1977,8 +1999,11 @@ msgid "Non-breakable space character at third level, nothing at fourth level"
 msgstr "Espace insécable au 3e niveau et rien au 4e niveau"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "Espace insécable au 3e niveau et une espace fine insécable au 4e niveau"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"Espace insécable au 3e niveau et une espace fine insécable au 4e niveau"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2302,7 +2327,8 @@ msgstr "Maj. n'annule pas le verrouillage numérique; choisir le 3e niveau"
 
 #: ../rules/base.xml.in.h:573
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr "La touche Maj. avec le pavé numérique se comporte comme dans MS Windows"
+msgstr ""
+"La touche Maj. avec le pavé numérique se comporte comme dans MS Windows"
 
 #: ../rules/base.xml.in.h:574
 msgid "Shift+CapsLock"
@@ -2334,7 +2360,9 @@ msgstr "Espagne"
 
 #: ../rules/base.xml.in.h:581
 msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server"
-msgstr "Les combinaisons spéciales (Ctrl+Alt+&lt;touche&gt;) sont traitées par un serveur"
+msgstr ""
+"Les combinaisons spéciales (Ctrl+Alt+&lt;touche&gt;) sont traitées par un "
+"serveur"
 
 #: ../rules/base.xml.in.h:582
 msgid "SrL"
@@ -2615,8 +2643,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Ajouts Unicode (touches fléchées et opérateurs mathématiques)"
 
 #: ../rules/base.xml.in.h:653
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Ajouts Unicode (touches fléchées et opérateurs mathématiques). Les opérateurs mathématiques se trouvent sur le niveau par défaut"
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Ajouts Unicode (touches fléchées et opérateurs mathématiques). Les "
+"opérateurs mathématiques se trouvent sur le niveau par défaut"
 
 #: ../rules/base.xml.in.h:654
 msgid "UnicodeExpert"
@@ -2656,7 +2688,9 @@ msgstr "Remplacer les guillemets droits avec les guillements français"
 
 #: ../rules/base.xml.in.h:663
 msgid "Use keyboard LED to show alternative layout"
-msgstr "Utiliser les voyants lumineux du clavier pour afficher une disposition alternative"
+msgstr ""
+"Utiliser les voyants lumineux du clavier pour afficher une disposition "
+"alternative"
 
 #: ../rules/base.xml.in.h:664
 msgid "Using space key to input non-breakable space character"
@@ -2688,11 +2722,18 @@ msgstr "Vnm"
 
 #: ../rules/base.xml.in.h:671
 msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
-msgstr "Clavier Wang 724 avec ajouts Unicode (touches fléchées et opérateurs mathématiques)"
+msgstr ""
+"Clavier Wang 724 avec ajouts Unicode (touches fléchées et opérateurs "
+"mathématiques)"
 
 #: ../rules/base.xml.in.h:672
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Clavier Wang 724 avec ajouts Unicode (touches fléchées et opérateurs mathématiques). Les opérateurs mathématiques se trouvent sur le niveau par défaut"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Clavier Wang 724 avec ajouts Unicode (touches fléchées et opérateurs "
+"mathématiques). Les opérateurs mathématiques se trouvent sur le niveau par "
+"défaut"
 
 #: ../rules/base.xml.in.h:673
 msgid "Wang model 724 azerty"
@@ -2863,7 +2904,8 @@ msgstr "International (AltCar et Unicode, alternatif))"
 #~ msgstr "Alt+Maj. change de configuration."
 
 #~ msgid "CapsLock LED shows alternative layout."
-#~ msgstr "Le témoins lumineux du Verr. maj. indique un groupe autre que le premier."
+#~ msgstr ""
+#~ "Le témoins lumineux du Verr. maj. indique un groupe autre que le premier."
 
 #~ msgid "CapsLock just locks the Shift modifier."
 #~ msgstr "Verr. maj. verrouille le modificateur de majuscules."
@@ -2917,7 +2959,9 @@ msgstr "International (AltCar et Unicode, alternatif))"
 #~ msgstr "Neostyle"
 
 #~ msgid "NumLock LED shows alternative layout."
-#~ msgstr "Le témoin lumineux de verrouillage numérique indique une disposition alternative."
+#~ msgstr ""
+#~ "Le témoin lumineux de verrouillage numérique indique une disposition "
+#~ "alternative."
 
 #~ msgid "Press Left Alt key to choose 3rd level."
 #~ msgstr "La touche Alt de gauche sélectionne le 3e niveau."
@@ -2959,13 +3003,17 @@ msgstr "International (AltCar et Unicode, alternatif))"
 #~ msgstr "La touche Logo de droite est Compose."
 
 #~ msgid "ScrollLock LED shows alternative layout."
-#~ msgstr "Le témoin lumineux d'Arrêt défil. indique une disposition différente."
+#~ msgstr ""
+#~ "Le témoin lumineux d'Arrêt défil. indique une disposition différente."
 
 #~ msgid "Shift+CapsLock changes layout."
 #~ msgstr "Les touches Maj.+Verr. maj. changent de disposition."
 
-#~ msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
-#~ msgstr "Échange les codes de deux touches pour les claviers Mac mal reconnus par le noyau."
+#~ msgid ""
+#~ "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+#~ msgstr ""
+#~ "Échange les codes de deux touches pour les claviers Mac mal reconnus par "
+#~ "le noyau."
 
 #~ msgid "Third level choosers"
 #~ msgstr "Sélecteur du 3e niveau"

@@ -507,19 +507,28 @@ msgstr "Feststelltaste"
 
 #: ../rules/base.xml.in.h:123
 msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
-msgstr "Feststelltaste (zur ersten Belegung), Umschalttaste+Feststelltaste (zur letzten Belegung)"
+msgstr ""
+"Feststelltaste (zur ersten Belegung), Umschalttaste+Feststelltaste (zur "
+"letzten Belegung)"
 
 #: ../rules/base.xml.in.h:124
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
-msgstr "Feststelltaste (gedrückt halten), Alt+Feststelltaste führen die normale Feststelltasten-Aktion aus"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgstr ""
+"Feststelltaste (gedrückt halten), Alt+Feststelltaste führen die normale "
+"Feststelltasten-Aktion aus"
 
 #: ../rules/base.xml.in.h:125
 msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock"
-msgstr "Feststelltaste arbeitet als Umschalttaste mit Sperrung. Umschalttaste »unterbricht« Feststelltaste"
+msgstr ""
+"Feststelltaste arbeitet als Umschalttaste mit Sperrung. Umschalttaste "
+"»unterbricht« Feststelltaste"
 
 #: ../rules/base.xml.in.h:126
 msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock"
-msgstr "Feststelltaste arbeitet als Umschalttaste mit Sperrung. Umschalttaste beeinflusst Feststelltaste nicht"
+msgstr ""
+"Feststelltaste arbeitet als Umschalttaste mit Sperrung. Umschalttaste "
+"beeinflusst Feststelltaste nicht"
 
 #: ../rules/base.xml.in.h:127
 msgid "CapsLock is disabled"
@@ -531,19 +540,25 @@ msgstr "Verhalten der Feststelltaste"
 
 #: ../rules/base.xml.in.h:129
 msgid "CapsLock toggles Shift so all keys are affected"
-msgstr "Feststelltaste kehrt Umschalttaste um, so dass alle Tasten beeinflusst werden"
+msgstr ""
+"Feststelltaste kehrt Umschalttaste um, so dass alle Tasten beeinflusst werden"
 
 #: ../rules/base.xml.in.h:130
 msgid "CapsLock toggles normal capitalization of alphabetic characters"
-msgstr "Feststelltaste kehrt die normale Großschreibung alphabetischer Zeichen um"
+msgstr ""
+"Feststelltaste kehrt die normale Großschreibung alphabetischer Zeichen um"
 
 #: ../rules/base.xml.in.h:131
 msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock"
-msgstr "Feststelltaste verwendet interne Großschreibung. Umschalttaste »unterbricht« Feststelltaste"
+msgstr ""
+"Feststelltaste verwendet interne Großschreibung. Umschalttaste »unterbricht« "
+"Feststelltaste"
 
 #: ../rules/base.xml.in.h:132
 msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock"
-msgstr "Feststelltaste verwendet interne Großschreibung. Umschalttaste beeinflusst Feststelltaste nicht"
+msgstr ""
+"Feststelltaste verwendet interne Großschreibung. Umschalttaste beeinflusst "
+"Feststelltaste nicht"
 
 #: ../rules/base.xml.in.h:133
 msgid "Catalan variant with middle-dot L"
@@ -671,7 +686,8 @@ msgstr "Strg + Alt + Löschtaste"
 
 #: ../rules/base.xml.in.h:164
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr "Strg ist den Alt-Tasten zugeordnet, Alt ist den Windows-Tasten zugeordnet"
+msgstr ""
+"Strg ist den Alt-Tasten zugeordnet, Alt ist den Windows-Tasten zugeordnet"
 
 #: ../rules/base.xml.in.h:165
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
@@ -1526,7 +1542,9 @@ msgstr "Linke Strg-Taste"
 
 #: ../rules/base.xml.in.h:379
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
-msgstr "Linke Strg-Taste (zur ersten Belegung), rechte Strg-Taste (zur letzten Belegung)"
+msgstr ""
+"Linke Strg-Taste (zur ersten Belegung), rechte Strg-Taste (zur letzten "
+"Belegung)"
 
 #: ../rules/base.xml.in.h:380
 msgid "Left Ctrl+Left Shift"
@@ -1542,7 +1560,9 @@ msgstr "Linke Windows-Taste"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Linke Windows-Taste (zur ersten Belegung), rechte Windows/Menütaste (zur letzten Belegung)"
+msgstr ""
+"Linke Windows-Taste (zur ersten Belegung), rechte Windows/Menütaste (zur "
+"letzten Belegung)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1954,12 +1974,20 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Nicht umbrechbares Leerzeichen in der vierten Tastaturebene"
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Nicht umbrechbares Leerzeichen in der vierten Tastaturebene, schmales nicht umbrechbares Leerzeichen in der sechsten Ebene"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Nicht umbrechbares Leerzeichen in der vierten Tastaturebene, schmales nicht "
+"umbrechbares Leerzeichen in der sechsten Ebene"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Nicht umbrechbares Leerzeichen in der vierten Tastaturebene, schmales nicht umbrechbares Leerzeichen in der sechsten Ebene (mit Strg + Umschalttaste)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Nicht umbrechbares Leerzeichen in der vierten Tastaturebene, schmales nicht "
+"umbrechbares Leerzeichen in der sechsten Ebene (mit Strg + Umschalttaste)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
@@ -1971,11 +1999,17 @@ msgstr "Nicht umbrechbares Leerzeichen in der dritten Tastaturebene"
 
 #: ../rules/base.xml.in.h:491
 msgid "Non-breakable space character at third level, nothing at fourth level"
-msgstr "Nicht umbrechbares Leerzeichen in der dritten Tastaturebene, nichts in der vierten Ebene"
+msgstr ""
+"Nicht umbrechbares Leerzeichen in der dritten Tastaturebene, nichts in der "
+"vierten Ebene"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "Nicht umbrechbares Leerzeichen in der dritten Tastaturebene, schmales nicht umbrechbares Leerzeichen in der vierten Ebene"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"Nicht umbrechbares Leerzeichen in der dritten Tastaturebene, schmales nicht "
+"umbrechbares Leerzeichen in der vierten Ebene"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2295,11 +2329,14 @@ msgstr "Umschalttaste deaktiviert Feststelltaste"
 
 #: ../rules/base.xml.in.h:572
 msgid "Shift does not cancel NumLock, chooses 3d level instead"
-msgstr "Umschalttaste deaktiviert NumLock nicht, wechselt stattdessen in die dritte Tastaturebene"
+msgstr ""
+"Umschalttaste deaktiviert NumLock nicht, wechselt stattdessen in die dritte "
+"Tastaturebene"
 
 #: ../rules/base.xml.in.h:573
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr "Unschalttaste funktioniert mit den Tasten des Nummernblocks wie in MS Windows"
+msgstr ""
+"Unschalttaste funktioniert mit den Tasten des Nummernblocks wie in MS Windows"
 
 #: ../rules/base.xml.in.h:574
 msgid "Shift+CapsLock"
@@ -2612,8 +2649,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Unicode-Ergänzungen (Pfeile und mathematische Operatoren)"
 
 #: ../rules/base.xml.in.h:653
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Unicode-Ergänzungen (Pfeile und mathematische Operatoren). Mathematische Operatoren befinden sich in der Standardebene."
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Unicode-Ergänzungen (Pfeile und mathematische Operatoren). Mathematische "
+"Operatoren befinden sich in der Standardebene."
 
 #: ../rules/base.xml.in.h:654
 msgid "UnicodeExpert"
@@ -2688,8 +2729,12 @@ msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
 msgstr "Wang 724 mit Unicode-Ergänzungen (Pfeile und mathematische Operatoren)"
 
 #: ../rules/base.xml.in.h:672
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Wang 724 mit Unicode-Ergänzungen (Pfeile und mathematische Operatoren). Mathematische Operatoren in der Standardebene"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Wang 724 mit Unicode-Ergänzungen (Pfeile und mathematische Operatoren). "
+"Mathematische Operatoren in der Standardebene"
 
 #: ../rules/base.xml.in.h:673
 msgid "Wang model 724 azerty"
@@ -2918,25 +2963,34 @@ msgstr "International (AltGr-Unicode-Kombination, alternativ)"
 #~ msgstr "NumLock-LED zeigt alternative Belegung an."
 
 #~ msgid "Press Left Alt key to choose 3rd level."
-#~ msgstr "Linke Alt-Taste drücken, um in die dritte Tastaturebene zu gelangen."
+#~ msgstr ""
+#~ "Linke Alt-Taste drücken, um in die dritte Tastaturebene zu gelangen."
 
 #~ msgid "Press Left Win-key to choose 3rd level."
-#~ msgstr "Linke Win-Taste drücken, um in die dritte Tastaturebene zu gelangen."
+#~ msgstr ""
+#~ "Linke Win-Taste drücken, um in die dritte Tastaturebene zu gelangen."
 
 #~ msgid "Press Right Alt key to choose 3rd level."
-#~ msgstr "Rechte Alt-Taste drücken, um in die dritte Tastaturebene zu gelangen."
+#~ msgstr ""
+#~ "Rechte Alt-Taste drücken, um in die dritte Tastaturebene zu gelangen."
 
 #~ msgid "Press Right Ctrl to choose 3rd level."
-#~ msgstr "Rechte Strg-Taste drücken, um in die dritte Tastaturebene zu gelangen."
+#~ msgstr ""
+#~ "Rechte Strg-Taste drücken, um in die dritte Tastaturebene zu gelangen."
 
 #~ msgid "Press Right Win-key to choose 3rd level."
-#~ msgstr "Rechte Win-Taste drücken, um in die dritte Tastaturebene zu gelangen."
+#~ msgstr ""
+#~ "Rechte Win-Taste drücken, um in die dritte Tastaturebene zu gelangen."
 
 #~ msgid "Press any of Alt keys to choose 3rd level."
-#~ msgstr "Eine beliebige Alt-Taste drücken, um in die dritte Tastaturebene zu gelangen."
+#~ msgstr ""
+#~ "Eine beliebige Alt-Taste drücken, um in die dritte Tastaturebene zu "
+#~ "gelangen."
 
 #~ msgid "Press any of Win-keys to choose 3rd level."
-#~ msgstr "Eine beliebige Win-Taste drücken, um in die dritte Tastaturebene zu gelangen."
+#~ msgstr ""
+#~ "Eine beliebige Win-Taste drücken, um in die dritte Tastaturebene zu "
+#~ "gelangen."
 
 #, fuzzy
 #~ msgid "Right Alt is Compose."
@@ -2964,8 +3018,11 @@ msgstr "International (AltGr-Unicode-Kombination, alternativ)"
 #~ msgid "Shift+CapsLock changes layout."
 #~ msgstr "Umschalt-+Feststelltaste wechselt die Belegung."
 
-#~ msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
-#~ msgstr "Tastencodes zweier Tasten vertauschen, wenn Mac-Tastaturen nicht korrekt vom Kernel erkannt werden."
+#~ msgid ""
+#~ "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+#~ msgstr ""
+#~ "Tastencodes zweier Tasten vertauschen, wenn Mac-Tastaturen nicht korrekt "
+#~ "vom Kernel erkannt werden."
 
 #~ msgid "Third level choosers"
 #~ msgstr "Auswahltasten der dritten Ebene"

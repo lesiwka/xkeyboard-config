@@ -508,19 +508,24 @@ msgstr "CapsLock"
 
 #: ../rules/base.xml.in.h:123
 msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
-msgstr "CapsLock (ke tata letak pertama), Shift+CapsLock (ke tata letak terakhir)"
+msgstr ""
+"CapsLock (ke tata letak pertama), Shift+CapsLock (ke tata letak terakhir)"
 
 #: ../rules/base.xml.in.h:124
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
 msgstr "CapsLock (ketika ditekan), Alt+CapsLock melakukan aksi capslock asli"
 
 #: ../rules/base.xml.in.h:125
 msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock"
-msgstr "CapsLock bertindak sebagai Shift dengan mengunci. Shift \"jeda\" CapsLock."
+msgstr ""
+"CapsLock bertindak sebagai Shift dengan mengunci. Shift \"jeda\" CapsLock."
 
 #: ../rules/base.xml.in.h:126
 msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock"
-msgstr "CapsLock bertindak sebagai Shift yang terkunci. Shift tidak mempengaruhi CapsLock"
+msgstr ""
+"CapsLock bertindak sebagai Shift yang terkunci. Shift tidak mempengaruhi "
+"CapsLock"
 
 #: ../rules/base.xml.in.h:127
 msgid "CapsLock is disabled"
@@ -544,7 +549,8 @@ msgstr "CapsLock menggunakan huruf besar internal. Shift \"pauses\" CapsLock"
 
 #: ../rules/base.xml.in.h:132
 msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock"
-msgstr "CapsLock menggunakan huruf besar internal. Shift tidak mempengaruhi CapsLock"
+msgstr ""
+"CapsLock menggunakan huruf besar internal. Shift tidak mempengaruhi CapsLock"
 
 #: ../rules/base.xml.in.h:133
 msgid "Catalan variant with middle-dot L"
@@ -1542,7 +1548,8 @@ msgstr "Win Kiri"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Win Kiri (ke tata letak pertama), Win/Menu Kanan (ke tata letak terakhir)"
+msgstr ""
+"Win Kiri (ke tata letak pertama), Win/Menu Kanan (ke tata letak terakhir)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1954,12 +1961,20 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Karakter spasi yang tidak pecah pada tingkat 4"
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Karakter spasi yang tidak pecah pada tingkat 4, karakter spasi yang tidak pecah dan tipis pada tingkat 6"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Karakter spasi yang tidak pecah pada tingkat 4, karakter spasi yang tidak "
+"pecah dan tipis pada tingkat 6"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Karakter spasi yang tidak pecah pada tingkat 4, karakter spasi yang tidak pecah dan tipis pada tingkat 6 (via Ctrl+Shift)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Karakter spasi yang tidak pecah pada tingkat 4, karakter spasi yang tidak "
+"pecah dan tipis pada tingkat 6 (via Ctrl+Shift)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
@@ -1971,11 +1986,16 @@ msgstr "Karakter spasi yang tidak pecah pada tingkat 3"
 
 #: ../rules/base.xml.in.h:491
 msgid "Non-breakable space character at third level, nothing at fourth level"
-msgstr "Karakter spasi yang tidak pecah pada tingkat 3, tidak ada pada tingkat 4"
+msgstr ""
+"Karakter spasi yang tidak pecah pada tingkat 3, tidak ada pada tingkat 4"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "Karakter spasi yang tidak pecah pada tingkat 3, karakter spasi yang tidak pecah dan tipis pada tingkat 4"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"Karakter spasi yang tidak pecah pada tingkat 3, karakter spasi yang tidak "
+"pecah dan tipis pada tingkat 4"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2612,8 +2632,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Tambahan unicode (panah dan operator matematika)"
 
 #: ../rules/base.xml.in.h:653
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Tambahan unicode (panah dan operator matematika). Operator matematika pada tingkat standar"
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Tambahan unicode (panah dan operator matematika). Operator matematika pada "
+"tingkat standar"
 
 #: ../rules/base.xml.in.h:654
 msgid "UnicodeExpert"
@@ -2685,11 +2709,16 @@ msgstr "Vnm"
 
 #: ../rules/base.xml.in.h:671
 msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
-msgstr "Wang 724 keypad dengan tambahan unicode (panah and operator matematika). "
+msgstr ""
+"Wang 724 keypad dengan tambahan unicode (panah and operator matematika). "
 
 #: ../rules/base.xml.in.h:672
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Wang 724 keypad dengan tambahan unicode (panah and operator matematika). Operator matematika pada tingkat standar"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Wang 724 keypad dengan tambahan unicode (panah and operator matematika). "
+"Operator matematika pada tingkat standar"
 
 #: ../rules/base.xml.in.h:673
 msgid "Wang model 724 azerty"
@@ -2961,8 +2990,11 @@ msgstr "Internasional (AltGr menggabungkan Unicode, alternatif)"
 #~ msgid "Shift+CapsLock changes layout."
 #~ msgstr "Shift+CapsLock mengubah layout."
 
-#~ msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
-#~ msgstr "Tukar keycode dari 2 tombol ketika keyboard Mac salah terdeteksi oleh kernel."
+#~ msgid ""
+#~ "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+#~ msgstr ""
+#~ "Tukar keycode dari 2 tombol ketika keyboard Mac salah terdeteksi oleh "
+#~ "kernel."
 
 #~ msgid "Third level choosers"
 #~ msgstr "Pilihan tingkat 3"

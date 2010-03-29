@@ -509,8 +509,10 @@ msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
 msgstr "CapsLock (till första layouten), Skift+CapsLock (till sista layouten)"
 
 #: ../rules/base.xml.in.h:124
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
-msgstr "CapsLock (när den trycks ned), Alt+CapsLock gör ursprunglig capslock-åtgärd"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgstr ""
+"CapsLock (när den trycks ned), Alt+CapsLock gör ursprunglig capslock-åtgärd"
 
 #: ../rules/base.xml.in.h:125
 msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock"
@@ -542,7 +544,8 @@ msgstr "CapsLock använder intern skiftlägesstyrning. Skift \"pausar\" CapsLock
 
 #: ../rules/base.xml.in.h:132
 msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock"
-msgstr "CapsLock använder intern skiftlägesstyrning. Skift påverkar inte CapsLock"
+msgstr ""
+"CapsLock använder intern skiftlägesstyrning. Skift påverkar inte CapsLock"
 
 #: ../rules/base.xml.in.h:133
 msgid "Catalan variant with middle-dot L"
@@ -670,11 +673,14 @@ msgstr "Control + Alt + Backsteg"
 
 #: ../rules/base.xml.in.h:164
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr "Control är mappad till Win-tangenterna, Alt-tangenten är mappad till Win-tangenterna"
+msgstr ""
+"Control är mappad till Win-tangenterna, Alt-tangenten är mappad till Win-"
+"tangenterna"
 
 #: ../rules/base.xml.in.h:165
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr "Control är mappad till Win-tangenterna (och de vanliga Ctrl-tangenterna)"
+msgstr ""
+"Control är mappad till Win-tangenterna (och de vanliga Ctrl-tangenterna)"
 
 #: ../rules/base.xml.in.h:166
 msgid "Creative Desktop Wireless 7000"
@@ -1542,7 +1548,8 @@ msgstr "Vänster Win-tangent"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Vänster Win (till första layouten), Höger Win/Meny (till sista layouten)"
+msgstr ""
+"Vänster Win (till första layouten), Höger Win/Meny (till sista layouten)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1954,12 +1961,20 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Icke-brytande blankstegstecken på fjärde nivån"
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Icke-brytande blankstegstecken på fjärde nivån, tunt icke-brytande blankstegstecken på sjätte nivån"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Icke-brytande blankstegstecken på fjärde nivån, tunt icke-brytande "
+"blankstegstecken på sjätte nivån"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Icke-brytande blankstegstecken på fjärde nivån, tunt icke-brytande blankstegstecken på sjätte nivån (via Ctrl+Skift)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Icke-brytande blankstegstecken på fjärde nivån, tunt icke-brytande "
+"blankstegstecken på sjätte nivån (via Ctrl+Skift)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
@@ -1971,11 +1986,16 @@ msgstr "Icke-brytande blankstegstecken på tredje nivån"
 
 #: ../rules/base.xml.in.h:491
 msgid "Non-breakable space character at third level, nothing at fourth level"
-msgstr "Icke-brytande blankstegstecken på tredje nivån, ingenting på fjärde nivån"
+msgstr ""
+"Icke-brytande blankstegstecken på tredje nivån, ingenting på fjärde nivån"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "Icke-brytande blankstegstecken på tredje nivån, tunt icke-brytande blankstegstecken på fjärde nivån"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"Icke-brytande blankstegstecken på tredje nivån, tunt icke-brytande "
+"blankstegstecken på fjärde nivån"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2300,7 +2320,8 @@ msgstr "Skift avbryter inte NumLock, väljer tredje nivån istället"
 
 #: ../rules/base.xml.in.h:573
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr "Skift med tangenterna på numeriska tangentbordet fungerar som i MS Windows"
+msgstr ""
+"Skift med tangenterna på numeriska tangentbordet fungerar som i MS Windows"
 
 #: ../rules/base.xml.in.h:574
 msgid "Shift+CapsLock"
@@ -2613,8 +2634,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Unicode-tillägg (pilar och matematikoperatorer)"
 
 #: ../rules/base.xml.in.h:653
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Unicode-tillägg (pilar och matematikoperatorer). Matematikoperatorer på standardnivå"
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Unicode-tillägg (pilar och matematikoperatorer). Matematikoperatorer på "
+"standardnivå"
 
 #: ../rules/base.xml.in.h:654
 msgid "UnicodeExpert"
@@ -2658,7 +2683,8 @@ msgstr "Använd tangentbordslampa för att visa alternativ layout"
 
 #: ../rules/base.xml.in.h:664
 msgid "Using space key to input non-breakable space character"
-msgstr "Använder blankstegstangenten för att mata in icke-brytande blankstegstecken"
+msgstr ""
+"Använder blankstegstangenten för att mata in icke-brytande blankstegstecken"
 
 #: ../rules/base.xml.in.h:665
 msgid "Usual space at any level"
@@ -2686,11 +2712,17 @@ msgstr "Vnm"
 
 #: ../rules/base.xml.in.h:671
 msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
-msgstr "Wang 724 numeriskt tangentbord med unicode-tillägg (pilar och matematikoperatorer)"
+msgstr ""
+"Wang 724 numeriskt tangentbord med unicode-tillägg (pilar och "
+"matematikoperatorer)"
 
 #: ../rules/base.xml.in.h:672
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Wang 724 numeriskt tangentbord med unicode-tillägg (pilar och matematikoperatorer). Matematikoperatorer på standardnivå"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Wang 724 numeriskt tangentbord med unicode-tillägg (pilar och "
+"matematikoperatorer). Matematikoperatorer på standardnivå"
 
 #: ../rules/base.xml.in.h:673
 msgid "Wang model 724 azerty"
@@ -2983,8 +3015,11 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgid "Shift+CapsLock changes layout."
 #~ msgstr "Skift+CapsLock-tangenten byter layout."
 
-#~ msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
-#~ msgstr "Byt tangentkoder för två tangenter när Mac-tangentbord identifieras fel av kärnan."
+#~ msgid ""
+#~ "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+#~ msgstr ""
+#~ "Byt tangentkoder för två tangenter när Mac-tangentbord identifieras fel "
+#~ "av kärnan."
 
 #~ msgid "Third level choosers"
 #~ msgstr "Tredjenivåsväljare"
@@ -3118,8 +3153,11 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgid "Press Right Alt key to choose 3rd level"
 #~ msgstr "Tryck höger Alt-tangent för att välja tredjenivå"
 
-#~ msgid "Press Right Alt-key to choose 3rd level, Shift+Right Alt-key is Multi_Key"
-#~ msgstr "Tryck höger Alt-tangent för att välja tredjenivå. Skift+höger Alt-tangent är Multi_Key"
+#~ msgid ""
+#~ "Press Right Alt-key to choose 3rd level, Shift+Right Alt-key is Multi_Key"
+#~ msgstr ""
+#~ "Tryck höger Alt-tangent för att välja tredjenivå. Skift+höger Alt-tangent "
+#~ "är Multi_Key"
 
 #~ msgid "Press Right Control to choose 3rd level"
 #~ msgstr "Tryck höger Control-tangent för att välja tredjenivå"
@@ -3146,7 +3184,8 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgstr "Scroll_Lock-lampan visar alternativ grupp"
 
 #~ msgid "Shift with numpad keys works as in MS Windows"
-#~ msgstr "Skift med tangenterna på numeriska tangentbordet fungerar som i MS Windows"
+#~ msgstr ""
+#~ "Skift med tangenterna på numeriska tangentbordet fungerar som i MS Windows"
 
 #~ msgid "Shift+CapsLock changes group"
 #~ msgstr "Skift+CapsLock byter grupp"
@@ -3233,7 +3272,9 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgstr "Tvinga ursprungligt standard numeriskt tangentbord"
 
 #~ msgid "Adding the nobreakspace keysym to space key"
-#~ msgstr "Lägger till den icke-brytande blankstegstangentsymbolen till blankstegstangenten"
+#~ msgstr ""
+#~ "Lägger till den icke-brytande blankstegstangentsymbolen till "
+#~ "blankstegstangenten"
 
 #~ msgid "PowerPC PS/2"
 #~ msgstr "PowerPC PS/2"
@@ -3509,7 +3550,8 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgstr "Behåll separat grupp för varje programfönster."
 
 #~ msgid "Keep the state of indicators separately for each application window."
-#~ msgstr "Behåll tillståndet för indikatorerna separat för varje programfönster."
+#~ msgstr ""
+#~ "Behåll tillståndet för indikatorerna separat för varje programfönster."
 
 #~ msgid "Save/restore _indicators with group"
 #~ msgstr "Spara/återställ _indikatorer med grupp"
@@ -3551,7 +3593,8 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgstr "Välj layout."
 
 #~ msgid "Choose the layout. Note: one layout can provide several groups."
-#~ msgstr "Välj layouten. Observera att en layout kan tillhandahålla flera grupper."
+#~ msgstr ""
+#~ "Välj layouten. Observera att en layout kan tillhandahålla flera grupper."
 
 #~ msgid "Choose the model of the keyboard (brand, number of keys, etc.)."
 #~ msgstr "Välj modellen på tangentbordet (märke, antal tangenter, osv.)."
@@ -3578,13 +3621,21 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgstr "Visa _avancerade parametrar"
 
 #~ msgid "Show tabs with advanced keyboard parameters (for power users)."
-#~ msgstr "Visa flikar med avancerade tangentbordsparametrar (för avancerade användare)."
+#~ msgstr ""
+#~ "Visa flikar med avancerade tangentbordsparametrar (för avancerade "
+#~ "användare)."
 
-#~ msgid "This version of XFree86 does not support multiple layouts, so only one layout can be choosen."
-#~ msgstr "Denna version av XFree86 stöder inte flera layouter, så endast en layout kan väljas."
+#~ msgid ""
+#~ "This version of XFree86 does not support multiple layouts, so only one "
+#~ "layout can be choosen."
+#~ msgstr ""
+#~ "Denna version av XFree86 stöder inte flera layouter, så endast en layout "
+#~ "kan väljas."
 
 #~ msgid "Use custom settings, ignore global configuration set in XF86Config."
-#~ msgstr "Använd anpassade inställningar, ignorera global konfiguration som är angiven i XF86Config."
+#~ msgstr ""
+#~ "Använd anpassade inställningar, ignorera global konfiguration som är "
+#~ "angiven i XF86Config."
 
 #~ msgid "Use global configuration set in XF86Config."
 #~ msgstr "Använd global konfiguration som är angiven i XF86Config."
@@ -3637,8 +3688,12 @@ msgstr "Internationell (AltGr med kombinerad Unicode, alternativ)"
 #~ msgid "Show layout names instead of group names"
 #~ msgstr "Visa layoutnamn istället för gruppnamn"
 
-#~ msgid "Show layout names instead of group names (only for versions of XFree supporting multiple layouts)"
-#~ msgstr "Visa layoutnamn istället för gruppnamn (endast för versioner av XFree som stöder flera layouter)"
+#~ msgid ""
+#~ "Show layout names instead of group names (only for versions of XFree "
+#~ "supporting multiple layouts)"
+#~ msgstr ""
+#~ "Visa layoutnamn istället för gruppnamn (endast för versioner av XFree som "
+#~ "stöder flera layouter)"
 
 #~ msgid "The id of active switchcut"
 #~ msgstr "Id för den aktiva genvägen"

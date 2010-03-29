@@ -15,7 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: lt\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
+"100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Virtaal 0.4.0\n"
 
 #: ../rules/base.xml.in.h:1
@@ -192,7 +193,9 @@ msgstr "Alt ir Meta funkcijos priskirtos Alt klavišams"
 
 #: ../rules/base.xml.in.h:44
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr "Dešiniajam Win klavišui priskirti Alt funkciją, o Meniu klavišui – Super funkciją"
+msgstr ""
+"Dešiniajam Win klavišui priskirti Alt funkciją, o Meniu klavišui – Super "
+"funkciją"
 
 #: ../rules/base.xml.in.h:45
 msgid "Alt+CapsLock"
@@ -515,7 +518,8 @@ msgid "CapsLock (to first layout), Shift+CapsLock (to last layout)"
 msgstr "Didž (į pirmąjį išdėstymą), Lyg2+Didž (į paskutinį išdėstymą)"
 
 #: ../rules/base.xml.in.h:125
-msgid "CapsLock (while pressed), Alt+CapsLock does the original capslock action"
+msgid ""
+"CapsLock (while pressed), Alt+CapsLock does the original capslock action"
 msgstr "Didž (kol nuspaustas); Alt+Didž atlieka pirminę Didž klavišo funkciją"
 
 #: ../rules/base.xml.in.h:126
@@ -536,7 +540,8 @@ msgstr "Didžiųjų raidžių klavišo veiksena"
 
 #: ../rules/base.xml.in.h:130
 msgid "CapsLock toggles Shift so all keys are affected"
-msgstr "Didž klavišas veikia kaip nuolat nuspaustas Lyg2 (įtakoja visus klavišus)"
+msgstr ""
+"Didž klavišas veikia kaip nuolat nuspaustas Lyg2 (įtakoja visus klavišus)"
 
 #: ../rules/base.xml.in.h:131
 msgid "CapsLock toggles normal capitalization of alphabetic characters"
@@ -544,11 +549,15 @@ msgstr "Didž klavišas įjungia įprastą raidžių vertimą didžiosiomis"
 
 #: ../rules/base.xml.in.h:132
 msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock"
-msgstr "Didž įjungia įtaisytąjį raidžių vertimą didžiosiomis. Lyg2 „pristabdo“ Didž klavišo veikimą"
+msgstr ""
+"Didž įjungia įtaisytąjį raidžių vertimą didžiosiomis. Lyg2 „pristabdo“ Didž "
+"klavišo veikimą"
 
 #: ../rules/base.xml.in.h:133
 msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock"
-msgstr "Didž įjungia įtaisytąjį raidžių vertimą didžiosiomis. Lyg2 neįtakoja Didž veiksenos"
+msgstr ""
+"Didž įjungia įtaisytąjį raidžių vertimą didžiosiomis. Lyg2 neįtakoja Didž "
+"veiksenos"
 
 #: ../rules/base.xml.in.h:134
 msgid "Catalan variant with middle-dot L"
@@ -1542,7 +1551,9 @@ msgstr "Kairysis Win"
 
 #: ../rules/base.xml.in.h:383
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Kairysis Win (į pirmąjį išdėstymą), dešinysis Win/Meniu (į paskutinį išdėstymą)"
+msgstr ""
+"Kairysis Win (į pirmąjį išdėstymą), dešinysis Win/Meniu (į paskutinį "
+"išdėstymą)"
 
 #: ../rules/base.xml.in.h:384
 msgid "Left Win (while pressed)"
@@ -1727,7 +1738,9 @@ msgstr "Macintosh, be tęsties ženklų"
 
 #: ../rules/base.xml.in.h:430
 msgid "Make CapsLock an additional Backspace"
-msgstr "Didžiųjų raidžių klavišą paversti papildomu Naikinimo kairėn („Backspace“) klavišu"
+msgstr ""
+"Didžiųjų raidžių klavišą paversti papildomu Naikinimo kairėn („Backspace“) "
+"klavišu"
 
 #: ../rules/base.xml.in.h:431
 msgid "Make CapsLock an additional Ctrl"
@@ -1743,7 +1756,8 @@ msgstr "Didžiųjų raidžių klavišą paversti papildomu „Hyper“ klavišu"
 
 #: ../rules/base.xml.in.h:434
 msgid "Make CapsLock an additional NumLock"
-msgstr "Didžiųjų raidžių klavišą paversti papildomu Skaitmenų („NumLock“) klavišu"
+msgstr ""
+"Didžiųjų raidžių klavišą paversti papildomu Skaitmenų („NumLock“) klavišu"
 
 #: ../rules/base.xml.in.h:435
 msgid "Make CapsLock an additional Super"
@@ -1954,12 +1968,20 @@ msgid "Non-breakable space character at fourth level"
 msgstr "Jungiamasis tarpas ketvirtajame lygyje"
 
 #: ../rules/base.xml.in.h:487
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level"
-msgstr "Jungiamasis tarpas ketvirtajame lygyje, siauras jungiamasis tarpas šeštajame lygyje"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+"Jungiamasis tarpas ketvirtajame lygyje, siauras jungiamasis tarpas šeštajame "
+"lygyje"
 
 #: ../rules/base.xml.in.h:488
-msgid "Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"
-msgstr "Jungiamasis tarpas ketvirtajame lygyje, siauras jungiamasis tarpas šeštajame lygyje (Vald+Lyg2)"
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+"Jungiamasis tarpas ketvirtajame lygyje, siauras jungiamasis tarpas šeštajame "
+"lygyje (Vald+Lyg2)"
 
 #: ../rules/base.xml.in.h:489
 msgid "Non-breakable space character at second level"
@@ -1974,8 +1996,12 @@ msgid "Non-breakable space character at third level, nothing at fourth level"
 msgstr "Jungiamasis tarpas trečiajame lygyje, ketvirtajame lygyje nieko"
 
 #: ../rules/base.xml.in.h:492
-msgid "Non-breakable space character at third level, thin non-breakable space character at fourth level"
-msgstr "Jungiamasis tarpas trečiajame lygyje, siauras jungiamasis tarpas ketvirtajame lygyje"
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+"Jungiamasis tarpas trečiajame lygyje, siauras jungiamasis tarpas "
+"ketvirtajame lygyje"
 
 #: ../rules/base.xml.in.h:493
 msgid "Nor"
@@ -2604,8 +2630,12 @@ msgid "Unicode additions (arrows and math operators)"
 msgstr "Unikodiniai priedai (rodyklės ir matematiniai operatoriai)"
 
 #: ../rules/base.xml.in.h:651
-msgid "Unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Unikodiniai priedai (rodyklės ir matematiniai operatoriai). Matematiniai operatoriai numatytame lygyje"
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+"Unikodiniai priedai (rodyklės ir matematiniai operatoriai). Matematiniai "
+"operatoriai numatytame lygyje"
 
 #: ../rules/base.xml.in.h:652
 msgid "UnicodeExpert"
@@ -2677,11 +2707,17 @@ msgstr "Vnm"
 
 #: ../rules/base.xml.in.h:669
 msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
-msgstr "Wang 724 skaitmenų sritis su unikodiniais priedais (rodyklėmis ir matematiniais operatoriais)"
+msgstr ""
+"Wang 724 skaitmenų sritis su unikodiniais priedais (rodyklėmis ir "
+"matematiniais operatoriais)"
 
 #: ../rules/base.xml.in.h:670
-msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level"
-msgstr "Wang 724 skaitmenų sritis su unikodiniais priedais (rodyklėmis ir matematiniais operatoriais). Matematiniai operatoriai numatytame lygyje"
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+"Wang 724 skaitmenų sritis su unikodiniais priedais (rodyklėmis ir "
+"matematiniais operatoriais). Matematiniai operatoriai numatytame lygyje"
 
 #: ../rules/base.xml.in.h:671
 msgid "Wang model 724 azerty"
@@ -2789,7 +2825,8 @@ msgstr "Tarptautinis (unikodo ženklai kombinuojami Lyg3 klavišu)"
 
 #: ../rules/base.extras.xml.in.h:6
 msgid "International (AltGr Unicode combining, alternative)"
-msgstr "Tarptautinis (unikodo ženklai kombinuojami Lyg3 klavišu, alternatyvusis)"
+msgstr ""
+"Tarptautinis (unikodo ženklai kombinuojami Lyg3 klavišu, alternatyvusis)"
 
 #~| msgid "Right Ctrl as Right Alt"
 #~ msgid "Right Ctrl+Right Shift"
