@@ -1,7 +1,8 @@
 Source: xkeyboard-config
 Section: x11
 Priority: extra
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Uploaders: Mohammed Adnène Trojette <adn+deb@diwi.org>, Cyril Brulebois <kibi@debian.org>
 Build-Depends: debhelper (>= 7.0.0), quilt
 Build-Depends-Indep: libxml-parser-perl, x11-xkb-utils, automake, intltool, libglib2.0-dev
@@ -23,6 +24,12 @@ Description: X Keyboard Extension (XKB) configuration data
  designers have to send their layouts to several places.  The
  xkeyboard-config project has been launched at FreeDesktop in order
  to provide a central repository that could be used by all vendors.
+
+Package: xkb-data-i18n
+Architecture: all
+Description: X Keyboard Extension (XKB) configuration data translations
+ This package contains translations used by xkb-data.  Users should
+ not install this package.
 
 Package: xkb-data-udeb
 XC-Package-Type: udeb

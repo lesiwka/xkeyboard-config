@@ -1,1 +1,5 @@
 docs.diff
+102_mac_aliases.patch
+104_macbook_expose_and_dashboard.patch
+105_intelligent_keyboard.patch
+106_fixspell3d.patch
