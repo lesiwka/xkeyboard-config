@@ -1,3 +1,10 @@
+xkeyboard-config (1.8-1ubuntu4) lucid; urgency=low
+
+  * Add tw to Makefile so it will install
+  * Earlier upload fixed win key as 3rd level chooser (LP: #408397)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 29 Mar 2010 20:49:47 -0700
+
 xkeyboard-config (1.8-1ubuntu3) lucid; urgency=low
 
   * Cherrypicks from upstream to enable support for Apple Aluminum
