@@ -127,3 +127,15 @@ Index: xkeyboard-config/rules/base.xml.in
          <name>ua</name>
          <_shortDescription>Ukr</_shortDescription>
          <_description>Ukraine</_description>
+diff -Nurp xkeyboard-config-merge/symbols/Makefile.am working/symbols/Makefile.am
+--- xkeyboard-config-merge/symbols/Makefile.am	2010-03-29 18:38:01.000000000 -0700
++++ working/symbols/Makefile.am	2010-03-29 23:29:53.000000000 -0700
+@@ -27,7 +27,7 @@ ro rs ru \
+ se si sk sn \
+ sy th \
+ terminate \
+-tj tm tr \
++tj tm tr tw \
+ ua us uz vn \
+ za \
+ altwin capslock compose ctrl eurosign group inet \
