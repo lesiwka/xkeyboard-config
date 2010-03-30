@@ -1,3 +1,12 @@
+xkeyboard-config (1.8-1ubuntu2) lucid; urgency=low
+
+  [Arne Goetje]
+  * Add 108_taiwan.patch: New keyboard layouts for Taiwan.
+  * Add 107_lao.patch: New keyboard layout for Lao, implemented as
+    an alternative to the default one. (LP: #341741)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 29 Mar 2010 19:11:44 -0700
+
 xkeyboard-config (1.8-1ubuntu1) lucid; urgency=low
 
   * Merge from debian testing.  Remaining changes:
