@@ -1,3 +1,11 @@
+xkeyboard-config (1.8-1ubuntu6) lucid; urgency=low
+
+  * Removed unwanted semicolons in 112_zero-with-spacing.patch
+    to quell error messages when using certain keyboard layouts.
+    (LP: #553401)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Tue, 13 Apr 2010 13:36:32 -0700
+
 xkeyboard-config (1.8-1ubuntu5) lucid; urgency=low
 
   * Add 127_restore_gb_colemak.patch:  Fixes bottom row offset on the

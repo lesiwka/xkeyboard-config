@@ -186,7 +186,7 @@ index f80abfe..110caac 100644
  
  	// space, space, Zero-Width-Non-Joiner (ZWNJ), Zero-Width-Joiner (ZWJ):
 -	key <SPCE> { [ space, space, U200c, U200d ] };
-+	include "nbsp(zwnj3zwj4)";
++	include "nbsp(zwnj3zwj4)"
  };
  
  //Name		:	Bolnagri (Combined)
@@ -196,7 +196,7 @@ index f80abfe..110caac 100644
  
 -  key <SPCE> { [	space,		space,	U200C,	U200D ] }; // ZERO-WIDTH-NON-JOINER (ZWNJ); ZERO-WIDTH-JOINER (ZWJ)
 +  // space, space, Zero-Width-Non-Joiner (ZWNJ), Zero-Width-Joiner (ZWJ):
-+  include "nbsp(zwnj3zwj4)";
++  include "nbsp(zwnj3zwj4)"
  
    include "group(olpc)"
  };
@@ -213,11 +213,11 @@ index 85f18b1..a974188 100644
 -
      name[Group1]= "Iran";
 +
-+    include "ir(pes_part_basic)";
-+    include "ir(pes_part_ext)";
++    include "ir(pes_part_basic)"
++    include "ir(pes_part_ext)"
 +
-+    include "nbsp(zwnj2nb3nnb4)";
-+    include "level3(ralt_switch)";
++    include "nbsp(zwnj2nb3nnb4)"
++    include "level3(ralt_switch)"
  };
  
  
@@ -228,11 +228,11 @@ index 85f18b1..a974188 100644
 -
      name[Group1]= "Iran - Persian, with Persian Keypad";
 +
-+    include "ir(pes_part_basic)";
-+    include "ir(pes_part_keypad)";
++    include "ir(pes_part_basic)"
++    include "ir(pes_part_keypad)"
 +
-+    include "nbsp(zwnj2nb3nnb4)";
-+    include "level3(ralt_switch)";
++    include "nbsp(zwnj2nb3nnb4)"
++    include "level3(ralt_switch)"
  };
  
  partial hidden alphanumeric_keys
@@ -281,7 +281,7 @@ index 1615186..d07453b 100644
  
    // Space
 -  key <SPCE> { [ space, nobreakspace, 0x0100200c, NoSymbol ] };
-+  include "nbsp(zwnj2nb3s)";
++  include "nbsp(zwnj2nb3s)"
  
    include "level3(ralt_switch)"
  };
@@ -470,7 +470,7 @@ index f9a9f42..6bdba99 100644
      // End Alphanumeric Section
  
 +    // Space
-+    include "nbsp(zwnj2)";
++    include "nbsp(zwnj2)"
      
      // Begin Modifier Mappings
      
