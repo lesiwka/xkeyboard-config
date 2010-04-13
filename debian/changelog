@@ -1,3 +1,12 @@
+xkeyboard-config (1.8-1ubuntu5) lucid; urgency=low
+
+  * Add 127_restore_gb_colemak.patch:  Fixes bottom row offset on the
+    Colemak UK keyboard.  Cherrypick from upstream to revert an earlier
+    patch.  Thanks for chasing the patch down, Ben.
+    (LP: #542237)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Tue, 13 Apr 2010 13:14:35 -0700
+
 xkeyboard-config (1.8-1ubuntu4) lucid; urgency=low
 
   * Add tw to Makefile so it will install
