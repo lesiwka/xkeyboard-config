@@ -33,6 +33,7 @@ build: $(STAMP_DIR)/build
 $(STAMP_DIR)/build: config.status
 	dh_testdir
 	$(MAKE)
+	cd po && intltool-update -p && cd ..
 	>$@
 
 clean: xsfclean
