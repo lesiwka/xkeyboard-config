@@ -1,3 +1,11 @@
+xkeyboard-config (1.8-1ubuntu8) lucid; urgency=low
+
+  * rules: Make pot file as part of build process.
+    (LP: #562872)
+  * Renumber patch 130 to 128 so is consecutive
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Wed, 14 Apr 2010 16:20:56 -0700
+
 xkeyboard-config (1.8-1ubuntu7) lucid; urgency=low
 
   * add debian/patches/130_fix_oss_ctrl_space_accelerator.patch:
@@ -5,10 +13,10 @@ xkeyboard-config (1.8-1ubuntu7) lucid; urgency=low
       both space and Ctrl + space returned the same XLookupString, which
       prevents space using in some application using
       gtk_action_group_add_toggle_actions to setup Ctrl + space accelerator.
-      We loose rctrl accelator but that's better than not having space in
+      We lose rctrl accelator but that's better than not having space in
       those applications. Setup it manually will reintroduce
-      https://bugs.launchpad.net/bugs/198759 (LP: #221112)
-
+      https://bugs.launchpad.net/bugs/198759 
+      (LP: #221112)
  -- Didier Roche <didrocks@ubuntu.com>  Wed, 14 Apr 2010 18:15:30 +0200
 
 xkeyboard-config (1.8-1ubuntu6) lucid; urgency=low
