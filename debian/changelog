@@ -1,3 +1,36 @@
+xkeyboard-config (2.1-1) experimental; urgency=low
+
+  * New upstream release:
+    + Beware of the possible regressions, we're going 3 releases forward
+      at once.
+  * Rebuild ChangeLog using “git log” on the upstream branch. The NEWS
+    file is a bit too lightweight. As a reminder, it's installed as:
+      /usr/share/doc/xkb-data/changelog.gz
+  * Point to /usr/share/X11/xkb/rules/base.lst in README.Debian, thanks to
+    Riku Saikkonen for the suggestion (Closes: #487951).
+  * Great debian/rules cleanup:
+    + Remove deb target, dpkg-buildpackage's -i does the right thing, and
+      “-rfakeroot” has been the default for a while.
+    + Remove dir target, no longer used.
+    + Stop removing rules/compat/base.l[2-4]*.part, they are no longer
+      generated automatically.
+    + More generically, stop removing files which weren't cleaned, that's
+      been fixed.
+    + Call touch in clean to restore the empty file which gets deleted by
+      quilt when unpatching rules/base.o_k.part; this avoid its showing up
+      as “deleted” in “git status”.
+    + Try and keep the udeb's size low: Replace multiple spaces with a
+      single space character. For this version, installed size goes down
+      from 3.5MB to 3.0MB.
+    + Additionally, remove comments starting with “//”. Down to 2.6MB, yay.
+    + Also don't ship the newly-added pkg-config file in the udeb.
+    + Stop removing $(xkb_base)/compiled, it's no longer created.
+    + Stop passing --disable-xkbcomp-symlink to configure, it's gone.
+  * Merge xsfbs/debian-unstable, which helps avoiding rebuilds.
+  * Update download URL in watch file.
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 28 Jan 2011 00:11:58 +0100
+
 xkeyboard-config (1.8-2) unstable; urgency=low
 
   * Add revert-goodmap-badmap-for-apple.diff patch to make apple:goodmap and
