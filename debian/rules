@@ -33,6 +33,7 @@ build: $(STAMP_DIR)/build
 $(STAMP_DIR)/build: config.status
 	dh_testdir
 	$(MAKE)
+	cd po && intltool-update -p && cd ..
 	>$@
 
 clean: xsfclean
@@ -59,10 +60,11 @@ install: build
 	dh_prep
 	dh_installdirs
 
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/xkb-data
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/tmp
+	dh_install
 
 	# Treat the udeb as an exact copy, but remove messages/pkg-config:
-	cp -r $(CURDIR)/debian/xkb-data/* $(CURDIR)/debian/xkb-data-udeb
+	cp -r $(CURDIR)/debian/tmp/* $(CURDIR)/debian/xkb-data-udeb
 	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/locale
 	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/pkgconfig
 
@@ -91,4 +93,4 @@ binary-indep: build install
 	dh_builddeb
 
 binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install 
+.PHONY: build clean binary-indep binary-arch binary install
