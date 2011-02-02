@@ -1,0 +1,70 @@
+diff -Nurp patched//rules/base.o_s.part working//rules/base.o_s.part
+--- patched//rules/base.o_s.part	2011-02-01 15:14:18.940730332 -0800
++++ working//rules/base.o_s.part	2011-02-02 14:11:00.899152049 -0800
+@@ -77,6 +77,7 @@
+   eurosign:2		=	+eurosign(2)
+   eurosign:4		=	+eurosign(4)
+   eurosign:5		=	+eurosign(5)
++  rupeesign:4           =       +rupeesign(4)
+   keypad:oss            =       +keypad(oss)
+   keypad:legacy         =	+keypad(legacy)
+   keypad:legacy_wang    =	+keypad(legacy_wang)
+diff -Nurp patched//rules/base.xml.in working//rules/base.xml.in
+--- patched//rules/base.xml.in	2011-02-01 15:14:19.028729794 -0800
++++ working//rules/base.xml.in	2011-02-02 14:11:00.907152003 -0800
+@@ -1762,6 +1762,12 @@
+             <languageList><iso639Id>hin</iso639Id></languageList>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>rupee</name>
++            <_description>With RupeeSign</_description>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+diff -Nurp patched//symbols/in working//symbols/in
+--- patched//symbols/in	2011-02-01 15:14:18.964730185 -0800
++++ working//symbols/in	2011-02-02 14:11:00.919151934 -0800
+@@ -1334,3 +1334,16 @@ xkb_symbols "hin-wx" {
+     include "level3(ralt_switch)"
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "rupee" {
++
++    name[Group1]= "India - USA With Rupee";
++
++    include "us(basic)"
++
++    include "rupeesign(4)"
++
++    include "level3(ralt_switch)"
++};
++
++
+diff -Nurp patched//symbols/Makefile.am working//symbols/Makefile.am
+--- patched//symbols/Makefile.am	2011-02-01 15:14:19.028729794 -0800
++++ working//symbols/Makefile.am	2011-02-02 14:11:52.626854227 -0800
+@@ -31,7 +31,7 @@ terminate \
+ tj tm tr tw tz \
+ ua us uz vn \
+ za \
+-altwin capslock compose ctrl eurosign group inet \
++altwin capslock compose ctrl eurosign rupeesign group inet \
+ keypad kpdl level3 level5 nbsp olpc shift srvr_ctrl typo
+ 
+ dir_data = $(dist_symbols_DATA)
+diff -Nurp patched//symbols/rupeesign working//symbols/rupeesign
+--- patched//symbols/rupeesign	1969-12-31 16:00:00.000000000 -0800
++++ working//symbols/rupeesign	2011-02-02 14:11:00.919151934 -0800
+@@ -0,0 +1,7 @@
++
++// keyboards having the RupeeSign on the 4 key
++partial
++xkb_symbols "4" {
++    key <AE04>	{ [  NoSymbol,   NoSymbol,   U20B9 ]	};
++};
++
