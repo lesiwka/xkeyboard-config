@@ -1,3 +1,11 @@
+xkeyboard-config (1.8-1ubuntu8.1~10.04.1) lucid-proposed; urgency=low
+
+  * Add 129_rupee_1.patch, 130_rupee_2.patch:  Cherrypick from upstream
+    to enable rupee symbol on English-Indian keyboards.
+    (LP: #712167)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Wed, 02 Feb 2011 14:32:12 -0800
+
 xkeyboard-config (1.8-1ubuntu8) lucid; urgency=low
 
   * rules: Make pot file as part of build process.

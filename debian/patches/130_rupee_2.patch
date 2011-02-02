@@ -1,0 +1,83 @@
+From 396de5b7138f25e49f4de3a0c871f09f08619867 Mon Sep 17 00:00:00 2001
+From: Sergey V. Udaltsov <svu@gnome.org>
+Date: Wed, 29 Sep 2010 21:11:04 +0000
+Subject: Polishing some RupeeSign-related stuff
+
+https://bugs.freedesktop.org/show_bug.cgi?id=30236
+---
+diff --git a/rules/base.xml.in b/rules/base.xml.in
+index c518c88..1a9cb5f 100644
+--- a/rules/base.xml.in
++++ b/rules/base.xml.in
+@@ -1785,8 +1785,9 @@
+         </variant>
+         <variant>
+           <configItem>
+-            <name>rupee</name>
+-            <_description>With RupeeSign</_description>
++            <name>eng</name>
++            <_description>English with RupeeSign</_description>
++            <languageList><iso639Id>eng</iso639Id></languageList>
+           </configItem>
+         </variant>
+       </variantList>
+@@ -5308,30 +5309,36 @@
+       <!-- Special shortcuts for the Euro character -->
+       <configItem>
+         <name>eurosign</name>
+-        <_description>Adding EuroSign to certain keys</_description>
++        <_description>Adding currency signs to certain keys</_description>
+       </configItem>
+       <option>
+         <configItem>
+           <name>eurosign:e</name>
+-          <_description>E</_description>
++          <_description>Euro on E</_description>
+         </configItem>
+       </option>
+       <option>
+         <configItem>
+           <name>eurosign:2</name>
+-          <_description>2</_description>
++          <_description>Euro on 2</_description>
+         </configItem>
+       </option>
+       <option>
+         <configItem>
+           <name>eurosign:4</name>
+-          <_description>4</_description>
++          <_description>Euro on 4</_description>
+         </configItem>
+       </option>
+       <option>
+         <configItem>
+           <name>eurosign:5</name>
+-          <_description>5</_description>
++          <_description>Euro on 5</_description>
++        </configItem>
++      </option>
++      <option>
++        <configItem>
++          <name>rupeesign:4</name>
++          <_description>Rupee on 4</_description>
+         </configItem>
+       </option>
+     </group>
+diff --git a/symbols/in b/symbols/in
+index d34c6ee..28e963c 100644
+--- a/symbols/in
++++ b/symbols/in
+@@ -1334,9 +1334,9 @@ xkb_symbols "hin-wx" {
+ };
+ 
+ partial alphanumeric_keys
+-xkb_symbols "rupee" {
++xkb_symbols "eng" {
+ 
+-    name[Group1]= "India - USA With Rupee";
++    name[Group1]= "India - English with RupeeSign";
+ 
+     include "us(basic)"
+ 
+--
+cgit v0.8.3-6-g21f6
