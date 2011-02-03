@@ -1,7 +1,68 @@
-Index: xkeyboard-config/symbols/tw
-===================================================================
---- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ xkeyboard-config/symbols/tw	2010-03-28 23:23:52.000000000 +0800
+diff -Nurp a/rules/base.xml.in b/rules/base.xml.in
+--- a/rules/base.xml.in	2011-02-03 15:51:13.421086910 -0800
++++ b/rules/base.xml.in	2011-02-03 15:50:56.761185595 -0800
+@@ -4102,6 +4102,46 @@
+     </layout>
+     <layout>
+       <configItem>
++        <name>tw</name>
++        <_shortDescription>Twn</_shortDescription>
++        <_description>Taiwan</_description>
++        <languageList>
++          <iso639Id>trv</iso639Id>
++        </languageList>
++      </configItem>
++      <variantList>
++        <variant>
++          <configItem>
++            <name>indigenous</name>
++            <_description>Indigenous</_description>
++            <languageList>
++              <iso639Id>ami</iso639Id>
++              <iso639Id>tay</iso639Id>
++              <iso639Id>bnn</iso639Id>
++              <iso639Id>ckv</iso639Id>
++              <iso639Id>pwn</iso639Id>
++              <iso639Id>pyu</iso639Id>
++              <iso639Id>dru</iso639Id>
++              <iso639Id>ais</iso639Id>
++              <iso639Id>ssf</iso639Id>
++              <iso639Id>tao</iso639Id>
++              <iso639Id>tsu</iso639Id>
++            </languageList>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>saisiyat</name>
++            <_description>Saisiyat</_description>
++            <languageList>
++              <iso639Id>xsf</iso639Id>
++            </languageList>
++          </configItem>
++        </variant>
++      </variantList>
++    </layout>
++    <layout>
++      <configItem>
+         <name>ua</name>
+         <_shortDescription>Ukr</_shortDescription>
+         <_description>Ukraine</_description>
+diff -Nurp a/symbols/Makefile.am b/symbols/Makefile.am
+--- a/symbols/Makefile.am	2011-02-03 15:51:13.421086910 -0800
++++ b/symbols/Makefile.am	2011-02-03 15:50:56.649186258 -0800
+@@ -29,7 +29,7 @@ ro rs ru \
+ se si sk sn \
+ sy th \
+ terminate \
+-tj tm tr tz \
++tj tm tr tw tz \
+ ua us uz vn \
+ za \
+ altwin capslock compose ctrl empty eurosign rupeesign group inet \
+diff -Nurp a/symbols/tw b/symbols/tw
+--- a/symbols/tw	1969-12-31 16:00:00.000000000 -0800
++++ b/symbols/tw	2011-02-03 15:50:56.653186234 -0800
 @@ -0,0 +1,73 @@
 +// $XKeyboardConfig$
 +
@@ -76,66 +137,3 @@ Index: xkeyboard-config/symbols/tw
 +
 +  include "level3(ralt_switch)"
 +};
-Index: xkeyboard-config/rules/base.xml.in
-===================================================================
---- xkeyboard-config.orig/rules/base.xml.in	2010-03-28 23:24:07.000000000 +0800
-+++ xkeyboard-config/rules/base.xml.in	2010-03-28 23:24:46.000000000 +0800
-@@ -3958,6 +3958,46 @@
-     </layout>
-     <layout>
-       <configItem>
-+        <name>tw</name>
-+        <_shortDescription>Twn</_shortDescription>
-+        <_description>Taiwan</_description>
-+        <languageList>
-+          <iso639Id>trv</iso639Id>
-+        </languageList>
-+      </configItem>
-+      <variantList>
-+        <variant>
-+          <configItem>
-+            <name>indigenous</name>
-+            <_description>Indigenous</_description>
-+            <languageList>
-+              <iso639Id>ami</iso639Id>
-+              <iso639Id>tay</iso639Id>
-+              <iso639Id>bnn</iso639Id>
-+              <iso639Id>ckv</iso639Id>
-+              <iso639Id>pwn</iso639Id>
-+              <iso639Id>pyu</iso639Id>
-+              <iso639Id>dru</iso639Id>
-+              <iso639Id>ais</iso639Id>
-+              <iso639Id>ssf</iso639Id>
-+              <iso639Id>tao</iso639Id>
-+              <iso639Id>tsu</iso639Id>
-+            </languageList>
-+          </configItem>
-+        </variant>
-+        <variant>
-+          <configItem>
-+            <name>saisiyat</name>
-+            <_description>Saisiyat</_description>
-+            <languageList>
-+              <iso639Id>xsf</iso639Id>
-+            </languageList>
-+          </configItem>
-+        </variant>
-+      </variantList>
-+    </layout>
-+    <layout>
-+      <configItem>
-         <name>ua</name>
-         <_shortDescription>Ukr</_shortDescription>
-         <_description>Ukraine</_description>
-diff -Nurp xkeyboard-config-merge/symbols/Makefile.am working/symbols/Makefile.am
---- xkeyboard-config-merge/symbols/Makefile.am	2010-03-29 18:38:01.000000000 -0700
-+++ working/symbols/Makefile.am	2010-03-29 23:29:53.000000000 -0700
-@@ -27,7 +27,7 @@ ro rs ru \
- se si sk sn \
- sy th \
- terminate \
--tj tm tr \
-+tj tm tr tw \
- ua us uz vn \
- za \
- altwin capslock compose ctrl eurosign group inet \
