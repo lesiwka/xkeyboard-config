@@ -20,12 +20,11 @@ diff -Nrup xkeyboard-config-1.7-patched/keycodes/evdev xkeyboard-config-working/
 diff -Nrup xkeyboard-config-1.7-patched/symbols/inet xkeyboard-config-working/symbols/inet
 --- xkeyboard-config-1.7-patched/symbols/inet	2010-02-11 12:27:43.000000000 -0800
 +++ xkeyboard-config-working/symbols/inet	2010-02-11 12:30:16.000000000 -0800
-@@ -123,6 +123,7 @@ xkb_symbols "evdev" {
+@@ -123,5 +123,6 @@ xkb_symbols "evdev" {
  
  //  key <I120>   {      [ ]       }; // KEY_MACRO 
      key <I126>   {      [ plusminus             ]       };
 +    key <I128>   {      [ XF86LaunchA           ]       };
-     key <I129>   {      [ KP_Decimal            ]       };
      key <I147>   {      [ XF86MenuKB            ]       };
      key <I148>   {      [ XF86Calculator        ]       };
 @@ -172,6 +173,7 @@ xkb_symbols "evdev" {

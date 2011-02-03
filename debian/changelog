@@ -1,3 +1,9 @@
+xkeyboard-config (2.1-1ubuntu2) natty; urgency=low
+
+  * Refresh patches 104, 105, 108 to apply
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 03 Feb 2011 15:57:08 -0800
+
 xkeyboard-config (2.1-1ubuntu1) natty; urgency=low
 
   * Merge from debian of 2.1 release.
