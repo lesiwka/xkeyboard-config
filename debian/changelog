@@ -1,3 +1,9 @@
+xkeyboard-config (2.1-1ubuntu3) natty; urgency=low
+
+  * Fix broken HTC Dream stanza.
+
+ -- Evan Dandrea <ev@ubuntu.com>  Tue, 08 Feb 2011 12:22:12 +0000
+
 xkeyboard-config (2.1-1ubuntu2) natty; urgency=low
 
   * Refresh patches 104, 105, 108 to apply
