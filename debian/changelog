@@ -1,3 +1,13 @@
+xkeyboard-config (2.3-1) experimental; urgency=low
+
+  * New upstream release:
+    - Since 2.1 is still supposed to be the best for GNOME2, and since
+      GNOME3 is still being prepared in experimental, target that suite
+      rather than unstable.
+  * Add intltool build-dep.
+
+ -- Cyril Brulebois <kibi@debian.org>  Sat, 04 Jun 2011 00:35:16 +0200
+
 xkeyboard-config (2.2.1-1) experimental; urgency=low
 
   * New upstream release:
