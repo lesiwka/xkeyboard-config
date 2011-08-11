@@ -3,7 +3,7 @@
 xkb_base := /usr/share/X11/xkb
 
 override_dh_autoreconf:
-	dh_autoreconf -- '(intltoolize -c -f && autoreconf -vfi)'
+	dh_autoreconf '(intltoolize -c -f && autoreconf -vfi)'
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
@@ -13,10 +13,10 @@ override_dh_auto_configure:
 
 override_dh_auto_install:
 	# Regular deb:
-	$(MAKE) -C build install DESTDIR=$(CURDIR)/debian/xkb-data
+	$(MAKE) -C build install DESTDIR=$(CURDIR)/debian/tmp
 
 	# Treat the udeb as an exact copy, but remove messages/pkg-config:
-	cp -r $(CURDIR)/debian/xkb-data/* $(CURDIR)/debian/xkb-data-udeb
+	cp -r $(CURDIR)/debian/tmp/* $(CURDIR)/debian/xkb-data-udeb
 	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/locale
 	rm -rf $(CURDIR)/debian/xkb-data-udeb/usr/share/pkgconfig
 
