@@ -5,11 +5,23 @@ xkb_base := /usr/share/X11/xkb
 override_dh_autoreconf:
 	dh_autoreconf '(intltoolize -c -f && autoreconf -vfi)'
 
+override_dh_auto_clean:
+	dh_auto_clean
+	if [ -e $(CURDIR)/po/xkeyboard-config.pot-orig ]; then \
+		mv $(CURDIR)/po/xkeyboard-config.pot-orig \
+		$(CURDIR)/po/xkeyboard-config.pot; \
+	fi
+
 override_dh_auto_configure:
 	dh_auto_configure -- \
 	  --with-xkb-rules-symlink=xfree86,xorg \
 	  --with-xkb-base=$(xkb_base) \
 	  --disable-runtime-deps
+
+override_dh_auto_build:
+	dh_auto_build
+	mv $(CURDIR)/po/xkeyboard-config.pot $(CURDIR)/po/xkeyboard-config.pot-orig
+	cd $(CURDIR)/po && intltool-update -p
 
 override_dh_auto_install:
 	# Regular deb:

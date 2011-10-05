@@ -1,3 +1,11 @@
+xkeyboard-config (2.3-1ubuntu2) oneiric; urgency=low
+
+  * rules: Bring back the pot file build, very much needed still.
+    This time move the original file away during build, and restore
+    on clean. (LP: #868554)
+
+ -- Timo Aaltonen <tjaalton@batty>  Wed, 05 Oct 2011 23:34:45 +0300
+
 xkeyboard-config (2.3-1ubuntu1) oneiric; urgency=low
 
   * Merge from Debian experimental.  Remaining Ubuntu changes:
