@@ -1,3 +1,12 @@
+xkeyboard-config (2.3-1ubuntu2.1) oneiric-proposed; urgency=low
+
+  * Add 109_fix_cz.patch: Update Czech keyboard layout to match physical
+    keys.  This adds 5 new keys which are present on the keyboards.
+    This is a cherrypick of two patches from 2.5.
+    (LP: #770354)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 23 Feb 2012 16:40:33 -0800
+
 xkeyboard-config (2.3-1ubuntu2) oneiric; urgency=low
 
   * rules: Bring back the pot file build, very much needed still.

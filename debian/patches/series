@@ -2,3 +2,4 @@ docs.diff
 revert-goodmap-badmap-for-apple.diff
 105_intelligent_keyboard.patch
 108_fix_intltool_make_check.diff
+109_fix_cz.patch
