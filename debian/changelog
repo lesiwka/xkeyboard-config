@@ -1,3 +1,14 @@
+xkeyboard-config (2.5-1ubuntu2) quantal; urgency=low
+
+  * Add 109_fr_oss_space_char.patch: Fix problems using space bar in various
+    applications when using the fr(oss) keymap.
+    (LP: #221112)
+  * Add 110_dead_hook_horn.patch: Add two deadkeys on level 3 and 4 of the
+    j key for the latin keymap.
+    (LP: #825624)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Wed, 16 May 2012 18:46:24 -0700
+
 xkeyboard-config (2.5-1ubuntu1) precise; urgency=low
 
   * Merge from Debian experimental. Remaining Ubuntu changes:
