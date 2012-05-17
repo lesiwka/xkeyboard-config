@@ -2,3 +2,5 @@ docs.diff
 revert-goodmap-badmap-for-apple.diff
 105_intelligent_keyboard.patch
 108_fix_intltool_make_check.diff
+109_fr_oss_space_char.patch
+110_dead_hook_horn.patch
