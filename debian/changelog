@@ -1,3 +1,9 @@
+xkeyboard-config (2.5-1ubuntu4) quantal; urgency=low
+
+  * Actually apply patch 112
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 04 Jun 2012 18:30:47 -0700
+
 xkeyboard-config (2.5-1ubuntu3) quantal; urgency=low
 
   * Add 111_cz_ssharp.patch: Fix mapping of 4th level of the AC11 key to
