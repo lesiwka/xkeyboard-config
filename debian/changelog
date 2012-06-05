@@ -1,3 +1,15 @@
+xkeyboard-config (2.5-1ubuntu3) quantal; urgency=low
+
+  * Add 111_cz_ssharp.patch: Fix mapping of 4th level of the AC11 key to
+    ssharp rather than quotedbl for the Czech layout.  Cherrypick of 
+    patch from upstream.
+    (LP: #953477)
+  * Add 112_dk_dvorak_tilde.patch: Fix tilde key in the Danish Dvorak
+    layout.  It's not the same as Norwegian as has been assumed previously.
+    (LP: #989626)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 04 Jun 2012 18:11:53 -0700
+
 xkeyboard-config (2.5-1ubuntu2) quantal; urgency=low
 
   * Add 109_fr_oss_space_char.patch: Fix problems using space bar in various
