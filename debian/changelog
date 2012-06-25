@@ -1,3 +1,14 @@
+xkeyboard-config (2.5-1ubuntu5) quantal; urgency=low
+
+  * Add 113_ossmath_is_five_levels.patch: Some keymaps like fr/oss fail to
+    load because they include ossmath (via keypad(oss)) which
+    misconfigures the keypad as 4-level when it should be 5-level.  This
+    patch from upstream bugzilla fixes this by adding the 5th level to the
+    ossmath definition.
+    (LP: #985065)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 25 Jun 2012 09:30:19 -0700
+
 xkeyboard-config (2.5-1ubuntu4) quantal; urgency=low
 
   * Actually apply patch 112
