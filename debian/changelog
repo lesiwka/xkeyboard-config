@@ -1,3 +1,17 @@
+xkeyboard-config (2.5-1ubuntu1.3) precise-proposed; urgency=low
+
+  * Add 113_ossmath_is_five_levels.patch: Some keymaps like fr(oss) fail to
+    load because they include ossmath (via keypad(oss)) which
+    misconfigures the keypad as 4-level when it should be 5-level.  This
+    patch from upstream bugzilla fixes this by adding the 5th level to the
+    ossmath definition.
+    (LP: #985065)
+  * Drop 109_fr_oss_space_char.patch change; the fix causes behavioral
+    changes for right control which a fr(oss) user did not like.
+    (LP: #1013881)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 25 Jun 2012 17:32:15 -0700
+
 xkeyboard-config (2.5-1ubuntu1.2) precise-proposed; urgency=low
 
   * Add 111_cz_ssharp.patch: Fix mapping of 4th level of the AC11 key to
@@ -14,7 +28,7 @@ xkeyboard-config (2.5-1ubuntu1.1) precise-proposed; urgency=low
 
   * Add 109_fr_oss_space_char.patch: Fix problems using space bar in various
     applications when using the fr(oss) keymap.
-    (LP: #221112)
+    (was for LP bug 221112)
   * Add 110_dead_hook_horn.patch: Add two deadkeys on level 3 and 4 of the
     j key for the latin keymap.
     (LP: #825624)
