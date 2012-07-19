@@ -1,3 +1,11 @@
+xkeyboard-config (2.5-1ubuntu6) quantal; urgency=low
+
+  * Disable patch 109.  The fix causes behavioral changes for right
+    control.  Needs to be fixed differently; discussion ongoing upstream.
+    (LP: #1013881)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Thu, 19 Jul 2012 14:08:18 -0700
+
 xkeyboard-config (2.5-1ubuntu5) quantal; urgency=low
 
   * Add 113_ossmath_is_five_levels.patch: Some keymaps like fr/oss fail to
