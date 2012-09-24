@@ -1,3 +1,12 @@
+xkeyboard-config (2.5-1ubuntu7) quantal; urgency=low
+
+  * Add patch 114_shift_f10.patch.  Don't let Ctrl+Alt consume Shift, else
+    it causes Shift-F10 to be treated as F10.  This can result in popup
+    menus opening when they shouldn't.
+    (LP: #937822)
+
+ -- Bryce Harrington <bryce@ubuntu.com>  Mon, 24 Sep 2012 15:19:25 -0700
+
 xkeyboard-config (2.5-1ubuntu6) quantal; urgency=low
 
   * Disable patch 109.  The fix causes behavioral changes for right
