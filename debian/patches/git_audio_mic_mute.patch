@@ -1,0 +1,25 @@
+From 4e648ea02ce68e404faa0c99118e4d11a64f74a7 Mon Sep 17 00:00:00 2001
+From: James M Leddy <jm.leddy@gmail.com>
+Date: Mon, 13 May 2013 18:08:24 +0000
+Subject: Add XF86AudioMicMute mappings
+
+https://bugs.freedesktop.org/show_bug.cgi?id=54171
+
+Signed-off-by: James M Leddy <jm.leddy@gmail.com>
+---
+diff --git a/symbols/inet b/symbols/inet
+index 4c172fa..839439a 100644
+--- a/symbols/inet
++++ b/symbols/inet
+@@ -120,6 +120,8 @@ xkb_symbols "evdev" {
+     key <FK22>   {      [ XF86TouchpadOn        ]       };
+     key <FK23>   {      [ XF86TouchpadOff       ]       };
+ 
++    key <FK20>   {      [ XF86AudioMicMute      ]       };
++
+ //  key <I120>   {      [ ]       }; // KEY_MACRO 
+     key <I126>   {      [ plusminus             ]       };
+     key <I128>   {      [ XF86LaunchA           ]       };
+--
+cgit v0.9.0.2-2-gbebe
+

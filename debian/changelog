@@ -1,3 +1,10 @@
+xkeyboard-config (2.5.1-3ubuntu2) saucy; urgency=low
+
+  * debian/patches/git_audio_mic_mute.patch: Add XF86AudioMicMute mappings,
+    thanks James M Leddy (lp: #408903)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 17 May 2013 19:09:15 +0200
+
 xkeyboard-config (2.5.1-3ubuntu1) raring; urgency=low
 
   * Merge from Debian unstable. Remaining Ubuntu changes:
