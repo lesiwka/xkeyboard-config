@@ -7,3 +7,4 @@ preserve-shift.diff
 110_dead_hook_horn.patch
 111_cz_ssharp.patch
 112_dk_dvorak_tilde.patch
+git_audio_mic_mute.patch
