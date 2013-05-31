@@ -7,4 +7,4 @@ revert-goodmap-badmap-for-apple.diff
 111_cz_ssharp.patch
 112_dk_dvorak_tilde.patch
 113_ossmath_is_five_levels.patch
-114_shift_f10.patch
+115_add_XF86AudioMicMute.patch
