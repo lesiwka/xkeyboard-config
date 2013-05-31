@@ -1,3 +1,11 @@
+xkeyboard-config (2.5-1ubuntu1.5) precise-proposed; urgency=low
+
+  * Revert last commit due to a SRU verification failure.
+  * Add patch 115_add_XF86AudioMicMute.patch.  This maps F20 to the new
+    XF86AudioMicMute keysym. Cherrypick from upstream. (LP: #408903)
+
+ -- James M Leddy <james.leddy@canonical.com>  Fri, 31 May 2013 15:39:35 -0400
+
 xkeyboard-config (2.5-1ubuntu1.4) precise-proposed; urgency=low
 
   * Add patch 114_shift_f10.patch.  Don't let Ctrl+Alt consume Shift, else
@@ -24,7 +32,7 @@ xkeyboard-config (2.5-1ubuntu1.3) precise-proposed; urgency=low
 xkeyboard-config (2.5-1ubuntu1.2) precise-proposed; urgency=low
 
   * Add 111_cz_ssharp.patch: Fix mapping of 4th level of the AC11 key to
-    ssharp rather than quotedbl for the Czech layout.  Cherrypick of
+    ssharp rather than quotedbl for the Czech layout.  Cherrypick of 
     patch from upstream.
     (LP: #953477)
   * Add 112_dk_dvorak_tilde.patch: Fix tilde key in the Danish Dvorak
@@ -104,14 +112,14 @@ xkeyboard-config (2.3-1ubuntu1) oneiric; urgency=low
 
   * Merge from Debian experimental.  Remaining Ubuntu changes:
       + xkb-data-i18n.install, xkb-data.install, rules: Split out
-	xkb-data-i18n to be used by console-setup.
+        xkb-data-i18n to be used by console-setup.
       + 105_intelligent_keyboard.patch: Add support for the Intelligent
-	Keyboard K04
+        Keyboard K04
       + 108_fix_intltool_make_check.diff: Fix make check in the presence
-	of the quilt patch system.
+        of the quilt patch system.
       + xkb-data.postinst.in: Migrate console-setup/keyboard-configuration
-	settings from dvorak-intl to dvorak-alt-intl to match rename in
-	xkeyboard-config 1.9. (LP: 742683)
+        settings from dvorak-intl to dvorak-alt-intl to match rename in
+        xkeyboard-config 1.9. (LP: 742683)
   * No need to build the pot file anymore, upstream version is used.
   * Fix dh_autoreconf override in rules (FTBFS).
 
@@ -131,10 +139,10 @@ xkeyboard-config (2.2.1-1ubuntu1) oneiric; urgency=low
 
   * Merge from Debian experimental.  Remaining Ubuntu changes:
       + xkb-data-i18n.install, xkb-data.install, rules: Split out
-	xkb-data-i18n to be used by console-setup.
+        xkb-data-i18n to be used by console-setup.
       + rules: Generate pot file for translations during build
       + 105_intelligent_keyboard.patch: Add support for the Intelligent
-	Keyboard K04
+        Keyboard K04
   * debian/patches/108_taiwan.patch:
   * debian/patches/104_macbook_expose_and_dashboard.patch:
   * debian/patches/107_lao.patch:
@@ -200,18 +208,18 @@ xkeyboard-config (2.1-1ubuntu1) natty; urgency=low
       + Support for Kinesis keyboard geometry (LP: #393887)
       + Support for Apple Aluminium keyboards (LP: #696232)
       + Support for abnt2 keyboard, thinkpad variant for Lenovo 3000 v100
-	laptops (LP: #359719)
+        laptops (LP: #359719)
       + Fix CapsLock misspelling (LP: #592448)
     - Remaining Ubuntu changes:
       + xkb-data-i18n.install, xkb-data.install, rules: Split out
-	xkb-data-i18n to be used by console-setup.
+        xkb-data-i18n to be used by console-setup.
       + rules: Generate pot file for translations during build
       + 104_macbook_expose_and_dashboard.patch: Add keycode definitions
-	  required for Apples Expose & Dashboard keys (F3/F4).
+          required for Apples Expose & Dashboard keys (F3/F4).
       + 105_intelligent_keyboard.patch: Add support for the Intelligent
-	Keyboard K04
+        Keyboard K04
       + 107_lao.patch: New keyboard layout for Lao, implemented as
-	an alternative to the default one.
+        an alternative to the default one.
       + 108_taiwan.patch: New keyboard layouts for Taiwan.
   * Drop 102_mac_aliases.patch: This appears to have some side effects,
     and the patch was not taken by upstream because it was an incomplete
@@ -1059,7 +1067,7 @@ xkeyboard-config (0.8-13) unstable; urgency=low
     + debian/patches/mac_swap_kp.diff
     + debian/patches/mac_nodeadkeys.diff
 
-  * debian/README.Debian: Replace its obsolete content by informations
+  * debian/README.Debian: Replace its obsolete content by informations 
     to powerpc users.
 
   * debian/patches/fix_xkbcomp_crash.diff: New patch to fix an
@@ -1277,3 +1285,4 @@ xkeyboard-config (0.5-1) experimental; urgency=low
     xlibs <-> xkb-data transition.
 
  -- Denis Barbier <barbier@debian.org>  Wed,  2 Mar 2005 22:28:23 +0100
+
