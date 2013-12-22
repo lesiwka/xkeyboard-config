@@ -1,3 +1,16 @@
+xkeyboard-config (2.10.1-1) unstable; urgency=low
+
+  [ Dmitry Shachnev ]
+  * New upstream release (closes: #718730).
+  * Refresh revert-goodmap-badmap-for-apple.diff.
+  * Drop preserve-shift.diff, applied upstream.
+  * Update debian/watch for new tarballs location (closes: #727812).
+  * Disable autopoint, it causes build failure and we use intltoolize
+    instead.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 22 Dec 2013 16:37:56 +0100
+
 xkeyboard-config (2.5.1-3) unstable; urgency=low
 
   * Cherry-picks from upstream:
