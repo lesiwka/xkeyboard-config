@@ -1,0 +1,270 @@
+Description: Use the modern language name Bangla instead of Bengali
+Bug-Ubuntu: https://launchpad.net/bugs/991002
+Forwarded: yes
+Bug-Debian: http://bugs.debian.org/731274
+Author: Gunnar Hjalmarsson <gunnarhj@ubuntu.com>
+
+--- a/rules/base.xml.in
++++ b/rules/base.xml.in
+@@ -1769,9 +1769,9 @@
+     <layout>
+       <configItem>
+         <name>bd</name>
+-        <!-- Keyboard indicator for Bengali layouts -->
++        <!-- Keyboard indicator for Bangla layouts -->
+         <_shortDescription>bn</_shortDescription>
+-        <_description>Bengali</_description>
++        <_description>Bangla</_description>
+         <languageList>
+           <iso639Id>ben</iso639Id>
+         </languageList>
+@@ -1780,7 +1780,7 @@
+         <variant>
+           <configItem>
+             <name>probhat</name>
+-            <_description>Bengali (Probhat)</_description>
++            <_description>Bangla (Probhat)</_description>
+           </configItem>
+         </variant>
+       </variantList>
+@@ -1796,9 +1796,9 @@
+         <variant>
+           <configItem>
+             <name>ben</name>
+-            <!-- Keyboard indicator for Bengali layouts -->
++            <!-- Keyboard indicator for Bangla layouts -->
+             <_shortDescription>bn</_shortDescription>
+-            <_description>Bengali (India)</_description>
++            <_description>Bangla (India)</_description>
+             <languageList>
+               <iso639Id>ben</iso639Id>
+             </languageList>
+@@ -1807,9 +1807,9 @@
+         <variant>
+           <configItem>
+             <name>ben_probhat</name>
+-            <!-- Keyboard indicator for Bengali layouts -->
++            <!-- Keyboard indicator for Bangla layouts -->
+             <_shortDescription>bn</_shortDescription>
+-            <_description>Bengali (India, Probhat)</_description>
++            <_description>Bangla (India, Probhat)</_description>
+             <languageList>
+               <iso639Id>ben</iso639Id>
+             </languageList>
+@@ -1818,28 +1818,28 @@
+         <variant>
+           <configItem>
+             <name>ben_baishakhi</name>
+-            <_description>Bengali (India, Baishakhi)</_description>
++            <_description>Bangla (India, Baishakhi)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+           </configItem>
+         </variant>
+         <variant>
+           <configItem>
+             <name>ben_bornona</name>
+-            <_description>Bengali (India, Bornona)</_description>
++            <_description>Bangla (India, Bornona)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+             </configItem>
+         </variant>
+          <variant>
+           <configItem>
+             <name>ben_gitanjali</name>
+-            <_description>Bengali (India, Uni Gitanjali)</_description>
++            <_description>Bangla (India, Uni Gitanjali)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+           </configItem>
+         </variant>
+         <variant>
+           <configItem>
+             <name>ben_inscript</name>
+-            <_description>Bengali (India, Baishakhi Inscript)</_description>
++            <_description>Bangla (India, Baishakhi Inscript)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+           </configItem>
+         </variant>
+--- a/rules/evdev.xml.in
++++ b/rules/evdev.xml.in
+@@ -1769,9 +1769,9 @@
+     <layout>
+       <configItem>
+         <name>bd</name>
+-        <!-- Keyboard indicator for Bengali layouts -->
++        <!-- Keyboard indicator for Bangla layouts -->
+         <_shortDescription>bn</_shortDescription>
+-        <_description>Bengali</_description>
++        <_description>Bangla</_description>
+         <languageList>
+           <iso639Id>ben</iso639Id>
+         </languageList>
+@@ -1780,7 +1780,7 @@
+         <variant>
+           <configItem>
+             <name>probhat</name>
+-            <_description>Bengali (Probhat)</_description>
++            <_description>Bangla (Probhat)</_description>
+           </configItem>
+         </variant>
+       </variantList>
+@@ -1796,9 +1796,9 @@
+         <variant>
+           <configItem>
+             <name>ben</name>
+-            <!-- Keyboard indicator for Bengali layouts -->
++            <!-- Keyboard indicator for Bangla layouts -->
+             <_shortDescription>bn</_shortDescription>
+-            <_description>Bengali (India)</_description>
++            <_description>Bangla (India)</_description>
+             <languageList>
+               <iso639Id>ben</iso639Id>
+             </languageList>
+@@ -1807,9 +1807,9 @@
+         <variant>
+           <configItem>
+             <name>ben_probhat</name>
+-            <!-- Keyboard indicator for Bengali layouts -->
++            <!-- Keyboard indicator for Bangla layouts -->
+             <_shortDescription>bn</_shortDescription>
+-            <_description>Bengali (India, Probhat)</_description>
++            <_description>Bangla (India, Probhat)</_description>
+             <languageList>
+               <iso639Id>ben</iso639Id>
+             </languageList>
+@@ -1818,28 +1818,28 @@
+         <variant>
+           <configItem>
+             <name>ben_baishakhi</name>
+-            <_description>Bengali (India, Baishakhi)</_description>
++            <_description>Bangla (India, Baishakhi)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+           </configItem>
+         </variant>
+         <variant>
+           <configItem>
+             <name>ben_bornona</name>
+-            <_description>Bengali (India, Bornona)</_description>
++            <_description>Bangla (India, Bornona)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+             </configItem>
+         </variant>
+          <variant>
+           <configItem>
+             <name>ben_gitanjali</name>
+-            <_description>Bengali (India, Uni Gitanjali)</_description>
++            <_description>Bangla (India, Uni Gitanjali)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+           </configItem>
+         </variant>
+         <variant>
+           <configItem>
+             <name>ben_inscript</name>
+-            <_description>Bengali (India, Baishakhi Inscript)</_description>
++            <_description>Bangla (India, Baishakhi Inscript)</_description>
+             <languageList><iso639Id>ben</iso639Id></languageList>
+           </configItem>
+         </variant>
+--- a/symbols/bd
++++ b/symbols/bd
+@@ -16,7 +16,7 @@
+ 
+ default  partial alphanumeric_keys
+ xkb_symbols "basic" {
+-   name[Group1]= "Bengali";
++   name[Group1]= "Bangla";
+    key <ESC>  { [ Escape ] };
+ 
+ // numbers
+@@ -92,5 +92,5 @@
+ 
+ xkb_symbols "probhat" {
+     include "in(ben_probhat)"
+-    name[Group1]= "Bengali (Probhat)";
++    name[Group1]= "Bangla (Probhat)";
+ };
+--- a/symbols/in
++++ b/symbols/in
+@@ -1,6 +1,6 @@
+ // This layout includes all Indian layouts, including:
+ //     - Devanagari (Hindi, Marathi, Sanskrit)
+-//     - Bengali
++//     - Bangla
+ //     - Gujarati
+ //     - Kannada
+ //     - Malayalam
+@@ -12,12 +12,12 @@
+ // Links:
+ // - Indic INSCRIPT keyboard layout diagrams:
+ //     http://java.sun.com/products/jfc/tsc/articles/InputMethod/indiclayout.html
+-// - Bengali Baishakhi (Bengali layouts):
+-// - Bengali Baishakhi Inscript (Bengali layouts):
+-// - Bengali Bornona (Bengali layouts):
+-// - Uni Gitanjali (Bengali layouts):
++// - Bangla Baishakhi (Bangla layouts):
++// - Bangla Baishakhi Inscript (Bangla layouts):
++// - Bangla Bornona (Bangla layouts):
++// - Uni Gitanjali (Bangla layouts):
+ //     http://nltr.org
+-// - Ekusheyr Shadhinota (Bengali layouts):
++// - Ekusheyr Shadhinota (Bangla layouts):
+ //     http://ekushey.org/projects/shadhinota/index.html
+ // - Microsoft Windows XP SP2: Indic Language Standards - an Introduction:
+ //     http://www.bhashaindia.com/MSProducts/XpSp2/Articles/IndicLanguageStandards.aspx
+@@ -176,7 +176,7 @@
+ 
+ partial alphanumeric_keys
+ xkb_symbols "ben" {
+-    name[Group1]= "Bengali (India)";
++    name[Group1]= "Bangla (India)";
+ 
+       // Mainly numbers.
+       key <AE01> { [      U09E7 		]	};
+@@ -244,7 +244,7 @@
+ };
+ 
+ xkb_symbols "ben_probhat" {
+- name[Group1]= "Bengali (India, Probhat)";
++ name[Group1]= "Bangla (India, Probhat)";
+    key <ESC>  { [ Escape ] };
+ 
+ // numbers
+@@ -318,10 +318,10 @@
+     include "rupeesign(4)"
+ };
+ 
+-// Bengali Baishakhi, Bengali Baishakhi Inscript, Bengali Bornona, Uni Gitanjali Layouts are added by Promathesh Mandal <promathesh812004@gmail.com>
++// Bangla Baishakhi, Bangla Baishakhi Inscript, Bangla Bornona, Uni Gitanjali Layouts are added by Promathesh Mandal <promathesh812004@gmail.com>
+ 
+ xkb_symbols "ben_baishakhi" {
+- name[Group1]= "Bengali (India, Baishakhi)";
++ name[Group1]= "Bangla (India, Baishakhi)";
+    key <ESC>   { [ Escape 					] };
+ 
+ // numbers
+@@ -398,7 +398,7 @@
+ };
+ 
+ xkb_symbols "ben_inscript" {
+-    name[Group1]= "Bengali (India, Baishakhi Inscript)";
++    name[Group1]= "Bangla (India, Baishakhi Inscript)";
+ 
+       // Mainly numbers.
+       key <TLDE> { [      0x100200D, 0x100200C	] 	};
+@@ -464,7 +464,7 @@
+ };
+ 
+ xkb_symbols "ben_gitanjali" {
+- name[Group1]= "Bengali (India, Uni Gitanjali)";
++ name[Group1]= "Bangla (India, Uni Gitanjali)";
+    key <ESC>   { [ Escape			] };
+ 
+ // numbers
+@@ -542,7 +542,7 @@
+ 
+ 
+ xkb_symbols "ben_bornona" {
+- name[Group1]= "Bengali (India, Bornona)";
++ name[Group1]= "Bangla (India, Bornona)";
+    key <ESC>  { [ Escape 					] };
+ 
+ // numbers
