@@ -1,3 +1,20 @@
+xkeyboard-config (2.11-1) unstable; urgency=medium
+
+  [ Lior Kaplan ]
+  * New upstream release
+    + altwin(ctrl_alt_win): Map "win" to Ctrl keys (closes: #678553)
+    + use the modern language name Bangla instead of Bengali (closes: #731274)
+    + implemented the new Israeli Standard SI1452 for the il basic layout
+      (closes: #530820)
+
+  [ Sven Joachim ]
+  * Mark xkb-data as "Multi-Arch: foreign" (Closes: #677884).
+
+  [ Julien Cristau ]
+  * Fix grab:debug reference in the xml file.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 13 May 2014 00:09:58 +0200
+
 xkeyboard-config (2.10.1-1) unstable; urgency=low
 
   [ Dmitry Shachnev ]
