@@ -1,3 +1,13 @@
+xkeyboard-config (2.14-1) unstable; urgency=medium
+
+  * New upstream release (closes: #776817).
+    - fujitsu_vndr: add a name to xkb_symbols sections (closes: #749006)
+    - Add option to swap right alt & right control (closes: #752680)
+  * Remove Cyril from Uploaders.
+  * Drop fr-oss-rctrl.diff, upstream did a mostly equivalent change.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 26 Apr 2015 16:30:30 +0200
+
 xkeyboard-config (2.12-1) unstable; urgency=medium
 
   * New upstream release
