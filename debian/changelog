@@ -1,3 +1,12 @@
+xkeyboard-config (2.19-1+deb9u1) stretch; urgency=medium
+
+  * Non-maintainer upload.
+  * Revert blacklisting of Indic layouts (Closes: #865316)
+    Now Indic keyboards can be selected from list of available keyboard layouts
+    like in previous stable releases. This was reverted upstream as well.
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 18 Jul 2017 13:08:55 +0530
+
 xkeyboard-config (2.19-1) unstable; urgency=medium
 
   * New upstream release.
