@@ -1,10 +1,9 @@
 Source: xkeyboard-config
 Section: x11
-Priority: extra
+Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Build-Depends:
- debhelper (>= 9),
- dh-autoreconf,
+ debhelper (>= 10),
  quilt,
 Build-Depends-Indep:
  libxml-parser-perl,
@@ -13,9 +12,9 @@ Build-Depends-Indep:
  intltool,
  xsltproc,
  xutils-dev (>= 1:7.6+2),
-Standards-Version: 3.9.8
-Vcs-Git: https://anonscm.debian.org/git/pkg-xorg/data/xkb-data.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-xorg/data/xkb-data.git
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/xorg-team/data/xkb-data.git
+Vcs-Browser: https://salsa.debian.org/xorg-team/data/xkb-data
 Homepage: https://www.freedesktop.org/Software/XKeyboardConfig
 
 Package: xkb-data

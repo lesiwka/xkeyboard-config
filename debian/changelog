@@ -1,3 +1,20 @@
+xkeyboard-config (2.26-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Map evdev keycodes KEY_RFKILL and KEY_WWAN to XF86RFKill and
+      XF86WWAN (Closes: #917157).
+    - allowMultipleSelection is wrong in korean data (Closes: #902234).
+  * Drop fix-typo.diff, upstreamed.
+  * Cherry-pick af6c0f29 (Fixed broken pt layout) from upstream.
+  * Let uscan check upstream tarball signatures.
+  * Update Vcs-* URLs to point to salsa.debian.org.
+  * Bump debhelper compat to 10.
+  * Raise Priority to optional.
+  * Set source format to 1.0.
+  * Bump standards version to 4.3.0.
+
+ -- Andreas Boll <aboll@debian.org>  Fri, 08 Feb 2019 22:27:41 +0100
+
 xkeyboard-config (2.23.1-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #884822)
