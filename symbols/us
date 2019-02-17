@@ -1523,3 +1523,40 @@ partial alphanumeric_keys
 	xkb_symbols "sun_type6" {
 	include "sun_vndr/us(sun_type6)"
 };
+
+
+partial alphanumeric_keys
+xkb_symbols "lesiwka" {
+    include "us(basic)"
+
+    name[Group1] = "Ukrainian (Lesiwka)";
+
+    include "typo(lesiwka)"
+
+    key <TLDE> { [ NoSymbol, NoSymbol,   U0301, NoSymbol ] };
+    key <AC10> { [ NoSymbol, NoSymbol,  scaron,   Scaron ] };
+    key <AC11> { [ NoSymbol, NoSymbol,  zcaron,   Zcaron ] };
+    key <AD01> { [ NoSymbol, NoSymbol,  ccaron,   Ccaron ] };
+    key <AD11> { [ NoSymbol, NoSymbol, dstroke,  Dstroke ] };
+    key <AD12> { [ NoSymbol, NoSymbol, zstroke,  Zstroke ] };
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "lesiwka-alt" {
+    include "us(basic)"
+
+    name[Group1] = "Ukrainian (Lesiwka, alt.)";
+
+    include "typo(lesiwka)"
+
+    key <TLDE> { [ NoSymbol, NoSymbol,   U0301, NoSymbol ] };
+    key <AC02> { [ NoSymbol, NoSymbol,  scaron,   Scaron ] };
+    key <AC03> { [ NoSymbol, NoSymbol, dstroke,  Dstroke ] };
+    key <AB01> { [ NoSymbol, NoSymbol,  zcaron,   Zcaron ] };
+    key <AB02> { [ NoSymbol, NoSymbol, zstroke,  Zstroke ] };
+    key <AB03> { [ NoSymbol, NoSymbol,  ccaron,   Ccaron ] };
+
+    include "level3(ralt_switch)"
+};

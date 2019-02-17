@@ -54,3 +54,17 @@ xkb_symbols "base" {
     key <AB09> { [NoSymbol, NoSymbol, guillemotright, greater] }; // "."
     key <AB10> { [NoSymbol, NoSymbol, ellipsis] }; // "/"
 };
+
+partial alphanumeric_keys
+xkb_symbols "lesiwka" {
+    key <TLDE> { [ NoSymbol, NoSymbol,       NoSymbol,            approxeq ] };
+    key <AE03> { [ NoSymbol, NoSymbol,     numerosign,              degree ] };
+    key <AE04> { [ NoSymbol, NoSymbol,          U20B4,            EuroSign ] };
+    key <AE11> { [ NoSymbol, NoSymbol,          U2010,              emdash ] };
+    key <AE12> { [ NoSymbol, NoSymbol,       notequal,           plusminus ] };
+    key <AB08> { [ NoSymbol, NoSymbol,  guillemotleft,  doublelowquotemark ] };
+    key <AB09> { [ NoSymbol, NoSymbol, guillemotright, leftdoublequotemark ] };
+    key <AB10> { [ NoSymbol, NoSymbol,       ellipsis,              endash ] };
+
+    include "nbsp(level4)"
+};
