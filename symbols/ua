@@ -324,3 +324,76 @@ partial alphanumeric_keys
 	xkb_symbols "sun_type6" {
 	include "sun_vndr/ua(sun_type6)"
 };
+
+partial alphanumeric_keys
+xkb_symbols "lesiwka" {
+    include "us(basic)"
+
+    name[Group1] = "Ukrainian (Lesiwka)";
+
+    include "typo(lesiwka)"
+
+    key <TLDE> { [   U0301, NoSymbol,         grave,   NoSymbol ] };
+    key <AC10> { [  scaron,   Scaron,     semicolon,      colon ] };
+    key <AC11> { [  zcaron,   Zcaron,    apostrophe,   quotedbl ] };
+    key <AD01> { [  ccaron,   Ccaron,             q,          Q ] };
+    key <AD11> { [ dstroke,  Dstroke,   bracketleft,  braceleft ] };
+    key <AD12> { [ zstroke,  Zstroke,  bracketright, braceright ] };
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "lesiwka-phonetic" {
+    include "us(basic)"
+
+    name[Group1] = "Ukrainian (Lesiwka, phonetic)";
+
+    include "typo(lesiwka)"
+
+    key <AE04> { [ NoSymbol, semicolon,         dollar,               U20B4 ] };
+    key <AE05> { [ NoSymbol,  NoSymbol,       EuroSign,            NoSymbol ] };
+    key <AE06> { [ NoSymbol,     colon,    asciicircum,            NoSymbol ] };
+    key <AE07> { [ NoSymbol,  question,      ampersand,            NoSymbol ] };
+    key <AE09> { [ NoSymbol,  NoSymbol,  guillemotleft,  doublelowquotemark ] };
+    key <AE10> { [ NoSymbol,  NoSymbol, guillemotright, leftdoublequotemark ] };
+
+    key <AD01> { [        j,         J,              q,                   Q ] };
+    key <AD02> { [        c,         C                                      ] };
+    key <AD03> { [        u,         U                                      ] };
+    key <AD04> { [        k,         K                                      ] };
+    key <AD05> { [        e,         E                                      ] };
+    key <AD06> { [        n,         N                                      ] };
+    key <AD07> { [        h,         H                                      ] };
+    key <AD08> { [   scaron,    Scaron                                      ] };
+    key <AD09> { [        w,         W                                      ] };
+    key <AD10> { [        z,         Z                                      ] };
+    key <AD11> { [        x,         X,    bracketleft,           braceleft ] };
+    key <AD12> { [        g,         G,   bracketright,          braceright ] };
+
+    key <AC01> { [        f,         F                                      ] };
+    key <AC02> { [        i,         I                                      ] };
+    key <AC03> { [        v,         V                                      ] };
+    key <AC04> { [        a,         A                                      ] };
+    key <AC05> { [        p,         P                                      ] };
+    key <AC06> { [        r,         R                                      ] };
+    key <AC07> { [        o,         O                                      ] };
+    key <AC08> { [        l,         L                                      ] };
+    key <AC09> { [        d,         D                                      ] };
+    key <AC10> { [   zcaron,    Zcaron,      semicolon,               colon ] };
+    key <AC11> { [ NoSymbol,  NoSymbol,       ellipsis,              endash ] };
+
+    key <AB01> { [  dstroke,   Dstroke                                      ] };
+    key <AB02> { [   ccaron,    Ccaron                                      ] };
+    key <AB03> { [        s,         S                                      ] };
+    key <AB04> { [        m,         M                                      ] };
+    key <AB05> { [        y,         Y                                      ] };
+    key <AB06> { [        t,         T                                      ] };
+    key <AB07> { [    U0301,     U0301                                      ] };
+    key <AB08> { [        b,         B,          comma,                less ] };
+    key <AB09> { [  zstroke,   Zstroke,         period,             greater ] };
+    key <AB10> { [   period,     comma,          slash,            question ] };
+
+    include "nbsp(level4)"
+    include "level3(ralt_switch)"
+};
