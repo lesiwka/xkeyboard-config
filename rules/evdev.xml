@@ -5567,6 +5567,24 @@
             <description>Ukrainian (homophonic)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>lesivka</name>
+            <description>Ukrainian (Lesivka)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>lesivka-eng</name>
+            <description>English (Ukraine, with Lesivka)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>lesivka-eng-alt</name>
+            <description>English (Ukraine, with Lesivka, alt.)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
