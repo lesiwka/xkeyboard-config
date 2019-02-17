@@ -1465,6 +1465,18 @@
             <_description>English (Workman, intl., with dead keys)</_description>
            </configItem>
          </variant>
+        <variant>
+          <configItem>
+            <name>lesiwka</name>
+            <_description>Ukrainian (Lesiwka)</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>lesiwka-alt</name>
+            <_description>Ukrainian (Lesiwka, alt.)</_description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -5358,6 +5370,18 @@
           <configItem>
             <name>homophonic</name>
             <_description>Ukrainian (homophonic)</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>lesiwka</name>
+            <_description>Ukrainian (Lesiwka)</_description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>lesiwka-phonetic</name>
+            <_description>Ukrainian (Lesiwka, phonetic)</_description>
           </configItem>
         </variant>
       </variantList>
