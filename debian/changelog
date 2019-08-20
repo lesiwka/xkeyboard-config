@@ -1,3 +1,12 @@
+xkeyboard-config (2.26-2ubuntu2) eoan; urgency=medium
+
+  [ Viktor Kovács ]
+  * debian/patches/git-update-old-hungarian.diff:
+    - Upstream commit which addresses some issues with the Old
+      Hungarian layout (LP: #1840699).
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Tue, 20 Aug 2019 15:38:00 +0200
+
 xkeyboard-config (2.26-2ubuntu1) eoan; urgency=medium
 
   * Merge with Debian (LP: #1766063, LP: #1825786), remaining changes:
