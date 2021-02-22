@@ -1,3 +1,9 @@
+xkeyboard-config (2.29-2build1) hirsute; urgency=medium
+
+  * No-change rebuild to drop the udeb package.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 22 Feb 2021 10:36:46 +0100
+
 xkeyboard-config (2.29-2) unstable; urgency=medium
 
   [ Simon McVittie ]
