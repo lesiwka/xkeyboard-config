@@ -324,3 +324,68 @@ partial alphanumeric_keys
 	xkb_symbols "sun_type6" {
 	include "sun_vndr/ua(sun_type6)"
 };
+
+partial alphanumeric_keys
+xkb_symbols "lesiwka" {
+    include "us(basic)"
+
+    name[Group1] = "Ukrainian (Lesiwka)";
+
+    include "typo(lesiwka)"
+
+    key <TLDE> { [   U0301, NoSymbol,         grave,   NoSymbol ] };
+    key <AC10> { [  scaron,   Scaron,     semicolon,      colon ] };
+    key <AC11> { [  zcaron,   Zcaron,    apostrophe,   quotedbl ] };
+    key <AD01> { [  ccaron,   Ccaron,             q,          Q ] };
+    key <AD11> { [ dstroke,  Dstroke,   bracketleft,  braceleft ] };
+    key <AD12> { [ zstroke,  Zstroke,  bracketright, braceright ] };
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "lesiwka-jcuken" {
+    include "ua(unicode)"
+
+    name[Group1] = "Ukrainian (Lesiwka, JCUKEN)";
+
+    key <TLDE> { [      grave, asciitilde ] };
+
+    key <AD01> { [          j,          J ] };
+    key <AD02> { [          c,          C ] };
+    key <AD03> { [          u,          U ] };
+    key <AD04> { [          k,          K ] };
+    key <AD05> { [          e,          E ] };
+    key <AD06> { [          n,          N ] };
+    key <AD07> { [          h,          H ] };
+    key <AD08> { [     scaron,     Scaron ] };
+    key <AD09> { [          w,          W ] };
+    key <AD10> { [          z,          Z ] };
+    key <AD11> { [          x,          X ] };
+    key <AD12> { [          g,          G ] };
+    key <BKSL> { [  backslash,        bar ] };
+
+    key <AC01> { [          f,          F ] };
+    key <AC02> { [          i,          I ] };
+    key <AC03> { [          v,          V ] };
+    key <AC04> { [          a,          A ] };
+    key <AC05> { [          p,          P ] };
+    key <AC06> { [          r,          R ] };
+    key <AC07> { [          o,          O ] };
+    key <AC08> { [          l,          L ] };
+    key <AC09> { [          d,          D ] };
+    key <AC10> { [     zcaron,     Zcaron ] };
+    key <AC11> { [ apostrophe,   quotedbl ] };
+
+    key <AB01> { [    dstroke,    Dstroke ] };
+    key <AB02> { [     ccaron,     Ccaron ] };
+    key <AB03> { [          s,          S ] };
+    key <AB04> { [          m,          M ] };
+    key <AB05> { [          y,          Y ] };
+    key <AB06> { [          t,          T ] };
+    key <AB07> { [      U0301,      U0301 ] };
+    key <AB08> { [          b,          B ] };
+    key <AB09> { [    zstroke,    Zstroke ] };
+
+    include "level3(ralt_switch)"
+};
